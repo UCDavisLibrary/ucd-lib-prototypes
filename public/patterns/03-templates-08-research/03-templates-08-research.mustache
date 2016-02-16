@@ -1,0 +1,93 @@
+&lt;div class=&quot;page l-header--fixed&quot;&gt;
+  {{&gt; organisms-header }}
+  &lt;div class=&quot;l-main&quot; role=&quot;main&quot;&gt;
+
+    &lt;div class=&quot;page-title category-brand--sunny-grass page-title--banner&quot;&gt;
+      &lt;div class=&quot;page-title__title--nested&quot;&gt;
+        &lt;h1 class=&quot;page-title__title category-brand__text--knock-out&quot;&gt;{{ title }}&lt;/h1&gt;
+      &lt;/div&gt;
+      {{&gt; atoms-title-banner }}
+    &lt;/div&gt;
+
+    &lt;div class=&quot;l-container brenham-flipped&quot;&gt;
+      {{&gt; molecules-breadcrumbs }}
+
+      {{# emergency }}
+        {{&gt; molecules-alert-error }}
+      {{/ emergency }}
+
+      &lt;div class=&quot;l-content&quot;&gt;
+        &lt;div class=&quot;box-wrapper&quot;&gt;
+          &lt;div class=&quot;panel-pane body-text&quot;&gt;
+            &lt;h2 class=&quot;heading--underline&quot;&gt;{{ headline.short }}&lt;/h2&gt;
+            {{{ excerpt.long }}}
+          &lt;/div&gt;
+        &lt;/div&gt;
+        {{# marketing-highlight.short-burst }}
+          &lt;div class=&quot;panel-pane l-sibling-grid--third&quot;&gt;
+            {{&gt; molecules-marketing-highlight }}
+          &lt;/div&gt;
+        {{/ marketing-highlight.short-burst }}
+        {{# marketing-highlight.horizontal }}
+          &lt;div class=&quot;panel-pane&quot;&gt;
+            {{&gt; molecules-marketing-highlight:marketing-highlight--horizontal }}
+          &lt;/div&gt;
+        {{/ marketing-highlight.horizontal }}
+        &lt;div class=&quot;box-wrapper clear&quot;&gt;
+            &lt;div class=&quot;panel-pane&quot;&gt;
+              &lt;h2 class=&quot;space-below&quot;&gt;More discoveries in progress&lt;/h2&gt;
+              &lt;div class=&quot;category-brand--sunny-grass&quot;&gt;
+                &lt;ul class=&quot;list--link l-column--3&quot;&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://www.ucdmc.ucdavis.edu/publish/news/newsroom/10075/&quot;&gt;Autism&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://blogs.ucdavis.edu/egghead/2015/06/22/californias-wildflowers-losing-diversity-in-face-of-warmer-drier-winters/&quot;&gt;Drought&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://blogs.ucdavis.edu/egghead/2015/06/15/crosstalk-gives-clues-to-diabetes/&quot;&gt;Disease prevention&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://www.ucdmc.ucdavis.edu/publish/news/newsroom/10116/&quot;&gt;Brain science&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://news.ucdavis.edu/search/news_detail.lasso?id=10791/&quot;&gt;Animal health&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://www.ucdmc.ucdavis.edu/publish/news/newsroom/10017/&quot;&gt;Cancer&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://ucdavis.edu/ucdavis-today/2015/june/18-baboons-on-the-move-practice-democracy.html/&quot;&gt;Social behavior&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://news.ucdavis.edu/search/news_detail.lasso?id=11207/&quot;&gt;Climate change&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://blogs.ucdavis.edu/egghead/2015/05/12/ucd-mars-inc-team-awarded-finalist-in-u-s-fda-food-safety-challenge/&quot;&gt;Food safety&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://blogs.ucdavis.edu/egghead/2015/06/03/death-in-the-tide-pools-rapid-die-off-of-urchins-and-sea-stars-a-grim-warning-of-climate-change/&quot;&gt;Ocean health&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://blogs.ucdavis.edu/egghead/2015/06/16/wild-bees-pollinate-crops-but-thats-not-why-they-should-be-conserved/&quot;&gt;Animal extinction&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://news.ucdavis.edu/search/news_detail.lasso?id=11124/&quot;&gt;Feeding the world&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://blogs.ucdavis.edu/egghead/2015/05/08/new-study-analyzes-thinspiration-images-of-women-on-social-media-sites/&quot;&gt;Nutrition&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://news.ucdavis.edu/search/news_detail.lasso?id=11171/&quot;&gt;Conservation&lt;/a&gt;&lt;/li&gt;
+                  &lt;li&gt;&lt;a href=&quot;http://news.ucdavis.edu/search/news_detail.lasso?id=11245/&quot;&gt;Education&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;&lt;!--end .l-content--&gt;
+
+      &lt;div class=&quot;l-sidebar-second&quot;&gt;
+        &lt;div class=&quot;panel-pane&quot;&gt;
+          &lt;div class=&quot;sub-nav&quot;&gt;
+            {{# tertiary-page }}
+                &lt;h2 class=&quot;sub-nav__title&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;{{ parent-page-title }}&lt;/a&gt;&lt;/h2&gt;
+            {{/ tertiary-page }}
+              &lt;ul class=&quot;sub-nav__body menu&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Undergraduate Research&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Graduate Research&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Industry &amp;amp; Technology&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Libraries&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Museums &amp;amp; Collections&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;panel-pane box&quot;&gt;
+          {{&gt; organisms-research-news }} 
+        &lt;/div&gt;
+        {{# focal-links }}
+          &lt;div class=&quot;panel-pane&quot;&gt;
+            {{&gt; molecules-focal-link }}
+          &lt;/div&gt;
+        {{/ focal-links }}
+        &lt;div class=&quot;panel-pane bg-transparent&quot;&gt;
+          {{&gt; molecules-social-follow-small }}
+        &lt;/div&gt;
+      &lt;/div&gt;&lt;!--end .l-sidebar-second--&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;!--End role=main--&gt;
+  {{&gt; organisms-footer }}
+&lt;/div&gt;

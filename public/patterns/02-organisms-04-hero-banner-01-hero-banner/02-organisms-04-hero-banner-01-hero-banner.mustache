@@ -1,0 +1,31 @@
+{{# hero-banner }}
+&lt;section class=&quot;hero-banner {{ styleModifier }}&quot;&gt;
+  &lt;div class=&quot;hero-banner__media&quot;&gt;
+    {{# video-src }}
+      &lt;div class=&quot;hero-banner__video-placeholder&quot; data-hero-banner-video=&quot;{{ video-src }}&quot;&gt;&lt;/div&gt;
+    {{/ video-src }}
+
+    {{^ video-src }}
+      {{# show-image }}
+        &lt;div class=&quot;hero-banner__image&quot;&gt;
+          {{&gt; atoms-hero }}
+        &lt;/div&gt;
+      {{/ show-image }}
+    {{/ video-src }}
+  &lt;/div&gt;
+
+  &lt;div class=&quot;hero-banner__body&quot;&gt;
+    &lt;div class=&quot;hero-banner__title&quot;&gt;
+      &lt;span class=&quot;hero-banner__title--top&quot;&gt;{{ top-text }}&lt;/span&gt;
+      &lt;span class=&quot;hero-banner__title--bottom&quot;&gt;{{ bottom-text }}&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class =&quot;hero-banner__horizontal-line&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;hero-banner__buttons&quot;&gt;
+      {{# btn-video }}
+      &lt;a href=&quot;#&quot; class=&quot;btn--invert&quot;&gt;Play Video&lt;/a&gt;
+      {{/ btn-video }}
+      &lt;a href=&quot;#&quot; class=&quot;btn--invert&quot;&gt;Apply Now&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+{{/ hero-banner }}

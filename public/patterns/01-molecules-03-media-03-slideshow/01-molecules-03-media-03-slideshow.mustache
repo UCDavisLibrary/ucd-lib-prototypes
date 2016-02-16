@@ -1,0 +1,28 @@
+{{# slideshow }}
+  &lt;div class=&quot;slideshow&quot;&gt;
+    {{# slides }}
+      &lt;div class=&quot;slideshow__item&quot;&gt;
+        {{&gt; atoms-slideshow }}
+        &lt;div class=&quot;slideshow__text&quot;&gt;
+          {{# slide-title }}
+            &lt;div class=&quot;slideshow__title&quot;&gt;
+              &lt;span class=&quot;slideshow__knockout&quot;&gt;{{ first-word }}&lt;/span&gt; {{ remaining }}
+            &lt;/div&gt;
+          {{/ slide-title }}
+          {{# caption }}
+            &lt;div class=&quot;slideshow__caption&quot;&gt;{{{ caption }}}&lt;/div&gt;
+          {{/ caption }}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    {{/ slides }}
+  &lt;/div&gt;
+  {{# has-thumbnails }}
+    &lt;div class=&quot;slider-nav&quot; role=&quot;toolbar&quot;&gt;
+      {{# thumb-slides }}
+        &lt;div class=&quot;slideshow__item&quot;&gt;
+          {{&gt; atoms-slideshow-thumbnail }}
+        &lt;/div&gt;
+      {{/ thumb-slides }}
+    &lt;/div&gt;
+  {{/ has-thumbnails }}
+{{/ slideshow }}

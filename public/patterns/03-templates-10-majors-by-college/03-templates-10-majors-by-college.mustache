@@ -1,0 +1,129 @@
+&lt;div class=&quot;page l-header--fixed&quot;&gt;
+  {{&gt; organisms-header }}
+    &lt;div class=&quot;l-main&quot; role=&quot;main&quot;&gt;
+
+        &lt;div class=&quot;page-title&quot;&gt;
+            &lt;h1 class=&quot;page-title__title category-brand__text--knock-out&quot;&gt;{{ title }}&lt;/h1&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;l-container brenham-flipped&quot;&gt;
+          {{&gt; molecules-breadcrumbs }}
+
+          {{# emergency }}
+            {{&gt; molecules-alert-error }}
+          {{/ emergency }}
+
+            &lt;div class=&quot;l-content&quot;&gt;
+                &lt;div class=&quot;box-wrapper&quot;&gt;
+                    &lt;div class=&quot;panel-pane&quot;&gt;
+                        &lt;h2 class=&quot;space-below&quot;&gt;UC Davis Majors by College and Division&lt;/h2&gt;
+                        {{&gt; molecules-search-form:search-form__input--border}}
+                        &lt;p&gt;&lt;/p&gt;
+                        &lt;div class=&quot;view-content clear&quot;&gt;
+
+                            &lt;div class=&quot;item-list hdepth&quot;&gt;
+                                &lt;h4&gt;College of Engineering&lt;/h4&gt;
+                                &lt;ul&gt;
+                                    &lt;li class=&quot;hdepth-0&quot;&gt;
+                                        &lt;div class=&quot;views-field views-field-title&quot;&gt;
+                                            &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Aerospace Science and Engineering&lt;/a&gt;&lt;span class=&quot;field-content ucd-major-minor&quot;&gt;(Major &amp;amp; Minor)&lt;/span&gt;&lt;/span&gt;
+                                        &lt;/div&gt;
+                                    &lt;/li&gt;
+
+                                    &lt;li class=&quot;hdepth-0&quot;&gt;
+                                        &lt;div class=&quot;views-field views-field-title&quot;&gt;
+                                            &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Biochemical Engineering&lt;/a&gt;&lt;span class=&quot;field-content ucd-major&quot;&gt;(Major)&lt;/span&gt;&lt;/span&gt;
+                                        &lt;/div&gt;
+                                    &lt;/li&gt;
+
+                                    &lt;li class=&quot;hdepth-0&quot;&gt;
+                                        &lt;div class=&quot;views-field views-field-title&quot;&gt;
+                                            &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Biological Systems Engineering&lt;/a&gt;&lt;span class=&quot;field-content ucd-major-minor&quot;&gt;(Major &amp;amp; Minor)&lt;/span&gt;&lt;/span&gt;
+                                        &lt;/div&gt;
+                                    &lt;/li&gt;
+
+                                    &lt;li class=&quot;hdepth-0&quot;&gt;
+                                        &lt;div class=&quot;views-field views-field-title&quot;&gt;
+                                            &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Biological Systems Engineering&lt;/a&gt;&lt;span class=&quot;field-content ucd-major&quot;&gt;(Major)&lt;/span&gt;&lt;/span&gt;
+                                        &lt;/div&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;item-list hdepth&quot;&gt;
+                                &lt;h4&gt;College of Letters and Science&lt;/h4&gt;
+
+                                &lt;ul&gt;
+                                    &lt;li class=&quot;hdepth-0&quot;&gt;
+                                        &lt;div class=&quot;views-field views-field-title&quot;&gt;
+                                            &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Marine and Coastal Science - Oceans and the Earth System&lt;/a&gt;&lt;/span&gt;
+                                        &lt;/div&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;item-list hdepth&quot;&gt;
+                                &lt;h6 class=&quot;california-poppy&quot;&gt;Division of Humanities, Arts and Cultural Studies&lt;/h6&gt;
+
+                                &lt;ul&gt;
+                                    &lt;li class=&quot;hdepth-1&quot;&gt;
+                                        &lt;div class=&quot;views-field views-field-title&quot;&gt;
+                                            &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;African American and African Studies&lt;/a&gt;&lt;/span&gt;
+                                        &lt;/div&gt;
+                                    &lt;/li&gt;
+
+                                    &lt;li class=&quot;hdepth-1&quot;&gt;
+                                        &lt;div class=&quot;views-field views-field-title&quot;&gt;
+                                            &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;American Studies&lt;/a&gt;&lt;/span&gt;
+                                        &lt;/div&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class=&quot;item-list hdepth&quot;&gt;
+                                &lt;h6 class=&quot;california-poppy&quot;&gt;Division of Math and Physical Sciences&lt;/h6&gt;
+
+                                &lt;ul&gt;
+                                    &lt;li class=&quot;hdepth-1&quot;&gt;
+                                        &lt;div class=&quot;views-field views-field-title&quot;&gt;
+                                            &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Applied Mathematics&lt;/a&gt;&lt;/span&gt;
+                                        &lt;/div&gt;
+                                    &lt;/li&gt;
+
+                                    &lt;li class=&quot;hdepth-1&quot;&gt;
+                                        &lt;div class=&quot;views-field views-field-title&quot;&gt;
+                                            &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Applied Physics&lt;/a&gt;&lt;/span&gt;
+                                        &lt;/div&gt;
+                                    &lt;/li&gt;
+
+                                    &lt;li class=&quot;hdepth-1&quot;&gt;
+                                        &lt;div class=&quot;views-field views-field-title&quot;&gt;
+                                            &lt;span class=&quot;field-content&quot;&gt;&lt;a href=&quot;{{ url }}&quot;&gt;Chemical Physics&lt;/a&gt;&lt;/span&gt;
+                                        &lt;/div&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;p class=&quot;major-note&quot;&gt;&lt;span class=&quot;field-content ucd-major-minor&quot;&gt;(Major &amp;amp; Minor)&lt;/span&gt;&lt;span class=&quot;gray-italic&quot;&gt; = This major is also available as a minor.&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!--end .l-content--&gt;
+            &lt;/div&gt;&lt;!--end .l-content--&gt;
+
+            &lt;div class=&quot;l-sidebar-second&quot;&gt;
+                &lt;div class=&quot;panel-pane&quot;&gt;
+                  {{&gt; molecules-sub-nav }}
+                &lt;/div&gt;
+              {{# focal-links }}
+                  &lt;div class=&quot;panel-pane&quot;&gt;
+                    {{&gt; molecules-focal-link }}
+                  &lt;/div&gt;
+              {{/ focal-links }}
+                &lt;div class=&quot;panel-pane bg-transparent&quot;&gt;
+                  {{&gt; molecules-social-follow-small }}
+                &lt;/div&gt;
+            &lt;/div&gt;&lt;!--end .l-sidebar-second--&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!--End role=main--&gt;
+  {{&gt; organisms-footer }}
+&lt;/div&gt;

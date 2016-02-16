@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8 pl"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9 pl"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="pl"> <!--<![endif]-->
+<head>
+  <title>Administration</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+  <!-- proxima nova -->
+  <script src="//use.typekit.net/bkh4ofy.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <!-- end proxima nova -->
+
+
+  <!-- bower:css -->
+  <link rel="stylesheet" href="../../../bower_components/normalize.css/normalize.css" />
+  <link rel="stylesheet" href="../../../bower_components/slick-carousel/slick/slick.css" />
+  <link rel="stylesheet" href="../../../bower_components/slick-carousel/slick/slick-theme.css" />
+  <link rel="stylesheet" href="../../../bower_components/bootstrap-select/dist/css/bootstrap-select.css" />
+  <link rel="stylesheet" href="../../../bower_components/photoswipe/dist/photoswipe.css" />
+  <link rel="stylesheet" href="../../../bower_components/photoswipe/dist/default-skin/default-skin.css" />
+  <!-- endbower -->
+
+  <link rel="stylesheet" href="../../css/style.css?1455637857" media="all" />
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="../../css/no-query.css?1455637857" media="all" />
+  <![endif]-->
+
+  <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+  		<!-- never cache patterns -->
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1455637857" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1455637857" media="all" />
+		
+
+  <!-- End Pattern Lab -->
+
+  <!-- bower:js -->
+  <script src="../../../bower_components/jquery/jquery.js"></script>
+  <script src="../../../bower_components/modernizr/modernizr.js"></script>
+  <script src="../../../bower_components/jquery-migrate/jquery-migrate.js"></script>
+  <script src="../../../bower_components/drupal/index.js"></script>
+  <script src="../../../bower_components/jquery-hoverintent/jquery.hoverIntent.js"></script>
+  <script src="../../../bower_components/slick-carousel/slick/slick.min.js"></script>
+  <script src="../../../bower_components/bootstrap-select/dist/js/bootstrap-select.js"></script>
+  <script src="../../../bower_components/photoswipe/dist/photoswipe.js"></script>
+  <script src="../../../bower_components/photoswipe/dist/photoswipe-ui-default.js"></script>
+  <!-- endbower -->
+
+  <!--masory-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.1/masonry.pkgd.min.js"></script>
+
+  <script src="../../js/scripts.js"></script>
+
+</head>
+<body class="article">
+<div class="page l-header--fixed">
+  <!-- Begin .header -->
+  <header class="l-header header" role="banner">
+    <div class="header__img-bg">
+      <a href="#nav" class="nav-toggle js-nav-toggle">
+        <span class="nav-toggle__icon nav-toggle__icon--menu">Menu</span>
+      </a>
+      <div class="l-container">
+      <a href="#" class="site-logo"><img src="../../images/uc-logo-white.svg" class="logo" alt="UC Davis Logo" /></a>
+      </div>
+    </div>
+    <div class="l-navbar navbar menu--closed">
+      <div class="l-container--navigation off-canvas off-canvas--left">
+        <div class="off-canvas__container">
+          <div class="l-search-popup">
+          <button class="search-popup__open js-search-popup__open">Open</button>
+
+          <form action="#" method="post" class="search-popup">
+            <button class="search-popup__close"><span class="search-popup__close-icon">Close</span></button>
+            <div class="search-popup__container">
+              <input type="text" name="search" class="search-popup__input" placeholder="Search" required="required">
+              <label for="search" class="search-popup__label">Search</label>
+              <div class="search-popup__buttons">
+                <input type="submit" value="Pages" class="search-popup__submit">
+                <input type="submit" value="People" class="search-popup__submit">
+                <input type="submit" value="Departments" class="search-popup__submit">
+              </div>
+            </div>
+          </form>
+          </div>
+        <nav class="primary-nav">
+          <ul class="menu">
+            <li><a href="https://ucdavis.edu/about/">About Us<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a>
+              <ul class="menu">
+                <li class="is-visible"><a href="https://ucdavis.edu/about/">Our Story<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/about/initiatives/">Initiatives</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/about/facts/">Facts &amp; Rankings</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/about/location-parking/">Locations &amp; Maps</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/visit/">Visit UC Davis</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/about/health/">UC Davis Health</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/about/administration/">Administration</a></li>
+              </ul>
+            </li>
+            <li class="is-visible"><a href="https://ucdavis.edu/admission/">Admissions</a>
+              <ul class="menu">
+                <li class="is-visible"><a href="https://ucdavis.edu/admission/undergraduate/">Undergraduate</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/admission/graduate-program/">Graduate</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/admission/professional-program/">Professional</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/admission/international-student/">International</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/cost-tuition-fees/">Tuition &amp; Fees</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/financial-aid/">Financial Aid</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/apply/">Apply</a></li>
+              </ul>
+            </li>
+            <li class="is-visible"><a href="https://ucdavis.edu/academics/">Academics</a>
+              <ul class="menu">
+                <li class="is-visible"><a href="https://ucdavis.edu/majors/">Majors</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/colleges-schools/">Colleges &amp; Schools</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/graduate-programs/">Graduate Programs</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/study-abroad/">Study Abroad</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/continuing-education/">Continuing Education</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/calendar/academic/">Academic Calendar</a></li>
+              </ul>
+            </li>
+            <li class="is-visible"><a href="https://ucdavis.edu/research/">Research</a>
+              <ul class="menu">
+                <li class="is-visible"><a href="https://ucdavis.edu/research/">World Impact</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/research/student/">Student Research</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/research/partnerships/">Partnerships</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/library/">Library</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/museums-collections/">Museums &amp; Collections</a></li>
+              </ul>
+            </li>
+            <li class="is-visible"><a href="https://ucdavis.edu/campus-life/">Campus Life</a>
+              <ul class="menu">
+                <li class="is-visible"><a href="https://ucdavis.edu/campus-life/">Student Life</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/features-hot-spots/">Campus Features</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/housing/">Housing</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/calendar/">Events Calendar</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/athletics/">Athletics</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/clubs-student-organizations/">Clubs &amp; Organizations</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/city-of-davis/">City of Davis</a></li>
+              </ul>
+            </li>
+            <li class="is-visible"><a href="https://ucdavis.edu/news/">News</a>
+              <ul class="menu">
+                <li class="is-visible"><a href="https://ucdavis.edu/news/">Latest News</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/news/university-news/">University News</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/news/environment/">Environment</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/news/food-agriculture/">Food &amp; Agriculture</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/news/human-animal-health/">Human &amp; Animal Health</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/news/science-technology/">Science &amp; Technology</a></li>
+                <li class="is-visible"><a href="https://ucdavis.edu/news/society-arts-culture/">Society, Arts &amp; Culture</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav><!--end .nav-->
+          <div class="l-quick-links">
+          <h2><a href="#" class="quick-links__title">Quick Links<span class="submenu-toggle"><span class="submenu-toggle__icon">+</span></span></a></h2>
+          <nav class="quick-links is-hidden--visually" tabindex="1">
+            <ul class="menu">
+              <li><a href="#">myucdavis</a></li>
+              <li><a href="#">myadmissions</a></li>   
+              <li><a href="#">Make a Gift to UC Davis</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Campus Map</a></li>
+              <li><a href="#">Locations &amp; Parking</a></li>
+              <li><a href="#">Visit</a></li>
+              <li><a href="#">Apply</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Athletics</a></li>
+              <li><a href="#">Academic Dates</a></li>
+              <li><a href="#">SmartSite</a></li>
+              <li><a href="#">Course Catalog</a></li>
+              <li><a href="#">Schedule Builder</a></li>
+              <li><a href="#">Student Health</a></li>
+              <li><a href="#">Alumni</a></li>
+              <li><a href="#">UC Davis Stores</a></li>
+            </ul>
+          </nav><!--end .quick-nav-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End .header -->  <div class="l-main" role="main">
+
+    <div class="page-title">
+      <h1 class="page-title__title category-brand__text--knock-out">Administration</h1>
+    </div>
+
+    <div class="l-container brenham-flipped">
+      <ol class="breadcrumbs ">
+          <li><a href="/pattern-lab-one/public/patterns/04-pages-00-homepage/04-pages-00-homepage.html">UC Davis Home</a></li>
+          <li><a href="">About Us</a></li>
+          <li><a href="">Administration</a></li>
+      </ol>
+
+      <div class="l-content">
+        <div class="box-wrapper">
+          <div class="panel-pane category-brand--sky-blue">
+            <div class="focus-box  category-brand__background category-brand__background--lighten">
+              <div class="focus-box__image">
+    <img src="../../images/sample/chancellor-coho.jpg" alt="Chancellor Katehi at the Coffeehouse" />              </div>
+              <h3 class="focus-box__title category-brand__text category-brand__text--knock-out"><span class="focus-box__title--weighted">Chancellor</span> Linda P. B. Katehi</h3>
+              <div class="focus-box__body body-text">
+                <div class="l-column--2"><p>UC Davis Chancellor <a href="http://chancellor.ucdavis.edu/about/">Linda P.B. Katehi</a> heads one of the <a href="">top 10 universities in the world led by a female leader</a>.</p> <p>Chancellor since 2009, she oversees all aspects of the university’s teaching, research and public service mission.</p> <p>An electrical engineer and proud UC alum (UCLA ’81 and ’84), Katehi has spent her career focusing on expanding research opportunities for undergraduates and improving the education and profes­sional experience of graduate students, with an emphasis on underrepresented groups.</p> <p>In addition to her role as chancellor, Katehi holds UC Davis faculty appointments in electrical and computer engineering and in women and gender studies.</p> <p>The chancellor enjoys a global reputation as a leading STEM (science, technology, engineering and math) educator, and her work in electronic circuit design has led to numerous national and international awards as well as 19 U.S. patents.</p><h4 class="space-below">Learn more about the chancellor</h4> <ul> <li><a href="#">Visit her website</a> <li><a href="#">Follow her on Twitter</a> <li><a href="#">Read her blog</a></ul></div>
+              </div>
+            </div>          </div>
+          <div class="panel-pane">
+            <h2 class="heading--underline">Provost and Executive Vice Chancellor Ralph J. Hexter</h2>
+            <div class="align-left image-half">
+              <img src="../../images/sample/hexter-new.jpg" alt="Provost and Executive Vice Chancellor Ralph J. Hexter" />            </div>
+            <p>Classics scholar and long-time university administrator <a href="http://provost.ucdavis.edu/">Ralph J. Hexter</a> helps lead UC Davis as its chief academic and operating officer. Under Chancellor Linda Katehi’s direction, he is responsible for the campus’s academic and organizational functioning and its excellence in education, research and public service.</p><p><a href="http://provost.ucdavis.edu/people/hexter-biography.html">Hexter arrived at UC Davis</a> on Jan. 1, 2011, to become provost and executive vice chancellor. He also holds an appointment as distinguished professor of classics and comparative literature.</p><p>Throughout his career, Hexter has made it a priority to foster excellence across the full range of disciplines, and to promote equal opportunity, diversity and inclusion for students, faculty and staff.</p><p>Hexter directs and collaborates with the campus’s vice chancellors, deans, the university librarian and other campus leaders. In addition, he is UC Davis’ chief ethics and compliance officer, and serves as the chancellor’s principal liaison to the Academic Senate.</p>
+          </div>
+            <div class="panel-pane">
+              <div class="collapse category-brand--sky-blue">
+                <h2 class="collapse__title collapse__title--closed category-brand__background">
+                  Vice chancellors
+                </h2>
+                <div class="collapse__content is-hidden--visually">
+                  <ul> <li><a href="{{ url }}">Administrative Reorganization and Transformation: <strong>Associate Chancellor Prasant Mohapatra</strong></a></li> <li><a href="{{ url }}">Development and Alumni Relations: <strong>Vice Chancellor Shaun Keister</strong></a></li> <li><a href="{{ url }}">Finance, Operations and Administration: <strong>Vice Chancellor and Chief Financial Officer Dave Lawlor</strong></a></li> <li><a href="{{ url }}">Human Health Sciences: <strong>Vice Chancellor and Dean Julie A.</strong></a></li> <li><a href="{{ url }}">Research: <strong>Vice Chancellor Harris Lewin</strong></a></li> <li><a href="{{ url }}">Student Affairs: <strong>Vice Chancellor Adela de la Torre</strong></a></li> </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel-pane">
+              <div class="collapse category-brand--sunny-grass">
+                <h2 class="collapse__title collapse__title--closed category-brand__background">
+                  Deans
+                </h2>
+                <div class="collapse__content is-hidden--visually">
+                  <ul> <li><a href="{{ url }}">Agricultural and Environmental Sciences: <strong>Dean Helene Dillard</strong></a></li> <li><a href="{{ url }}">Betty Irene Moore School of Nursing: <strong>Dean Heather Young</strong></a></li> <li><a href="{{ url }}">Biological Sciences: <strong>Interim Dean Peter Wainwright</strong></a></li> <li><a href="{{ url }}">Education: <strong>Dean Harold Levine</strong></a></li> <li><a href="{{ url }}">Engineering: <strong>Dean Enrique Lavernia</strong></a></li> <li><a href="{{ url }}">Humanities, Arts and Cultural Studies: <strong>Interim Dean Susan B. Kaiser</strong></a></li> <li><a href="{{ url }}">Graduate School of Management: <strong>Interim Dean Ann Huff Stevens</strong></a></li> <li><a href="{{ url }}">Graduate Studies: <strong>Vice Provost and Dean Jeffery C. Gibeling</strong></a></li> <li><a href="{{ url }}">Law: <strong>Dean Kevin Johnson</strong></a></li> <li><a href="{{ url }}">Mathematical and Physical Sciences: <strong>Interim Dean Alexandra Navrotsky</strong></a></li> <li><a href="{{ url }}">Medicine: <strong>Dean Julie A. Freischlag</strong></a></li> <li><a href="{{ url }}">Social Sciences: <strong>Dean George R. Mangun</strong></a></li> <li><a href="{{ url }}">UC Davis Extension: <strong>Dean Paul M. McNeil</strong></a></li> <li><a href="{{ url }}">Undergraduate Education: <strong>Vice Provost and Dean Carolyn Thomas</strong></a></li> <li><a href="{{ url }}">Veterinary Medicine: <strong>Dean Michael D. Lairmore</strong></a></li> </ul>
+                </div>
+              </div>
+            </div>
+            <div class="panel-pane">
+              <div class="collapse category-brand--california-poppy">
+                <h2 class="collapse__title collapse__title--closed category-brand__background">
+                  Vice provosts and others
+                </h2>
+                <div class="collapse__content is-hidden--visually">
+                  <h3>Vice provosts</h3> <ul> <li><a href="{{ url }}">Academic Affairs: <strong>Vice Provost Maureen Stanton</strong></a></li> <li><a href="{{ url }}">Global Affairs: <strong>Interim Vice Provost Adrienne Martin</strong></a></li> <li><a href="{{ url }}">Graduate education: <strong>Vice Provost and Dean Jeffery C. Gibeling</strong></a></li> <li><a href="{{ url }}">Information and Educational Technology: <strong>Vice Provost Viji Murali</strong></a></li> <li><a href="{{ url }}">Undergraduate Education: <strong>Vice Provost and Dean Carolyn Thomas</strong></a></li> </ul> <h3>Associate chancellors</h3> <ul> <li><a href="{{ url }}">Chancellor’s Office: <strong>Associate Chancellor Karl Engelbach, senior staff adviser to the chancellor and chief of staff</strong></a></li></ul> <h3>Other administrators</h3> <ul> <li><a href="{{ url }}">Chancellor Emeritus: <strong>Larry Vanderhoef</strong></a></li> <li><a href="{{ url }}">Library: <strong>University Librarian MacKenzie Smith</strong></a></li> <li><a href="{{ url }}">Medical Center: <strong>Chief Executive Officer Ann Madden Rice</strong></a></li> <li><a href="{{ url }}">Chancellor’s Senior Advisor for Strategic Projects and Initiatives: <strong>Steven C. Currall</strong></a></li> </ul>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div><!--end .l-content-->
+
+      <div class="l-sidebar-second">
+        <div class="panel-pane">
+          <div class="sub-nav">
+                <h2 class="sub-nav__title"><a href="#">About Us</a></h2>
+              <ul class="menu sub-nav__body category-brand--admin-blue">
+                  <li><a href="#">Our Story</a></li>
+                  <li><a href="#">Facts &amp; Rankings</a></li>
+                  <li><a href="#">Visit UC Davis</a></li>
+                  <li><a href="#">Locations/Parking</a></li>
+                  <li class="sub-nav__body--active category-brand__list-link"><a href="#">Administration</a>
+                      <ul>
+                          <li><a href="#">Major Admin Units</a></li>
+                          <li><a href="#">Organizational Chart</a></li>
+                          <li><a href="#">Initiatives</a></li>
+                          <li><a href="#">Policies</a></li>
+                          <li><a href="#">Executive Recruitments</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">Jobs</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="panel-pane box">
+          <section class="list--bordered pane-title--icon pane-title--initiatives">
+            <h2 class="pane-title"><span class="pane-title--weighted">Campus Initiatives</span></h2>
+    <div class="node vm-simple-list node--event">
+      <h3 class="node__title"><a href="#">An Invitation to Envision the University of the 21st Century</a></h3>
+      <div class="field__date">Sunday, August 23</div>
+      <div class="field__location"></div>
+    </div>
+    <div class="node vm-simple-list node--event">
+      <h3 class="node__title"><a href="#">UC Davis World Food Center</a></h3>
+      <div class="field__date">Friday, September 4</div>
+      <div class="field__location"></div>
+    </div>
+    <div class="node vm-simple-list node--event">
+      <h3 class="node__title"><a href="#">The 2020 Initiative: A Path to Academic Excellence and Economic Opportunity</a></h3>
+      <div class="field__date">Saturday, September 12</div>
+      <div class="field__location"></div>
+    </div>
+          </section>
+        </div>
+          <div class="panel-pane">
+            <a href="#" class="focal-link ">
+              <div class="focal-link__figure">
+    <img src="../../images/icons/org-chart.svg" alt="Org Chart" />              </div>
+              <div class="focal-link__body">
+                <strong>View Our Org Chart</strong>
+              </div>
+            </a>
+          </div>
+          <div class="panel-pane">
+            <a href="#" class="focal-link ">
+              <div class="focal-link__figure">
+    <img src="../../images/icons/read-principles.svg" alt="Principles of Community" />              </div>
+              <div class="focal-link__body">
+                <strong>Read Our Principles of Community</strong>
+              </div>
+            </a>
+          </div>
+          <div class="panel-pane">
+            <a href="#" class="focal-link ">
+              <div class="focal-link__figure">
+    <img src="../../images/icons/jobs.svg" alt="Search Jobs" />              </div>
+              <div class="focal-link__body">
+                <strong>Search Jobs</strong>
+              </div>
+            </a>
+          </div>
+        <div class="panel-pane">
+          <section class="pane-title--icon pane-title--twitter">
+            <h2 class="pane-title"><span class="pane-title--weighted">Follow the chancellor on twitter</span></h2>
+              <div class="twitter-container">
+                <a class="twitter-timeline"  href="https://twitter.com/ucdavis" data-widget-id="618832200495054848">Tweets by @ucdavis</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>      
+              </div>
+          </section>
+        </div>
+        <div class="panel-pane bg-transparent">
+          <div class="social-follow-small">
+            <h3 class="pane-title">Follow UC Davis</h3>
+            <ul>
+              <li><a class="social-follow-small__facebook" title="Facebook" href="#">Follow on Facebook</a></li>
+              <li><a class="social-follow-small__twitter" title="Twitter" href="#">Follow on Twitter</a></li>
+              <li><a class="social-follow-small__instagram" title="Instagram" href="#">Follow on Instagram</a></li>
+              <li><a class="social-follow-small__youtube" title="YouTube" href="#">Follow on YouTube</a></li>
+              <li><a class="social-follow-small__googleplus" title="Google Plus" href="#">Follow on Google Plus</a></li>
+            </ul>
+          </div>        </div>
+      </div><!--end .l-sidebar-second-->
+
+    </div>
+  </div><!--End role=main-->
+  <!-- Begin Footer -->
+  <footer class="l-footer footer" role="contentinfo">
+    <div class="l-container">
+      <div class="pack pack--small footer__navs">
+        <div class="pack__item">
+        <div class="footer-nav">
+          <div class="footer-nav__logo">
+            <a href="https://ucdavis.edu/"><a href="#"><img src="../../images/uc-logo-gold.svg" class="logo " alt="UC Davis Logo" /></a>
+</a>
+          </div>
+          <ul class="menu">
+            <li><a href="http://ucdmc.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-UCDHS">Health System</a></li>
+            <li><a href="http://www.vetmed.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-VetMed">Veterinary Medicine</a></li>
+            <li><a href="https://extension.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-Extension">Extension</a></li>
+            <li><a href="http://ucdavisstores.com/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-Stores">UC Davis Stores</a></li>
+            <li><a href="http://mondavicenter.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-Mondavi">Mondavi Center</a></li>
+            <li><a href="https://ucdavis.edu/museums-collections/">Museums</a></li>
+            <li><a href="http://mobile.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-MobileApp">UC Davis Mobile Apps</a></li>
+          </ul>
+        </div>        </div>
+        <div class="pack__item">
+          <div class="footer-nav">
+            <h2 class="footer-nav__title">Students</h2>
+            <ul class="menu">
+              <li><a href="http://orientation.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-Orientation">New Students</a></li>
+              <li><a href="http://studentlife.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-Student-Life">Undergraduates</a></li>
+              <li><a href="https://gradstudies.ucdavis.edu/current-students?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-Grad-Studies">Graduate Students</a></li>
+              <li><a href="https://icc.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-ICC">Internship &amp; Career Center</a></li>
+              <li><a href="https://ucdavis.edu/jobs/student-jobs-internships/">Jobs &amp; Internships</a></li>
+              <li><a href="http://alumni.ucdavis.edu/membership/parents/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-CAAA-Parents">Parents</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pack__item">
+          <div class="footer-nav">
+            <h2 class="footer-nav__title">Alumni</h2>
+            <ul class="menu">
+              <li><a href="http://alumni.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-CAAA">Cal Aggie Alumni Association</a></li>
+              <li><a href="http://www.alumni.ucdavis.edu/benefits/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-CAAA-Benefits">Member Benefits</a></li>
+              <li><a href="http://www.alumni.ucdavis.edu/benefits/career-connections?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-CAAA-Career-Connections">Career Connections</a></li>
+              <li><a href="http://ucdavismagazine.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-Magazine">UC Davis Magazine</a></li>
+              <li><a href="https://registrar.ucdavis.edu/records/transcripts/index.cfm?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-Registrar-Transcripts">Transcripts</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pack__item">
+          <div class="footer-nav">
+            <h2 class="footer-nav__title">Faculty</h2>
+            <ul class="menu">
+              <li><a href="http://academicaffairs.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-Academic-Affairs">Resources</a></li>
+              <li><a href="http://ue.ucdavis.edu/faculty/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-UE-Teaching-Resources">Teaching</a></li>
+              <li><a href="http://research.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-Office-of-Research">Research</a></li>
+              <li><a href="http://www.hr.ucdavis.edu/benefits/index.html?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-HR-Benefits-Faculty">Benefits</a></li>
+              <li><a href="http://academicsenate.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-Academic-Senate">Faculty Governance</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pack__item">
+          <div class="footer-nav">
+            <h2 class="footer-nav__title">Staff</h2>
+            <ul class="menu">
+              <li><a href="https://ucdavis.edu/staff/">Resources</a></li>
+              <li><a href="http://sdps.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-SDPS
+  ">Training</a></li>
+              <li><a href="http://www.hr.ucdavis.edu/benefits/index.html?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Link-to-HR-Benefits-Staff">Benefits</a></li>
+              <li><a href="https://ucdavis.edu/jobs/">Jobs</a></li>
+              <li><a href="http://staff.ucdavis.edu/?utm_source=UC-Davis-Homesite&utm_medium=Footer&utm_campaign=UC-Davis-Footer-Links-to-Staff-Assembly">Staff Assembly</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-spacer">
+        <hr class="footer-spacer__hr hr-invert">
+        <div class="footer-spacer__logo">
+        <a href="#"><img src="../../images/c-horse.svg" class="logo" alt="UC Davis Athletics Logo" /></a>        </div>
+      </div>
+
+    <div class="copyright">
+      <p>University of California, Davis, One Shields Avenue, Davis, CA 95616 | 530-752-1011</p>
+      <ul class="list--pipe">
+        <li><a href="#">Help</a> | <a href="#">Questions or comments?</a></li>
+        <li><a href="#">Privacy & Accessibility</a></li>
+        <li><a href="http://occr.ucdavis.edu/poc/">Principles of Community</a></li>
+        <li><a href="http://www.universityofcalifornia.edu/">University of California</a></li>
+        <li><a href="#">Sitemap</a></li>
+        <li>Last update: July 14, 2015</li>
+      </ul>
+      <p>Copyright © The Regents of the University of California, Davis campus. All rights reserved.</p>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer --></div>
+	<!--DO NOT REMOVE-->
+		
+	<script>
+		// handle injection of items from PHP
+		var patternPartial = "pages-administration";
+		var lineage        = [{"lineagePattern":"templates-administration","lineagePath":"..\/..\/patterns\/03-templates-06-administration\/03-templates-06-administration.html","lineageState":"inprogress"}];
+		var lineageR       = [];
+		var patternState   = "inprogress";
+		var cssEnabled     = false;
+	</script>
+		<script>
+		/*!
+		 * scriptLoader - v0.1
+		 *
+		 * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+		 * Licensed under the MIT license
+		 *
+		 */
+		
+		var scriptLoader = {
+			
+			run: function(js,cb,target) {
+				var s  = document.getElementById(target+'-'+cb); 
+				for (var i = 0; i < js.length; i++) {
+					var src = (typeof js[i] != "string") ? js[i].src : js[i];
+					var c   = document.createElement('script');
+					c.src   = '../../'+src+'?'+cb;
+					if (typeof js[i] != "string") {
+						if (js[i].dep !== undefined) {
+							c.onload = function(dep,cb,target) {
+								return function() {
+									scriptLoader.run(dep,cb,target);
+								}
+							}(js[i].dep,cb,target);
+						}
+					}
+					s.parentNode.insertBefore(c,s);
+				}
+			}
+			
+		}
+	</script>
+	<script id="pl-js-polyfill-insert-1455637857">
+		(function() {
+			if (self != top) {
+				var cb = '1455637857';
+				var js = [];
+				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
+					js.push("styleguide/js/vendor/classlist-polyfill.js");
+				}
+				scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+			}
+		})();
+	</script>
+	<script id="pl-js-insert-1455637857">
+		(function() {
+			if (self != top) {
+				var cb = '1455637857';
+				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
+				scriptLoader.run(js,cb,'pl-js-insert');
+			}
+		})();
+	</script>
+	
+
+
+	</body>
+</html>

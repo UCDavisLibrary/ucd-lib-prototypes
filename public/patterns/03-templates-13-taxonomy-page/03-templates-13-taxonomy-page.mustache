@@ -1,0 +1,30 @@
+&lt;div class=&quot;page l-header--fixed&quot;&gt;
+  {{&gt; organisms-header }}
+    &lt;div class=&quot;l-main&quot; role=&quot;main&quot;&gt;
+
+        &lt;div class=&quot;page-title&quot;&gt;
+            &lt;h1 class=&quot;page-title__title category-brand__text--knock-out&quot;&gt;{{ title }}&lt;/h1&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;l-container full-width&quot;&gt;
+          {{&gt; molecules-breadcrumbs }}
+
+          {{# emergency }}
+            {{&gt; molecules-alert-error }}
+          {{/ emergency }}
+
+            &lt;div class=&quot;l-content&quot;&gt;
+                &lt;div class=&quot;box-wrapper&quot;&gt;
+                    &lt;div class=&quot;panel-pane&quot;&gt;
+                        {{# latest-news }}
+                          {{&gt; molecules-teaser-article }}
+                        {{/ latest-news }}
+                        {{&gt; molecules-pagination }}
+                    &lt;/div&gt;
+                &lt;/div&gt;&lt;!--end .l-content--&gt;
+            &lt;/div&gt;&lt;!--end .l-content--&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;&lt;!--End role=main--&gt;
+  {{&gt; organisms-footer }}
+&lt;/div&gt;

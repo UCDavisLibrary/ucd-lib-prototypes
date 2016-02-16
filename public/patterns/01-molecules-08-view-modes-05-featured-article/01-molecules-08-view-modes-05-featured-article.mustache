@@ -1,0 +1,14 @@
+&lt;a href=&quot;{{ url }}&quot; class=&quot;media vm-featured category-brand__background category-brand__background--darken {{ brand-class }}&quot;&gt;
+  &lt;div class=&quot;media__figure vm-featured__figure category&quot;&gt;
+    {{&gt; atoms-thumbnail }}
+  &lt;/div&gt;
+  &lt;div class=&quot;media__body vm-featured__body&quot;&gt;
+    &lt;h3 class=&quot;vm-featured__title&quot;&gt;{{ headline.medium }}&lt;/h3&gt;
+    &lt;div class=&quot;vm-featured__byline&quot;&gt;
+      &lt;span&gt;{{&gt; molecules-byline }}&lt;/span&gt;
+      &lt;span&gt;{{ month.long }} {{ day.long }}, {{ year.long }}&lt;/span&gt;
+      &lt;span&gt;{{ category.primary }}&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;vm-featured__summary&quot;&gt;{{ excerpt.short }}&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/a&gt;

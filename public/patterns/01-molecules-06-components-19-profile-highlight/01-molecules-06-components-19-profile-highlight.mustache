@@ -1,0 +1,23 @@
+&lt;div class=&quot;profile-highlight {{ brand-class }} {{ styleModifier }}&quot;&gt;
+  &lt;div class=&quot;profile-highlight__image&quot;&gt;
+    &lt;a href=&quot;{{ video-url }}&quot; title=&quot;&quot;&gt;{{&gt; atoms-profile-image }}&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;profile-highlight__body&quot;&gt;
+    &lt;h3 class=&quot;profile-highlight__title category-brand__text&quot;&gt;{{ headline.short }}&lt;/h3&gt;
+    &lt;ul class=&quot;profile-highlight__tags&quot;&gt;
+      {{# tags }}
+        &lt;li&gt;{{ tag-label }}&lt;/li&gt;
+      {{/tags}}
+    &lt;/ul&gt;
+    &lt;div class=&quot;profile-highlight__content&quot;&gt;
+      &lt;div class=&quot;profile-highlight__frontside&quot;&gt;
+        {{{ excerpt.long }}}
+        &lt;span class=&quot;profile-highlight__cta category-brand__arrow category-brand__arrow--left&quot;&gt;Details&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;profile-highlight__flipside&quot;&gt;
+        {{{ excerpt.medium }}}
+        &lt;span class=&quot;profile-highlight__cta category-brand__arrow category-brand__arrow--right&quot;&gt;Back&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
