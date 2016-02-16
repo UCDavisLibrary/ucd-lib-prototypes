@@ -7,6 +7,15 @@
   }
 }
 
+// Header for collections sites
+.header__img-bg--collection {
+  background: url("../images/global-header-bg--alt.svg") center top/cover no-repeat;
+
+  .no-svg & {
+    background: url("../images/global-header-bg--alt.png") center top repeat;
+  }
+}
+
 .site-logo {
   display: inline-block;
   height: $header-height--sm;

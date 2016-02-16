@@ -5,7 +5,8 @@
   "logo": {
     "white": "../../images/uc-logo-white.svg",
     "blue": "../../images/uc-logo-blue.svg",
-    "gold": "../../images/uc-logo-gold.svg"
+    "gold": "../../images/uc-logo-gold.svg",
+    "library": "../../images/uc-logo-lib-white.svg"
   },
   "img": {
     "landscape-4x3": {
