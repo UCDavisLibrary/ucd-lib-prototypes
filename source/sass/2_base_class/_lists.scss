@@ -1,0 +1,214 @@
+// List styles
+$list-faq-prefix-spacing: $spacing-unit * 1.5;
+
+// Flush
+.list--flush,
+%list--flush {
+  @include list-flush();
+}
+
+// Bordered
+.list--bordered,
+%list--bordered {
+
+  li,
+  > div {
+    border-bottom: 1px dotted $ucd-blue-50;
+    margin-bottom: $spacing-unit--tiny;
+    padding: 0 0 $spacing-unit--small $spacing-unit--large;
+    background: url("../images/chevron-invert.svg") no-repeat 0 $spacing-unit--tiny;
+
+    .no-svg & {
+      background-image: url("../images/chevron-invert.png");
+    }
+
+    &:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    li {
+      padding-left: 0;
+      background: none;
+    }
+  }
+}
+
+// Bordered Flush
+.list--bordered-flush,
+%list--bordered-flush {
+  @extend %list--bordered;
+  @include list-flush();
+}
+
+// FAQ
+.list--faq,
+%list--faq {
+  @include reset-list();
+  margin-left: $spacing-unit;
+
+  > li {
+    padding: 0 $spacing-unit--small $spacing-unit--small $list-faq-prefix-spacing;
+
+    &:nth-child(odd) {
+      padding-top: $spacing-unit--small;
+      color: $link-color;
+      cursor: pointer;
+      font-family: $font-family--headings;
+
+      &:hover {
+        color: $link-color-hover;
+      }
+
+      &:not(:first-child) {
+        border-top: 1px dotted $ucd-blue-50;
+      }
+
+      &:before {
+        display: inline-block;
+        margin-left: -$list-faq-prefix-spacing;
+        width: $list-faq-prefix-spacing;
+        color: $ucd-blue-80;
+        content: "Q:";
+        font-family: $font-family--serif;
+      }
+
+      > p {
+        margin: 0;
+      }
+    }
+
+    &:nth-child(even) {
+      display: none;
+      margin-bottom: $spacing-unit--small;
+
+      &:before {
+        float: left;
+        display: inline-block;
+        margin-left: -$list-faq-prefix-spacing;
+        width: $list-faq-prefix-spacing;
+        color: $ucd-blue-80;
+        content: "A:";
+        font-family: $font-family--serif;
+      }
+    }
+  }
+}
+
+// Divided
+.list--divided,
+%list--divided {
+  @include reset-list();
+
+  li {
+    padding: $spacing-unit 0;
+    border-bottom: 1px dotted $ucd-blue-10;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+// Pipe
+.list--pipe,
+%list--pipe {
+  @include reset-list();
+
+  li {
+    border-right: 1px solid $gray-light;
+    margin-right: $spacing-unit--tiny;
+    padding-right: $spacing-unit--small;
+    display: inline-block;
+    line-height: .9;
+
+    &:last-child {
+      border-right: 0;
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+// Comment
+.list--comment {
+  @extend %list--bordered;
+
+  margin: 0;
+  padding: 0 0 $spacing-unit--large;
+}
+
+// Link
+.list--link,
+%list--link {
+  @include reset-list();
+
+  a {
+    display: block;
+    padding: $spacing-unit;
+    color: $ucd-blue;
+    font-weight: $font-weight--light;
+    transition: all .2s ease-in-out;
+    break-inside: avoid; // used to fix multi-column implementation
+
+    &:hover {
+      background: $ucd-blue-10;
+      text-decoration: none;
+    }
+  }
+}
+
+// White Arrows
+.list--white-arrow,
+%list--white-arrow {
+  li {
+    background: url("../images/chevron-white.svg") no-repeat 0 $spacing-unit--small;
+
+    .no-svg & {
+      background-image: url("../images/chevron-white.png");
+    }
+  }
+}
+
+// Simple
+.list--simple,
+%list--simple {
+  @include reset-list();
+
+  li {
+    @include reset-list-titles();
+    margin-bottom: $spacing-unit;
+
+    ul {
+      margin-top: $spacing-unit;
+    }
+  }
+
+  a {
+    font-weight: $font-weight--base;
+  }
+}
+
+
+// List Wrappers
+
+// List Wrappers so that any lists further down the DOM will inherit the style
+// even if they don't have the class applied directly to their list.
+$list-wrapper-parents: (
+  "bordered",
+  "bordered-flush",
+  "faq",
+  "divided",
+  "pipe",
+  "link",
+  "white-arrow",
+  "flush",
+  "simple"
+);
+
+@each $item in $list-wrapper-parents {
+  .list-wrapper--#{$item} ul {
+    @extend %list--#{$item};
+  }
+}

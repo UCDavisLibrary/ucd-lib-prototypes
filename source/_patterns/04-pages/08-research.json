@@ -1,0 +1,233 @@
+{
+  "title" : "Research",
+  "bodyClass": "article",
+  "author" : {
+    "first-name" : "Julianne",
+    "last-name" : "McCormick"
+  },
+  "img": {
+    "landscape-4x3": {
+      "src": "../../images/sample/landscape-16x9-mountains.jpg",
+      "alt": "Mountains"
+    },
+    "landscape-16x9": {
+      "src": "../../images/sample/landscape-16x9-mountains.jpg",
+      "alt": "Mountains"
+    },
+    "title-banner": {
+      "src": "../../images/sample/research/research-banner.jpg",
+      "alt": "Research"
+    }
+  },
+  "headline" : {
+    "short" : "At UC Davis research is in our DNA"
+  },
+  "excerpt" : {
+    "long" : "<p>Whether UC Davis is <a href=\"http://news.ucdavis.edu/search/news_detail.lasso?id=11096\">predicting the next global virus</a> before it happens or <a href=\"http://dateline.ucdavis.edu/dl_detail.lasso?id=14702\">developing more nutritious wheat</a> for a hungry world, our research is making a world a better place to live. Here is where you will improve health, enrich life and help feed the world. Come to one of the top 10 public research universities to make your mark.</p>"
+  },
+  "page-copy" : {
+    "intro" : {
+      "heading" : "At UC Davis research is in our DNA",
+      "body" : "<p>Whether UC Davis is <a href=\"http://news.ucdavis.edu/search/news_detail.lasso?id=11096\">predicting the next global virus</a> before it happens or <a href=\"http://dateline.ucdavis.edu/dl_detail.lasso?id=14702\">developing more nutritious wheat</a> for a hungry world, our research is making a world a better place to live. Here is where you will improve health, enrich life and help feed the world. Come to one of the top 10 public research universities to make your mark.</p>"
+    }
+  },
+  "inset-blocks" : [
+    {
+      "headline" : "This is the headline for the inset block"
+    }
+  ],
+  "latest-block" : [
+    {
+      "headline" : "This is the headline for the latest block"
+    }
+  ],
+  "marketing-highlight" : {
+    "short-burst" : [
+      {
+        "brand-class": "category-brand--california-poppy",
+        "headline" : {
+          "short" : "Undergrad opportunities"
+        },
+        "highlight-content" : {
+          "excerpt" : {
+            "short" : "Put “research” on your résumé by attending UC Davis, where you get hands-on experience and the skills valued by employers."
+          }
+        },
+        "img": {
+          "landscape-4x3": {
+            "src": "../../images/sample/research/undergraduate.jpg",
+            "alt": "Undergraduate research"
+          }
+        }
+      },
+      {
+        "brand-class": "category-brand--sunny-grass",
+        "headline" : {
+          "short" : "Graduate programs"
+        },
+        "highlight-content" : {
+          "excerpt" : {
+            "short" : "Get world-class mentoring and training from our faculty by choosing one of our 96 programs, many ranked top in the world."
+          }
+        },
+        "img": {
+          "landscape-4x3": {
+            "src": "../../images/sample/research/doctoral-student.jpg",
+            "alt": "Plant biology doctoral student Barbara Blanco examines tomato plants for their susceptibility to fungal pathogens"
+          }
+        }
+      },
+      {
+        "brand-class": "category-brand--sky-blue",
+        "headline" : {
+          "short" : "Industry partnerships"
+        },
+        "highlight-content" : {
+          "excerpt" : {
+            "short" : "If you are looking for a research university that nurtures a culture of innovation and cooperation, join us at UC Davis."
+          }
+        },
+        "img": {
+          "landscape-4x3": {
+            "src": "../../images/sample/research/ebony-coleman-postdoctoral-scientist.jpg",
+            "alt": "Dr. Ebony Coleman is a postdoctoral scientist in the Department of Molecular and Cellular Biology at UC Davis"
+          }
+        }
+      }
+    ],
+    "horizontal" : [
+      {
+        "hightlight-title-horizontal" : true,
+        "brand-class": "category-brand--sunny-grass",
+        "headline" : {
+          "short" : "Adapting Crops for a Warmer Planet"
+        },
+        "img": {
+          "landscape-4x3": {
+            "src": "../../images/sample/research/wheat.jpg",
+            "alt": "Wheat"
+          }
+        }
+      }
+    ]
+  },
+  "focal-links" : [
+    {
+      "action-text" : "Learn About Undergraduate Research",
+      "img": {
+        "square": {
+          "src": "../../images/icons/undergrad-research.svg",
+          "alt": "Undergraduate research"
+        }
+      }
+    },
+    {
+      "action-text" : "Find Grad Program Deadlines",
+      "img": {
+        "square": {
+          "src": "../../images/icons/deadlines.svg",
+          "alt": "Grad program deadlines"
+        }
+      }
+    },
+    {
+      "action-text" : "Contact Corporate Relations",
+      "img": {
+        "square": {
+          "src": "../../images/icons/contact.svg",
+          "alt": "Contact Corporate Relations"
+        }
+      }
+    }
+  ],
+  "research-news" : [
+    {
+      "img": {
+        "square": {
+          "src": "../../images/sample/research/harcourt-in-ecuador.jpg",
+          "alt": "Alexander Harcourt"
+        }
+      },
+      "headline" : {
+        "medium" : "Big Questions, Big Answers About Humankind"
+      },
+      "url": "http://ucdavis.edu/ucdavis-today/2015/july/15-big-questions-big-answers-about-humankind.html",
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "July",
+        "short": "Jul",
+        "digit": "07"
+      },
+      "day": {
+        "long": "15",
+        "short": "15",
+        "ordinal": "th"
+      }
+    },
+    {
+      "img": {
+        "square": {
+          "src": "../../images/sample/research/puma.jpg",
+          "alt": "Mountain Lion"
+        }
+      },
+      "headline" : {
+        "medium" : "Humans Cause Most Mountain Lion Deaths in Southern California"
+      },
+      "url": "http://news.ucdavis.edu/search/news_detail.lasso?id=11262",
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "July",
+        "short": "Jul",
+        "digit": "07"
+      },
+      "day": {
+        "long": "15",
+        "short": "15",
+        "ordinal": "th"
+      }
+    },
+    {
+      "img": {
+        "square": {
+          "src": "../../images/sample/research/pain.jpg",
+          "alt": "A woman experiencing joint pain"
+        }
+      },
+      "headline" : {
+        "medium" : "Researchers Find Key Mechanism that Causes Neuropathic Pain"
+      },
+      "url": "http://news.ucdavis.edu/search/news_detail.lasso?id=11258",
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "July",
+        "short": "Jul",
+        "digit": "07"
+      },
+      "day": {
+        "long": "06",
+        "short": "6",
+        "ordinal": "th"
+      }
+    }
+  ],
+  "breadcrumbs" : [
+    {
+      "url" : "/pattern-lab-one/public/patterns/04-pages-00-homepage/04-pages-00-homepage.html",
+      "link-title" : "UC Davis Home"
+    },
+    {
+      "url" : "",
+      "link-title" : "Research"
+    }
+  ]
+}

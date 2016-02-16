@@ -1,0 +1,15 @@
+// Body text for output in Body and Basic Text Fieldable Panel Panes
+
+.body-text {
+  line-height: 1.9;
+
+  a {
+    color: $ucd-blue-80;
+    font-weight: bold;
+    text-decoration: underline;
+
+    &:hover {
+      color: $ucd-blue;
+    }
+  }
+}

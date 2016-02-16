@@ -1,0 +1,79 @@
+<div class="page l-header--fixed">
+  {{> organisms-header }}
+    <div class="l-main" role="main">
+
+      <div class="page-title">
+        <h1 class="page-title__title category-brand__text--knock-out">News & Information</h1>
+      </div>
+
+      <div class="l-container brenham-flipped">
+        {{> molecules-breadcrumbs }}
+
+        {{# emergency }}
+          {{> molecules-alert-error }}
+        {{/ emergency }}
+
+        <div class="box-wrapper">
+          <div class="l-content">
+            {{> molecules-featured-headline }}
+          </div>
+          <div class="l-sidebar-second">
+            {{> molecules-headline-stack }}
+          </div>
+        </div>
+
+        <div class="box-wrapper">
+
+          <div class="l-content">
+
+            <div class="panel-pane">
+              {{> organisms-latest-news }}
+            </div>
+
+          </div>
+
+          <div class="l-sidebar-second">
+
+            <div class="panel-pane pane-title--weighted-underline">
+              <h2 class="pane-title"><span class="pane-title--weighted">News</span> Categories</h2>
+            </div>
+
+            <div class="panel-pane">
+              {{> molecules-category-filter }}
+            </div>
+
+            <div class="panel-pane">
+              {{> molecules-search-form:search-form--border }}
+            </div>
+
+            <div class="panel-pane">
+              {{> organisms-initiatives-news }}
+            </div>
+
+            <div class="panel-pane">
+              {{> organisms-davis-in-news }}
+            </div>
+
+            <div class="panel-pane">
+              {{> organisms-campus-events }}
+            </div>
+
+            <hr/>
+            <a href="">See All &raquo;</a>
+            <div class="panel-pane">
+              {{> organisms-campus-blogs }}
+            </div>
+
+            {{# sign-up-form }}
+              {{> molecules-sign-up-form--short }}
+            {{/ sign-up-form }}
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div><!--End role=main-->
+  {{> organisms-footer }}
+</div>

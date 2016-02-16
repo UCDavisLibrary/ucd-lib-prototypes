@@ -1,0 +1,23 @@
+/*------------------------------------*\
+    $MEDIA ELEMENTS
+\*------------------------------------*/
+
+/* Flexible Media */
+img, video, object {
+	max-width: 100%;
+	height: auto;
+}
+
+iframe {
+	margin-bottom: $spacing-unit;
+}
+
+figure {
+	margin-bottom: $spacing-unit;
+	img {
+		margin-bottom: $spacing-unit--small;
+	}
+}
+figcaption {
+	font-style: italic;
+}

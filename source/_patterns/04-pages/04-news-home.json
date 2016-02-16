@@ -1,0 +1,739 @@
+{
+  "title" : "UC Davis News",
+  "breadcrumbs" : [
+    {
+      "url" : "/pattern-lab-one/public/patterns/04-pages-00-homepage/04-pages-00-homepage.html",
+      "link-title" : "UC Davis Home"
+    },
+    {
+      "url" : "",
+      "link-title" : "News"
+    }
+  ],
+  "img": {
+    "landscape-16x9": {
+      "src": "../../images/sample/news-home/foal.jpg",
+      "alt": "Foal gives a licking"
+    },
+    "focus": {
+      "src": "../../images/sample/news-home/landscape-16x9-tahoe.jpg",
+      "alt": "Researcher on a boat at Lake Tahoe"
+    }
+  },
+  "headline" : {
+    "short" : "Newborn Horses Give Clues to Autism",
+    "medium" : "UC Davis researchers have discovered a surprising clue to maladjusted foal syndrome",
+    "long" : "Keep Tahoe blue? Less algae, not clarity, key factor for blueness"
+  },
+  "latest-news": [
+    {
+      "img": {
+        "thumbnail": {
+          "src": "http://lorempixel.com/200/200/nature/1",
+          "alt": "News photo"
+        }
+      },
+      "brand-class" : "category-brand--wine-grape",
+      "headline" : {
+        "medium" : "Rice disease-resistance discovery closes the loop for scientific integrity"
+      },
+      "author": {
+        "first-name": "Pat",
+        "last-name": "Bailey"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "July",
+        "short": "Jul",
+        "digit": "07"
+      },
+      "day": {
+        "long": "24",
+        "short": "24",
+        "ordinal": "th"
+      },
+      "category": {
+        "primary": "Food & Agriculture",
+        "cat-list": [
+          {
+            "category-value": "Science & Technology",
+            "brand-color": "sky-blue"
+          },
+          {
+            "category-value": "Society, Arts & Culture",
+            "brand-color": "unitrans-red"
+          }
+        ]
+      }
+    },
+    {
+      "img": {
+        "thumbnail": {
+          "src": "http://lorempixel.com/200/200/nature/2",
+          "alt": "News photo"
+        }
+      },
+      "brand-class" : "category-brand--western-redbud",
+      "headline" : {
+        "medium" : "Drought and climate change fuel high-elevation California fires, study finds"
+      },
+      "author": {
+        "first-name": "Pat",
+        "last-name": "Bailey"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "July",
+        "short": "Jul",
+        "digit": "07"
+      },
+      "day": {
+        "long": "24",
+        "short": "24",
+        "ordinal": "th"
+      },
+      "category": {
+        "primary": "Environment",
+        "cat-list": [
+          {
+            "category-value": "Science & Technology",
+            "brand-color": "sky-blue"
+          }
+        ]
+      }
+    },
+    {
+      "img": {
+        "thumbnail": {
+          "src": "http://lorempixel.com/200/200/nature/3",
+          "alt": "News photo"
+        }
+      },
+      "brand-class" : "category-brand--western-redbud",
+      "headline" : {
+        "medium" : "Campus earns 2 state awards for sustainability"
+      },
+      "author": {
+        "first-name": "Dave",
+        "last-name": "Jones"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "July",
+        "short": "Jul",
+        "digit": "07"
+      },
+      "day": {
+        "long": "23",
+        "short": "23",
+        "ordinal": "rd"
+      },
+      "category": {
+        "primary": "Environment",
+        "cat-list": [
+          {
+            "category-value": "University News",
+            "brand-color": "admin-blue"
+          }
+        ]
+      }
+    },
+    {
+      "img": {
+        "thumbnail": {
+          "src": "http://lorempixel.com/200/200/technics/1",
+          "alt": "News photo"
+        }
+      },
+      "brand-class" : "category-brand--sunny-grass",
+      "headline" : {
+        "medium" : "Study in calves offers hope for respiratory-disease treatment"
+      },
+      "author": {
+        "first-name": "Pat",
+        "last-name": "Bailey"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "July",
+        "short": "Jul",
+        "digit": "07"
+      },
+      "day": {
+        "long": "23",
+        "short": "23",
+        "ordinal": "rd"
+      },
+      "category": {
+        "primary": "Human & Animal Health",
+        "cat-list": [
+          {
+            "category-value": "Science & Technology",
+            "brand-color": "sky-blue"
+          }
+        ]
+      }
+    },
+    {
+      "img": {
+        "thumbnail": {
+          "src": "http://lorempixel.com/200/200/people/1",
+          "alt": "News photo"
+        }
+      },
+      "brand-class" : "category-brand--unitrans-red",
+      "headline" : {
+        "medium" : "Children of imprisoned parents have health problems"
+      },
+      "author": {
+        "first-name": "Jeffrey",
+        "last-name": "Day"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "July",
+        "short": "Jul",
+        "digit": "07"
+      },
+      "day": {
+        "long": "17",
+        "short": "17",
+        "ordinal": "th"
+      },
+      "category": {
+        "primary": "Society, Arts & Culture",
+        "cat-list": [
+          {
+            "category-value": "Human & Animal Health",
+            "brand-color": "sunny-grass"
+          }
+        ]
+      }
+    },
+    {
+      "img": {
+        "thumbnail": {
+          "src": "http://lorempixel.com/200/200/city/1",
+          "alt": "News photo"
+        }
+      },
+      "brand-class" : "category-brand--admin-blued",
+      "headline" : {
+        "medium" : "UC Davis receives ‘A’ grade in Money’s ‘Best Colleges’"
+      },
+      "author": {
+        "first-name": "Karen",
+        "last-name": "Nikos-Rose"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "July",
+        "short": "Jul",
+        "digit": "07"
+      },
+      "day": {
+        "long": "14",
+        "short": "14",
+        "ordinal": "th"
+      },
+      "category": {
+        "primary": "University News",
+        "cat-list": [
+          {
+            "category-value": "Science & Technology",
+            "brand-color": "sky-blue"
+          }
+        ]
+      }
+    }
+  ],
+  "latest-news-2": [
+    {
+      "img": {
+        "thumbnail": {
+          "src": "http://lorempixel.com/200/200/technics/2",
+          "alt": "News photo"
+        }
+      },
+      "brand-class" : "category-brand--western-redbud",
+      "headline" : {
+        "medium" : "Residents use video and other tech effectively to report environmental hazards"
+      },
+      "author": {
+        "first-name": "Jeffrey",
+        "last-name": "Day"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "July",
+        "short": "Jul",
+        "digit": "07"
+      },
+      "day": {
+        "long": "10",
+        "short": "10",
+        "ordinal": "th"
+      },
+      "category": {
+        "primary": "Environment",
+        "cat-list": [
+          {
+            "category-value": "Science & Technology",
+            "brand-color": "sky-blue"
+          },
+          {
+            "category-value": "Society, Arts & Culture",
+            "brand-color": "unitrans-red"
+          }
+        ]
+      }
+    },
+    {
+      "img": {
+        "thumbnail": {
+          "src": "http://lorempixel.com/200/200/nature/3",
+          "alt": "News photo"
+        }
+      },
+      "brand-class" : "category-brand--western-redbud",
+      "headline" : {
+        "medium" : "‘Cool’ conservation: UC Davis saves 61 million gallons of water a year"
+      },
+      "author": {
+        "first-name": "Kat",
+        "last-name": "Kerlin"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "June",
+        "short": "Jun",
+        "digit": "06"
+      },
+      "day": {
+        "long": "30",
+        "short": "30",
+        "ordinal": "th"
+      },
+      "category": {
+        "primary": "Environment",
+        "cat-list": [
+          {
+            "category-value": "University News",
+            "brand-color": "admin-blue"
+          }
+        ]
+      }
+    },
+    {
+      "img": {
+        "thumbnail": {
+          "src": "http://lorempixel.com/200/200/nature/4",
+          "alt": "News photo"
+        }
+      },
+      "brand-class" : "category-brand--sky-blue",
+      "headline" : {
+        "medium" : "Baboon study reveals surprises, breaks ground in tracking behavior"
+      },
+      "author": {
+        "first-name": "Jeffrey",
+        "last-name": "Day"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "June",
+        "short": "Jun",
+        "digit": "06"
+      },
+      "day": {
+        "long": "18",
+        "short": "18",
+        "ordinal": "th"
+      },
+      "category": {
+        "primary": "Science & Technology"
+      }
+    }
+  ],
+  "latest-news-3": [
+    {
+      "img": {
+        "thumbnail": {
+          "src": "http://lorempixel.com/200/200/food/1",
+          "alt": "News photo"
+        }
+      },
+      "brand-class" : "category-brand--wine-grape",
+      "headline" : {
+        "medium" : "Craft-brewing leader gives $1 million to enhance UC Davis brewing facility"
+      },
+      "author": {
+        "first-name": "Pat",
+        "last-name": "Bailey"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "June",
+        "short": "Jun",
+        "digit": "06"
+      },
+      "day": {
+        "long": "15",
+        "short": "15",
+        "ordinal": "th"
+      },
+      "category": {
+        "primary": "Food & Agriculture",
+        "cat-list": [
+          {
+            "category-value": "University News",
+            "brand-color": "admin-blue"
+          }
+        ]
+      }
+    }
+  ],
+  "news-featured": {
+    "img": {
+      "thumbnail": {
+        "src": "http://lorempixel.com/200/250/technics/3",
+        "alt": "News photo"
+      }
+    },
+    "brand-class" : "category-brand--sunny-grass",
+    "headline" : {
+      "medium" : "UC Davis researchers find key mechanism that causes neuropathic pain"
+    },
+    "author": {
+      "first-name": "Pat",
+      "last-name": "Bailey"
+    },
+    "year": {
+      "long": "2015",
+      "short": "15"
+    },
+    "month": {
+      "long": "July",
+      "short": "Jul",
+      "digit": "07"
+    },
+    "day": {
+      "long": "06",
+      "short": "6",
+      "ordinal": "th"
+    },
+    "category": {
+      "primary": "Human & Animal Health"
+    }
+  },
+  "featured-video": {
+    "brand-class" : "category-brand--western-redbud",
+    "headline": {
+      "medium": "Lake Tahoe Blueness Not Related to Clarity"
+    },
+    "author": {
+      "first-name": "Joe",
+      "last-name": "Proudman"
+    },
+    "year": {
+      "long": "2015",
+      "short": "15"
+    },
+    "month": {
+      "long": "July",
+      "short": "Jul",
+      "digit": "07"
+    },
+    "day": {
+      "long": "23",
+      "short": "23",
+      "ordinal": "rd"
+    }
+  },
+  "headline-stack": [
+    {
+      "headline": {
+        "short": "Almonds contribute little to carbon emissions, study finds"
+      },
+      "url": ""
+    },
+    {
+      "headline": {
+        "short": "UC Davis ranked among top public universities "
+      },
+      "url": ""
+    },
+    {
+      "headline": {
+        "short": "Lyme disease subverts immune system, prevents future protection"
+      },
+      "url": ""
+    }
+  ],
+  "cat-filter": {
+    "cat-filter-list": [
+      {
+        "cat-filter-brand-color": "category-brand--unitrans-red",
+        "is-active-link": true,
+        "cat-filter-text": "University News"
+      },
+      {
+        "cat-filter-brand-color": "category-brand--western-redbud",
+        "is-active-link": false,
+        "cat-filter-text": "Student Life"
+      },
+      {
+        "cat-filter-brand-color": "category-brand--sunny-grass",
+        "is-active-link": false,
+        "cat-filter-text": "Environment"
+      },
+      {
+        "cat-filter-brand-color": "category-brand--wine-grape",
+        "is-active-link": false,
+        "cat-filter-text": "Food & Agriculture"
+      },
+      {
+        "cat-filter-brand-color": "category-brand--sky-blue",
+        "is-active-link": false,
+        "cat-filter-text": "Human & Animal Health"
+      },
+      {
+        "cat-filter-brand-color": "category-brand--california-poppy",
+        "is-active-link": false,
+        "cat-filter-text": "Science & Technology"
+      },
+      {
+        "cat-filter-brand-color": "category-brand--unitrans-red",
+        "is-active-link": false,
+        "cat-filter-text": "Society, Arts & Culture"
+      }
+    ]
+  },
+  "initiatives": [
+    {
+      "headline" : {
+        "medium" : "An Invitation to Envision the University of the 21st Century"
+      },
+      "url": "",
+      "year": {
+        "long": "2015"
+      },
+      "month": {
+        "long": "August"
+      },
+      "day": {
+        "short": "4"
+      }
+    },
+    {
+      "headline" : {
+        "medium" : "UC Davis World Food Center"
+      },
+      "url": "",
+      "year": {
+        "long": "2015"
+      },
+      "month": {
+        "long": "July"
+      },
+      "day": {
+        "short": "31"
+      }
+    },
+    {
+      "headline" : {
+        "medium" : "The 2020 Initiative: A Path to Academic Excellence and Economic Opportunity"
+      },
+      "url": "",
+      "year": {
+        "long": "2015"
+      },
+      "month": {
+        "long": "July"
+      },
+      "day": {
+        "short": "28"
+      }
+    }
+  ],
+  "in-the-news": [
+    {
+      "headline" : {
+        "medium" : "UC Davis gets $8.5M for stem-cell research to help AIDS patients"
+      },
+      "url": "",
+      "year": {
+        "long": "2015"
+      },
+      "month": {
+        "long": "August"
+      },
+      "day": {
+        "short": "4"
+      }
+    },
+    {
+      "headline" : {
+        "medium" : "UC Davis joins national research effort to build faster microchips using light"
+      },
+      "url": "",
+      "year": {
+        "long": "2015"
+      },
+      "month": {
+        "long": "July"
+      },
+      "day": {
+        "short": "31"
+      }
+    },
+    {
+      "headline" : {
+        "medium" : "UC Davis plans $50M building on Sacramento campus for nursing school"
+      },
+      "url": "",
+      "year": {
+        "long": "2015"
+      },
+      "month": {
+        "long": "July"
+      },
+      "day": {
+        "short": "28"
+      }
+    }
+  ],
+  "campus-events": [
+    {
+      "img": {
+        "landscape-16x9": {
+          "src": "../../images/sample/news-home/lynch.jpg",
+          "alt": "Jane Lynch"
+        }
+      },
+      "headline" : {
+        "short" : "Jane Lynch"
+      },
+      "location": "Mondavi Center for the Performing Arts",
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "August",
+        "short": "Aug",
+        "digit": "08"
+      },
+      "dayofweek": {
+        "long": "Saturday",
+        "short": "Sat"
+      },
+      "day": {
+        "long": "08",
+        "short": "8",
+        "ordinal": "th"
+      }
+    },
+    {
+      "img": {
+        "landscape-16x9": {
+          "src": "../../images/sample/news-home/gorman.jpg",
+          "alt": "MooCow Kaboom"
+        }
+      },
+      "headline" : {
+        "short" : "A Decade Later: Recent Acquisitions of the C.N. Gorman Museum"
+      },
+      "location": "C.N. Gorman Museum",
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "September",
+        "short": "Sep",
+        "digit": "09"
+      },
+      "dayofweek": {
+        "long": "Friday",
+        "short": "Fri"
+      },
+      "day": {
+        "long": "11",
+        "short": "11",
+        "ordinal": "th"
+      }
+    }
+  ],
+  "campus-blogs": [
+    {
+      "headline" : {
+        "medium" : "Changing ocean affecting salmon biodiversity and survival"
+      },
+      "url": "",
+      "year": {
+        "long": "2015"
+      },
+      "month": {
+        "long": "August"
+      },
+      "day": {
+        "short": "3"
+      }
+    },
+    {
+      "headline" : {
+        "medium" : "Psychology researchers build mind map of memories evoked by music"
+      },
+      "url": "",
+      "year": {
+        "long": "2015"
+      },
+      "month": {
+        "long": "July"
+      },
+      "day": {
+        "short": "28"
+      }
+    }
+  ],
+  "sign-up-form": {
+    "headline" : {
+      "short" : "subscribe",
+      "medium" : "E-Newsletter"
+    },
+    "excerpt": {
+      "short": "Sign up to get UC Davis news alerts sent directly to your inbox"
+    }
+  }
+}

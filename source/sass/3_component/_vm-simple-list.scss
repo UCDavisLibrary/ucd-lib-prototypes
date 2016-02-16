@@ -1,0 +1,20 @@
+// Simple List (view mode)
+.vm-simple-list {
+  margin-bottom: $spacing-unit;
+
+  .node__title {
+    @include reset-list-titles();
+    font-weight: $font-weight--base;
+    line-height: 1.2;
+  }
+
+  &.node--event {
+    .node__title {
+      font-weight: $font-weight--bold;
+    }
+  }
+
+  &.node--article {
+    color: $gray-light;
+  }
+}

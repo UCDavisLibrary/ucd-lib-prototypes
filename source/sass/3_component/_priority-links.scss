@@ -1,0 +1,158 @@
+// Featured Links Block
+
+$priority-links-size: 100px;
+$priority-links-size-small: 60px;
+$rollover-scale: 1.1;
+
+.priority-links {
+  padding: $spacing-unit--large 0 $spacing-unit;
+
+  .vertical-link {
+    padding: 0 1%;
+
+    &__figure {
+      @include hide-text();
+      @include circle-border(5px);
+      box-sizing: content-box;
+      height: $priority-links-size;
+      width: $priority-links-size;
+      background-image: url("../images/icons-priority-links.svg");
+      background-repeat: no-repeat;
+      transition: transform 0.25s ease-out, border-color 0.25s ease-out;
+
+      @include breakpoint($bp-small--down) {
+        @include circle-border(3px);
+        height: $priority-links-size-small;
+        width: $priority-links-size-small;
+        background-size: 356px 43px;
+        margin: 0;
+      }
+
+      .no-svg & {
+        background-image: url("../images/icons-priority-links.png");
+      }
+    }
+
+    &__body {
+      text-transform: uppercase;
+    }
+
+  }
+
+  .flexbox & .pack__item,
+  .flexbox & > * {
+    @include breakpoint($bp-narrow--down) {
+      width: 30%;
+    }
+  }
+
+  // Positioning for each icon's sprite
+  &--badge {
+
+    .vertical-link__figure {
+      background-position: 0 center;
+    }
+
+    &:hover .vertical-link__figure,
+    &:focus .vertical-link__figure {
+      transform: scale($rollover-scale);
+      border-color: $ucd-blue;
+    }
+  }
+
+  &--hat {
+
+    .vertical-link__figure {
+      background-position: -$priority-links-size center;
+      @include breakpoint($bp-small--down) {
+        background-position: -$priority-links-size-small center;
+      }
+    }
+
+    &:hover .vertical-link__figure,
+    &:focus .vertical-link__figure {
+      transform: scale($rollover-scale);
+      border-color: $rec-pool-blue;
+    }
+  }
+
+  &--dollar {
+
+    .vertical-link__figure {
+      background-position: -$priority-links-size * 2 center;
+      @include breakpoint($bp-small--down) {
+        background-position: -$priority-links-size-small * 2 center;
+      }
+    }
+
+    &:hover .vertical-link__figure,
+    &:focus .vertical-link__figure {
+      transform: scale($rollover-scale);
+      border-color: $sunny-grass;
+    }
+  }
+
+  &--calendar {
+
+    .vertical-link__figure {
+      background-position: -$priority-links-size * 3 center;
+      @include breakpoint($bp-small--down) {
+        background-position: -$priority-links-size-small * 3 center;
+      }
+    }
+
+    &:hover .vertical-link__figure,
+    &:focus .vertical-link__figure {
+      transform: scale($rollover-scale);
+      border-color: $ucd-gold;
+    }
+  }
+
+  &--people {
+
+    .vertical-link__figure {
+      background-position: -$priority-links-size * 4 center;
+      @include breakpoint($bp-small--down) {
+        background-position: -$priority-links-size-small * 4 center;
+      }
+    }
+
+    &:hover .vertical-link__figure,
+    &:focus .vertical-link__figure {
+      transform: scale($rollover-scale);
+      border-color: $california-poppy;
+    }
+  }
+
+  &--check-mark {
+
+    .vertical-link__figure {
+      background-position: -$priority-links-size * 5 center;
+      @include breakpoint($bp-small--down) {
+        background-position: -$priority-links-size-small * 5 center;
+      }
+    }
+
+    &:hover .vertical-link__figure,
+    &:focus .vertical-link__figure {
+      transform: scale($rollover-scale);
+      border-color: $western-redbud;
+    }
+  }
+
+}
+
+// Remove the .pack styles on smaller screens
+@include breakpoint($bp-narrow--down) {
+  @include pack-removal("priority-links");
+}
+
+// No Flex-Box
+.no-flexbox .priority-links .vertical-link {
+  float: left;
+  width: 33.33%;
+
+  @include breakpoint($bp-narrow--up, true) {
+    width: 16.6%;
+  }
+}

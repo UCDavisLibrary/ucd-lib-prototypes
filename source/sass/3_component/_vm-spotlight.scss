@@ -1,0 +1,155 @@
+// Spotlight (view mode)
+.vm-spotlight {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+
+  .no-flexbox & {
+    @include clearfix();
+    display: block;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    & .vm-spotlight__body {
+      padding: $spacing-unit--small 3% $spacing-unit--small 7%;
+
+      .lt-ie9 & {
+        padding-top: $spacing-unit--large;
+      }
+    }
+
+    & .vm-spotlight__shade {
+      opacity: 0.7;
+    }
+
+    & .vm-spotlight__indicator img {
+      left: 40%;
+    }
+  }
+
+  // Body of text
+  &__body {
+    @include reset-list-titles();
+    flex-grow: 1;
+    padding: $spacing-unit--small 5%;
+    max-width: 50%;
+    color: $black;
+    font-weight: $font-weight--bold;
+    transition: all .2s ease-in-out;
+
+    .no-flexbox & {
+      float: left;
+      width: 60%;
+    }
+
+    @include breakpoint($bp-wide--up) {
+      @include font-size($font-size--large);
+    }
+
+    .lt-ie9 & {
+      padding-top: $spacing-unit--large;
+    }
+  }
+
+  // Large callout of the first word
+  &__callout {
+    @include font-size(25px, 1.4);
+    display: inline-block;
+    float: none;
+    width: 40px;
+    margin-right: .25em;
+    padding: 0 $spacing-unit--tiny;
+    background-color: $ucd-blue;
+    color: $white;
+    font-weight: $font-weight--bold;
+    text-align: center;
+
+    @include breakpoint($bp-small--up) {
+      @include font-size(40px);
+      float: left;
+      width: auto;
+    }
+
+    @include breakpoint($bp-huge) {
+      @include font-size(50px);
+    }
+  }
+
+  // Title
+  &__title {
+    @include font-size(13px, 1.1);
+    margin-top: $spacing-unit--small;
+
+    @include breakpoint($bp-small--up) {
+      @include font-size(20px, 1.4);
+      float: left;
+      width: auto;
+    }
+
+    @include breakpoint($bp-narrow--up, true) {
+      @include font-size(25px, 1.4);
+      margin-top: $spacing-unit--small;
+    }
+  }
+
+  // Image
+  &__image {
+    position: relative;
+    z-index: $zindex-component-bg;
+    max-width: 50%; // This is to prevent the image taking too much space
+    transition: transform $transition-time ease-in-out;
+    overflow: hidden;
+
+    .no-flexbox & {
+      float: right;
+      max-width: 40%;
+    }
+
+    .lt-ie9 & div {
+      display: none;
+    }
+  }
+
+  // Link Hover state
+  &__shade {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    min-height: 900px;
+    overflow: hidden;
+    background-color: $western-redbud;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+  }
+
+  &__indicator {
+
+    img {
+      position: absolute;
+      top: 35%;
+      left: -200px;
+      z-index: 3;
+      width: 20%;
+      transition: all .37s ease-in-out;
+    }
+  } 
+
+  // Reverse the direction
+  &--rev {
+    flex-direction: row-reverse;
+
+    .no-flexbox & {
+      .vm-spotlight__body {
+        float: right;
+      }
+
+      .vm-spotlight__image {
+        float: left;
+      }
+    }
+  }
+}

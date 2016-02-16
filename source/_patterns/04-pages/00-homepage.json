@@ -1,0 +1,568 @@
+{
+  "title" : "Home Page",
+  "bodyClass": "home",
+  "emergency" : false,
+  "hero-banner" : {
+    "btn-video": true,
+    "img": {
+      "hero": {
+        "src": "http://loremflickr.com/2000/770/tree",
+        "alt": "It’s Right HERE"
+      }
+    },
+    "top-text": "IT'S RIGHT",
+    "bottom-text": "HERE AND NOW"
+  },
+  "priority-links" : [
+    {
+      "icon-class": "priority-links--badge",
+      "action-text" : "Majors"
+    },
+    {
+      "icon-class": "priority-links--hat",
+      "action-text" : "Academics"
+    },
+    {
+      "icon-class": "priority-links--dollar",
+      "action-text" : "Cost"
+    },
+    {
+      "icon-class": "priority-links--calendar",
+      "action-text" : "Calendar"
+    },
+    {
+      "icon-class": "priority-links--people",
+      "action-text" : "Visit"
+    },
+    {
+      "icon-class": "priority-links--check-mark",
+      "action-text" : "Apply"
+    }
+  ],
+  "focal-links" : [
+    {
+      "action-text" : "Take Our Virtual Tour",
+      "img": {
+        "square": {
+          "src": "../../images/icons/vtour.svg",
+          "alt": "Clubs and organizations"
+        }
+      }
+    },
+    {
+      "action-text" : "Sign Up for Our Prospective Student Mailing List",
+      "img": {
+        "square": {
+          "src": "../../images/icons/mailing-list.svg",
+          "alt": "Clubs and organizations"
+        }
+      }
+    },
+    {
+      "action-text" : "Join Our Alumni Association",
+      "img": {
+        "square": {
+          "src": "../../images/icons/alumni.svg",
+          "alt": "Virtual tour"
+        }
+      }
+    },
+    {
+      "action-text" : "Make a Gift to UC Davis",
+      "img": {
+        "square": {
+          "src": "../../images/icons/giving.svg",
+          "alt": "Mailing list"
+        }
+      }
+    }
+  ],
+  "listItems-news" : [
+    {
+      "img": {
+        "square": {
+          "src": "../../images/sample/homepage/water-conservation.jpg",
+          "alt": "UC Davis employees make the connection between the recycled water pipeline and a cooling tower"
+        }
+      },
+      "headline" : {
+        "medium" : "‘Cool’ Conservation: UC Davis Saves 61 Million Gallons of Water a Year"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "June",
+        "short": "Jun",
+        "digit": "06"
+      },
+      "day": {
+        "long": "30",
+        "short": "30",
+        "ordinal": "th"
+      }
+    },
+    {
+      "img": {
+        "square": {
+          "src": "../../images/sample/homepage/beer.jpg",
+          "alt": "Beer and equipment in UC Davis brewing science program"
+        }
+      },
+      "headline" : {
+        "medium" : "Craft-brewing Leader Gives $1 Million to Enhance UC Davis Brewing Facility"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "June",
+        "short": "Jun",
+        "digit": "06"
+      },
+      "day": {
+        "long": "15",
+        "short": "15",
+        "ordinal": "th"
+      }
+    },
+    {
+      "img": {
+        "square": {
+          "src": "../../images/sample/homepage/graduates.jpg",
+          "alt": "Miguelangel Turcios and his sister, Christy"
+        }
+      },
+      "headline" : {
+        "medium" : "Siblings Overcome Major Challenges to Earn UC Davis Degrees"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "June",
+        "short": "Jun",
+        "digit": "06"
+      },
+      "day": {
+        "long": "10",
+        "short": "10",
+        "ordinal": "th"
+      }
+    }
+  ],
+  "listItems-events" : [
+    {
+      "headline" : {
+        "medium" : "Native Plants: Home Landscape Champions"
+      },
+      "location": "Walter A. Buehler Alumni Center",
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "July",
+        "short": "Jul",
+        "digit": "07"
+      },
+      "dayofweek": {
+        "long": "Saturday",
+        "short": "Sat"
+      },
+      "day": {
+        "long": "11",
+        "short": "11",
+        "ordinal": "th"
+      }
+    },
+    {
+      "headline" : {
+        "medium" : "Neighbors for Nepal Benefit Dinner and Concert"
+      },
+      "location": "Odd Fellows Hall, Davis",
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "July",
+        "short": "Jul",
+        "digit": "11"
+      },
+      "dayofweek": {
+        "long": "Saturday",
+        "short": "Sat"
+      },
+      "day": {
+        "long": "10",
+        "short": "10",
+        "ordinal": "th"
+      }
+    },
+    {
+      "headline" : {
+        "medium" : "“Public Universities and Regional Development”"
+      },
+      "location": "UC Center Sacramento",
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "July",
+        "short": "Jul",
+        "digit": "07"
+      },
+      "dayofweek": {
+        "long": "Thursday",
+        "short": "Thu"
+      },
+      "day": {
+        "long": "16",
+        "short": "16",
+        "ordinal": "th"
+      }
+    }
+  ],
+  "listItems-athletics" : [
+    {
+      "headline" : {
+        "medium" : "Women’s Soccer vs. Sacramento State"
+      },
+      "location": "Aggie Soccer Field",
+      "time": "1:00 PM",
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "August",
+        "short": "Aug",
+        "digit": "08"
+      },
+      "dayofweek": {
+        "long": "Sunday",
+        "short": "Sun"
+      },
+      "day": {
+        "long": "23",
+        "short": "23",
+        "ordinal": "rd"
+      }
+    },
+    {
+      "headline" : {
+        "medium" : "Men’s Soccer vs. CSU Bakersfield"
+      },
+      "location": "UC Davis",
+      "time": "5:00 PM",
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "September",
+        "short": "Sep",
+        "digit": "09"
+      },
+      "dayofweek": {
+        "long": "Friday",
+        "short": "Fri"
+      },
+      "day": {
+        "long": "04",
+        "short": "4",
+        "ordinal": "th"
+      }
+    },
+    {
+      "headline" : {
+        "medium" : "Football vs. South Dakota"
+      },
+      "location": "UC Davis",
+      "time": "TBA",
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "September",
+        "short": "Sep",
+        "digit": "09"
+      },
+      "dayofweek": {
+        "long": "Saturday",
+        "short": "Sat"
+      },
+      "day": {
+        "long": "12",
+        "short": "12",
+        "ordinal": "th"
+      }
+    }
+  ],
+  "listItems-blog" : [
+    {
+      "headline" : {
+        "medium" : "Tale of a New City: An International Student’s Summer in Davis"
+      },
+      "year": {
+        "long": "2014",
+        "short": "14"
+      },
+      "month": {
+        "long": "September",
+        "short": "Sep",
+        "digit": "09"
+      },
+      "day": {
+        "long": "18",
+        "short": "18",
+        "ordinal": "th"
+      }
+    },
+    {
+      "headline" : {
+        "medium" : "$80,000 in My Pocket (Part III)"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "May",
+        "short": "May",
+        "digit": "05"
+      },
+      "day": {
+        "long": "12",
+        "short": "12",
+        "ordinal": "th"
+      }
+    },
+    {
+      "headline" : {
+        "medium" : "Building a Concrete Canoe"
+      },
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "May",
+        "short": "May",
+        "digit": "05"
+      },
+      "day": {
+        "long": "12",
+        "short": "12",
+        "ordinal": "th"
+      }
+    }
+  ],
+  "spotlight-article": {
+    "url": "",
+    "callout": "13",
+    "headline": "UC Davis Breakthroughs that Changed the World",
+    "img": {
+      "landscape-4x3": {
+        "src": "../../images/sample/homepage/research.jpg",
+        "alt": "Wow"
+      }
+    }
+  },
+  "marketing-highlight-featured" : {
+    "short-burst" : [
+      {
+        "brand-class" : "category-brand--california-poppy",
+        "img": {
+          "landscape-4x3": {
+            "src": "../../images/sample/homepage/climbing-wall.jpg",
+            "alt": "Esther Ebuehi poses for a photo at the rock wall inside of the Activities and Recreation Center on the UC Davis campus."
+          }
+        },
+        "headline" : {
+          "short" : "The climbing wall"
+        },
+        "highlight-label" : "Hot Spot",
+        "cta-text": "More about campus",
+        "highlight-content" : {
+          "excerpt" : {
+            "short" : "At this popular hangout, practice rock climbing in preparation for an outdoor adventure in the Sierra"
+          }
+        }
+      },
+      {
+        "brand-class" : "category-brand--western-redbud",
+        "img": {
+          "landscape-4x3": {
+            "src": "../../images/sample/homepage/picnicday-parade.jpg",
+            "alt": ""
+          }
+        },
+        "headline" : {
+          "short" : "We’ve got more than 500 student clubs"
+        },
+        "highlight-label" : "Fast Fact",
+        "cta-text" : "More UC Davis facts"
+      }
+    ]
+  },
+  "slideshow" : [
+    {
+      "slides" : [
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/tercero.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/tercero.jpg",
+              "alt": "Tercero Residence Halls"
+            }
+          },
+          "slide-title" : {
+            "first-word": "Picture",
+            "remaining": "UC Davis"
+          },
+          "caption" : false
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/arc.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/arc.jpg",
+              "alt": "The Activities and Recreation Center"
+            }
+          },
+          "caption" : false
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/quad.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/quad.jpg",
+              "alt": "The Quad"
+            }
+          }
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/arboretum.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/arboretum.jpg",
+              "alt": "The Arboretum"
+            }
+          }
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/blindfolds.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/blindfolds.jpg",
+              "alt": "Intern Trust Training"
+            }
+          }
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/chem194.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/chem194.jpg",
+              "alt": "Outside Chem 194"
+            }
+          }
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/coffee-house.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/coffee-house.jpg",
+              "alt": "The Coffeehouse"
+            }
+          }
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/community-center.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/community-center.jpg",
+              "alt": "The Student Community Center"
+            }
+          }
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/dining-hall.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/dining-hall.jpg",
+              "alt": "A Dining Commons"
+            }
+          }
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/farmers-market.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/farmers-market.jpg",
+              "alt": "The Davis Farmers Market"
+            }
+          }
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/pavilion.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/pavilion.jpg",
+              "alt": "The Pavilion"
+            }
+          }
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/pj-rino2.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/pj-rino2.jpg",
+              "alt": "Pajamarino"
+            }
+          }
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/quad.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/quad.jpg",
+              "alt": "The Quad"
+           }
+          }
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/stadium.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/stadium.jpg",
+              "alt": "The Football Stadium"
+           }
+          }
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "../../images/sample/slideshows/homepage/wv-pool.jpg",
+              "lazy": "../../images/sample/slideshows/homepage/wv-pool.jpg",
+              "alt": "The West Village Pool"
+           }
+          }
+        }
+      ]
+    }
+  ],
+  "has-figure" : false,
+  "achievement-badges" : [
+    {
+      "has-figure" : true
+    }
+  ]
+}

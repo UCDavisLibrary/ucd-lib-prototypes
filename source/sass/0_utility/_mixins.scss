@@ -1,0 +1,177 @@
+//------------------------------------
+//  $MIXINS
+//------------------------------------
+
+// Use REMs with a pixel fallback for font sizing. Taken from Inuit CSS
+// https://github.com/inuitcss/tools.mixins/blob/master/_tools.mixins.scss
+@mixin font-size($font-size, $line-height: auto) {
+  font-size: $font-size;
+  font-size: ($font-size / $font-size--base) * 1rem;
+
+  @if $line-height == auto {
+    line-height: ceil($font-size / $line-height-base) * ($line-height-base / $font-size);
+  }
+
+  @else {
+
+    @if (type-of($line-height) == number or $line-height == inherit or $line-height == normal) {
+      line-height: $line-height;
+    }
+
+    @elseif ($line-height != none and $line-height != false) {
+      @warn "D’oh! ‘#{$line-height}’ is not a valid value for `line-height`."
+    }
+
+  }
+
+}
+
+// Make list flush
+@mixin list-flush() {
+  margin: 0;
+  padding: 0;
+}
+
+// Reset lists to that they have no styling
+@mixin reset-list() {
+  @include list-flush();
+  list-style: none;
+
+  li {
+    padding-left: 0;
+    background-image: none;
+    overflow-x: inherit;
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+// Hide text for image replacement
+@mixin hide-text() {
+  text-indent: 110%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  // Text transform capitalize fixes text-replacement issue when used in a <button> element on ie7
+  // text-transform: capitalize;
+}
+
+// Reset the Heading tags which will be used in a list of items
+@mixin reset-list-titles() {
+  @include font-size(16px);
+  font-style: normal;
+  margin-bottom: 0;
+}
+
+// Create a circle border around an element
+@mixin circle-border($border-size: 1px, $border-color: $brand--gray) {
+  border: $border-size solid $border-color;
+  border-radius: 50%;
+}
+
+// Create a circular elements
+@mixin circle($width, $color: "") {
+  width: $width;
+  height: $width;
+  background: #{$color};
+  border-radius: $width / 2;
+}
+
+// Transform scale smoothes rough borders in some browsers
+@mixin force-anti-alias() {
+  transform: scale(.9999);
+}
+
+// Base focus styles {
+@mixin set-focus($type: "default") {
+
+  @if $type == "default" {
+    outline: thin dotted;
+    outline-offset: $spacing-unit--tiny;
+  }
+  @else if $type == "form" {
+    outline: none;
+    background-color: $input-bg-focus;
+    border-color: $ucd-gold;
+  }
+  @else if $type == "reset" {
+    outline: none;
+    background-color: inherit;
+    text-decoration: none;
+  }
+}
+
+// Remove default form input styles
+@mixin remove-input-style() {
+  height: auto;
+  box-shadow: none;
+}
+
+// Responsive sprite (horizontal)
+@mixin responsive-sprite($sprite-url, $images: (), $width: 100%, $padding-bottom: 100%) {
+  display: block;
+  padding-bottom: $padding-bottom;
+  height: 0;
+  width: $width;
+  background-image: url($sprite-url);
+  background-repeat: no-repeat;
+  background-size: 100% * length($images);
+  background-position: 0 0;
+
+  $ratio: 100% / (length($images) - 1);
+
+  @for $i from 1 through length($images) {
+    $image: nth($images, $i);
+
+    &--#{$image} {
+      background-position: ($ratio * $i) 0;
+    }
+  }
+}
+
+// Standard horizontal Sprite generator
+@mixin horizontal-sprite($sprite-url, $images: (), $width: 50px, $height: 50px) {
+  display: block;
+  height: $height;
+  width: $width;
+  background-image: url($sprite-url);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @for $i from 1 through length($images) {
+    $image: nth($images, $i);
+
+    &--#{$image} {
+      background-position: -($width * ($i - 1)) 0;
+    }
+  }
+}
+
+// horizontal spacing adjustment when wrapped with a box wrapper (news feed)
+@mixin box-wrapper-negative-overflow($offset: 0) {
+  .box-wrapper & {
+    margin-left: -$spacing-unit--large;
+    margin-right: -$spacing-unit--large;
+  }
+
+  .box-wrapper--small & {
+    margin-left: -$spacing-unit;
+    margin-right: -$spacing-unit;
+  }
+
+  .box-wrapper--large & {
+    margin-left: -($spacing-unit--large + $spacing-unit);
+    margin-right: -($spacing-unit--large + $spacing-unit);
+  }
+
+  .box-wrapper &,
+  .box-wrapper--small &,
+  .box-wrapper--large & {
+    @include breakpoint ($bp-narrow--up) {
+      margin-left: $offset;
+      margin-right: 0;
+    }
+  }
+}

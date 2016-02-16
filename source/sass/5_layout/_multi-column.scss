@@ -1,0 +1,15 @@
+$max-cols: 5;
+
+@include breakpoint($bp-small--up) {
+  @for $i from 2 through $max-cols {
+    .l-column--#{$i} {
+      column-gap: $spacing-unit;
+      column-count: $i;
+    }
+
+    .body-column--#{$i} .body-text {
+      column-gap: $spacing-unit;
+      column-count: $i;
+    }
+  }
+}

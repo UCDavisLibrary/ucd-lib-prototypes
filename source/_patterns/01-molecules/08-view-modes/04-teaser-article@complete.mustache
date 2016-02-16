@@ -1,0 +1,18 @@
+<a href="{{ url }}" class="media vm-teaser {{ brand-class }}">
+  <div class="media__figure vm-teaser__figure category category-brand__thumbnail">
+    {{> atoms-thumbnail }}
+  </div>
+  <div class="media__body">
+    <h3 class="vm-teaser__title">{{ headline.medium }}</h3>
+    <div class="vm-teaser__byline">
+      <span>{{> molecules-byline }}</span>
+      <span>{{ month.long }} {{ day.long }}, {{ year.long }}</span>
+    </div>
+    <ul class="vm-teaser__categories">
+      <li class="category-brand__label">{{ category.primary }}</li>
+      {{# category.cat-list }}
+          <li class="{{ brand-color }}">{{ category-value }}</li>
+      {{/ category.cat-list }}
+    </ul>
+  </div>
+</a>

@@ -1,0 +1,23 @@
+// Brand Textbox which will add a category color to the background
+.brand-textbox {
+  padding: $spacing-unit $spacing-unit--large;
+
+  *:last-child {
+    margin-bottom: 0;
+  }
+
+  &--large-text {
+    @include font-size(20px, 1.8);
+  }
+
+  // Make sure that headings are White since this has a colored background
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $white;
+  }
+
+}

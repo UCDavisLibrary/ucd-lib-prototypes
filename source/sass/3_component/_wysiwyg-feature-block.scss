@@ -1,0 +1,54 @@
+.wysiwyg-feature-block {
+  padding-bottom: $spacing-unit;
+  background-color: $ucd-blue-80;
+
+  &__body {
+    padding: $spacing-unit $fixed-spacing-unit;
+    color: $white;
+    text-align: left;
+
+    a {
+      border-bottom: 2px dotted $ucd-gold;
+      padding: 0 $spacing-unit--small / 2.5;
+      color: $white;
+      font-weight: $font-weight--bold;
+      text-decoration: none;
+
+      &:hover {
+        border-bottom: 0;
+        background: $ucd-blue;
+        color: $white;
+      }
+    }
+
+    h4 {
+      font-weight: $font-weight--light;
+    }
+
+    ul {
+      margin: $spacing-unit 0 0;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: $spacing-unit;
+      background: url("../images/chevron-white.svg") no-repeat 0 $spacing-unit--small;
+
+      .no-svg & {
+        background-image: url("../images/chevron-white.png");
+      }
+    }
+  }
+
+  &__title {
+    @include font-size($font-size--base + 2);
+    display: block;
+    margin-top: 0;
+    padding: $spacing-unit $fixed-spacing-unit;
+    background: $ucd-blue-90;
+    color: $white;
+    font-weight: $font-weight--bold;
+    font-style: inherit;
+    text-align: left;
+  }
+}

@@ -1,0 +1,93 @@
+<div class="page l-header--fixed">
+  {{> organisms-header }}
+  <div class="l-main" role="main">
+
+    <div class="page-title category-brand--sunny-grass page-title--banner">
+      <div class="page-title__title--nested">
+        <h1 class="page-title__title category-brand__text--knock-out">{{ title }}</h1>
+      </div>
+      {{> atoms-title-banner }}
+    </div>
+
+    <div class="l-container brenham-flipped">
+      {{> molecules-breadcrumbs }}
+
+      {{# emergency }}
+        {{> molecules-alert-error }}
+      {{/ emergency }}
+
+      <div class="l-content">
+        <div class="box-wrapper">
+          <div class="panel-pane body-text">
+            <h2 class="heading--underline">{{ headline.short }}</h2>
+            {{{ excerpt.long }}}
+          </div>
+        </div>
+        {{# marketing-highlight.short-burst }}
+          <div class="panel-pane l-sibling-grid--third">
+            {{> molecules-marketing-highlight }}
+          </div>
+        {{/ marketing-highlight.short-burst }}
+        {{# marketing-highlight.horizontal }}
+          <div class="panel-pane">
+            {{> molecules-marketing-highlight:marketing-highlight--horizontal }}
+          </div>
+        {{/ marketing-highlight.horizontal }}
+        <div class="box-wrapper clear">
+            <div class="panel-pane">
+              <h2 class="space-below">More discoveries in progress</h2>
+              <div class="category-brand--sunny-grass">
+                <ul class="list--link l-column--3">
+                  <li><a href="http://www.ucdmc.ucdavis.edu/publish/news/newsroom/10075/">Autism</a></li>
+                  <li><a href="http://blogs.ucdavis.edu/egghead/2015/06/22/californias-wildflowers-losing-diversity-in-face-of-warmer-drier-winters/">Drought</a></li>
+                  <li><a href="http://blogs.ucdavis.edu/egghead/2015/06/15/crosstalk-gives-clues-to-diabetes/">Disease prevention</a></li>
+                  <li><a href="http://www.ucdmc.ucdavis.edu/publish/news/newsroom/10116/">Brain science</a></li>
+                  <li><a href="http://news.ucdavis.edu/search/news_detail.lasso?id=10791/">Animal health</a></li>
+                  <li><a href="http://www.ucdmc.ucdavis.edu/publish/news/newsroom/10017/">Cancer</a></li>
+                  <li><a href="http://ucdavis.edu/ucdavis-today/2015/june/18-baboons-on-the-move-practice-democracy.html/">Social behavior</a></li>
+                  <li><a href="http://news.ucdavis.edu/search/news_detail.lasso?id=11207/">Climate change</a></li>
+                  <li><a href="http://blogs.ucdavis.edu/egghead/2015/05/12/ucd-mars-inc-team-awarded-finalist-in-u-s-fda-food-safety-challenge/">Food safety</a></li>
+                  <li><a href="http://blogs.ucdavis.edu/egghead/2015/06/03/death-in-the-tide-pools-rapid-die-off-of-urchins-and-sea-stars-a-grim-warning-of-climate-change/">Ocean health</a></li>
+                  <li><a href="http://blogs.ucdavis.edu/egghead/2015/06/16/wild-bees-pollinate-crops-but-thats-not-why-they-should-be-conserved/">Animal extinction</a></li>
+                  <li><a href="http://news.ucdavis.edu/search/news_detail.lasso?id=11124/">Feeding the world</a></li>
+                  <li><a href="http://blogs.ucdavis.edu/egghead/2015/05/08/new-study-analyzes-thinspiration-images-of-women-on-social-media-sites/">Nutrition</a></li>
+                  <li><a href="http://news.ucdavis.edu/search/news_detail.lasso?id=11171/">Conservation</a></li>
+                  <li><a href="http://news.ucdavis.edu/search/news_detail.lasso?id=11245/">Education</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div><!--end .l-content-->
+
+      <div class="l-sidebar-second">
+        <div class="panel-pane">
+          <div class="sub-nav">
+            {{# tertiary-page }}
+                <h2 class="sub-nav__title"><a href="{{ url }}">{{ parent-page-title }}</a></h2>
+            {{/ tertiary-page }}
+              <ul class="sub-nav__body menu">
+                <li><a href="{{ url }}">Undergraduate Research</a></li>
+                <li><a href="{{ url }}">Graduate Research</a></li>
+                <li><a href="{{ url }}">Industry &amp; Technology</a></li>
+                <li><a href="{{ url }}">Libraries</a></li>
+                <li><a href="{{ url }}">Museums &amp; Collections</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="panel-pane box">
+          {{> organisms-research-news }} 
+        </div>
+        {{# focal-links }}
+          <div class="panel-pane">
+            {{> molecules-focal-link }}
+          </div>
+        {{/ focal-links }}
+        <div class="panel-pane bg-transparent">
+          {{> molecules-social-follow-small }}
+        </div>
+      </div><!--end .l-sidebar-second-->
+
+    </div>
+  </div><!--End role=main-->
+  {{> organisms-footer }}
+</div>

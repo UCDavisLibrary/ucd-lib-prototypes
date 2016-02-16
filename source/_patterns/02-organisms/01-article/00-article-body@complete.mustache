@@ -1,0 +1,74 @@
+<div class="article-body body-text">
+  {{> molecules-video-youtube:responsive-iframe--16x9(video-id: "mKbwOv7eQKc", video-width: "853", video-height: "480") }}
+  {{> molecules-social-share }}
+  {{> molecules-quick-summary:align-right width-half }}
+  <p class="intro">{{{ excerpt.long }}}</p>
+  <h2>{{{ page-copy.section-01.heading }}}</h2>
+  <div class="align-right image-half">
+    {{> atoms-landscape-4x3 }}
+  </div>
+  {{> molecules-feature-block:align-right width-half }}
+  <p>{{{ page-copy.section-01.text }}}</p>
+  {{# figures.first }}
+    <div class="image-full">
+      {{> molecules-figure-with-caption }}
+    </div>
+  {{/ figures.first }}
+  <h2>{{{ page-copy.section-02.heading }}}</h2>
+  <p>{{{ page-copy.section-02.text }}}</p>
+  <h2>{{{ page-copy.section-03.heading }}}</h2>
+  <p>{{{ page-copy.section-03.text }}}</p>
+  <h2>{{{ page-copy.section-04.heading }}}</h2>
+  {{# pullquotes.first }}
+    {{> molecules-pullquote:align-left width-half }}
+  {{/ pullquotes.first }}
+  <p>{{{ page-copy.section-04.text }}}</p>
+  {{# figures.second }}
+    <div class="image-full">
+      {{> molecules-figure-with-caption }}
+    </div>
+  {{/ figures.second }}
+  <h2>{{{ page-copy.section-05.heading }}}</h2>
+  <p>{{{ page-copy.section-05.text }}}</p>
+  <h2>{{{ page-copy.section-06.heading }}}</h2>
+  <p>{{{ page-copy.section-06.text }}}</p>
+  <h2>{{{ page-copy.section-07.heading }}}</h2>
+  <p>{{{ page-copy.section-07.text }}}</p>
+  <h2>{{{ page-copy.section-08.heading }}}</h2>
+  <p>{{{ page-copy.section-08.text }}}</p>
+  {{# figures.third }}
+    <div class="image-full">
+      {{> molecules-figure-with-caption }}
+    </div>
+  {{/ figures.third }}
+  <h2>{{{ page-copy.section-09.heading }}}</h2>
+  <p>{{{ page-copy.section-09.text }}}</p>
+  <h2>{{{ page-copy.section-10.heading }}}</h2>
+  <p>{{{ page-copy.section-10.text }}}</p>
+  <h2>{{{ page-copy.section-11.heading }}}</h2>
+  <p>{{{ page-copy.section-11.text }}}</p>
+  <h2>{{{ page-copy.section-12.heading }}}</h2>
+  {{# pullquotes.second }}
+    {{> molecules-pullquote:align-left width-half }}
+  {{/ pullquotes.second }}
+  <p>{{{ page-copy.section-12.text }}}</p>
+  <h2>{{{ page-copy.section-13.heading }}}</h2>
+  <p>{{{ page-copy.section-13.text }}}</p>
+  <h2>{{{ page-copy.section-14.heading }}}</h2>
+  <p>{{{ page-copy.section-14.text }}}</p>
+  <h2>{{{ page-copy.section-15.heading }}}</h2>
+  {{# person-feature }}
+    {{> molecules-person-feature:align-right width-half }}
+  {{/ person-feature }}
+  <p>{{{ page-copy.section-15.text }}}</p>
+  <h2>{{{ page-copy.section-16.heading }}}</h2>
+  <p>{{{ page-copy.section-16.text }}}</p>
+  <h2 class="heading--auxiliary">Related Images:</h2>
+  {{> molecules-image-gallery }}
+</div>
+
+<p>{{ excerpt.medium }}</p>
+
+{{# tags }}
+  {{> molecules-tags }}
+{{/ tags }}

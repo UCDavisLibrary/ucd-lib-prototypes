@@ -1,0 +1,201 @@
+// Mixins for all heading styles
+
+// Defaults for all Headings
+@mixin heading-default($weight: "bold") {
+  @include font-size($font-size--base);
+  margin: .75em 0 .25em;
+  padding: 0;
+  color: $ucd-blue;
+  font-style: normal;
+
+  @if $weight == "bold" {
+    font-weight: $font-weight--bold;
+  }
+  @else if($weight == "light") {
+    font-weight: $font-weight--bold;
+  }
+
+  // Remove the top margin on the first elements so that there aren't issues with
+  // backgrounds starting in the wrong place.
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+// Primary Heading
+@mixin heading--primary() {
+  @include heading-default();
+  @include font-size(25px);
+  font-weight: $font-weight--bold;
+}
+
+// Secondary Heading
+@mixin heading--secondary() {
+  @include heading-default();
+  @include font-size(23px);
+  color: $ucd-blue-80;
+  font-style: italic;
+  font-weight: $font-weight--light;
+}
+
+// Highlight Heading 
+@mixin heading--highlight($line: true) {
+  @include heading-default();
+  @include font-size(22px);
+  font-weight: $font-weight--bold;
+  font-style: inherit;
+  color: $ucd-blue;
+  text-align: center;
+
+  @if ($line) {
+    &:after {
+      display: block;
+      margin: $spacing-unit auto;
+      width: 15%;
+      height: 2px;
+      background-color: $ucd-blue;
+      content: "";
+    }
+  }
+  @else {
+    &:after {
+      display: none;
+    }
+  }
+}
+
+// Image Overlay
+@mixin heading--overlay($align: left) {
+  @include heading-default();
+  @include font-size(20px);
+  position: absolute;
+  bottom: $spacing-unit * 2;
+  z-index: $zindex-component-fg;
+  padding: $spacing-unit * .6 $spacing-unit;
+  width: 70%;
+  color: $white;
+  text-align: right;
+
+  @if ($align == right) {
+    right: 0;
+    text-align: left;
+  }
+
+  @include breakpoint($bp-small--up) {
+    @include font-size(25px);
+    line-height: 1.3;
+  }
+
+  &:hover {
+    color: $white;
+    text-decoration: none;
+  }
+
+  &--right {
+    right: 0;
+    text-align: left;
+  }
+}
+
+// Pane Heading
+@mixin heading--pane() {
+  @include heading--primary();
+  @include font-size(22px);
+}
+
+// Auxiliary Heading
+@mixin heading--auxiliary() {
+  @include heading-default();
+  @include font-size(20px);
+  margin-bottom: $spacing-unit--small;
+  color: $ucd-blue-80;
+  font-style: italic;
+  font-weight: $font-weight--bold;
+}
+
+// Weighted Heading
+@mixin heading--weighted($invert: false) {
+  @include heading-default();
+  @include font-size(28px);
+  @if ($invert) {
+    font-weight: $font-weight--bold;
+  }
+  @else {
+    font-weight: $font-weight--light;
+  }
+
+  &--weighted {
+    @if ($invert) {
+      font-weight: $font-weight--light;
+    }
+    @else {
+      font-weight: $font-weight--bold;
+    }
+  }
+}
+
+// Underline Heading
+@mixin heading--underline() {
+  @include heading-default();
+  @include font-size(28px);
+  font-weight: $font-weight--light;
+
+  &:after {
+    display: block;
+    border-top: 3px solid $ucd-gold;
+    margin: $spacing-unit--tiny 0 $spacing-unit;
+    width: $spacing-unit * 1.25;
+    content: "";
+  }
+}
+
+// Weighted Underline Heading
+@mixin heading--weighted-underline() {
+  @include heading--weighted();
+  @include heading--underline();
+}
+
+// social follow heading
+@mixin heading--social-follow() {
+  @include heading--secondary();
+  font-weight: $font-weight--bold;
+  color: $ucd-blue-60;
+}
+
+// Heading for feature block inside feature block wysiwyg widget
+@mixin heading--feature-block() {
+  @include heading-default();
+  @include font-size($font-size--base + 2);
+  display: block;
+  margin-top: 0;
+  padding: $spacing-unit $fixed-spacing-unit;
+  background: $ucd-blue-90;
+  color: $white;
+  font-weight: $font-weight--bold;
+  font-style: inherit;
+  text-align: left;
+}
+
+//heading for focus box elements
+@mixin heading--focus-box() {
+  // Pass TRUE to invert the weighting
+  @include heading--weighted(true);
+  @include font-size(25px, 1);
+  display: block;
+  margin-top: 0;
+  padding: $spacing-unit;
+  background: $ucd-blue;
+  color: $white;
+  font-style: inherit;
+  text-align: left;
+}
+
+// Footer Audience Headers
+@mixin heading--invert() {
+  @include heading-default();
+  @include font-size(23px);
+  font-weight: $font-weight--bold;
+  margin-bottom: $spacing-unit;
+  padding-left: $fixed-spacing-unit;
+  color: $white;
+}

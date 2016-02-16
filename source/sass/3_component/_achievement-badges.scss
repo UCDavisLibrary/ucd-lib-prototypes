@@ -1,0 +1,67 @@
+// Achievement Badges
+.achievement-badges {
+  @include font-size($font-size--large);
+
+  @include breakpoint($bp-small--up) {
+    padding: $spacing-unit * 2.1 0;
+  }
+
+  .pack__item {
+    clear: both;
+    margin-bottom: 0;
+    padding: 0 2%;
+
+    img {
+      transition: transform .2s ease-in-out;
+      transform: scale(.9);
+    }
+
+    &:hover img {
+      transform: scale(1);
+    }
+  }
+
+  .vertical-link__figure {
+    float: left;
+    width: 40%;
+
+    @include breakpoint($bp-small--up) {
+      float: none;
+      width: auto;
+      max-width: 75%;
+    }
+  }
+
+  .vertical-link__body {
+    @include font-size(16px, 1.1);
+    float: left;
+    margin-left: $spacing-unit--small;
+    padding-top: $spacing-unit * 2;
+    width: 40%;
+    text-align: left;
+
+    @include breakpoint($bp-small--up) {
+      @include font-size(18px, 1.2);
+      float: none;
+      margin-left: 0;
+      padding-top: 0;
+      width: auto;
+      text-align: center;
+    }
+  }
+
+  .no-flexbox & .pack__item {
+    float: left;
+    width: 33.3%;
+  }
+
+}
+
+.achievement-badges.pack {
+  display: block;
+
+
+  @include breakpoint ($bp-small--up) {
+    display: flex;
+  }
+}

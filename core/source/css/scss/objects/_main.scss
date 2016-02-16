@@ -1,0 +1,9 @@
+/*------------------------------------*\
+    $MAIN CONTENT AREA
+\*------------------------------------*/
+[role=main] {
+	padding: $spacing-unit--small $spacing-unit--small $spacing-unit--large;
+	overflow: hidden;
+	@extend .lc;
+	@extend .cf;
+}

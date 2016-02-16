@@ -1,0 +1,56 @@
+// Header
+.header__img-bg {
+  background: url("../images/global-header-bg.svg") center top/cover no-repeat;
+
+  .no-svg & {
+    background: url("../images/global-header-bg.png") center top repeat;
+  }
+}
+
+.site-logo {
+  display: inline-block;
+  height: $header-height--sm;
+  transition: all .2s ease-in-out;
+
+  @include breakpoint($media-small $media-medium-max) {
+    height: $header-height--md;
+  }
+
+  @include breakpoint($bp-medium--up, true) {
+    height: $header-height;
+
+    .l-header--fixed.is-scrolling & {
+      height: $header-height--scrolling;
+    }
+  }
+
+  .logo {
+    @include vertical-center();
+    height: 40%;
+    vertical-align: baseline;
+    transition: all .2s ease-in-out;
+
+    .l-header--fixed.is-scrolling & {
+      @include breakpoint($bp-medium--up, true) {
+        height: 55%;
+      }
+    }
+
+    .lt-ie9 & {
+      margin-top: 12%;
+      top: 0;
+    }
+  }
+}
+
+// Navbar
+.navbar {
+  background-color: $menu-background-color;
+  box-shadow: 0 2px 1px rgba($ucd-blue, .15);
+
+  .primary-nav {
+    @include breakpoint($bp-medium--up, true) {
+      margin-right: 100px;
+    }
+  }
+}

@@ -1,0 +1,176 @@
+// Primary Navigation
+.primary-nav {
+  background-color: $menu-background-color;
+
+  @include breakpoint($bp-medium--up, true) {
+    overflow: hidden;
+    max-height: $menu-height;
+    transition: max-height $transition-time;
+
+    &.is-hover {
+      max-height: 600px; // Set to be larger than needed
+    }
+
+    > .menu {
+      .flexbox & {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+      }
+    }
+
+    li {
+      // Hide links by default unless it has been explicitly set to be shown in desktop
+      display: none;
+      float: left;
+      width: 10em;
+
+      &.is-visible {
+        display: block;
+      }
+
+      @include breakpoint($bp-wide--up) {
+        width: 11.5em;
+      }
+
+      .flexbox & {
+        flex-basis: 0;
+        flex-grow: 1;
+        float: none;
+        width: auto;
+      }
+
+      &:hover {
+        background: $ucd-gold-20;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    border-bottom: 1px solid $gray;
+    padding-left: 1em;
+    background: $menu-background-color;
+    color: $ucd-blue;
+    font-weight: $font-weight--bold;
+    line-height: $menu-height;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    @include breakpoint($bp-medium--up, true) {
+      @include font-size(15px, $menu-height);
+      border-bottom: 0;
+      padding: 0 1em;
+      background: none;
+    }
+
+    @include breakpoint(1100px) {
+      @include font-size(17px, $menu-height);
+    }
+
+    @include breakpoint($bp-huge) {
+      @include font-size(18px, $menu-height);
+    }
+
+    &:hover {
+      background: $menu-background-color-active;
+    }
+
+    &:focus,
+    .active {
+      background: $menu-background-color-active;
+    }
+  }
+
+  li li a {
+    border-color: $menu-background-color;
+    background: $ucd-gold-10;
+    font-weight: $font-weight--base;
+    text-transform: none;
+
+    @include breakpoint($bp-medium--up, true) {
+      @include font-size(15px, 1.35);
+      padding: $spacing-unit--small $spacing-unit;
+      background: none;
+
+      &:focus {
+        background: $menu-background-color-active;
+      }
+    }
+
+    @include breakpoint($bp-wide--up, true) {
+      @include font-size(17px, 1.35);
+    }
+  }
+
+  li li li a {
+    background: $ucd-gold-30;
+  }
+}
+
+// Sub-Menu Toggle
+.submenu-toggle {
+  display: block;
+  float: right;
+  height: $menu-height;
+  padding-bottom: 1px; //this is to avoid the border
+  width: 50px;
+  background: $ucd-blue;
+  text-align: center;
+
+  @include breakpoint($menu-vert-width) {
+    width: $menu-height;
+  }
+
+  @include breakpoint($bp-medium--up, true) {
+    display: none;
+  }
+
+  .lt-ie8 & {
+    position: relative;
+    top: -$menu-height;
+  }
+
+  a:hover & {
+    background: shade($menu-background-color-active, 40%);
+  }
+
+  &--open .submenu-toggle__icon:before {
+    transform: rotate(0deg);
+  }
+
+  &__icon {
+    @include vertical-center;
+    display: block;
+    left: 30%;
+    z-index: $zindex-navbar;
+    height: 3px;
+    width: $menu-icon-width;
+    background-color: $white;
+    font-size: 0;
+
+    .lt-ie8 & {
+      left: 0;
+    }
+
+    &:before {
+      left: 0;
+      position: absolute;
+      z-index: $zindex-navbar;
+      height: 100%;
+      width: 100%;
+      background-color: $white;
+      content: "";
+      transition: all $transition-time;
+      transform: rotate(90deg);
+    }
+
+    a:hover & {
+      background-color: $white;
+
+      &:before {
+        background-color: $white;
+      }
+    }
+  }
+}

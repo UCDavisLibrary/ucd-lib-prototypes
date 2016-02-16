@@ -1,0 +1,38 @@
+// Footer
+.footer {
+  margin-top: $spacing-unit--large;
+  padding: $spacing-unit--huge 0 6em;
+  background-color: $ucd-blue;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+
+  // Region of Navigation lists
+  &__navs {
+
+    // Make the first list slightly larger
+    .pack__item:first-child {
+      flex-grow: 1.5;
+    }
+
+    .flexbox & .pack__item,
+    .flexbox & > * {
+      margin-bottom: $spacing-unit--large;
+
+      @include breakpoint($bp-narrow--down) {
+        width: 50%;
+      }
+
+      @include breakpoint($bp-small--down) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// Remove the .pack styles on smaller screens
+@include breakpoint($bp-medium--down) {
+  @include pack-removal("footer__navs");
+}

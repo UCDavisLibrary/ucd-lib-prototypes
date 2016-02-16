@@ -1,0 +1,10 @@
+<div class="headline-stack">
+  <div class="headline-stack__sub-feature">
+    <a href="{{ url }}">{{> atoms-focus }}<span>{{ headline.long }}</span></a>
+  </div>
+  <ul class="headline-stack__list">
+    {{# headline-stack }}
+      <li><a href="{{ url }}">{{ headline.short }}</a></li>
+    {{/ headline-stack }}
+  </ul>
+</div>

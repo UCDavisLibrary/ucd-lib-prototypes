@@ -1,0 +1,12 @@
+// Search Filter for refining search results
+.search-filter {
+
+  li {
+    padding: $spacing-unit--tiny 0 $spacing-unit--tiny $spacing-unit--small;
+  }
+
+  a {
+    color: $ucd-blue-70;
+    font-weight: $font-weight--base;
+  }
+}

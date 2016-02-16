@@ -1,0 +1,195 @@
+{
+  "title" : "Administration",
+  "bodyClass": "article",
+  "author" : {
+    "first-name" : "Julianne",
+    "last-name" : "McCormick"
+  },
+  "tertiary-page": "true",
+  "parent-page-title": "About Us",
+  "img": {
+    "landscape-4x3": {
+      "src": "../../images/sample/hexter-new.jpg",
+      "alt": "Provost and Executive Vice Chancellor Ralph J. Hexter"
+    },
+    "landscape-16x9": {
+      "src": "../../images/sample/landscape-16x9-mountains.jpg",
+      "alt": "Mountains"
+    },
+    "focus": {
+      "src": "../../images/sample/chancellor-coho.jpg",
+      "alt": "Chancellor Katehi at the Coffeehouse"
+    }
+  },
+  "headline" : {
+    "short" : "Provost and Executive Vice Chancellor Ralph J. Hexter"
+  },
+  "excerpt" : {
+    "long" : "<p>Classics scholar and long-time university administrator <a href=\"http://provost.ucdavis.edu/\">Ralph J. Hexter</a> helps lead UC Davis as its chief academic and operating officer. Under Chancellor Linda Katehi’s direction, he is responsible for the campus’s academic and organizational functioning and its excellence in education, research and public service.</p><p><a href=\"http://provost.ucdavis.edu/people/hexter-biography.html\">Hexter arrived at UC Davis</a> on Jan. 1, 2011, to become provost and executive vice chancellor. He also holds an appointment as distinguished professor of classics and comparative literature.</p><p>Throughout his career, Hexter has made it a priority to foster excellence across the full range of disciplines, and to promote equal opportunity, diversity and inclusion for students, faculty and staff.</p><p>Hexter directs and collaborates with the campus’s vice chancellors, deans, the university librarian and other campus leaders. In addition, he is UC Davis’ chief ethics and compliance officer, and serves as the chancellor’s principal liaison to the Academic Senate.</p>"
+  },
+  "focus-box-title" : "<span class=\"focus-box__title--weighted\">Chancellor</span> Linda P. B. Katehi",
+  "focus-box-text": "<div class=\"l-column--2\"><p>UC Davis Chancellor <a href=\"http://chancellor.ucdavis.edu/about/\">Linda P.B. Katehi</a> heads one of the <a href=\"\">top 10 universities in the world led by a female leader</a>.</p> <p>Chancellor since 2009, she oversees all aspects of the university’s teaching, research and public service mission.</p> <p>An electrical engineer and proud UC alum (UCLA ’81 and ’84), Katehi has spent her career focusing on expanding research opportunities for undergraduates and improving the education and profes­sional experience of graduate students, with an emphasis on underrepresented groups.</p> <p>In addition to her role as chancellor, Katehi holds UC Davis faculty appointments in electrical and computer engineering and in women and gender studies.</p> <p>The chancellor enjoys a global reputation as a leading STEM (science, technology, engineering and math) educator, and her work in electronic circuit design has led to numerous national and international awards as well as 19 U.S. patents.</p><h4 class=\"space-below\">Learn more about the chancellor</h4> <ul> <li><a href=\"#\">Visit her website</a> <li><a href=\"#\">Follow her on Twitter</a> <li><a href=\"#\">Read her blog</a></ul></div>",
+  "brandModifier" : "category-brand__background category-brand__background--lighten",
+  "inset-blocks" : [
+    {
+      "headline" : "This is the headline for the inset block"
+    }
+  ],
+  "latest-block" : [
+    {
+      "headline" : "This is the headline for the latest block"
+    }
+  ],
+  "focal-links" : [
+    {
+      "action-text" : "View Our Org Chart",
+      "img": {
+        "square": {
+          "src": "../../images/icons/org-chart.svg",
+          "alt": "Org Chart"
+        }
+      }
+    },
+    {
+      "action-text" : "Read Our Principles of Community",
+      "img": {
+        "square": {
+          "src": "../../images/icons/read-principles.svg",
+          "alt": "Principles of Community"
+        }
+      }
+    },
+    {
+      "action-text" : "Search Jobs",
+      "img": {
+        "square": {
+          "src": "../../images/icons/jobs.svg",
+          "alt": "Search Jobs"
+        }
+      }
+    }
+  ],
+  "collapse": [
+    {
+      "headline" : {
+        "short" : "Vice chancellors"
+      },
+      "excerpt" : {
+        "long" : "<ul> <li><a href=\"{{ url }}\">Administrative Reorganization and Transformation: <strong>Associate Chancellor Prasant Mohapatra</strong></a></li> <li><a href=\"{{ url }}\">Development and Alumni Relations: <strong>Vice Chancellor Shaun Keister</strong></a></li> <li><a href=\"{{ url }}\">Finance, Operations and Administration: <strong>Vice Chancellor and Chief Financial Officer Dave Lawlor</strong></a></li> <li><a href=\"{{ url }}\">Human Health Sciences: <strong>Vice Chancellor and Dean Julie A.</strong></a></li> <li><a href=\"{{ url }}\">Research: <strong>Vice Chancellor Harris Lewin</strong></a></li> <li><a href=\"{{ url }}\">Student Affairs: <strong>Vice Chancellor Adela de la Torre</strong></a></li> </ul>"
+      },
+      "url": "",
+      "brand-class": "category-brand--sky-blue"
+    },
+    {
+      "headline" : {
+        "short" : "Deans"
+      },
+      "excerpt" : {
+        "long" : "<ul> <li><a href=\"{{ url }}\">Agricultural and Environmental Sciences: <strong>Dean Helene Dillard</strong></a></li> <li><a href=\"{{ url }}\">Betty Irene Moore School of Nursing: <strong>Dean Heather Young</strong></a></li> <li><a href=\"{{ url }}\">Biological Sciences: <strong>Interim Dean Peter Wainwright</strong></a></li> <li><a href=\"{{ url }}\">Education: <strong>Dean Harold Levine</strong></a></li> <li><a href=\"{{ url }}\">Engineering: <strong>Dean Enrique Lavernia</strong></a></li> <li><a href=\"{{ url }}\">Humanities, Arts and Cultural Studies: <strong>Interim Dean Susan B. Kaiser</strong></a></li> <li><a href=\"{{ url }}\">Graduate School of Management: <strong>Interim Dean Ann Huff Stevens</strong></a></li> <li><a href=\"{{ url }}\">Graduate Studies: <strong>Vice Provost and Dean Jeffery C. Gibeling</strong></a></li> <li><a href=\"{{ url }}\">Law: <strong>Dean Kevin Johnson</strong></a></li> <li><a href=\"{{ url }}\">Mathematical and Physical Sciences: <strong>Interim Dean Alexandra Navrotsky</strong></a></li> <li><a href=\"{{ url }}\">Medicine: <strong>Dean Julie A. Freischlag</strong></a></li> <li><a href=\"{{ url }}\">Social Sciences: <strong>Dean George R. Mangun</strong></a></li> <li><a href=\"{{ url }}\">UC Davis Extension: <strong>Dean Paul M. McNeil</strong></a></li> <li><a href=\"{{ url }}\">Undergraduate Education: <strong>Vice Provost and Dean Carolyn Thomas</strong></a></li> <li><a href=\"{{ url }}\">Veterinary Medicine: <strong>Dean Michael D. Lairmore</strong></a></li> </ul>"
+      },
+      "url": "",
+      "brand-class": "category-brand--sunny-grass"
+    },
+    {
+      "headline" : {
+        "short" : "Vice provosts and others"
+      },
+      "excerpt" : {
+        "long" : "<h3>Vice provosts</h3> <ul> <li><a href=\"{{ url }}\">Academic Affairs: <strong>Vice Provost Maureen Stanton</strong></a></li> <li><a href=\"{{ url }}\">Global Affairs: <strong>Interim Vice Provost Adrienne Martin</strong></a></li> <li><a href=\"{{ url }}\">Graduate education: <strong>Vice Provost and Dean Jeffery C. Gibeling</strong></a></li> <li><a href=\"{{ url }}\">Information and Educational Technology: <strong>Vice Provost Viji Murali</strong></a></li> <li><a href=\"{{ url }}\">Undergraduate Education: <strong>Vice Provost and Dean Carolyn Thomas</strong></a></li> </ul> <h3>Associate chancellors</h3> <ul> <li><a href=\"{{ url }}\">Chancellor’s Office: <strong>Associate Chancellor Karl Engelbach, senior staff adviser to the chancellor and chief of staff</strong></a></li></ul> <h3>Other administrators</h3> <ul> <li><a href=\"{{ url }}\">Chancellor Emeritus: <strong>Larry Vanderhoef</strong></a></li> <li><a href=\"{{ url }}\">Library: <strong>University Librarian MacKenzie Smith</strong></a></li> <li><a href=\"{{ url }}\">Medical Center: <strong>Chief Executive Officer Ann Madden Rice</strong></a></li> <li><a href=\"{{ url }}\">Chancellor’s Senior Advisor for Strategic Projects and Initiatives: <strong>Steven C. Currall</strong></a></li> </ul>"
+      },
+      "url": "",
+      "brand-class": "category-brand--california-poppy"
+    }
+  ],
+  "breadcrumbs" : [
+    {
+      "url" : "/pattern-lab-one/public/patterns/04-pages-00-homepage/04-pages-00-homepage.html",
+      "link-title" : "UC Davis Home"
+    },
+    {
+      "url" : "",
+      "link-title" : "About Us"
+    },
+    {
+      "url" : "",
+      "link-title" : "Administration"
+    }
+  ],
+  "listItems-initiatives": [
+    {
+      "headline" : {
+        "medium" : "An Invitation to Envision the University of the 21st Century"
+      },
+      "location": null,
+      "time": "1:00 PM",
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "August",
+        "short": "Aug",
+        "digit": "08"
+      },
+      "dayofweek": {
+        "long": "Sunday",
+        "short": "Sun"
+      },
+      "day": {
+        "long": "23",
+        "short": "23",
+        "ordinal": "rd"
+      }
+    },
+    {
+      "headline" : {
+        "medium" : "UC Davis World Food Center"
+      },
+      "location": null,
+      "time": "5:00 PM",
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "September",
+        "short": "Sep",
+        "digit": "09"
+      },
+      "dayofweek": {
+        "long": "Friday",
+        "short": "Fri"
+      },
+      "day": {
+        "long": "04",
+        "short": "4",
+        "ordinal": "th"
+      }
+    },
+    {
+      "headline" : {
+        "medium" : "The 2020 Initiative: A Path to Academic Excellence and Economic Opportunity"
+      },
+      "location": null,
+      "time": "TBA",
+      "year": {
+        "long": "2015",
+        "short": "15"
+      },
+      "month": {
+        "long": "September",
+        "short": "Sep",
+        "digit": "09"
+      },
+      "dayofweek": {
+        "long": "Saturday",
+        "short": "Sat"
+      },
+      "day": {
+        "long": "12",
+        "short": "12",
+        "ordinal": "th"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+// Block Hero
+.featured-headline {
+  @include clearfix();
+
+  margin-bottom: $spacing-unit * 2;
+  box-shadow: 0 1px 3px $ucd-blue-30;
+  transition: background .2s ease-in-out;
+
+  &:hover {
+    background: $ucd-gold-10;
+  }
+
+  @include breakpoint($bp-medium--up, true) {
+    margin-bottom: 0;
+    box-shadow: none;
+  }
+
+  &__thumb {
+    margin-bottom: $spacing-unit;
+  }
+
+  &__title {
+    @include font-size(28px, 30px);
+
+    margin: 0 $spacing-unit--small $spacing-unit--tiny;
+    color: $ucd-blue;
+    font-weight: $font-weight--bold;
+  }
+
+  &__sub-title {
+    margin: 0 $spacing-unit--small $spacing-unit * .8 $spacing-unit--small;
+    color: $ucd-gold;
+    font-style: normal;
+
+    @include breakpoint($bp-medium--up, true) {
+      margin: 0 $spacing-unit--small $spacing-unit--small;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}

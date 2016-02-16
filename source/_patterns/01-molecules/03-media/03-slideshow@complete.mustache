@@ -1,0 +1,28 @@
+{{# slideshow }}
+  <div class="slideshow">
+    {{# slides }}
+      <div class="slideshow__item">
+        {{> atoms-slideshow }}
+        <div class="slideshow__text">
+          {{# slide-title }}
+            <div class="slideshow__title">
+              <span class="slideshow__knockout">{{ first-word }}</span> {{ remaining }}
+            </div>
+          {{/ slide-title }}
+          {{# caption }}
+            <div class="slideshow__caption">{{{ caption }}}</div>
+          {{/ caption }}
+        </div>
+      </div>
+    {{/ slides }}
+  </div>
+  {{# has-thumbnails }}
+    <div class="slider-nav" role="toolbar">
+      {{# thumb-slides }}
+        <div class="slideshow__item">
+          {{> atoms-slideshow-thumbnail }}
+        </div>
+      {{/ thumb-slides }}
+    </div>
+  {{/ has-thumbnails }}
+{{/ slideshow }}

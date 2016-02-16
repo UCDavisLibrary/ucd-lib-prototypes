@@ -1,0 +1,592 @@
+{
+  "title" : "Page Title",
+  "htmlClass": "pl",
+  "bodyClass": "body",
+  "logo": {
+    "white": "../../images/uc-logo-white.svg",
+    "blue": "../../images/uc-logo-blue.svg",
+    "gold": "../../images/uc-logo-gold.svg"
+  },
+  "img": {
+    "landscape-4x3": {
+      "src": "../../images/fpo_4x3.png",
+      "alt": "4x3 Image"
+    },
+    "landscape-16x9": {
+      "src": "../../images/fpo_16x9.png",
+      "alt": "16x9 Image"
+    },
+    "square": {
+      "src": "../../images/fpo_square.png",
+      "alt": "Square Thumbnail"
+    },
+    "avatar" : {
+      "src" : "../../images/fpo_avatar.png",
+      "alt" : "Person Name"
+    },
+    "thumbnail": {
+      "src": "http://placehold.it/135x135",
+      "alt": "Thumbnail"
+    },
+    "thumbnail-highlight": {
+      "src": "http://placehold.it/135x250",
+      "alt": "Thumbnail Highlight"
+    },
+    "thumbnail-horizontal": {
+      "src": "http://placehold.it/500x188",
+      "alt": "Thumbnail Horizontal"
+    },
+    "featured": {
+      "src": "http://placehold.it/500x375",
+      "alt": "Featured Image"
+    },
+    "hero": {
+      "src": "http://placehold.it/2000x770",
+      "alt": "Featured Hero Image"
+    },
+    "slideshow": {
+      "src": "http://placehold.it/1000x563",
+      "lazy": "http://placehold.it/1000x563",
+      "alt": "Slideshow Image"
+    },
+    "slideshow-thumbnail": {
+      "src": "http://placehold.it/320x180",
+      "lazy": "http://placehold.it/320x180",
+      "alt": "Slideshow Thumbnail Image"
+    },
+    "title-banner": {
+      "src": "http://placehold.it/2000x460",
+      "alt": "Title Banner"
+    },
+    "focus": {
+      "src": "http://placehold.it/1000x380",
+      "alt": "Focus Image"
+    },
+    "profile-image": {
+      "src": "http://placehold.it/520x580",
+      "alt": "Profile Highlight Image"
+    }
+  },
+  "hero-banner" : {
+    "video-src": "https://player.vimeo.com/external/143768429.hd.mp4?s=7bdeb2e2e7c9a9e424bf0fd48039d230&profile_id=119",
+    "show-image": false,
+    "btn-video": false,
+    "top-text": "dolor sit (25 characters)",
+    "bottom-text": "Lorem ipsum (27 characters)"
+  },
+  "headline" : {
+    "short" : "Lorem ipsum dolor sit (37 characters)",
+    "medium" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. (72 characters)"
+  },
+  "excerpt" : {
+    "short" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+    "medium" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "long" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "description" : "So, setting about it as methodically as men might smoke out a wasps' nest, the Martians spread this strange stifling vapour over the Londonward country. The horns of the crescent slowly moved apart, until at last they formed a line from Hanwell to Coombe and Malden. All night through their destructive tubes advanced.",
+  "location" : "Location for the event",
+  "url" : "#",
+  "figcaption": "This is some caption text for an image",
+  "name" : {
+    "first": "Lacy",
+    "firsti": "L",
+    "middle": "Tommie",
+    "middlei": "T",
+    "last": "Way",
+    "lasti": "W"
+  },
+  "year" : {
+    "long": "2015",
+    "short": "13"
+  },
+  "month" : {
+    "long": "February",
+    "short": "Feb",
+    "digit": "2"
+  },
+  "dayofweek" : {
+    "long": "Monday",
+    "short": "Mon"
+  },
+  "day" : {
+    "long": "10",
+    "short": "10",
+    "ordinal": "th"
+  },
+  "hour" : {
+    "long": "01",
+    "short": "1",
+    "military": "13",
+    "ampm": "pm"
+  },
+  "minute" : {
+    "long": "20",
+    "short": "20"
+  },
+  "seconds" : "31",
+  "author" : {
+    "first-name": "Author",
+    "last-name": "Name"
+  },
+  "tags": [
+    { "tag-label" : "Divine Diva" },
+    { "tag-label" : "Media Maven" },
+    { "tag-label" : "Fabulous Fan" }
+  ],
+  "brand-class": "category-brand--ucdadmin",
+  "hero": true,
+  "emergency" : false,
+  "action-text" : "This is a Call to Action link",
+  "video-id": "nZZDAzErkIU",
+  "video-width": "853",
+  "video-height": "480",
+  "wysiwyg-feature-block": {
+    "title": "Title for the wysiwyg-feature-block",
+    "text": "Sed vehicula metus tellus, ut scelerisque justo posuere eget. Suspendisse eu feugiat nibh.</a>."
+  },
+  "slideshow" : [
+    {
+      "slides" : [
+        {
+          "slide-title": {
+            "first-word": "slide",
+            "remaining": "title"
+          },
+          "caption": "Look at me I'm a caption."
+        },
+        {
+          "caption": "I am also a caption."
+        },
+        {},
+        {},
+        {}
+      ],
+      "has-thumbnails": false,
+      "thumb-slides" : [
+        {},
+        {},
+        {},
+        {},
+        {}
+      ]
+    }
+  ],
+  "gallery" : [
+    {
+      "img": {
+        "full": {
+          "src": "../../images/fpo_16x9.png",
+          "alt": "Alt text one",
+          "width": "1280",
+          "height": "720"
+        },
+        "thumb": {
+          "src": "../../images/fpo_16x9.png",
+          "alt": "16x9 Image"
+        }
+      },
+      "caption": "Look at me I'm a caption."
+    },
+    {
+      "img": {
+        "full": {
+          "src": "../../images/fpo_16x9.png",
+          "alt": "Alt text two",
+          "width": "1280",
+          "height": "720"
+        },
+        "thumb": {
+          "src": "../../images/fpo_16x9.png",
+          "alt": "16x9 Image"
+        }
+      },
+      "caption": "I Also, am a caption."
+    },
+    {
+      "img": {
+        "full": {
+          "src": "../../images/fpo_16x9.png",
+          "alt": "Alt text three",
+          "width": "1280",
+          "height": "720"
+        },
+        "thumb": {
+          "src": "../../images/fpo_16x9.png",
+          "alt": "16x9 Image"
+        }
+      },
+      "caption": false
+    },
+    {
+      "img": {
+        "full": {
+          "src": "../../images/fpo_16x9.png",
+          "alt": "Alt text three",
+          "width": "1280",
+          "height": "720"
+        },
+        "thumb": {
+          "src": "../../images/fpo_16x9.png",
+          "alt": "16x9 Image"
+        }
+      },
+      "caption": false
+    },
+    {
+      "img": {
+        "full": {
+          "src": "../../images/fpo_16x9.png",
+          "alt": "Alt text three",
+          "width": "1280",
+          "height": "720"
+        },
+        "thumb": {
+          "src": "../../images/fpo_16x9.png",
+          "alt": "16x9 Image"
+        }
+      },
+      "caption": false
+    },
+    {
+      "img": {
+        "full": {
+          "src": "../../images/fpo_16x9.png",
+          "alt": "Alt text three",
+          "width": "1280",
+          "height": "720"
+        },
+        "thumb": {
+          "src": "../../images/fpo_16x9.png",
+          "alt": "16x9 Image"
+        }
+      },
+      "caption": false
+    },
+    {
+      "img": {
+        "full": {
+          "src": "../../images/fpo_16x9.png",
+          "alt": "Alt text three",
+          "width": "1280",
+          "height": "720"
+        },
+        "thumb": {
+          "src": "../../images/fpo_16x9.png",
+          "alt": "16x9 Image"
+        }
+      },
+      "caption": false
+    }
+  ],
+  "achievement-badges" : [
+    {
+      "img": {
+        "square": {
+          "src": "../../images/sample/badge-university.png",
+          "alt": "ranked 11th nationally for public universities"
+        }
+      },
+      "action-text": "Ranked 11th nationally for public universities",
+      "has-figure" : true
+    },
+    {
+      "img": {
+        "square": {
+          "src": "../../images/sample/badge-agriculture.png",
+          "alt": "ranked 1st in the world in agriculture and forestry"
+        }
+      },
+      "action-text": "Ranked 1st in the world in agriculture",
+      "has-figure" : true
+    },
+    {
+      "img": {
+        "square": {
+          "src": "../../images/sample/badge-veterinary.png",
+          "alt": "ranked 1st in the world for veterinary medicine"
+        }
+      },
+      "action-text": "Ranked 1st in the world for veterinary medicine",
+      "has-figure" : true
+    }
+  ],
+  "priority-links" : [
+    { "icon-class": "priority-links--badge",
+      "has-figure": false
+    },
+    { "icon-class": "priority-links--hat",
+      "has-figure": false
+    },
+    { "icon-class": "priority-links--dollar",
+      "has-figure": false
+    },
+    { "icon-class": "priority-links--calendar",
+      "has-figure": false
+    },
+    { "icon-class": "priority-links--people",
+      "has-figure": false
+    },
+    { "icon-class": "priority-links--check-mark",
+      "has-figure": false
+    }
+  ],
+  "focal-links" : [
+    { },
+    { },
+    { }
+  ],
+  "latest-posts" : [
+    { },
+    { },
+    { },
+    { },
+    { }
+  ],
+  "marketing-highlight" : {
+    "short-burst" : [
+      { "brand-class": "category-brand--california-poppy" },
+      { "brand-class": "category-brand--western-redbud" },
+      { "brand-class": "category-brand--wine-grape" }
+    ],
+    "long-burst" : [
+      { "brand-class": "category-brand--wine-grape" },
+      { "brand-class": "category-brand--california-poppy" },
+      { "brand-class": "category-brand--western-redbud" },
+      { "brand-class": "category-brand--sunny-grass" },
+      { "brand-class": "category-brand--sky-blue" },
+      { "brand-class": "category-brand--wine-grape" },
+      { "brand-class": "category-brand--wine-grape" },
+      { "brand-class": "category-brand--sunny-grass" },
+      { "brand-class": "category-brand--california-poppy" },
+      { "brand-class": "category-brand--western-redbud" }
+    ]
+  },
+  "profile-highlight" : [
+    {
+      "headline": {
+        "short": "Jane Doe"
+      },
+      "excerpt": {
+        "long": "<p>“Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.”</p>",
+        "medium": "<h4>Title:</h4><p>Professor, <a href=\"http://google.com/\">Parapsychology</a></p><h4>College:</h4><p><a href=\"http://google.com/\">Occult Macro Economics</a></p>"
+      },
+      "img": {
+        "profile-image": {
+          "src": "http://placehold.it/520x580",
+          "alt": "Profile Highlight Image"
+        }
+      },
+      "video-url" : "https://youtu.be/57s5erPfFhU"
+    },
+    { },
+    { },
+    { },
+    { }
+  ],
+  "marketing-highlight-featured" : {
+    "short-burst" : [
+      {
+        "brand-class" : "category-brand--california-poppy",
+        "highlight-label" : "Lorem Ipsum",
+        "cta-text": "Lorem Ipsum Dolar"
+      },
+      {
+        "brand-class" : "category-brand--western-redbud",
+        "highlight-label" : "Lorem Ipsum",
+        "cta-text" : "Lorem Ipsum Dolar",
+        "excerpt" : {
+          "short" : ""
+        }
+      }
+    ]
+  },
+  "spotlight-article": {
+    "url": "",
+    "callout": "5",
+    "headline": "Lorem ipsum dolor sit (37 characters)",
+    "img": {
+      "landscape-4x3": {
+        "src": "../../images/fpo_4x3.png",
+        "alt": "Alt text"
+      }
+    }
+  },
+  "research-news": [
+    { },
+    { },
+    { }
+  ],
+  "tag-list": [
+    { "link-title": "tag 1" },
+    { "link-title": "tag 2" },
+    { "link-title": "tag 3" },
+    { "link-title": "tag 4" },
+    { "link-title": "tag 5" },
+    { "link-title": "tag 6" },
+    { "link-title": "tag 7" }
+  ],
+  "latest-news": [
+    { },
+    { },
+    { }
+  ],
+  "latest-news-2": [
+    { },
+    { },
+    { }
+  ],
+  "in-the-news": [
+    { },
+    { },
+    { }
+  ],
+  "campus-events": [
+    { },
+    { }
+  ],
+  "campus-blogs": [
+    { },
+    { }
+  ],
+  "headline-stack": [
+    {},
+    {},
+    {}
+  ],
+  "quick-summary": [
+    { },
+    { },
+    { }
+  ],
+  "media-list": [
+    { },
+    { },
+    { }
+  ],
+  "articles-associated": [
+    { },
+    { },
+    { }
+  ],
+  "category" : {
+    "primary": "Snozzberries",
+    "secondary": "Gobstopper"
+  },
+  "stories-related": [
+    {},
+    {},
+    {}
+  ],
+  "stories-top": [
+    {},
+    {},
+    {}
+  ],
+  "listItems-events": [
+    {},
+    {},
+    {}
+  ],
+  "listItems-blog": [
+    {},
+    {},
+    {}
+  ],
+  "listItems-news": [
+    {},
+    {},
+    {}
+  ],
+  "listItems-athletics": [
+    {},
+    {},
+    {}
+  ],
+  "listItems-initiatives": [
+    {},
+    {},
+    {}
+  ],
+  "initiatives": [
+    {},
+    {},
+    {}
+  ],
+  "cat-filter": {
+    "cat-filter-list": [
+      {
+        "cat-filter-brand-color": "category-brand--unitrans-red",
+        "is-active-link": true,
+        "cat-filter-text": "Lorem Ipsum Dolar Sit"
+      },
+      {
+        "cat-filter-brand-color": "category-brand--western-redbud",
+        "is-active-link": false,
+        "cat-filter-text": "Lorem Ipsum"
+      },
+      {
+        "cat-filter-brand-color": "category-brand--wine-grape",
+        "is-active-link": false,
+        "cat-filter-text": "Lorem Ipsum"
+      },
+      {
+        "cat-filter-brand-color": "category-brand--sunny-grass",
+        "is-active-link": false,
+        "cat-filter-text": "Lorem Ipsum"
+      },
+      {
+        "cat-filter-brand-color": "category-brand--sky-blue",
+        "is-active-link": false,
+        "cat-filter-text": "Lorem Ipsum"
+      },
+      {
+        "cat-filter-brand-color": "category-brand--western-redbud",
+        "is-active-link": false,
+        "cat-filter-text": "Lorem Ipsum"
+      },
+      {
+        "cat-filter-brand-color": "category-brand--california-poppy",
+        "is-active-link": false,
+        "cat-filter-text": "Lorem Ipsum"
+      }
+    ]
+  },
+  "placeholder" : "Search News",
+  "text-input-text": "Input Title",
+  "text-input-placeholder" : "Enter Text...",
+  "is-admin-drag-table" : [
+    {
+      "listRows" : [
+        {
+          "is-indented" : false,
+          "row-title" : "Row Title",
+          "action-one" : "action 1",
+          "action-two" : "action 2"
+        },
+        {
+          "is-indented" : true,
+          "listRow-classes" : "drag-previous",
+          "row-title" : "Drag Previous",
+          "action-one" : "action 1",
+          "action-two" : "action 2"
+        },
+        {
+          "is-indented" : false,
+          "row-title" : "Row Title",
+          "action-one" : "action 1",
+          "action-two" : "action 2"
+        },
+        {
+          "is-indented" : true,
+          "listRow-classes" : "drag",
+          "row-title" : "Drag Active",
+          "action-one" : "action 1",
+          "action-two" : "action 2"
+        }
+      ]
+    }
+  ],
+  "focus-box-title" : "Focus Box Title",
+  "focus-box-text" : "Lorem ipsum dolar sit amet.",
+  "has-figure" : true
+}

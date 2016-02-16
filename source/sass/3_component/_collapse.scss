@@ -1,0 +1,68 @@
+// Collapse (Like accordion but only affects the current section)
+.collapse {
+
+  &__title {
+    @include font-size($font-size--large);
+    position: relative;
+    color: $ucd-blue;
+    background-color: $sky-blue;
+    padding: $spacing-unit * 1.7 $spacing-unit * 4 $spacing-unit * 1.7 $spacing-unit * 1.5;
+    cursor: pointer;
+    margin-bottom: 0;
+
+    @include breakpoint($bp-small--up) {
+      @include font-size(25px, 36px);
+    }
+
+    &:after {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      height: 30px;
+      width: 30px;
+      content: "";
+      background: url(../images/plus.svg) no-repeat 0 0;
+      background-size: cover;
+      transform: translateY(-50%) rotate(0deg);
+      transition: all .4s ease-in;
+
+      @include breakpoint($bp-small--down) {
+        transform: scale(.75, .75) translateY(-90%) rotate(0deg);
+      }
+
+      .no-svg & {
+        background-image: url(../images/plus.png);
+      }
+    }
+
+    &--open:after {
+      transform: translateY(-50%) rotate(135deg);
+      transform-origin: 50% 50%;
+
+      @include breakpoint($bp-small--down) {
+        transform: scale(.75, .75) translateY(-90%) rotate(135deg);
+      }
+    }
+  }
+
+  // Hiding of this content will be done in markup with a .is-hidden--visually
+  // class so that it can be removed by javascript. This is done for accessibility
+  // reasons so that the content is not actually hidden.
+  &__content {
+    background-color: $gray-lighter;
+    padding: $spacing-unit * 2.75;
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: $spacing-unit / 2;
+
+      a {
+        font-weight: normal;
+      }
+    }
+  }
+}

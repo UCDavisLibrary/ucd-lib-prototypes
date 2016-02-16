@@ -1,0 +1,80 @@
+// Featured (view mode)
+.vm-featured {
+  @include box-wrapper-negative-overflow($spacing-unit * 1.5);
+  padding: 0;
+  background-color: $western-redbud;
+  color: $white;
+  transition: background .2s ease-in-out;
+
+  @include breakpoint($bp-narrow--up) {
+    margin-top: $spacing-unit * 1.5;
+    margin-bottom: $spacing-unit * 1.5;
+  }
+
+  &:hover {
+    background-color: darken($western-redbud, 3%);
+    color: $white;
+    text-decoration: none;
+  }
+
+  &__figure {
+    margin-right: $spacing-unit--small;
+    max-width: 28%;
+
+    @include breakpoint($bp-small--up) {
+      margin-right: $spacing-unit;
+      max-width: 25%;
+    }
+  }
+
+  &__body {
+    padding: $spacing-unit--small $spacing-unit--small $spacing-unit 0;
+
+    @include breakpoint($bp-narrow--up) {
+      padding: $spacing-unit * 1.5 $spacing-unit $spacing-unit * 1.5 0;
+    }
+  }
+
+  &__title {
+    @include font-size($font-size--base, 1.1);
+    color: $white;
+    font-weight: $font-weight--bold;
+
+    @include breakpoint($bp-narrow--up) {
+      @include font-size($font-size--large, $line-height-base);
+    }
+  }
+
+  &__byline {
+    margin-bottom: $spacing-unit--tiny;
+    @include breakpoint($bp-narrow--up) {
+      margin-bottom: $spacing-unit;
+    }
+
+    span {
+      @include font-size($font-size--small - 2, 1);
+      border-right: 1px solid $white;
+      padding-right: $spacing-unit--small;
+      margin-right: $spacing-unit--tiny;
+      color: $white;
+
+      @include breakpoint($bp-narrow--up) {
+        @include font-size($font-size--base, 1.1);
+      }
+
+      &:last-child {
+        border-right: 0;
+        padding-right: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__summary {
+    @include font-size($font-size--small, 1.1);
+
+    @include breakpoint($bp-narrow--up) {
+      @include font-size($font-size--base, $line-height-base);
+    }
+  }
+}

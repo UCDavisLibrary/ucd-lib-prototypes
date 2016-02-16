@@ -1,0 +1,98 @@
+// Pack object
+// adapted from Inuit CSS
+// https://github.com/inuitcss/objects.pack/blob/master/_objects.pack.scss
+
+// 1. Fill all available space.
+// 2. Cause children to be automatically equally sized.
+.pack,
+%pack {
+  width: 100%; // [1]
+  display: table;
+  table-layout: fixed; // [2]
+
+  // Use flexbox if available
+  .flexbox & {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    // Use flexbox if available
+    > *,
+    %pack__item {
+      display: block;
+      flex-basis: 0;
+      flex-grow: 1;
+      min-width: 0; // Fix for firefox - http://stackoverflow.com/questions/31967019/max-width-doesnt-work-in-flexbox
+    }
+  }
+}
+
+// Cause children to adopt table-like structure.
+.pack__item,
+%pack__item {
+  display: table-cell;
+}
+
+// Cause children to pack up into available space, but not equally sized.
+.pack--auto,
+%pack--auto {
+  table-layout: auto;
+
+  // Use flexbox if available
+  .flexbox & .pack__item {
+    flex-basis: auto;
+  }
+}
+
+// Small gutters between items.
+.pack--small,
+%pack--small {
+  border-spacing: $spacing-unit--small;
+
+  // Use flexbox if available
+  .flexbox & .pack__item {
+    padding: 0 $spacing-unit--small;
+  }
+}
+
+// Large gutters between items.
+.pack--large,
+%pack--large {
+  border-spacing: $spacing-unit--large;
+
+  // Use flexbox if available
+  .flexbox & .pack__item {
+    padding: 0 $spacing-unit--large;
+  }
+}
+
+// Reversed order packs.
+.pack--rev,
+%pack--rev {
+  direction: rtl;
+
+  > .pack__item,
+  > %pack__item {
+    direction: ltr;
+  }
+}
+
+// Remove the Pack
+@mixin pack-removal($class) {
+  .flexbox .#{$class} {
+    flex-wrap: wrap;
+  }
+
+  .no-flexbox .#{$class} {
+    display: block;
+
+    .pack__item {
+      display: block;
+    }
+  }
+
+  .flexbox .#{$class} .pack__item,
+  .flexbox .#{$class} > * {
+    flex-basis: auto;
+  }
+}

@@ -1,0 +1,30 @@
+<div class="page l-header--fixed">
+  {{> organisms-header }}
+    <div class="l-main" role="main">
+
+        <div class="page-title">
+            <h1 class="page-title__title category-brand__text--knock-out">{{ title }}</h1>
+        </div>
+
+        <div class="l-container full-width">
+          {{> molecules-breadcrumbs }}
+
+          {{# emergency }}
+            {{> molecules-alert-error }}
+          {{/ emergency }}
+
+            <div class="l-content">
+                <div class="box-wrapper">
+                    <div class="panel-pane">
+                        {{# latest-news }}
+                          {{> molecules-teaser-article }}
+                        {{/ latest-news }}
+                        {{> molecules-pagination }}
+                    </div>
+                </div><!--end .l-content-->
+            </div><!--end .l-content-->
+
+        </div>
+    </div><!--End role=main-->
+  {{> organisms-footer }}
+</div>

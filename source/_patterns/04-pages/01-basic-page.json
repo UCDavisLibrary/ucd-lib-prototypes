@@ -1,0 +1,195 @@
+{
+  "title" : "Basic Page",
+  "bodyClass": "article",
+  "tertiary-page": true,
+  "parent-page-title": "Parent Page",
+  "img": {
+    "landscape-4x3": {
+      "src": "../../images/sample/landscape-16x9-mountains.jpg",
+      "alt": "Mountains"
+    },
+    "landscape-16x9": {
+      "src": "../../images/sample/landscape-16x9-mountains.jpg",
+      "alt": "Mountains"
+    }
+  },
+  "inset-blocks" : [
+    {
+      "headline" : "This is the headline for the inset block"
+    }
+  ],
+  "latest-block" : [
+    {
+      "headline" : "This is the headline for the latest block"
+    }
+  ],
+  "breadcrumbs" : [
+    {
+      "url" : "/pattern-lab-one/public/patterns/04-pages-00-homepage/04-pages-00-homepage.html",
+      "link-title" : "UC Davis Home"
+    },
+    {
+      "url" : "",
+      "link-title" : "Parent Page"
+    },
+    {
+      "url" : "",
+      "link-title" : "Basic Page"
+    }
+  ],
+  "slideshow": [
+    {
+      "slides": [
+        {
+          "img": {
+            "slideshow": {
+              "src": "http://lorempixel.com/640/360/city/1",
+              "lazy": "http://lorempixel.com/640/360/city/1",
+              "alt": "Alt text one"
+            }
+          },
+          "slide-title" : {
+            "first-word": "Picture",
+            "remaining": "This"
+          },
+          "caption": false
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "http://lorempixel.com/640/360/city/2",
+              "lazy": "http://lorempixel.com/640/360/city/2",
+              "alt": "Alt text two"
+            }
+          },
+          "caption": "In a libero a arcu aliquam cursus. Nulla facilisi. Vestibulum a dui quis est varius porttitor ac sed nisi. Duis gravida felis ut condimentum interdum."
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "http://lorempixel.com/640/360/city/3",
+              "lazy": "http://lorempixel.com/640/360/city/3",
+              "alt": "Alt text two"
+            }
+          },
+          "caption": "Suspendisse ac arcu augue. Maecenas efficitur quam eu sapien dignissim, nec bibendum nisl euismod. Nullam sit amet tincidunt purus, nec eleifend tortor."
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "http://lorempixel.com/640/360/city/4",
+              "lazy": "http://lorempixel.com/640/360/city/4",
+              "alt": "Alt text two"
+            }
+          },
+          "caption": "Nullam sit amet tincidunt purus, nec eleifend tortor. Suspendisse ac arcu augue. Maecenas efficitur quam eu sapien dignissim, nec bibendum nisl euismod."
+        },
+        {
+          "img": {
+            "slideshow": {
+              "src": "http://lorempixel.com/640/360/city/5",
+              "lazy": "http://lorempixel.com/640/360/city/5",
+              "alt": "Alt text two"
+            }
+          },
+          "caption": "Vestibulum a dui quis est varius porttitor ac sed nisi. Duis gravida felis ut condimentum interdum. In a libero a arcu aliquam cursus. Nulla facilisi."
+        }
+      ],
+      "has-thumbnails": true,
+      "thumb-slides": [
+        {
+          "img": {
+            "slideshow-thumbnail": {
+              "src": "http://lorempixel.com/320/180/city/1",
+              "lazy": "http://lorempixel.com/320/180/city/1",
+              "alt": "Alt text one"
+            }
+          }
+        },
+        {
+          "img": {
+            "slideshow-thumbnail": {
+              "src": "http://lorempixel.com/320/180/city/2",
+              "lazy": "http://lorempixel.com/320/180/city/2",
+              "alt": "Alt text two"
+            }
+          }
+        },
+        {
+          "img": {
+            "slideshow-thumbnail": {
+              "src": "http://lorempixel.com/320/180/city/3",
+              "lazy": "http://lorempixel.com/320/180/city/3",
+              "alt": "Alt text three"
+            }
+          }
+        },
+        {
+          "img": {
+            "slideshow-thumbnail": {
+              "src": "http://lorempixel.com/320/180/city/4",
+              "lazy": "http://lorempixel.com/320/180/city/4",
+              "alt": "Alt text four"
+            }
+          }
+        },
+        {
+          "img": {
+            "slideshow-thumbnail": {
+              "src": "http://lorempixel.com/320/180/city/5",
+              "lazy": "http://lorempixel.com/320/180/city/5",
+              "alt": "Alt text five"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "media-list": [
+    {
+      "url": "",
+      "img": {
+        "thumbnail": {
+          "src": "http://placehold.it/135x135",
+          "alt": "Thumbnail"
+        }
+      },
+      "headline" : {
+        "short" : "Lorem ipsum dolor sit (37 characters)"
+      },
+      "excerpt" : {
+        "medium" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      }
+    },
+    {
+      "url": "",
+      "img": {
+        "thumbnail": {
+          "src": "http://placehold.it/135x135",
+          "alt": "Thumbnail"
+        }
+      },
+      "headline" : {
+        "short" : "Lorem ipsum dolor sit (37 characters)"
+      },
+      "excerpt" : {
+        "medium" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      }
+    },
+    {
+      "url": "",
+      "img": {
+        "thumbnail": {
+          "src": "http://placehold.it/135x135",
+          "alt": "Thumbnail"
+        }
+      },
+      "headline" : {
+        "short" : "Lorem ipsum dolor sit (37 characters)"
+      },
+      "excerpt" : {
+        "medium" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      }
+    }
+  ]
+}

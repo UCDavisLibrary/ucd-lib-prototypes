@@ -1,0 +1,95 @@
+// Panel Titles
+$panel-title-icon-size: 100px;
+
+.pane-title {
+  @include heading--pane();
+
+  // Default style for Panel Pane Titles
+  &--plain & {
+    @include heading--primary();
+  }
+
+  // intro title
+  &--intro & {
+    @include heading--underline();
+  }
+
+  // intro title
+  &--weighted-underline & {
+    @include heading--weighted-underline();
+  }
+
+  // Auxilary title
+  &--auxilary & {
+    @include heading--auxiliary();
+  }
+
+  // Title with Icon
+  &--icon & {
+    height: $panel-title-icon-size;
+    padding: ($spacing-unit * 1.5) 0 0 60px;
+    background-image: url("../images/title-icons.svg");
+    background-repeat: no-repeat;
+
+    .no-svg & {
+      background-image: url("../images/title-icons.png");
+    }
+  }
+
+  // Fix margins when a .box class is attached or above
+  &--icon {
+    &.box .pane-title,
+    .box & .pane-title {
+      margin-top: -$fixed-spacing-unit;
+      margin-left: -$fixed-spacing-unit;
+    }
+
+    &.box--small .pane-title,
+    .box--small & .pane-title {
+      margin-top: -$fixed-spacing-unit--small;
+      margin-left: -$fixed-spacing-unit--small;
+    }
+
+    &.box--large .pane-title,
+    .box--large & .pane-title {
+      margin-top: -$fixed-spacing-unit--large;
+      margin-left: -$fixed-spacing-unit--large;
+    }
+  }
+
+  &--flask & {
+    background-position: 0 0;
+  }
+
+  &--bullhorn & {
+    background-position: 0 (-$panel-title-icon-size);
+  }
+
+  &--feed & {
+    background-position: 0 (-$panel-title-icon-size * 2);
+  }
+
+  &--twitter & {
+    background-position: 0 (-$panel-title-icon-size * 3);
+  }
+
+  &--mustang & {
+    background-position: 0 (-$panel-title-icon-size * 4);
+  }
+
+  &--line-chart & {
+    background-position: 0 (-$panel-title-icon-size * 5);
+  }
+
+  &--instagram & {
+    background-position: 0 (-$panel-title-icon-size * 6);
+  }
+
+  &--initiatives & {
+    background-position: 0 (-$panel-title-icon-size * 7);
+  }
+
+  &--alerts & {
+    background-position: 0 (-$panel-title-icon-size * 8);
+  }
+}

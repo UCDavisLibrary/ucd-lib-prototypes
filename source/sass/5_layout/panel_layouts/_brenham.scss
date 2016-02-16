@@ -1,0 +1,41 @@
+// Mimics the Panels layout called Brenham Flipped
+.brenham {
+  .l-content {
+
+    @include breakpoint($bp-medium--up, true) {
+      @include grid-span(2, 2);
+    }
+
+    &--sm-width {
+
+      @include breakpoint($bp-small--up) {
+        width: 30%;
+        margin-right: 5%;
+        float: left;
+
+        &:nth-child(3n + 4) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &--med-width {
+
+      @include breakpoint($bp-small--up) {
+        width: 47.5%;
+        margin-right: 5%;
+        float: left;
+
+        &:nth-child(odd) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .l-sidebar-first {
+    @include breakpoint($bp-medium--up, true) {
+      @include grid-span(1, 1);
+    }
+  }
+}

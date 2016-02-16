@@ -1,0 +1,39 @@
+// Pagination
+.pager {
+  width: inherit;
+  list-style: none;
+  margin: $spacing-unit 0;
+  padding: 0;
+
+  &__item {
+    float: left;
+    margin: $spacing-unit--tiny $spacing-unit--small $spacing-unit--tiny 0;
+
+    // Theme links and static text the same
+    a,
+    &--static {
+      display: block;
+      padding: $spacing-unit--small $spacing-unit;
+      background: $ucd-blue-20;
+      color: $ucd-blue;
+      transition: all .2s ease-in-out;
+    }
+
+    a:hover {
+      background: $ucd-blue-80;
+      color: $white;
+      text-decoration: none;
+    }
+
+    // Allow the current item to have a link or just static text
+    &--current,
+    &--current a {
+      background: $ucd-blue-80;
+      color: $white;
+
+      &:hover {
+        background: $ucd-blue-90;
+      }
+    }
+  }
+}

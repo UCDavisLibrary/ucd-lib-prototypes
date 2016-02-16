@@ -1,0 +1,23 @@
+<div class="profile-highlight {{ brand-class }} {{ styleModifier }}">
+  <div class="profile-highlight__image">
+    <a href="{{ video-url }}" title="">{{> atoms-profile-image }}</a>
+  </div>
+  <div class="profile-highlight__body">
+    <h3 class="profile-highlight__title category-brand__text">{{ headline.short }}</h3>
+    <ul class="profile-highlight__tags">
+      {{# tags }}
+        <li>{{ tag-label }}</li>
+      {{/tags}}
+    </ul>
+    <div class="profile-highlight__content">
+      <div class="profile-highlight__frontside">
+        {{{ excerpt.long }}}
+        <span class="profile-highlight__cta category-brand__arrow category-brand__arrow--left">Details</span>
+      </div>
+      <div class="profile-highlight__flipside">
+        {{{ excerpt.medium }}}
+        <span class="profile-highlight__cta category-brand__arrow category-brand__arrow--right">Back</span>
+      </div>
+    </div>
+  </div>
+</div>

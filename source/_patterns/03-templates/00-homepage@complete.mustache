@@ -1,0 +1,69 @@
+<div class="page l-header--fixed">
+  {{> organisms-header }}
+  <div class="l-main brenham" role="main">
+
+    <div class="panel-pane panel-pane--flush">
+      {{# hero-banner }}
+        {{> organisms-hero-banner}}
+      {{/ hero-banner }}
+    </div>
+
+    <div class="panel-pane">
+      <div class="l-container">
+        {{> organisms-priority-links }}
+      </div>
+    </div>
+
+    <div class="l-container">
+
+      {{# emergency }}
+        {{> molecules-alert-error }}
+      {{/ emergency }}
+
+      <div class="l-content">
+        <div class="panel-pane">
+          {{> molecules-spotlight-article:category-brand--western-redbud }}
+        </div>
+        <div class="panel-pane bg-transparent">
+          {{> organisms-achievements }}
+        </div>
+        <div class="panel-pane">
+          {{> molecules-slideshow }}
+        </div>
+        {{# marketing-highlight-featured.short-burst }}
+          <div class="panel-pane l-sibling-grid--half">
+            {{> molecules-marketing-highlight:marketing-highlight--featured }}
+          </div>
+        {{/ marketing-highlight-featured.short-burst }}
+        <div class="panel-pane">
+          {{> molecules-video-youtube(video-id: "nZZDAzErkIU", video-width: "853", video-height: "480") }}
+        </div>
+        <div class="panel-pane bg-transparent">
+          {{> molecules-social-follow }}
+        </div>
+      </div><!--end .l-content-->
+
+      <div class="l-sidebar-first">
+        <div class="panel-pane box">
+          {{> organisms-trending }}
+        </div>
+        <div class="panel-pane box">
+          {{> organisms-events }}
+        </div>
+        <div class="panel-pane box">
+          {{> organisms-davis-athletics }}
+        </div>
+        <div class="panel-pane box">
+          {{> organisms-student-blog }}
+        </div>
+        {{# focal-links }}
+          <div class="panel-pane">
+            {{> molecules-focal-link }}
+          </div>
+        {{/ focal-links }}
+      </div><!--end .l-sidebar-first-->
+
+    </div>
+  </div><!--End role=main-->
+  {{> organisms-footer }}
+</div>

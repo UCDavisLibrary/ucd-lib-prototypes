@@ -1,0 +1,24 @@
+// Achievement Badges
+.quick-summary {
+  border: 1px solid $gray-lighter;
+  padding: 0;
+  background: $white;
+
+  &__title {
+    @include font-size($font-size--base + 2);
+    display: block;
+    padding: $spacing-unit;
+    background: $gray-lighter;
+    font-weight: $font-weight--bold;
+  }
+
+  &__list {
+    margin: 0;
+    padding: $spacing-unit;
+
+    li {
+      margin: 0 0 $spacing-unit;
+      font-weight: $font-weight--bold;
+    }
+  }
+}

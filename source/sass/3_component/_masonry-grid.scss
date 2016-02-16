@@ -1,0 +1,50 @@
+// Masonry Grids javascript plugin
+.mason-grid {
+
+  &__item {
+    float: left;
+
+    .lt-ie9 & {
+      clear: none;
+      margin-right: 2%;
+    }
+  }
+
+  &__item,
+  &__sizer {
+    width: 100%;
+
+    @include breakpoint($bp-small--up) {
+      width: 48.0625%;
+    }
+
+    @include breakpoint($bp-narrow--up, true) {
+      width: 30.75%;
+    }
+  }
+
+  &__gutter {
+
+    @include breakpoint($bp-small--up, true) {
+      width: 3.875%;
+    }
+  }
+
+  &__item--width2 {
+    width: 100%;
+    display: block;
+
+    @include breakpoint($bp-small--up) {
+      width: 48.0625%;
+    }
+
+    @include breakpoint($bp-narrow--up, true) {
+      width: 65.5%;
+    }
+  }
+
+  &__item--width3 {
+    width: 100%;
+    display: block;
+  }
+}

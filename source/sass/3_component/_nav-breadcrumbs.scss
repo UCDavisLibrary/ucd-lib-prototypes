@@ -1,0 +1,28 @@
+.breadcrumbs {
+  margin-bottom: $spacing-unit * 1.75;
+  padding-left: 0;
+  color: $ucd-blue-60;
+
+  li {
+    display: inline-block;
+    font-style: italic;
+
+    &:not(:last-child):after {
+      padding: 0 $spacing-unit--tiny;
+      content: " >";
+      color: $ucd-blue;
+    }
+
+    a {
+      color: $ucd-blue;
+    }
+
+    &:last-child a {
+      color: $ucd-blue-60;
+    }
+  }
+
+  &--space-above {
+    margin-top: $spacing-unit * 1.5;
+  }
+}

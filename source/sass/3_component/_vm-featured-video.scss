@@ -1,0 +1,61 @@
+// featured video
+.vm-featured-video {
+  @include box-wrapper-negative-overflow($spacing-unit * 1.5);
+
+  & .responsive-iframe {
+    margin: 0;
+  }
+
+  &__body {
+    display: block;
+    position: relative;
+    background-color: $rec-pool-blue;
+    padding: $spacing-unit--small;
+
+    @include breakpoint($bp-narrow--up) {
+      padding: $spacing-unit * 2;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__title {
+    @include font-size($font-size--base, 1.1);
+    font-weight: $font-weight--bold;
+    color: $white;
+
+    @include breakpoint($bp-narrow--up) {
+      @include font-size($font-size--large, $line-height-base);
+    }
+  }
+
+  &__meta {
+
+    span {
+      @include font-size($font-size--small - 2, 1);
+      display: inline-block;
+      border-right: 1px solid $white;
+      padding-right: $spacing-unit--small;
+      margin-right: $spacing-unit--tiny;
+
+      @include breakpoint($bp-narrow--up) {
+        @include font-size($font-size--base, 1.1);
+      }
+
+      &:last-child {
+        border-right: 0;
+        padding-right: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__meta,
+  & .byline,
+  &__meta span,
+  a {
+    color: $white;
+  }
+}

@@ -1,0 +1,139 @@
+// Branding colors for Taxonomy Categories
+$category-brand-bg-offset: -23px;
+
+//@each $item in $category-brand--list {
+@for $i from 1 through length($category-brands) {
+  // Get the first item
+  $item:        nth($category-brands, $i);
+  // Now fetch the name and color from this first item
+  $brand-name:  nth($item, 1);
+  $brand-color: nth($item, 2);
+
+  // Generic color classes
+  .#{$brand-name} {
+    color: $brand-color;
+  }
+
+  // Brand wrapper
+  .category-brand--#{$brand-name} {
+
+    .category-brand__text {
+      color: $brand-color;
+
+      &--knock-out {
+        color: $white;
+        background-color: $brand-color;
+      }
+
+      &:after {
+        background-color: $brand-color;
+      }
+    }
+
+    .page-title__title:after {
+      border-top-color: $brand-color;
+    }
+
+    .category-brand__background,
+    &.category-brand__background {
+      background-color: $brand-color;
+    }
+
+    .category-brand__background--darken:hover,
+    &.category-brand__background--darken:hover {
+      background-color: darken($brand-color, 10%);
+    }
+
+    .category-brand__background--lighten,
+    &.category-brand__background--lighten {
+      background-color: lighten($brand-color, 35%);
+    }
+
+    .category-brand__thumbnail {
+      border-color: $brand-color;
+    }
+
+    .category-brand__label {
+      color: $brand-color;
+    }
+
+    .category-brand__arrow:before {
+      // Increment for each item in the list, but first remove 1 from the count
+      // since we actually want to start from 0 instead of 1.
+      background-position: 0 ($category-brand-bg-offset * ($i - 1));
+    }
+
+    .category-brand__circle-icon:before {
+      border-color: $brand-color;
+    }
+
+    // Branding for Focus-box
+    & .focus-box {
+
+      a {
+        color: darken($brand-color, 30%);
+
+        &:hover {
+          color: darken($brand-color, 60%);
+        }
+      }
+
+      .list--link a {
+        &:hover {
+          background-color: lighten($brand-color, 50%);
+          color: inherit;
+        }
+      }
+    }
+
+    // Branded List Styling
+    & .list--link a {
+      &:hover {
+        background-color: lighten($brand-color, 45%);
+        color: inherit;
+      }
+    }
+
+    // Put this on <li>
+    .category-brand__list-link {
+
+      > a {
+        background-color: $brand-color;
+        color: $white;
+
+        &:hover {
+          background-color: lighten($brand-color, 10%);
+        }
+      }
+
+      li a {
+        background-color: lighten($brand-color, 50%);
+
+        &:hover {
+          background-color: lighten($brand-color, 40%);
+        }
+      }
+    }
+  }
+}
+
+.sub-nav .category-brand__list-link {
+  > a {
+    background-image: url("../images/chevron-white.svg");
+  }
+}
+
+.category-brand__thumbnail {
+  display: block;
+  border-left: 7px solid $ucd-blue-80;
+}
+
+// Branding for Focus-box
+.focus-box.category-brand__background ul {
+  @extend %list--flush;
+  @extend %list--white-arrow;
+}
+
+.focus-box.category-brand__background .list--link li {
+  background-image: none;
+}

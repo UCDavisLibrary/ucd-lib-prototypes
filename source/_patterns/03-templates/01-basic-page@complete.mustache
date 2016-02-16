@@ -1,0 +1,61 @@
+<div class="page l-header--fixed">
+  {{> organisms-header }}
+  <div class="l-main" role="main">
+
+    <div class="page-title">
+      <h1 class="page-title__title category-brand__text--knock-out">{{ title }}</h1>
+    </div>
+
+    <div class="l-container brenham-flipped">
+      {{> molecules-breadcrumbs }}
+
+      {{# emergency }}
+        {{> molecules-alert-error }}
+      {{/ emergency }}
+
+      <div class="l-content">
+        <div class="panel-pane box">
+          {{> molecules-social-share }}
+          <h2 class="heading--underline">{{ headline.short }}</h2>
+          <div class="align-right image-half">
+            {{> molecules-figure-with-caption }}
+          </div>
+          {{ excerpt.long }}
+          <h3>{{ headline.short }}</h3>
+          {{ excerpt.short }}
+          {{> atoms-unordered }}
+
+          {{# media-list }}
+            {{> molecules-media-link}}
+          {{/ media-list }}
+
+          <h4>{{ headline.short }}</h4>
+          {{> molecules-feature-block:align-right width-half }}
+          {{ excerpt.long }}
+        </div>
+        <div class="panel-pane">
+          {{> molecules-slideshow-thumbnails }}
+        </div>
+      </div><!--end .l-content-->
+
+      <div class="l-sidebar-second">
+        <div class="panel-pane">
+          {{> molecules-sub-nav }}
+        </div>
+        {{# focal-links }}
+          <div class="panel-pane">
+            {{> molecules-focal-link }}
+          </div>
+        {{/ focal-links }}
+        <div class="panel-pane">
+          {{> organisms-instagram-feed }}
+        </div>
+        <div class="panel-pane bg-transparent">
+          {{> molecules-social-follow-small }}
+        </div>
+      </div><!--end .l-sidebar-second-->
+
+    </div>
+  </div><!--End role=main-->
+  {{> organisms-footer }}
+</div>

@@ -1,0 +1,74 @@
+<div class="page l-header--fixed">
+  {{> organisms-header }}
+  <div class="l-main" role="main">
+
+    <div class="page-title">
+      <h1 class="page-title__title category-brand__text--knock-out">{{ title }}</h1>
+    </div>
+
+    <div class="l-container brenham-flipped">
+      {{> molecules-breadcrumbs }}
+
+      {{# emergency }}
+        {{> molecules-alert-error }}
+      {{/ emergency }}
+
+      <div class="l-content">
+        <div class="box-wrapper">
+          <div class="panel-pane body-text">
+            <h2 class="uc-underline">{{ headline.short }}</h2>
+            <div class="width-half align-right">{{> molecules-image-gallery:gallery--poster }}</div>
+            {{{ excerpt.long }}}
+            <h3>{{ page-copy.first-year.heading }}</h3>
+            {{{ page-copy.first-year.body }}}
+            {{> molecules-slideshow }}
+            <h4>{{ page-copy.video-tour.heading }}</h4>
+            {{> molecules-video-youtube:responsive-iframe--16x9(video-id: "NZPaHOy2J0c", video-width: "853", video-height: "480") }}
+            <h3>{{ page-copy.not-freshman.heading }}</h3>
+            {{{ page-copy.not-freshman.body }}}
+            <h3>{{ page-copy.car.heading }}</h3>
+            {{> molecules-feature-block:align-right width-half }}
+            {{{ page-copy.car.body }}}
+          </div>
+        </div>
+        <div class="box-wrapper body-text">
+          <div class="panel-pane">
+            <h2 class="uc-underline">{{ page-copy.food.heading }}</h2>
+            {{{ page-copy.food.body }}}
+            {{> molecules-video-youtube:responsive-iframe--16x9(video-id: "fXJ2rU8zPN8", video-width: "853", video-height: "480") }}
+          </div>
+        </div>
+        <div class="panel-pane">
+          {{> molecules-spotlight-article: category-brand--sunny-grass }}
+        </div>
+      </div><!--end .l-content-->
+
+      <div class="l-sidebar-second">
+        <div class="panel-pane">
+          <div class="sub-nav">
+            {{# tertiary-page }}
+                <h2 class="sub-nav__title"><a href="{{ url }}">{{ parent-page-title }}</a></h2>
+            {{/ tertiary-page }}
+              <ul class="menu sub-nav__body">
+                  <li><a href="{{ url }}">Campus Features</a></li>
+                  <li class="sub-nav__body--active"><a href="{{ url }}">Housing & Dining</a></li>
+                  <li><a href="{{ url }}">Clubs & Organizations</a></li>
+                  <li><a href="{{ url }}">Athletics</a></li>
+                  <li><a href="{{ url }}">Cultural Life</a></li>
+              </ul>
+          </div>
+        </div>
+        {{# focal-links }}
+          <div class="panel-pane">
+            {{> molecules-focal-link }}
+          </div>
+        {{/ focal-links }}
+        <div class="panel-pane bg-transparent">
+          {{> molecules-social-follow-small }}
+        </div>
+      </div><!--end .l-sidebar-second-->
+
+    </div>
+  </div><!--End role=main-->
+  {{> organisms-footer }}
+</div>
