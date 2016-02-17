@@ -34,11 +34,11 @@ $font-size-large : 1.4375em;
 $max-width: 72em;
 
 //Defaults
-$base-spacing-unit: 1em;
-$space-and-half : $base-spacing-unit*1.5;
-$space-double : $base-spacing-unit*2;
-$space-quad : $base-spacing-unit*4;
-$space-half : $base-spacing-unit/2;
+$space : 1em;
+$space-and-half : $space*1.5;
+$space-double : $space*2;
+$space-quad : $space*4;
+$space-half : $space/2;
 $pad : 1em;
 $pad-and-half : $pad*1.5;
 $pad-double : $pad*2;

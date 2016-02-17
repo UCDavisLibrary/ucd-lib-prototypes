@@ -1,0 +1,186 @@
+{
+	"title" : "Wine Labels Project",
+	"bodyClass": "home",
+	"caption" : "title",
+	"label-home-copy" : [
+		{
+			"headline" :  "Ready to Drink"
+		},
+		{
+			"introduction" :  "These labels tell the story of the growing wine industry in California. Many of them are meaningful windows into the fabric of both winemaking and winemakers and should be searchable in a way that accessible. Before we can create a searchable database, we need to transcribe the labels. That’s where you come in! Help us uncork a piece of history."
+		}
+	],
+	"gallery-labels" : [
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00080.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00080"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00096.JPG"
+				}
+			},
+			"wine-type" :  "Cabernet",
+			"caption" :  "Label D060.00096"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00097.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00097"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00101.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00101"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00102.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00102"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00103.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00103"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00104.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00104"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00105.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00105"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00106.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00106"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00107.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00107"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00108.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00108"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00109.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00109"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00110.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00110"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00111.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00111"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00112.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00112"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00113.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00113"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00114.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00114"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00115.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00115"
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00116.JPG"
+				}
+			},
+			"wine-type" :  "Riesling",
+			"caption" :  "Label D060.00116"
+		}
+	]
+}

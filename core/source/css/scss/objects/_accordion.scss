@@ -1,5 +1,5 @@
 .accordion {
-	margin-bottom: $spacing-unit;
+	margin-bottom: $space;
 }
 
 .acc-handle {
@@ -9,7 +9,7 @@
 	font-weight: bold;
 	display: block;
 	position: relative;
-	padding: $spacing-unit--small;
+	padding: $pad-half;
 	border-bottom: 1px solid $gray-light-3;
 
 	&:after {

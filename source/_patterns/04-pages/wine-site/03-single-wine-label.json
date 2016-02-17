@@ -1,0 +1,30 @@
+{
+	"title" : "About the Amerine Wine Labels Project",
+	"bodyClass": "article",
+	"img": {
+		"landscape-16x9": {
+			"src": "../../images/labels/label-big.jpg",
+			"alt": ""
+		}
+	},
+	"gallery-labels" : [
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00101.JPG"
+				}
+			},
+			"wine-type" :  "Back of Card",
+			"caption" :  ""
+		},
+		{
+			"img": {
+				"landscape-4x3": {
+					"src": "../../images/labels/D060.00102.JPG"
+				}
+			},
+			"wine-type" :  "Neck Label",
+			"caption" :  ""
+		}
+	]
+}

@@ -1,7 +1,8 @@
 {
-	"title" : "Pattern Lab",
+	"title" : "UC Davis Library Pattern Lab",
 	"htmlClass": "pl",
 	"bodyClass": "body",
+	"caption" : "title",
 	"img": {
 		"landscape-4x3": {
 			"src": "../../images/fpo_4x3.png",

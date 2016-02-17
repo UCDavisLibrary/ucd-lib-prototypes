@@ -1,12 +1,12 @@
 .comments {
 	li {
-		margin-bottom: $spacing-unit;
+		margin-bottom: $space;
 	}
 }
 
 .comment-container {
 	overflow: hidden;
-	margin-bottom: $spacing-unit;
+	margin-bottom: $space;
 	list-style: none;
 }
 
@@ -17,12 +17,12 @@
 	img {
 		display: block;
 		border: 1px solid $gray-light-2;
-		margin-bottom: $spacing-unit--small;
+		margin-bottom: $space-half;
 	}
 }
 
 .comment-name {
-	font-size: $font-size--small;
+	font-size: $font-size-small;
 }
 
 .comment-text {

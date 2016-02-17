@@ -1,0 +1,39 @@
+{
+	"title" : "Top 10 Trails You Have To Hike Before You Die",
+	"bodyClass": "article",
+	"author" : {
+		"first-name" : "Amy",
+		"last-name" : "Azzarito"
+	},
+	"headline" : {
+		"medium": "Who was Maynard Amerine?"
+		},
+	"img": {
+		"landscape-4x3": {
+			"src": "../../images/sample/contratto_wine_label.jpg",
+			"alt": "Contratto Wine Label"
+		},
+		"landscape-16x9": {
+			"src": "../../images/sample/contratto_wine_label.jpg",
+			"alt": "Mountains"	
+		}
+	},
+	"inset-blocks" : [
+		{
+			"headline" : "This is the headline for the inset block"
+		}
+	],
+	"latest-block" : [
+		{
+			"headline" : "This is the headline for the latest block"
+		}
+	],
+	"article-body": [
+		{
+			"intro" : "Maynard Amerine (1911-1998) is generally considered to be the driving force behind resurrecting the post-Prohibition wine industry in California.",
+			"main-text-p-1" : "''If you did what he told you,'' said Robert Mondavi, founder of the Robert Mondavi Winery in Oakville, Calif., said of Maynard to The New York Times in 1998, ''You couldn't help but make outstanding wine. He was my mentor, and I wouldn't be where I am today if it weren't for him.''",
+			"main-text-p-2" : "In 1935, Amerine was hired by the fledgling University of California Davis’ newly formed Department of Viticulture and Enology to help establish a solid technical foundation for the California wine industry. Amerine wasn’t just interested in training future winemakers, he was driven to rectify the damage wrought by Prohibition to the wine industry in California. He authored 16 books and more than 400 articles, which not only contributed to elevating the industry in California, but impacted wine culture throughout the world. ",
+			"main-text-p-3" : "Born in San Jose, California, on October 30, 1911, Dr. Amerine was raised in the San Joaquin Valley near Modesto. In 1935, before finishing his plant physiology Ph.D. at the University of California at Berkeley, Dr. Amerine was hired as the first faculty member in the newly formed Department of Viticulture and Enology at UC Davis. He was appointed full professor in 1952 and was chair of the department from 1957 to 1962. "
+		}
+	]
+}

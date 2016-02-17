@@ -7,7 +7,7 @@
 	color: $white;
 	line-height: 1;
 	font-weight: bold;
-	padding: $spacing-unit;
+	padding: $pad;
 	border: 0;
 	text-align: center;
 	
@@ -23,11 +23,11 @@
 }
 
 .btn-small {
-	padding: $spacing-unit--small;
+	padding: $pad-half;
 }
 
 .btn-large {
-	padding: $spacing-unit--small;
+	padding: $pad-half;
 	text-transform: uppercase;
 	background: $gray;
 	font-size: 1.4rem;

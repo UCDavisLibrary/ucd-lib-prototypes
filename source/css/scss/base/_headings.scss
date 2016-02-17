@@ -1,0 +1,41 @@
+/* Headings */
+/*Further Reading: http:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/ */
+h1,
+%h1 {
+  @include heading-default();
+  @include font-size(36px);
+}
+
+h2,
+%h2 {
+  @include heading--primary();
+}
+
+h3,
+%h3 {
+  @include heading--secondary();
+}
+
+h4,
+%h4 {
+  @include heading-default();
+  @include font-size(19px);
+}
+
+h5,
+%h5 {
+  @include heading-default();
+  @include font-size(17px);
+}
+
+h6,
+%h6 {
+  @include heading-default();
+  @include font-size($font-size--base);
+}
+
+/* Subheadings */
+.subheading {
+	font-family: $font-secondary;
+	font-weight: normal;
+}

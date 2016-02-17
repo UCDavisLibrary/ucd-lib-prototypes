@@ -1,0 +1,35 @@
+<form method="post" action="{{ url }}" class="comment-form wine-transcription-form">
+	<h2>Transcribe this Label</h2>
+	<p>Help us transcribe the information on the label image by filling in the fields below:</p>
+	<fieldset>
+		<div class="field-container">
+			<label for="comment-name">Producer</label>
+			<input id="comment-name" type="text" placeholder="Name of the winery or producer" />
+		</div>
+		<div class="field-container">
+			<label for="comment-email">Varietal</label>
+			<input id="comment-email" type="text" placeholder="Predominant grape variety" />
+		</div>
+		<div class="field-container">
+			<label for="comment-url">Apellation</label>
+			<input id="comment-url" type="yext" placeholder="Region or country of origin" />
+		</div>
+		<div class="field-container">
+			<label for="comment-visual">Visual elements</label>
+			<textarea id="comment-visual" rows="5" placeholder="Items depicted on the label, e.g. grapes, other fruit, vineyards, shields, etc."></textarea>
+		</div>
+		<div class="field-container">
+			<label for="comment-additional-text">Additional text</label>
+			<textarea id="comment-additional-text" rows="5" placeholder="Minor text (not mentioned in other fields) printed on the label"></textarea>
+		</div>
+		<div class="field-container">
+			<label for="comment-annotations">Annotations</label>
+			<textarea id="comment-annotations" rows="5" placeholder="Hand-written notes on the backing sheet or label"></textarea>
+		</div>
+		<div class="field-container">
+			<label for="comment-additional-commentary">Additional commentary</label>
+			<textarea id="comment-additional-commentary" rows="5" placeholder="Any additional comments or observations that don’t fit into the above categories"></textarea>
+		</div>
+		<p><a href="#" class="btn">Submit</a></p>
+	</fieldset>
+</form>

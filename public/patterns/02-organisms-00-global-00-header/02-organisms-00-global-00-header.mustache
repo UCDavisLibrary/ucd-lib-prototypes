@@ -1,25 +1,9 @@
 &lt;!-- Begin .header --&gt;
-&lt;header class=&quot;l-header header&quot; role=&quot;banner&quot;&gt;
-  &lt;div class=&quot;header__img-bg&quot;&gt;
-    &lt;a href=&quot;#nav&quot; class=&quot;nav-toggle js-nav-toggle&quot;&gt;
-      &lt;span class=&quot;nav-toggle__icon nav-toggle__icon--menu&quot;&gt;Menu&lt;/span&gt;
-    &lt;/a&gt;
-    &lt;div class=&quot;l-container&quot;&gt;
-      {{&gt; atoms-logo:site-logo }}
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;l-navbar navbar menu--closed&quot;&gt;
-    &lt;div class=&quot;l-container--navigation off-canvas off-canvas--left&quot;&gt;
-      &lt;div class=&quot;off-canvas__container&quot;&gt;
-        &lt;div class=&quot;l-search-popup&quot;&gt;
-          {{&gt; molecules-search-popup }}
-        &lt;/div&gt;
-        {{&gt; molecules-primary-nav }}
-        &lt;div class=&quot;l-quick-links&quot;&gt;
-          {{&gt; molecules-quick-links }}
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
+&lt;header class=&quot;header cf&quot; role=&quot;banner&quot;&gt;
+	{{&gt; atoms-logo }}
+	&lt;a href=&quot;#search-form&quot; class=&quot;nav-toggle nav-toggle-search icon-search&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Search&lt;/span&gt;&lt;/a&gt;
+	&lt;a href=&quot;#nav&quot; class=&quot;nav-toggle nav-toggle-menu icon-menu&quot;&gt;&lt;span class=&quot;is-vishidden&quot;&gt;Menu&lt;/span&gt;&lt;/a&gt;
+	{{&gt; molecules-primary-nav }}
+	{{&gt; molecules-search }}
 &lt;/header&gt;
 &lt;!-- End .header --&gt;

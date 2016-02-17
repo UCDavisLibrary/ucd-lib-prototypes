@@ -1,0 +1,33 @@
+.accordion {
+	margin-bottom: $space;
+}
+
+.acc-handle {
+	background: $color__gray-dark-2;
+	color: $color__white;
+	font-family: $font-secondary;
+	font-weight: bold;
+	display: block;
+	position: relative;
+	padding: $pad-half;
+	border-bottom: 1px solid $color__gray-light-3;
+
+	&:after {
+		content:"+";
+		float: right;
+	}
+		
+	&:hover {
+		color: $color__white;
+		background: $color__gray-dark;
+
+	}
+	
+	&.active {
+		background: $color__gray-dark;
+
+		&:after {
+			content:"-";
+		}
+	}
+}

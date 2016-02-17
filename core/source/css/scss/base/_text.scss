@@ -1,6 +1,6 @@
 /* Text-Related Elements */ 
 p {
-	margin-bottom: $spacing-unit;
+	margin-bottom: $space;
 }
 
 /* Blockquote */
@@ -8,8 +8,8 @@ blockquote {
     font-style:italic;
     border-left: 1px solid $gray;
     color: $gray;
-	padding-left: $spacing-unit;
-	margin-bottom: $spacing-unit;
+	padding-left: $pad;
+	margin-bottom: $space;
 }
 
 /* Horizontal Rule */ 
@@ -17,7 +17,7 @@ hr {
 	border: 0;
     height: 2px;
     background: $gray-light-2;
-    margin: $spacing-unit--large 0;
+    margin: $space-double 0;
 }
 
 abbr {

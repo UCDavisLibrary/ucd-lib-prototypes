@@ -1,0 +1,28 @@
+&lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
+  {{&gt; organisms-wine-header }}
+	&lt;div role=&quot;main&quot;&gt;
+
+		&lt;div class=&quot;l-one-col&quot;&gt;
+			&lt;div class=&quot;l-column&quot;&gt;
+				&lt;section&gt;
+				{{# label-home-copy }}
+					{{&gt; molecules-wine-labels-intro-text }}
+				{{/ label-home-copy }}
+				&lt;/section&gt;
+				&lt;section class=&quot;section gallery&quot;&gt;
+					&lt;h2 class=&quot;section-title&quot;&gt;Browse the Labels&lt;/h2&gt;
+					{{&gt; molecules-wine-filters-form }}
+					&lt;h3&gt;Results:&lt;/h3&gt;
+					&lt;ul class=&quot;gallery-images&quot;&gt;
+						{{# gallery-labels }}
+							{{&gt; organisms-image-gallery }}
+						{{/ gallery-labels }}
+					&lt;/ul&gt;
+					{{&gt; molecules-pagination }}
+					&lt;!--button class=&quot;btn&quot;&gt;Load more&lt;/button--&gt;
+				&lt;/section&gt;
+			&lt;/div&gt;&lt;!--end .l-main--&gt;
+		&lt;/div&gt;&lt;!--end .l-two-col--&gt;
+	&lt;/div&gt;&lt;!--End role=main--&gt;
+	{{&gt; organisms-footer }}
+&lt;/div&gt;

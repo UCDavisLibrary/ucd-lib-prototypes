@@ -14,7 +14,7 @@ fieldset {
 
 label {
 	display: block;
-	padding-bottom: $spacing-unit--small;
+	padding-bottom: $space-half;
 }
 
 button, input, select, textarea {
@@ -26,7 +26,7 @@ button, input, select, textarea {
 input, textarea {
 	width: 100%;
 	border: 1px solid $gray;
-	padding: $spacing-unit--small 0.65rem;
+	padding: $pad-half 0.65rem;
 }
 
 input[type=text], input[type=search], input[type=url], input[type=number], textarea {
@@ -34,7 +34,7 @@ input[type=text], input[type=search], input[type=url], input[type=number], texta
 }
 
 button, input[type="submit"] {
-	padding: $spacing-unit--small;
+	padding: $pad-half;
 	background: $gray-dark;
 	border: 1px solid $gray;
 	cursor: pointer;
@@ -58,7 +58,7 @@ input[type="search"]::-webkit-search-decoration {
 
 //Form Field Container
 .field-container {
-	margin-bottom: $spacing-unit;
+	margin-bottom: $space;
 }
 
 .inline-form {

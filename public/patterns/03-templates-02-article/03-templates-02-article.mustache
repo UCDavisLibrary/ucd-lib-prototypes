@@ -1,58 +1,24 @@
-&lt;div class=&quot;page l-header--fixed&quot;&gt;
-  {{&gt; organisms-header }}
-    &lt;div class=&quot;l-main&quot; role=&quot;main&quot;&gt;
+&lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
+	{{&gt; organisms-wine-header }}
+	&lt;div role=&quot;main&quot;&gt;
+		&lt;div class=&quot;l-two-col&quot;&gt;
+			&lt;div class=&quot;l-main&quot;&gt;
+				&lt;article class=&quot;article&quot;&gt;
+					&lt;header class=&quot;article-header&quot;&gt;
+						{{&gt; molecules-headline }}
+						{{&gt; molecules-byline }}
+					&lt;/header&gt;
+					{{&gt; organisms-article-body }}
+				&lt;/article&gt;&lt;!--end .article--&gt;
+				{{&gt; molecules-social-share }}
+				{{&gt; organisms-comment-thread }}
+			&lt;/div&gt;&lt;!--end l-main--&gt;
 
-      &lt;div class=&quot;l-container brenham-flipped&quot;&gt;
-
-        {{&gt; molecules-breadcrumbs:breadcrumbs--space-above }}
-
-        {{# emergency }}
-          {{&gt; molecules-alert-error }}
-        {{/ emergency }}
-
-          &lt;div class=&quot;l-content&quot;&gt;
-            &lt;div class=&quot;box-wrapper&quot;&gt;
-              &lt;div class=&quot;panel-pane panel-pane--flush&quot;&gt;
-                  &lt;div class=&quot;page-title page-title--plain&quot;&gt;
-                      &lt;h1 class=&quot;page-title__title&quot;&gt;{{ title }}&lt;/h1&gt;
-                      &lt;h2 class=&quot;page-title__sub-title&quot;&gt;{{ title }}&lt;/h2&gt;
-                  &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;panel-pane panel-pane--flush&quot;&gt;
-                  &lt;div class=&quot;meta-info meta-info--pipe-seperated category-brand--california-poppy&quot;&gt;
-                      &lt;span class=&quot;meta-info__data wine-grape&quot;&gt;February 3, 2015&lt;/span&gt;
-                      &lt;span class=&quot;meta-info__data&quot;&gt;&lt;a class=&quot;category-brand__text&quot; href=&quot;{{ url }}&quot;&gt;UC Davis News&lt;/a&gt;&lt;/span&gt;
-                      &lt;span class=&quot;meta-info__data&quot;&gt;&lt;a class=&quot;sky-blue&quot; href=&quot;{{ url }}&quot;&gt;Science&lt;/a&gt;&lt;/span&gt;
-                  &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;panel-pane&quot;&gt;
-                  &lt;div class=&quot;byline&quot;&gt;
-                      &lt;span class=&quot;attribution&quot;&gt;Story {{&gt; molecules-byline }}, video and photos {{&gt; molecules-byline }}&lt;/span&gt;
-                  &lt;/div&gt;
-              &lt;/div&gt;
-              &lt;div class=&quot;panel-pane&quot;&gt;
-                {{&gt; organisms-article-body }}
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;&lt;!--end .l-content--&gt;
-
-          &lt;div class=&quot;l-sidebar-second&quot;&gt;
-              &lt;div class=&quot;panel-pane&quot;&gt;
-                {{&gt; molecules-search-form }}
-              &lt;/div&gt;
-              &lt;div class=&quot;panel-pane box&quot;&gt;
-                {{&gt; organisms-related-stories }}
-              &lt;/div&gt;
-              &lt;div class=&quot;panel-pane box&quot;&gt;
-                {{&gt; organisms-top-stories }}
-              &lt;/div&gt;
-              &lt;div class=&quot;panel-pane&quot;&gt;
-                {{&gt; organisms-facebook-activity }}
-              &lt;/div&gt;
-          &lt;/div&gt;&lt;!--end .l-sidebar-second--&gt;
-
-      &lt;/div&gt;&lt;!--End .l-container--&gt;
-
-    &lt;/div&gt;&lt;!--End role=main--&gt;
-  {{&gt; organisms-footer }}
+			&lt;div class=&quot;l-sidebar&quot;&gt;
+				{{&gt; organisms-related-posts }}
+				{{&gt; organisms-recent-tweets }}
+			&lt;/div&gt;&lt;!--end l-sidebar--&gt;
+		&lt;/div&gt;&lt;!--end l-two-col--&gt;	
+	&lt;/div&gt;&lt;!--End role=main--&gt;
+	{{&gt; organisms-footer }}
 &lt;/div&gt;

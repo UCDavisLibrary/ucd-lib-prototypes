@@ -113,13 +113,13 @@
 
 .icon-play-box {
 	display: block;
-	margin-left: $spacing-unit--large;
+	margin-left: $pad-double;
 }
 
 .icon-play-box:before {
-	padding: $spacing-unit--tiny;
+	padding: $pad-quarter;
 	background: $gray;
 	color: $white;
 	margin-left: -1.7rem;
-	margin-right: $spacing-unit--small;
+	margin-right: $pad-half;
 }

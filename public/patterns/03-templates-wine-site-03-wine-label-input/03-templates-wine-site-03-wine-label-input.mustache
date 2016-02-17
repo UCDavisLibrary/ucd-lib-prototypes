@@ -1,0 +1,41 @@
+&lt;div class=&quot;page&quot; id=&quot;page&quot;&gt;
+	{{&gt; organisms-wine-header }}
+	&lt;!--div role=&quot;main&quot;--&gt;
+		&lt;div role=&quot;main&quot;&gt;
+			&lt;article class=&quot;article&quot;&gt;
+				{{&gt; organisms-image-viewer }}
+			&lt;/article&gt;&lt;!--end .article--&gt;
+			&lt;div class=&quot;l-two-col&quot;&gt;
+				&lt;div class=&quot;l-main&quot;&gt;
+					&lt;header class=&quot;label-header&quot;&gt;
+						&lt;h2&gt;Label #32435&lt;/h2&gt;
+						&lt;h6&gt;Front of Card&lt;/h6&gt;
+					&lt;/header&gt;
+					&lt;section class=&quot;section gallery&quot;&gt;
+						&lt;ul class=&quot;gallery-images&quot;&gt;
+							{{# gallery-labels }}
+								&lt;li class=&quot;gallery-thumbnail&quot;&gt;&lt;h5&gt;&lt;a href=&quot;#&quot;&gt;
+								{{&gt; molecules-gallery-thumbnail }}
+								&lt;/a&gt;&lt;/h5&gt;&lt;/li&gt;
+							{{/ gallery-labels }}
+						&lt;/ul&gt;
+					&lt;/section&gt;
+					&lt;h4&gt;Existing information about the label, if any.&lt;/h4&gt;
+					&lt;p&gt;If there's no info, then we have a large call to action here to transcribe the label.&lt;/p&gt;
+					&lt;h4&gt;Related Blog Posts&lt;/h4&gt;
+					&lt;p&gt;Read more about the story behind this label:&lt;br/&gt;
+					&lt;a href=&quot;{{ link.pages-wine-article }}&quot;&gt;Who was Maynard Amerine?&lt;/a&gt;&lt;/p&gt;
+					&lt;h4&gt;Expert Commentary&lt;/h4&gt;
+					&lt;p&gt;We have already done an oral interview with Darrell Corti (and much of it is transcribed), but we&rsquo;d like to get additional expert commentary.&lt;/p&gt;
+					&lt;p&gt;Are you an expert? Do you have family history wiht this label? Send us your insights!
+					{{&gt; molecules-wine-expert-comment-form }}
+					&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Submit&lt;/a&gt;&lt;/p&gt;
+				&lt;/div&gt;&lt;!--end l-main--&gt;
+
+				&lt;div class=&quot;l-sidebar&quot;&gt;
+					{{&gt; molecules-wine-label-metadata-form }}
+				&lt;/div&gt;&lt;!--end l-sidebar--&gt;
+			&lt;/div&gt;&lt;!--end l-two-col--&gt;	
+	&lt;/div&gt;&lt;!--End role=main--&gt;
+	{{&gt; organisms-footer }}
+&lt;/div&gt;

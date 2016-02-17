@@ -6,7 +6,7 @@
 .lc {
 	max-width: $max-width;	
 	margin: 0 auto;
-	padding: $spacing-unit--small;
+	padding: $pad-half;
 }
 
 /*------------------------------------*\
@@ -21,7 +21,7 @@
 		@media all and (min-width: $bp-large) {
 			float: left;
 			width: 70%;
-			padding-right: $spacing-unit;
+			padding-right: $pad;
 		}
 	}
 	
@@ -33,7 +33,7 @@
 		@media all and (min-width: $bp-large) {
 			float: left;
 			width: 30%;
-			padding: 0 0 0 $spacing-unit;
+			padding: 0 0 0 $pad;
 		}
 	}
 }
@@ -46,12 +46,12 @@
 /* Grid Container */
 .g {
 	overflow: hidden;
-	margin: 0 (-$spacing-unit--small);
+	margin: 0 (-$pad-half);
 }
 
 /* Grid Item */
 .gi {
-	padding: $spacing-unit--small;
+	padding: $pad-half;
 	
 	img {
 		display: block;

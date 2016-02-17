@@ -5,8 +5,8 @@
 // Alerts
 .alert {
 	text-align: center;
-	padding: $spacing-unit;
-	margin-bottom: $spacing-unit--small;
+	padding: $pad;
+	margin-bottom: $space-half;
 	border: 1px solid $gray;
 	background: $gray-light;
 }

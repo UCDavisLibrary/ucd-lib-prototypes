@@ -8,24 +8,24 @@
 .byline {
 	font-size: $font-size-small-2;
 	font-style: italic;
-	margin-bottom: $spacing-unit--small;
+	margin-bottom: $space-half;
 }
 
 //Social Share
 .social-share {
 	overflow: hidden;
-	margin-bottom: $spacing-unit;
+	margin-bottom: $space;
 
 	li {
 		float: left;
-		margin-right: $spacing-unit--small;
+		margin-right: $space-half;
 	}
 
 	a {
 		background: $gray-dark;
 		color: $white;
 		display: block;
-		padding: $spacing-unit--small;
+		padding: $pad-half;
 
 		&:hover {
 			background: $gray;

@@ -1,0 +1,31 @@
+<div class="page" id="page">
+	{{> organisms-wine-header }}
+	<div role="main">
+		<div class="l-one-col">
+			<div class="l-column">
+			{{> molecules-wine-labels-tabs }}
+				<section>
+				{{# introduction }}
+					<h1>{{ headline }}</h1>
+					<p>{{ main-text-p-1 }}</p>
+					<p>{{ main-text-p-2 }}</p>
+					<p>{{ main-text-p-3 }}</p>
+				{{/ introduction }}
+				{{# history }}
+					<p class="intro" id="history">{{ headline }}</p>
+					<p>{{ main-text-p-1 }}</p>
+					<p>{{ main-text-p-2 }}</p>
+					<p>{{ main-text-p-3 }}</p>
+				{{/ history }}
+				{{# instructions }}
+					<p class="intro" id="instructions">{{ headline }}</p>
+					<p>{{ main-text-p-1 }}</p>
+					<p>{{ main-text-p-2 }}</p>
+					<p>{{ main-text-p-3 }}</p>
+				{{/ instructions }}
+				</section>
+			</div><!--end .l-main-->
+		</div><!--end .l-two-col-->
+	</div><!--End role=main-->
+	{{> organisms-footer }}
+</div>
