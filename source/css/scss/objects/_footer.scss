@@ -12,7 +12,7 @@
 	ul {
 		@media all and (min-width: $bp-med) {
 			display: flex;
-			justify-content: center;
+			justify-content: space-around;
 		}
 		li {
 			padding: .5em;

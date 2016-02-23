@@ -6,9 +6,11 @@
 			<h2 class="section-title">Browse the Labels</h2>
 			{{> molecules-wine-filters-form }}
 			<h3>Results:</h3>
-			{{> organisms-image-gallery }}
+			{{# wine-gallery }}
+				{{> organisms-image-gallery }}
+			{{/ wine-gallery }}
 			{{> molecules-pagination }}
 		</section>
 	</div><!--End role=main-->
 	{{> organisms-wine-footer }}
-</div>
+</div><!--End id="page"-->

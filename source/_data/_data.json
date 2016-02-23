@@ -106,5 +106,9 @@
 		{ },
 		{ },
 		{ }
-	]
+	],
+	"wine-gallery": {
+	    "varietal": "varietal",
+	    "caption": "caption"
+	  }
 }

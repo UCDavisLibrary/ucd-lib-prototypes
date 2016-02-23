@@ -1651,7 +1651,7 @@ td {
   /* line 12, scss/objects/_footer.scss */
   .footer ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 /* line 17, scss/objects/_footer.scss */
