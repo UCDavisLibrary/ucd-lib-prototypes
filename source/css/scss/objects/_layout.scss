@@ -1,11 +1,33 @@
 /*------------------------------------*\
+    ALT LAYOUT SYSTEM USING FLEXBOX 
+    BECAUSE FLEXBOX IS MAGIC
+    AND FLOATS REALLY SUCK
+\*------------------------------------*/
+
+.f {
+	margin: 0 auto;
+}
+
+.f-one-col {
+	max-width: 40em;
+	margin: 0 auto;
+}
+
+.f-two-col {
+	max-width: 40em;
+	margin: 0 auto;
+	@media all and (min-width: $bp-small-2) {
+		display: flex;
+	}
+}
+
+/*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
 
 /* Layout Container */
 .lc {
 	max-width: $max-width;	
-	margin: 0 auto;
 	padding: $pad-half;
 }
 

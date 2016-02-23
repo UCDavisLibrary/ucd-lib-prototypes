@@ -1040,6 +1040,13 @@ input[type="search"] {
   display: flex;
 }
 /* line 193, scss/base/_forms.scss */
+.labels-browse fieldset {
+  width: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 199, scss/base/_forms.scss */
 .labels-browse select {
   width: auto;
 }
@@ -1109,16 +1116,52 @@ td {
 }
 
 /*------------------------------------*\
+    $NAVIGATION
+\*------------------------------------*/
+/* line 5, scss/base/_wine.scss */
+.wine-page {
+  padding-top: 1em;
+  margin: -1em;
+}
+
+/*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
+/*------------------------------------*\
+    ALT LAYOUT SYSTEM USING FLEXBOX 
+    BECAUSE FLEXBOX IS MAGIC
+    AND FLOATS REALLY SUCK
+\*------------------------------------*/
+/* line 7, scss/objects/_layout.scss */
+.f {
+  margin: 0 auto;
+}
+
+/* line 11, scss/objects/_layout.scss */
+.f-one-col {
+  max-width: 40em;
+  margin: 0 auto;
+}
+
+/* line 16, scss/objects/_layout.scss */
+.f-two-col {
+  max-width: 40em;
+  margin: 0 auto;
+}
+@media all and (min-width: 29.75em) {
+  /* line 16, scss/objects/_layout.scss */
+  .f-two-col {
+    display: flex;
+  }
+}
+
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
 /* Layout Container */
-/* line 6, scss/objects/_layout.scss */
+/* line 29, scss/objects/_layout.scss */
 .lc, .header, [role=main] {
   max-width: 72em;
-  margin: 0 auto;
   padding: 0.5em;
 }
 
@@ -1126,7 +1169,7 @@ td {
     $TEMPLATES
 \*------------------------------------*/
 /* One Column Layout */
-/* line 20, scss/objects/_layout.scss */
+/* line 42, scss/objects/_layout.scss */
 .l-one-col .l-column {
   max-width: 40em;
   margin: 0 auto;
@@ -1134,7 +1177,7 @@ td {
 
 /* Two Column Layout */
 @media all and (min-width: 50em) {
-  /* line 30, scss/objects/_layout.scss */
+  /* line 52, scss/objects/_layout.scss */
   .l-two-col .l-main {
     float: left;
     width: 70%;
@@ -1142,13 +1185,13 @@ td {
   }
 }
 @media all and (max-width: 50em) {
-  /* line 38, scss/objects/_layout.scss */
+  /* line 60, scss/objects/_layout.scss */
   .l-two-col .l-sidebar {
     clear: both;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 38, scss/objects/_layout.scss */
+  /* line 60, scss/objects/_layout.scss */
   .l-two-col .l-sidebar {
     float: left;
     width: 30%;
@@ -1160,80 +1203,80 @@ td {
     $GRIDS
 \*------------------------------------*/
 /* Grid Container */
-/* line 57, scss/objects/_layout.scss */
+/* line 79, scss/objects/_layout.scss */
 .g {
   overflow: hidden;
   margin: 0 -0.5em;
 }
 
 /* Grid Item */
-/* line 63, scss/objects/_layout.scss */
+/* line 85, scss/objects/_layout.scss */
 .gi {
   padding: 0.5em;
 }
-/* line 66, scss/objects/_layout.scss */
+/* line 88, scss/objects/_layout.scss */
 .gi img {
   display: block;
 }
 @media all and (min-width: 46.8em) {
-  /* line 63, scss/objects/_layout.scss */
+  /* line 85, scss/objects/_layout.scss */
   .gi {
     float: left;
   }
 }
 
 /* Grid 1up */
-/* line 77, scss/objects/_layout.scss */
+/* line 99, scss/objects/_layout.scss */
 .g-1up .gi {
   width: 100%;
 }
 
 /* Grid 2up */
 @media all and (min-width: 46.8em) {
-  /* line 85, scss/objects/_layout.scss */
+  /* line 107, scss/objects/_layout.scss */
   .g-2up > .gi {
     float: left;
     width: 50%;
   }
-  /* line 89, scss/objects/_layout.scss */
+  /* line 111, scss/objects/_layout.scss */
   .g-2up > .gi:nth-of-type(odd) {
     clear: left;
   }
 }
 
 /* Grid Half (Always displayed side by side) */
-/* line 98, scss/objects/_layout.scss */
+/* line 120, scss/objects/_layout.scss */
 .g-half > .gi {
   float: left;
   width: 50%;
 }
-/* line 102, scss/objects/_layout.scss */
+/* line 124, scss/objects/_layout.scss */
 .g-half > .gi:nth-of-type(odd) {
   clear: left;
 }
 
 /* Grid 3up */
 @media all and (min-width: 46.8em) {
-  /* line 111, scss/objects/_layout.scss */
+  /* line 133, scss/objects/_layout.scss */
   .g-3up > .gi {
     float: left;
     width: 50%;
   }
-  /* line 115, scss/objects/_layout.scss */
+  /* line 137, scss/objects/_layout.scss */
   .g-3up > .gi:nth-of-type(2n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 122, scss/objects/_layout.scss */
+  /* line 144, scss/objects/_layout.scss */
   .g-3up > .gi {
     width: 33.3333333%;
   }
-  /* line 125, scss/objects/_layout.scss */
+  /* line 147, scss/objects/_layout.scss */
   .g-3up > .gi:nth-of-type(2n+1) {
     clear: none;
   }
-  /* line 129, scss/objects/_layout.scss */
+  /* line 151, scss/objects/_layout.scss */
   .g-3up > .gi:nth-of-type(3n+1) {
     clear: left;
   }
@@ -1241,130 +1284,130 @@ td {
 
 /* Grid 4up */
 @media all and (min-width: 46.8em) {
-  /* line 139, scss/objects/_layout.scss */
+  /* line 161, scss/objects/_layout.scss */
   .g-4up > .gi {
     float: left;
     width: 50%;
   }
-  /* line 143, scss/objects/_layout.scss */
+  /* line 165, scss/objects/_layout.scss */
   .g-4up > .gi:nth-of-type(2n+1) {
     clear: both;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 150, scss/objects/_layout.scss */
+  /* line 172, scss/objects/_layout.scss */
   .g-4up > .gi {
     width: 25%;
   }
-  /* line 153, scss/objects/_layout.scss */
+  /* line 175, scss/objects/_layout.scss */
   .g-4up > .gi:nth-of-type(2n+1) {
     clear: none;
   }
-  /* line 157, scss/objects/_layout.scss */
+  /* line 179, scss/objects/_layout.scss */
   .g-4up > .gi:nth-of-type(4n+1) {
     clear: left;
   }
 }
 
 /* Grid Quarter (Always displayed side by side) */
-/* line 166, scss/objects/_layout.scss */
+/* line 188, scss/objects/_layout.scss */
 .g-quarter > .gi {
   float: left;
   width: 24%;
 }
-/* line 170, scss/objects/_layout.scss */
+/* line 192, scss/objects/_layout.scss */
 .g-quarter > .gi:nth-of-type(4n+1) {
   clear: left;
 }
 
 @media all and (min-width: 29.75em) {
-  /* line 179, scss/objects/_layout.scss */
+  /* line 201, scss/objects/_layout.scss */
   .g-max4 > .gi {
     float: left;
     width: 50%;
   }
-  /* line 183, scss/objects/_layout.scss */
+  /* line 205, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(2n+1) {
     clear: both;
   }
 }
 @media all and (min-width: 39.8em) {
-  /* line 190, scss/objects/_layout.scss */
+  /* line 212, scss/objects/_layout.scss */
   .g-max4 > .gi {
     width: 33.3333333%;
   }
-  /* line 193, scss/objects/_layout.scss */
+  /* line 215, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(2n+1) {
     clear: none;
   }
-  /* line 197, scss/objects/_layout.scss */
+  /* line 219, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(3n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 204, scss/objects/_layout.scss */
+  /* line 226, scss/objects/_layout.scss */
   .g-max4 > .gi {
     width: 25%;
   }
-  /* line 207, scss/objects/_layout.scss */
+  /* line 229, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(3n+1) {
     clear: none;
   }
-  /* line 211, scss/objects/_layout.scss */
+  /* line 233, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(4n+1) {
     clear: left;
   }
 }
 
 /* Grid 5up */
-/* line 221, scss/objects/_layout.scss */
+/* line 243, scss/objects/_layout.scss */
 .g-max5 > .gi {
   float: left;
   width: 50%;
 }
-/* line 225, scss/objects/_layout.scss */
+/* line 247, scss/objects/_layout.scss */
 .g-max5 > .gi:nth-of-type(2n+1) {
   clear: both;
 }
 @media all and (min-width: 39.8em) {
-  /* line 231, scss/objects/_layout.scss */
+  /* line 253, scss/objects/_layout.scss */
   .g-max5 > .gi {
     width: 33.3333333%;
   }
-  /* line 234, scss/objects/_layout.scss */
+  /* line 256, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(2n+1) {
     clear: none;
   }
-  /* line 238, scss/objects/_layout.scss */
+  /* line 260, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(3n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 46.8em) {
-  /* line 245, scss/objects/_layout.scss */
+  /* line 267, scss/objects/_layout.scss */
   .g-max5 > .gi {
     width: 25%;
   }
-  /* line 248, scss/objects/_layout.scss */
+  /* line 270, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(3n+1) {
     clear: none;
   }
-  /* line 252, scss/objects/_layout.scss */
+  /* line 274, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(4n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 48em) {
-  /* line 259, scss/objects/_layout.scss */
+  /* line 281, scss/objects/_layout.scss */
   .g-max5 > .gi {
     width: 20%;
   }
-  /* line 262, scss/objects/_layout.scss */
+  /* line 284, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(4n+1) {
     clear: none;
   }
-  /* line 266, scss/objects/_layout.scss */
+  /* line 288, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(5n+1) {
     clear: left;
   }
@@ -1372,7 +1415,7 @@ td {
 
 /* Grid 2/3 */
 @media all and (min-width: 46.8em) {
-  /* line 274, scss/objects/_layout.scss */
+  /* line 296, scss/objects/_layout.scss */
   .gi-2-3 {
     float: left;
     width: 66.666666%;
@@ -1380,7 +1423,7 @@ td {
 }
 
 @media all and (min-width: 46.8em) {
-  /* line 281, scss/objects/_layout.scss */
+  /* line 303, scss/objects/_layout.scss */
   .gi-1-3 {
     float: left;
     width: 33.333333%;
@@ -1388,11 +1431,11 @@ td {
 }
 
 /* Grid 4up block */
-/* line 290, scss/objects/_layout.scss */
+/* line 312, scss/objects/_layout.scss */
 .g-opposites .gi {
   float: left;
 }
-/* line 293, scss/objects/_layout.scss */
+/* line 315, scss/objects/_layout.scss */
 .g-opposites .gi:last-child {
   float: right;
   text-align: right;
@@ -1522,54 +1565,66 @@ td {
 
 /*------------------------------------*\
     $NAVIGATION
-\*------------------------------------*/
-/* line 5, scss/objects/_nav.scss */
+
 .nav {
-  clear: both;
-  overflow: hidden;
-  max-height: 0;
+	clear: both;
+	overflow: hidden;
+	max-height: 0;
+	
+	a {
+		display: block;
+		padding: $pad;
+		border-top: 1px solid $color__gray-light-2;
+	}
+
+	&.active {
+		max-height: 40em;
+	}
+
+	@media all and (min-width: $bp-med) {
+		max-height: none;
+		float: right;
+		clear: none;
+
+		li {
+			float: left;
+		}
+
+		a {
+			border: 0;
+		}
+		
+	}
 }
-/* line 10, scss/objects/_nav.scss */
-.nav a {
-  display: block;
-  padding: 1em;
-  border-top: 1px solid #eee;
+\*------------------------------------*/
+/* line 37, scss/objects/_nav.scss */
+.wine-nav ul {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  max-width: 40em;
+  margin: 1em auto;
+  border: 1px solid #002855;
 }
-/* line 16, scss/objects/_nav.scss */
-.nav.active {
-  max-height: 40em;
-}
-@media all and (min-width: 46.8em) {
-  /* line 5, scss/objects/_nav.scss */
-  .nav {
-    max-height: none;
-    float: right;
-    clear: none;
-  }
-  /* line 25, scss/objects/_nav.scss */
-  .nav li {
-    float: left;
-  }
-  /* line 29, scss/objects/_nav.scss */
-  .nav a {
-    border: 0;
-  }
+/* line 45, scss/objects/_nav.scss */
+.wine-nav ul li {
+  padding: 0.5em;
 }
 
-/* line 37, scss/objects/_nav.scss */
+/* line 52, scss/objects/_nav.scss */
 .pagination {
   overflow: hidden;
 }
-/* line 40, scss/objects/_nav.scss */
+/* line 55, scss/objects/_nav.scss */
 .pagination li {
   float: left;
   border-right: 1px solid #eee;
 }
-/* line 44, scss/objects/_nav.scss */
+/* line 59, scss/objects/_nav.scss */
 .pagination li:last-child {
   border: 0;
 }
-/* line 49, scss/objects/_nav.scss */
+/* line 64, scss/objects/_nav.scss */
 .pagination a {
   padding: 1em;
 }
