@@ -771,7 +771,6 @@ dd + dt {
 /* line 19, scss/base/_lists.scss */
 ul li {
   padding-left: 1em;
-  background: url("../images/chevron.svg") no-repeat 0 0.4em;
   list-style: none;
   overflow-x: auto;
 }
@@ -1035,12 +1034,14 @@ input[type="search"] {
   padding: 1em;
   background: rgba(255, 255, 255, 0.6);
 }
-@media all and (min-width: 50em) {
-  /* line 182, scss/base/_forms.scss */
-  .wine-transcription-form {
-    position: absolute;
-    top: 56px;
-  }
+
+/* line 191, scss/base/_forms.scss */
+.labels-browse {
+  display: flex;
+}
+/* line 193, scss/base/_forms.scss */
+.labels-browse select {
+  width: auto;
 }
 
 /* line 2, scss/base/_tables.scss */
@@ -1458,6 +1459,67 @@ td {
   }
 }
 
+/* line 49, scss/objects/_header.scss */
+.header__img-bg--collection {
+  background: url("../images/global-header-bg--alt.svg") center top/cover no-repeat;
+}
+/* line 52, scss/objects/_header.scss */
+.no-svg .header__img-bg--collection {
+  background: url("../images/global-header-bg--alt.png") center top repeat;
+}
+
+/* line 57, scss/objects/_header.scss */
+.site-logo {
+  display: inline-block;
+  height: 50px;
+  transition: all .2s ease-in-out;
+}
+@media (480px 991px) {
+  /* line 57, scss/objects/_header.scss */
+  .site-logo {
+    height: 72px;
+  }
+}
+@media (992px, true) {
+  /* line 57, scss/objects/_header.scss */
+  .site-logo {
+    height: 112px;
+  }
+  /* line 69, scss/objects/_header.scss */
+  .l-header--fixed.is-scrolling .site-logo {
+    height: 60px;
+  }
+}
+/* line 74, scss/objects/_header.scss */
+.site-logo .logo {
+  height: 40%;
+  vertical-align: baseline;
+  transition: all .2s ease-in-out;
+}
+@media (992px, true) {
+  /* line 80, scss/objects/_header.scss */
+  .l-header--fixed.is-scrolling .site-logo .logo {
+    height: 55%;
+  }
+}
+/* line 86, scss/objects/_header.scss */
+.lt-ie9 .site-logo .logo {
+  margin-top: 12%;
+  top: 0;
+}
+
+/* line 94, scss/objects/_header.scss */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 1px rgba(0, 40, 85, 0.15);
+}
+@media (992px, true) {
+  /* line 98, scss/objects/_header.scss */
+  .navbar .primary-nav {
+    margin-right: 100px;
+  }
+}
+
 /*------------------------------------*\
     $NAVIGATION
 \*------------------------------------*/
@@ -1526,43 +1588,24 @@ td {
 \*------------------------------------*/
 /* line 4, scss/objects/_footer.scss */
 .footer {
-  clear: both;
-  overflow: hidden;
-  background: #131313;
-  color: #fff;
-  line-height: 1.2;
+  font-size: 14px;
+  font-weight: lighter;
+  text-align: center;
 }
-/* line 11, scss/objects/_footer.scss */
-.footer a {
-  color: #f9f9f9;
+@media all and (min-width: 46.8em) {
+  /* line 12, scss/objects/_footer.scss */
+  .footer ul {
+    display: flex;
+    justify-content: center;
+  }
 }
-
 /* line 17, scss/objects/_footer.scss */
-.nav-footer {
-  margin: -1em -1em 1em;
+.footer ul li {
+  padding: .5em;
 }
 /* line 20, scss/objects/_footer.scss */
-.nav-footer li {
-  border-bottom: 1px solid #333;
-}
-@media all and (min-width: 46.8em) {
-  /* line 20, scss/objects/_footer.scss */
-  .nav-footer li {
-    border: 0;
-    float: left;
-  }
-}
-/* line 29, scss/objects/_footer.scss */
-.nav-footer a {
-  display: block;
-  padding: 1em;
-}
-
-@media all and (min-width: 46.8em) {
-  /* line 35, scss/objects/_footer.scss */
-  .copyright {
-    float: right;
-  }
+.footer ul:last-of-kind {
+  font-size: 14px;
 }
 
 /*------------------------------------*\
@@ -1885,8 +1928,8 @@ fieldset[disabled] .btn {
   background: #fff;
   font-size: 2em;
   font-weight: bold;
-  padding: 0.05em 0.25em 0;
-  border: 2px solid #002855;
+  padding: 0 0.25em 0.25em;
+  border: 1px solid #002855;
   border-radius: .2em;
   text-align: center;
   text-transform: uppercase;
@@ -1905,7 +1948,6 @@ fieldset[disabled] .btn {
 /* line 131, scss/objects/_buttons.scss */
 .image-zoom-controls {
   margin: 1em;
-  position: absolute;
 }
 
 /* Generic Placeholder Brick: REMOVE FOR PRODUCTION */

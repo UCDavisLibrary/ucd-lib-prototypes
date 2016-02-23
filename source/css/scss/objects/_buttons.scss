@@ -113,8 +113,8 @@ fieldset[disabled] .btn {
 	background: $color__white;
 	font-size: 2em;
 	font-weight: bold;
-	padding: .05em $pad-quarter 0;
-	border: $border-small solid $ucd-blue;
+	padding: 0 $pad-quarter $pad-quarter;
+	border: 1px solid $brand--primary;
 	border-radius: .2em;
 	text-align: center;
 	text-transform: uppercase;
@@ -130,5 +130,4 @@ fieldset[disabled] .btn {
 
 .image-zoom-controls {
 	margin: 1em;
-	position: absolute;
 }

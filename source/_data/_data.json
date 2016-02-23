@@ -49,6 +49,17 @@
 		"last": "Way",
 		"lasti": "W"
 	},
+	"tabs" : [
+		{
+		"url" : "#",
+		"name" : "tab"
+		},
+		{
+		"url" : "#",
+		"name" : "tab"
+		}
+
+	],
 	"year" : {
 		"long": "2013",
 		"short": "13"

@@ -193,9 +193,6 @@ $border-radius--base:      4px !default;
 $border-radius--large:     6px !default;
 $border-radius--small:     3px !default;
 
-
-// Components
-// -------------------------
 $table-border-color:        $ucd-blue-50;
 $table-bg-accent:           $ucd-blue-10;
 $table-bg-hover:            $ucd-gold-10;
@@ -234,6 +231,63 @@ $off-canvas-width:            300px !default;
 
 // Default transition time
 $transition-time: 0.3s;
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+$zindex-component-bg:     800;
+$zindex-component-mg:     810;
+$zindex-component-fg:     820;
+$zindex-navbar:           830;
+$zindex-dropdown:         840;
+$zindex-popover:          850;
+$zindex-tooltip:          860;
+$zindex-navbar-fixed:     870;
+$zindex-modal-background: 1000;
+$zindex-modal:            1050;
+
+
+// Primary Menu
+// -------------------------
+
+$menu-background-color: $white;
+$menu-background-sub-color: $ucd-gold-30;
+$menu-background-color-active: $ucd-gold;
+// Menu dimensions
+$menu-vert-width: 310px;
+$menu-icon-width: 40%;
+$menu-height: 66px;
+
+
+// Header
+// -------------------------
+$header-height: 112px;
+$header-height--md: 72px;
+$header-height--sm: 50px;
+$header-height--scrolling: 60px;
+
+
+// Container sizes
+// -------------------------
+
+// Small screen / tablet
+$container-width:         95%;
+
+// Medium screen / desktop
+$container-width--md:     90%;
+
+// Large screen / wide desktop
+$container-width--lg:     85%;
+
+// X Large screen / huge desktop
+$container-width--xlg:    75%;
+
+// Container margin space
+$container-space:         (100% - $container-width) / 2;
+$container-space--md:     (100% - $container-width--md) / 2;
+$container-space--lg:     (100% - $container-width--lg) / 2;
+$container-space--xlg:    (100% - $container-width--xlg) / 2;
 
 //Defaults
 $space : 1em;

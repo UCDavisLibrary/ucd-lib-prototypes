@@ -183,7 +183,14 @@ input[type="search"] {
 	padding: 1em;
 	background: rgba(255,255,255,0.6);
 	@media all and (min-width: $bp-large) {
-		position: absolute;
-		top: 56px;
+		//position: absolute;
+		//top: 56px;
 	}
+}
+
+.labels-browse {
+  display: flex;
+  select {
+    width: auto;
+  }
 }
