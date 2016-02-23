@@ -2468,9 +2468,23 @@ fieldset[disabled] .btn {
   }
 }
 
-/* line 1, scss/objects/_image-zoomer.scss */
+/* line 1, scss/objects/_image-transcription-tool.scss */
 .main-wine-label {
   cursor: move;
+}
+
+/* line 5, scss/objects/_image-transcription-tool.scss */
+.zoom-controls {
+  position: absolute;
+  top: 80px;
+}
+
+/* line 10, scss/objects/_image-transcription-tool.scss */
+.label-trascription {
+  position: absolute;
+  top: 70px;
+  right: 0px;
+  max-width: 17em;
 }
 
 /* line 2, scss/objects/_pagination.scss */
