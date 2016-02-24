@@ -1119,9 +1119,8 @@ td {
     $NAVIGATION
 \*------------------------------------*/
 /* line 5, scss/base/_wine.scss */
-.wine-page {
-  padding-top: 1em;
-  margin: -1em;
+html, .wine-page {
+  background-color: #fefcf7;
 }
 
 /*------------------------------------*\
