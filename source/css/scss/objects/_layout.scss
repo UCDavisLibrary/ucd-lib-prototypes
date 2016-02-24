@@ -19,10 +19,13 @@
 }
 
 .f-two-col {
-	max-width: 40em;
+	max-width: 50em;
 	margin: 0 auto;
 	@media all and (min-width: $bp-small-2) {
-		//display: flex;
+		display: flex;
+		.sidebar {
+			min-width: 15em;
+		}
 	}
 }
 
