@@ -125,10 +125,12 @@
 		{ },
 		{ }
 	],
-	"wine-gallery" : {
-	    "label": "varietal",
-	    "caption": "caption"
-	},
+	"winegallery" : [
+		{
+		    "label": "Label Title",
+		    "caption": "Label caption"
+		}
+	],
 	"labelalternates" : [
 		{
 			"label": "Back of Card",

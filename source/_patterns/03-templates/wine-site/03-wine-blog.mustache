@@ -1,0 +1,19 @@
+<div class="page wine-page" id="page">
+	{{> organisms-wine-header }}
+		<section class="f-two-col">
+			<section>
+				<h1 class="section-title">The Aggie Oenophile Blog</h1>
+				<ul class="post-list">
+					{{# latest-posts}}
+						<li>{{> molecules-media-block }}</li>
+					{{/ latest-posts}}
+				</ul>
+				<a href="#" class="text-btn">View more posts</a>
+				{{> molecules-pagination }}
+			</section>
+			<section>
+				{{> organisms-tweets }}
+			</section>
+		</section>
+	{{> organisms-footer }}
+</div>

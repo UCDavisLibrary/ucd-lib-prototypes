@@ -1,16 +1,18 @@
-<div class="page f wine-page" id="page">
+<div class="page wine-page" id="page">
 	{{> organisms-wine-header }}
-	<div role="main">
 		<section class="f-one-col">
-			{{> molecules-wine-labels-intro-text }}
+			<h2 class="headline">Ready to Drink</h2>
+			<p>These labels tell the story of the growing wine industry in California. Many of them are meaningful windows into the fabric of both winemaking and winemakers and should be searchable in a way that accessible.</p>
+			<p>Before we can create a searchable database, we need to transcribe the labels. That’s where you come in! Help us uncork a piece of history.</p>
 			<h2 class="section-title">Browse the Labels</h2>
 			{{> molecules-wine-filters-form }}
 			<h3>Results:</h3>
-			{{# wine-gallery }}
-				{{> organisms-image-gallery }}
-			{{/ wine-gallery }}
+			<div class="gallery">
+				{{# winegallery }}
+					{{> molecules-gallery-thumbnail }}
+				{{/ winegallery }}
+			</div>
 			{{> molecules-pagination }}
 		</section>
-	</div>
 	{{> organisms-wine-footer }}
 </div>

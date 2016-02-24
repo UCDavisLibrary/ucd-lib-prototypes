@@ -1,0 +1,24 @@
+<div class="page wine-page" id="page">
+	{{> organisms-wine-header }}
+	<section class="f-one-col-jumbo">
+		{{> organisms-image-viewer }}
+	</section>
+	<section class="f-two-col">
+		<div class="label-trascription">
+			{{> molecules-wine-label-metadata-form }}
+		</div>
+		<div class="label-info">
+			<h1>Label #32435</h1>
+			<label>Front of Card</label>
+			{{# labelalternates }}
+				{{> organisms-image-gallery }}
+			{{/ labelalternates }}
+			<h2>Label Info</h2>
+			{{> atoms-definition }}
+			<h2>Get the story behind this label:</h2>
+			<p><a href="{{ link.pages-wine-article }}">Who was Maynard Amerine?</a></p>
+			<p>Are you a wine expert? Do you have family history with this label? <a href="#">Send us your story</a>!</p>
+		</div>
+	</section>
+	{{> organisms-wine-footer }}
+</div>

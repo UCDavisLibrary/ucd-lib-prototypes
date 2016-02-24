@@ -1,0 +1,19 @@
+&lt;div class=&quot;page wine-page&quot; id=&quot;page&quot;&gt;
+	{{&gt; organisms-wine-header }}
+		&lt;section class=&quot;f-two-col&quot;&gt;
+			&lt;section&gt;
+				&lt;h1 class=&quot;section-title&quot;&gt;The Aggie Oenophile Blog&lt;/h1&gt;
+				&lt;ul class=&quot;post-list&quot;&gt;
+					{{# latest-posts}}
+						&lt;li&gt;{{&gt; molecules-media-block }}&lt;/li&gt;
+					{{/ latest-posts}}
+				&lt;/ul&gt;
+				&lt;a href=&quot;#&quot; class=&quot;text-btn&quot;&gt;View more posts&lt;/a&gt;
+				{{&gt; molecules-pagination }}
+			&lt;/section&gt;
+			&lt;section&gt;
+				{{&gt; organisms-tweets }}
+			&lt;/section&gt;
+		&lt;/section&gt;
+	{{&gt; organisms-footer }}
+&lt;/div&gt;

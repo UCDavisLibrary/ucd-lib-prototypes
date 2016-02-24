@@ -90,12 +90,12 @@ header, footer, nav, section, article, hgroup, figure {
 \*------------------------------------*/
 /* Clearfix */
 /* line 6, scss/base/_global-classes.scss */
-.cf, .l-one-col, .l-two-col, [role=main] {
+.cf, .f-one-col, .f-two-col, .l-one-col, .l-two-col, [role=main] {
   *zoom: 1;
 }
 
 /* line 9, scss/base/_global-classes.scss */
-.cf:before, .l-one-col:before, .l-two-col:before, [role=main]:before, .cf:after, .l-one-col:after, .l-two-col:after, [role=main]:after {
+.cf:before, .f-one-col:before, .f-two-col:before, .l-one-col:before, .l-two-col:before, [role=main]:before, .cf:after, .f-one-col:after, .f-two-col:after, .l-one-col:after, .l-two-col:after, [role=main]:after {
   content: " ";
   /* 1 */
   display: table;
@@ -103,7 +103,7 @@ header, footer, nav, section, article, hgroup, figure {
 }
 
 /* line 14, scss/base/_global-classes.scss */
-.cf:after, .l-one-col:after, .l-two-col:after, [role=main]:after {
+.cf:after, .f-one-col:after, .f-two-col:after, .l-one-col:after, .l-two-col:after, [role=main]:after {
   clear: both;
 }
 
@@ -1128,38 +1128,33 @@ td {
     $LAYOUT
 \*------------------------------------*/
 /*------------------------------------*\
-    ALT LAYOUT SYSTEM USING FLEXBOX 
+    ALT LAYOUT SYSTEM USING FLEXBOX
     BECAUSE FLEXBOX IS MAGIC
     AND FLOATS REALLY SUCK
 \*------------------------------------*/
 /* line 7, scss/objects/_layout.scss */
-.f {
-  margin: 0 auto;
-}
-
-/* line 11, scss/objects/_layout.scss */
 .f-one-col {
-  max-width: 40em;
+  max-width: 50em;
   margin: 0 auto;
 }
-/* line 14, scss/objects/_layout.scss */
+/* line 11, scss/objects/_layout.scss */
 .f-one-col-jumbo {
   max-width: none;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 21, scss/objects/_layout.scss */
+/* line 18, scss/objects/_layout.scss */
 .f-two-col {
   max-width: 50em;
   margin: 0 auto;
 }
 @media all and (min-width: 29.75em) {
-  /* line 21, scss/objects/_layout.scss */
+  /* line 18, scss/objects/_layout.scss */
   .f-two-col {
     display: flex;
   }
-  /* line 26, scss/objects/_layout.scss */
+  /* line 24, scss/objects/_layout.scss */
   .f-two-col .sidebar {
     min-width: 15em;
   }
@@ -1169,7 +1164,7 @@ td {
     $LAYOUT
 \*------------------------------------*/
 /* Layout Container */
-/* line 37, scss/objects/_layout.scss */
+/* line 35, scss/objects/_layout.scss */
 .lc, .header, [role=main] {
   max-width: 72em;
   padding: 0.5em;
@@ -1179,7 +1174,7 @@ td {
     $TEMPLATES
 \*------------------------------------*/
 /* One Column Layout */
-/* line 50, scss/objects/_layout.scss */
+/* line 48, scss/objects/_layout.scss */
 .l-one-col .l-column {
   max-width: 40em;
   margin: 0 auto;
@@ -1187,7 +1182,7 @@ td {
 
 /* Two Column Layout */
 @media all and (min-width: 50em) {
-  /* line 60, scss/objects/_layout.scss */
+  /* line 58, scss/objects/_layout.scss */
   .l-two-col .l-main {
     float: left;
     width: 70%;
@@ -1195,13 +1190,13 @@ td {
   }
 }
 @media all and (max-width: 50em) {
-  /* line 68, scss/objects/_layout.scss */
+  /* line 66, scss/objects/_layout.scss */
   .l-two-col .l-sidebar {
     clear: both;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 68, scss/objects/_layout.scss */
+  /* line 66, scss/objects/_layout.scss */
   .l-two-col .l-sidebar {
     float: left;
     width: 30%;
@@ -1213,80 +1208,80 @@ td {
     $GRIDS
 \*------------------------------------*/
 /* Grid Container */
-/* line 87, scss/objects/_layout.scss */
+/* line 85, scss/objects/_layout.scss */
 .g {
   overflow: hidden;
   margin: 0 -0.5em;
 }
 
 /* Grid Item */
-/* line 93, scss/objects/_layout.scss */
+/* line 91, scss/objects/_layout.scss */
 .gi {
   padding: 0.5em;
 }
-/* line 96, scss/objects/_layout.scss */
+/* line 94, scss/objects/_layout.scss */
 .gi img {
   display: block;
 }
 @media all and (min-width: 46.8em) {
-  /* line 93, scss/objects/_layout.scss */
+  /* line 91, scss/objects/_layout.scss */
   .gi {
     float: left;
   }
 }
 
 /* Grid 1up */
-/* line 107, scss/objects/_layout.scss */
+/* line 105, scss/objects/_layout.scss */
 .g-1up .gi {
   width: 100%;
 }
 
 /* Grid 2up */
 @media all and (min-width: 46.8em) {
-  /* line 115, scss/objects/_layout.scss */
+  /* line 113, scss/objects/_layout.scss */
   .g-2up > .gi {
     float: left;
     width: 50%;
   }
-  /* line 119, scss/objects/_layout.scss */
+  /* line 117, scss/objects/_layout.scss */
   .g-2up > .gi:nth-of-type(odd) {
     clear: left;
   }
 }
 
 /* Grid Half (Always displayed side by side) */
-/* line 128, scss/objects/_layout.scss */
+/* line 126, scss/objects/_layout.scss */
 .g-half > .gi {
   float: left;
   width: 50%;
 }
-/* line 132, scss/objects/_layout.scss */
+/* line 130, scss/objects/_layout.scss */
 .g-half > .gi:nth-of-type(odd) {
   clear: left;
 }
 
 /* Grid 3up */
 @media all and (min-width: 46.8em) {
-  /* line 141, scss/objects/_layout.scss */
+  /* line 139, scss/objects/_layout.scss */
   .g-3up > .gi {
     float: left;
     width: 50%;
   }
-  /* line 145, scss/objects/_layout.scss */
+  /* line 143, scss/objects/_layout.scss */
   .g-3up > .gi:nth-of-type(2n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 152, scss/objects/_layout.scss */
+  /* line 150, scss/objects/_layout.scss */
   .g-3up > .gi {
     width: 33.3333333%;
   }
-  /* line 155, scss/objects/_layout.scss */
+  /* line 153, scss/objects/_layout.scss */
   .g-3up > .gi:nth-of-type(2n+1) {
     clear: none;
   }
-  /* line 159, scss/objects/_layout.scss */
+  /* line 157, scss/objects/_layout.scss */
   .g-3up > .gi:nth-of-type(3n+1) {
     clear: left;
   }
@@ -1294,130 +1289,130 @@ td {
 
 /* Grid 4up */
 @media all and (min-width: 46.8em) {
-  /* line 169, scss/objects/_layout.scss */
+  /* line 167, scss/objects/_layout.scss */
   .g-4up > .gi {
     float: left;
     width: 50%;
   }
-  /* line 173, scss/objects/_layout.scss */
+  /* line 171, scss/objects/_layout.scss */
   .g-4up > .gi:nth-of-type(2n+1) {
     clear: both;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 180, scss/objects/_layout.scss */
+  /* line 178, scss/objects/_layout.scss */
   .g-4up > .gi {
     width: 25%;
   }
-  /* line 183, scss/objects/_layout.scss */
+  /* line 181, scss/objects/_layout.scss */
   .g-4up > .gi:nth-of-type(2n+1) {
     clear: none;
   }
-  /* line 187, scss/objects/_layout.scss */
+  /* line 185, scss/objects/_layout.scss */
   .g-4up > .gi:nth-of-type(4n+1) {
     clear: left;
   }
 }
 
 /* Grid Quarter (Always displayed side by side) */
-/* line 196, scss/objects/_layout.scss */
+/* line 194, scss/objects/_layout.scss */
 .g-quarter > .gi {
   float: left;
   width: 24%;
 }
-/* line 200, scss/objects/_layout.scss */
+/* line 198, scss/objects/_layout.scss */
 .g-quarter > .gi:nth-of-type(4n+1) {
   clear: left;
 }
 
 @media all and (min-width: 29.75em) {
-  /* line 209, scss/objects/_layout.scss */
+  /* line 207, scss/objects/_layout.scss */
   .g-max4 > .gi {
     float: left;
     width: 50%;
   }
-  /* line 213, scss/objects/_layout.scss */
+  /* line 211, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(2n+1) {
     clear: both;
   }
 }
 @media all and (min-width: 39.8em) {
-  /* line 220, scss/objects/_layout.scss */
+  /* line 218, scss/objects/_layout.scss */
   .g-max4 > .gi {
     width: 33.3333333%;
   }
-  /* line 223, scss/objects/_layout.scss */
+  /* line 221, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(2n+1) {
     clear: none;
   }
-  /* line 227, scss/objects/_layout.scss */
+  /* line 225, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(3n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 234, scss/objects/_layout.scss */
+  /* line 232, scss/objects/_layout.scss */
   .g-max4 > .gi {
     width: 25%;
   }
-  /* line 237, scss/objects/_layout.scss */
+  /* line 235, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(3n+1) {
     clear: none;
   }
-  /* line 241, scss/objects/_layout.scss */
+  /* line 239, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(4n+1) {
     clear: left;
   }
 }
 
 /* Grid 5up */
-/* line 251, scss/objects/_layout.scss */
+/* line 249, scss/objects/_layout.scss */
 .g-max5 > .gi {
   float: left;
   width: 50%;
 }
-/* line 255, scss/objects/_layout.scss */
+/* line 253, scss/objects/_layout.scss */
 .g-max5 > .gi:nth-of-type(2n+1) {
   clear: both;
 }
 @media all and (min-width: 39.8em) {
-  /* line 261, scss/objects/_layout.scss */
+  /* line 259, scss/objects/_layout.scss */
   .g-max5 > .gi {
     width: 33.3333333%;
   }
-  /* line 264, scss/objects/_layout.scss */
+  /* line 262, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(2n+1) {
     clear: none;
   }
-  /* line 268, scss/objects/_layout.scss */
+  /* line 266, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(3n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 46.8em) {
-  /* line 275, scss/objects/_layout.scss */
+  /* line 273, scss/objects/_layout.scss */
   .g-max5 > .gi {
     width: 25%;
   }
-  /* line 278, scss/objects/_layout.scss */
+  /* line 276, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(3n+1) {
     clear: none;
   }
-  /* line 282, scss/objects/_layout.scss */
+  /* line 280, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(4n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 48em) {
-  /* line 289, scss/objects/_layout.scss */
+  /* line 287, scss/objects/_layout.scss */
   .g-max5 > .gi {
     width: 20%;
   }
-  /* line 292, scss/objects/_layout.scss */
+  /* line 290, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(4n+1) {
     clear: none;
   }
-  /* line 296, scss/objects/_layout.scss */
+  /* line 294, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(5n+1) {
     clear: left;
   }
@@ -1425,7 +1420,7 @@ td {
 
 /* Grid 2/3 */
 @media all and (min-width: 46.8em) {
-  /* line 304, scss/objects/_layout.scss */
+  /* line 302, scss/objects/_layout.scss */
   .gi-2-3 {
     float: left;
     width: 66.666666%;
@@ -1433,7 +1428,7 @@ td {
 }
 
 @media all and (min-width: 46.8em) {
-  /* line 311, scss/objects/_layout.scss */
+  /* line 309, scss/objects/_layout.scss */
   .gi-1-3 {
     float: left;
     width: 33.333333%;
@@ -1441,11 +1436,11 @@ td {
 }
 
 /* Grid 4up block */
-/* line 320, scss/objects/_layout.scss */
+/* line 318, scss/objects/_layout.scss */
 .g-opposites .gi {
   float: left;
 }
-/* line 323, scss/objects/_layout.scss */
+/* line 321, scss/objects/_layout.scss */
 .g-opposites .gi:last-child {
   float: right;
   text-align: right;
@@ -2439,43 +2434,16 @@ fieldset[disabled] .btn {
 }
 
 /* line 1, scss/objects/_gallery.scss */
-.gallery-images {
+.gallery {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  justify-content: center;
 }
 
-/* line 7, scss/objects/_gallery.scss */
-.gallery-thumbnail {
-  flex-basis: 40%;
-  flex-grow: 1;
-  max-width: 45%;
-  margin: 0 .4em;
-}
-/* line 12, scss/objects/_gallery.scss */
-.gallery-thumbnail figure img {
-  margin: 0;
-}
-@media all and (min-width: 480px 767px) {
-  /* line 7, scss/objects/_gallery.scss */
-  .gallery-thumbnail {
-    flex-basis: 30%;
-    max-width: 30%;
-  }
-}
-@media all and (min-width: 29.75em) {
-  /* line 7, scss/objects/_gallery.scss */
-  .gallery-thumbnail {
-    flex-basis: 20%;
-    max-width: 22%;
-  }
-}
-@media all and (min-width: 39.8em) {
-  /* line 7, scss/objects/_gallery.scss */
-  .gallery-thumbnail {
-    flex-basis: 15%;
-    max-width: 18%;
-  }
+/* line 6, scss/objects/_gallery.scss */
+.thumbnails {
+  max-width: 9em;
+  margin: 0.5em;
 }
 
 /* line 1, scss/objects/_image-transcription-tool.scss */

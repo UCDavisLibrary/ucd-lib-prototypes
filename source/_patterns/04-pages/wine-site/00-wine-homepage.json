@@ -2,12 +2,30 @@
 	"title" : "Wine Labels Project",
 	"bodyClass": "home",
 	"caption" : "title",
-	"label-home-copy" : [
+	"winegallery" : [
 		{
-			"headline" :  "Ready to Drink"
+			"label": "one",
+		    "caption": "one caption"
+	    },
+	    {
+			"label": "two",
+		    "caption": "two caption"
+	    },
+	    {
+		    "label": "three",
+		    "caption": "three caption"
 		},
 		{
-			"introduction" :  "These labels tell the story of the growing wine industry in California. Many of them are meaningful windows into the fabric of both winemaking and winemakers and should be searchable in a way that accessible. Before we can create a searchable database, we need to transcribe the labels. That’s where you come in! Help us uncork a piece of history."
+			"label": "four",
+		    "caption": "four caption"
+	    },
+	    {
+			"label": "five",
+		    "caption": "five caption"
+	    },
+	    {
+		    "label": "six",
+		    "caption": "six caption"
 		}
 	]
 }

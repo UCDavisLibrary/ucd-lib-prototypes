@@ -1,16 +1,13 @@
 /*------------------------------------*\
-    ALT LAYOUT SYSTEM USING FLEXBOX 
+    ALT LAYOUT SYSTEM USING FLEXBOX
     BECAUSE FLEXBOX IS MAGIC
     AND FLOATS REALLY SUCK
 \*------------------------------------*/
 
-.f {
-	margin: 0 auto;
-}
-
 .f-one-col {
-	max-width: 40em;
+	max-width: 50em;
 	margin: 0 auto;
+	@extend .cf;
 	&-jumbo {
 		max-width: none;
 		margin: 0 auto;
@@ -21,6 +18,7 @@
 .f-two-col {
 	max-width: 50em;
 	margin: 0 auto;
+	@extend .cf;
 	@media all and (min-width: $bp-small-2) {
 		display: flex;
 		.sidebar {
@@ -35,7 +33,7 @@
 
 /* Layout Container */
 .lc {
-	max-width: $max-width;	
+	max-width: $max-width;
 	padding: $pad-half;
 }
 
@@ -64,7 +62,7 @@
 			padding-right: $pad;
 		}
 	}
-	
+
 	.l-sidebar {
 		@media all and (max-width: $bp-large) {
 			clear: both;
@@ -92,7 +90,7 @@
 /* Grid Item */
 .gi {
 	padding: $pad-half;
-	
+
 	img {
 		display: block;
 	}
@@ -115,7 +113,7 @@
 		> .gi {
 			float: left;
 			width: 50%;
-			
+
 			&:nth-of-type(odd) {
 				clear: left;
 			}
@@ -128,7 +126,7 @@
 	> .gi {
 		float: left;
 		width: 50%;
-		
+
 		&:nth-of-type(odd) {
 			clear: left;
 		}
@@ -141,21 +139,21 @@
 		> .gi {
 			float: left;
 			width: 50%;
-			
+
 			&:nth-of-type(2n+1) {
 				clear: left;
 			}
 		}
 	}
-	
+
 	@media all and (min-width: $bp-large) {
 		> .gi {
 			width: 33.3333333%;
-			
+
 			&:nth-of-type(2n+1) {
 				clear: none;
 			}
-			
+
 			&:nth-of-type(3n+1) {
 				clear: left;
 			}
@@ -169,21 +167,21 @@
 		>.gi {
 			float: left;
 			width: 50%;
-			
+
 			&:nth-of-type(2n+1) {
 				clear: both;
 			}
 		}
 	}
-	
+
 	@media all and (min-width: $bp-large) {
 		>.gi {
 			width: 25%;
-			
+
 			&:nth-of-type(2n+1) {
 				clear: none;
 			}
-			
+
 			&:nth-of-type(4n+1) {
 				clear: left;
 			}
@@ -196,7 +194,7 @@
 	> .gi {
 		float: left;
 		width: 24%;
-		
+
 		&:nth-of-type(4n+1) {
 			clear: left;
 		}
@@ -209,7 +207,7 @@
 		>.gi {
 			float: left;
 			width: 50%;
-			
+
 			&:nth-of-type(2n+1) {
 				clear: both;
 			}
@@ -219,25 +217,25 @@
 	@media all and (min-width: $bp-small-3) {
 		>.gi {
 			width: 33.3333333%;
-			
+
 			&:nth-of-type(2n+1) {
 				clear: none;
 			}
-			
+
 			&:nth-of-type(3n+1) {
 				clear: left;
 			}
 		}
 	}
-	
+
 	@media all and (min-width: $bp-large) {
 		>.gi {
 			width: 25%;
-			
+
 			&:nth-of-type(3n+1) {
 				clear: none;
 			}
-			
+
 			&:nth-of-type(4n+1) {
 				clear: left;
 			}
@@ -251,7 +249,7 @@
 	>.gi {
 		float: left;
 		width: 50%;
-		
+
 		&:nth-of-type(2n+1) {
 			clear: both;
 		}
@@ -260,25 +258,25 @@
 	@media all and (min-width: $bp-small-3) {
 		>.gi {
 			width: 33.3333333%;
-			
+
 			&:nth-of-type(2n+1) {
 				clear: none;
 			}
-			
+
 			&:nth-of-type(3n+1) {
 				clear: left;
 			}
 		}
 	}
-	
+
 	@media all and (min-width: $bp-med) {
 		>.gi {
 			width: 25%;
-			
+
 			&:nth-of-type(3n+1) {
 				clear: none;
 			}
-			
+
 			&:nth-of-type(4n+1) {
 				clear: left;
 			}
@@ -288,11 +286,11 @@
 	@media all and (min-width: $bp-med-2) {
 		>.gi {
 			width: 20%;
-			
+
 			&:nth-of-type(4n+1) {
 				clear: none;
 			}
-			
+
 			&:nth-of-type(5n+1) {
 				clear: left;
 			}
@@ -319,7 +317,7 @@
 .g-opposites {
 	.gi {
 		float: left;
-		
+
 		&:last-child {
 			float: right;
 			text-align: right;
