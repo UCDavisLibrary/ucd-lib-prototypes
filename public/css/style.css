@@ -2436,7 +2436,7 @@ fieldset[disabled] .btn {
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* line 6, scss/objects/_gallery.scss */

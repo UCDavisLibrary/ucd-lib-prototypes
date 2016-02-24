@@ -1,7 +1,7 @@
 .gallery {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-start;
 }
 .thumbnails {
 	max-width: 9em;
