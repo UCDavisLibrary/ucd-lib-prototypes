@@ -1,26 +1,23 @@
 &lt;div class=&quot;page f wine-page&quot; id=&quot;page&quot;&gt;
 	{{&gt; organisms-wine-header }}
 	&lt;div role=&quot;main&quot;&gt;
-		&lt;div class=&quot;l-one-col&quot;&gt;
-			&lt;div class=&quot;l-main&quot;&gt;
-				&lt;article class=&quot;article&quot;&gt;
-					&lt;header class=&quot;article-header&quot;&gt;
-						{{&gt; molecules-headline }}
-						{{&gt; molecules-byline }}
-					&lt;/header&gt;
-					{{# article-body }}
-						&lt;p class=&quot;intro&quot;&gt;{{ intro }}&lt;/p&gt;
-						&lt;p&gt;{{ main-text-p-1 }}&lt;/p&gt;
-						{{&gt; atoms-landscape-16x9 }} 
-						&lt;p&gt;{{ main-text-p-2 }}&lt;/p&gt;
-						{{&gt; atoms-blockquote }} 
-						&lt;p&gt;{{ main-text-p-3 }}&lt;/p&gt;
-					{{/ article-body }}
-				&lt;/article&gt;&lt;!--end .article--&gt;
-				{{&gt; molecules-social-share }}
-			&lt;/div&gt;&lt;!--end l-main--&gt;
-
-		&lt;/div&gt;&lt;!--end l-one-col--&gt;	
-	&lt;/div&gt;&lt;!--End role=main--&gt;
+		&lt;div class=&quot;f-one-col&quot;&gt;
+			&lt;article class=&quot;article&quot;&gt;
+				&lt;header class=&quot;article-header&quot;&gt;
+					{{&gt; molecules-headline }}
+					{{&gt; molecules-byline }}
+				&lt;/header&gt;
+				{{# article-body }}
+					&lt;p class=&quot;intro&quot;&gt;{{ intro }}&lt;/p&gt;
+					&lt;p&gt;{{ main-text-p-1 }}&lt;/p&gt;
+					{{&gt; atoms-landscape-16x9 }} 
+					&lt;p&gt;{{ main-text-p-2 }}&lt;/p&gt;
+					{{&gt; atoms-blockquote }} 
+					&lt;p&gt;{{ main-text-p-3 }}&lt;/p&gt;
+				{{/ article-body }}
+			&lt;/article&gt;
+			{{&gt; molecules-social-share }}
+		&lt;/div&gt;
+	&lt;/div&gt;
 	{{&gt; organisms-wine-footer }}
 &lt;/div&gt;

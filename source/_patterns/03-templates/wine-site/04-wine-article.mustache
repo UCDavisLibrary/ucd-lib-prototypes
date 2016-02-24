@@ -1,26 +1,23 @@
 <div class="page f wine-page" id="page">
 	{{> organisms-wine-header }}
 	<div role="main">
-		<div class="l-one-col">
-			<div class="l-main">
-				<article class="article">
-					<header class="article-header">
-						{{> molecules-headline }}
-						{{> molecules-byline }}
-					</header>
-					{{# article-body }}
-						<p class="intro">{{ intro }}</p>
-						<p>{{ main-text-p-1 }}</p>
-						{{> atoms-landscape-16x9 }} 
-						<p>{{ main-text-p-2 }}</p>
-						{{> atoms-blockquote }} 
-						<p>{{ main-text-p-3 }}</p>
-					{{/ article-body }}
-				</article><!--end .article-->
-				{{> molecules-social-share }}
-			</div><!--end l-main-->
-
-		</div><!--end l-one-col-->	
-	</div><!--End role=main-->
+		<div class="f-one-col">
+			<article class="article">
+				<header class="article-header">
+					{{> molecules-headline }}
+					{{> molecules-byline }}
+				</header>
+				{{# article-body }}
+					<p class="intro">{{ intro }}</p>
+					<p>{{ main-text-p-1 }}</p>
+					{{> atoms-landscape-16x9 }} 
+					<p>{{ main-text-p-2 }}</p>
+					{{> atoms-blockquote }} 
+					<p>{{ main-text-p-3 }}</p>
+				{{/ article-body }}
+			</article>
+			{{> molecules-social-share }}
+		</div>
+	</div>
 	{{> organisms-wine-footer }}
 </div>
