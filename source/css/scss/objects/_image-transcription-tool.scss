@@ -4,12 +4,14 @@
 
 .zoom-controls {
 	position: absolute;
-	top: 80px;
+	top: 90px;
 }
 
 .label-trascription {
-	position: absolute;
-	top: 70px;
-	right: 0px;
-	max-width: 17em;
+	@media all and ($bp-small) {
+		position: absolute;
+		top: 70px;
+		right: 0px;
+		max-width: 17em;
+	}
 }

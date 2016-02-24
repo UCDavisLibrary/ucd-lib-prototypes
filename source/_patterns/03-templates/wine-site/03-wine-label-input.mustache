@@ -2,40 +2,24 @@
 	{{> organisms-wine-header }}
 	<!--div role="main"-->
 		<div role="main">
-			<article class="article">
+			<section class="f-one-col-jumbo">
 				{{> organisms-image-viewer }}
-			</article><!--end .article-->
-			<div class="l-two-col">
-				<div class="l-main">
-					<header class="label-header">
-						<h2>Label #32435</h2>
-						<h6>Front of Card</h6>
-					</header>
-					<section class="section gallery">
-						<ul class="gallery-images">
-							{{# gallery-labels }}
-								<li class="gallery-thumbnail"><h5><a href="#">
-								{{> molecules-gallery-thumbnail }}
-								</a></h5></li>
-							{{/ gallery-labels }}
-						</ul>
-					</section>
-					<h4>Existing information about the label, if any.</h4>
-					<p>If there's no info, then we have a large call to action here to transcribe the label.</p>
-					<h4>Related Blog Posts</h4>
-					<p>Read more about the story behind this label:<br/>
-					<a href="{{ link.pages-wine-article }}">Who was Maynard Amerine?</a></p>
-					<h4>Expert Commentary</h4>
-					<p>We have already done an oral interview with Darrell Corti (and much of it is transcribed), but we’d like to get additional expert commentary.</p>
-					<p>Are you an expert? Do you have family history wiht this label? Send us your insights!
-					{{> molecules-wine-expert-comment-form }}
-					<p><a href="#" class="btn">Submit</a></p>
-				</div><!--end l-main-->
-
+			</section>
+			<section class="f-two-col">
 				<div class="label-trascription">
 					{{> molecules-wine-label-metadata-form }}
-				</div><!--end l-sidebar-->
-			</div><!--end l-two-col-->	
-	</div><!--End role=main-->
-	{{> organisms-wine-footer }}
-</div>
+				</div>
+				<div class="label-info">
+					<h1>Label #32435</h1>
+					<label>Front of Card</label>
+					{{# labelalternates }}
+						{{> organisms-image-gallery }}
+					{{/ labelalternates }}
+					<h2>Label Info</h2>
+					{{> atoms-definition }}
+					<h2>Get the story behind this label:</h2>
+					<a href="{{ link.pages-wine-article }}">Who was Maynard Amerine?</a></p>
+					<p>Are you a wine expert? Do you have family history with this label? <a href="#">Send us your story</a>!
+				</div>
+			</section>
+			{{> organisms-wine-footer }}

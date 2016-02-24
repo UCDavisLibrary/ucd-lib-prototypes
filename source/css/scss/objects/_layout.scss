@@ -11,13 +11,18 @@
 .f-one-col {
 	max-width: 40em;
 	margin: 0 auto;
+	&-jumbo {
+		max-width: none;
+		margin: 0 auto;
+		text-align: center;
+	}
 }
 
 .f-two-col {
 	max-width: 40em;
 	margin: 0 auto;
 	@media all and (min-width: $bp-small-2) {
-		display: flex;
+		//display: flex;
 	}
 }
 
