@@ -1131,29 +1131,34 @@ html, .wine-page {
     BECAUSE FLEXBOX IS MAGIC
     AND FLOATS REALLY SUCK
 \*------------------------------------*/
-/* line 7, scss/objects/_layout.scss */
+/* line 6, scss/objects/_layout.scss */
+html {
+  padding: 0 1em;
+}
+
+/* line 9, scss/objects/_layout.scss */
 .f-one-col {
   max-width: 50em;
   margin: 0 auto;
 }
-/* line 11, scss/objects/_layout.scss */
+/* line 13, scss/objects/_layout.scss */
 .f-one-col-jumbo {
   max-width: none;
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 18, scss/objects/_layout.scss */
+/* line 20, scss/objects/_layout.scss */
 .f-two-col {
   max-width: 50em;
   margin: 0 auto;
 }
 @media all and (min-width: 29.75em) {
-  /* line 18, scss/objects/_layout.scss */
+  /* line 20, scss/objects/_layout.scss */
   .f-two-col {
     display: flex;
   }
-  /* line 24, scss/objects/_layout.scss */
+  /* line 26, scss/objects/_layout.scss */
   .f-two-col .sidebar {
     min-width: 15em;
   }
@@ -1163,7 +1168,7 @@ html, .wine-page {
     $LAYOUT
 \*------------------------------------*/
 /* Layout Container */
-/* line 35, scss/objects/_layout.scss */
+/* line 37, scss/objects/_layout.scss */
 .lc, .header, [role=main] {
   max-width: 72em;
   padding: 0.5em;
@@ -1173,7 +1178,7 @@ html, .wine-page {
     $TEMPLATES
 \*------------------------------------*/
 /* One Column Layout */
-/* line 48, scss/objects/_layout.scss */
+/* line 50, scss/objects/_layout.scss */
 .l-one-col .l-column {
   max-width: 40em;
   margin: 0 auto;
@@ -1181,7 +1186,7 @@ html, .wine-page {
 
 /* Two Column Layout */
 @media all and (min-width: 50em) {
-  /* line 58, scss/objects/_layout.scss */
+  /* line 60, scss/objects/_layout.scss */
   .l-two-col .l-main {
     float: left;
     width: 70%;
@@ -1189,13 +1194,13 @@ html, .wine-page {
   }
 }
 @media all and (max-width: 50em) {
-  /* line 66, scss/objects/_layout.scss */
+  /* line 68, scss/objects/_layout.scss */
   .l-two-col .l-sidebar {
     clear: both;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 66, scss/objects/_layout.scss */
+  /* line 68, scss/objects/_layout.scss */
   .l-two-col .l-sidebar {
     float: left;
     width: 30%;
@@ -1207,80 +1212,80 @@ html, .wine-page {
     $GRIDS
 \*------------------------------------*/
 /* Grid Container */
-/* line 85, scss/objects/_layout.scss */
+/* line 87, scss/objects/_layout.scss */
 .g {
   overflow: hidden;
   margin: 0 -0.5em;
 }
 
 /* Grid Item */
-/* line 91, scss/objects/_layout.scss */
+/* line 93, scss/objects/_layout.scss */
 .gi {
   padding: 0.5em;
 }
-/* line 94, scss/objects/_layout.scss */
+/* line 96, scss/objects/_layout.scss */
 .gi img {
   display: block;
 }
 @media all and (min-width: 46.8em) {
-  /* line 91, scss/objects/_layout.scss */
+  /* line 93, scss/objects/_layout.scss */
   .gi {
     float: left;
   }
 }
 
 /* Grid 1up */
-/* line 105, scss/objects/_layout.scss */
+/* line 107, scss/objects/_layout.scss */
 .g-1up .gi {
   width: 100%;
 }
 
 /* Grid 2up */
 @media all and (min-width: 46.8em) {
-  /* line 113, scss/objects/_layout.scss */
+  /* line 115, scss/objects/_layout.scss */
   .g-2up > .gi {
     float: left;
     width: 50%;
   }
-  /* line 117, scss/objects/_layout.scss */
+  /* line 119, scss/objects/_layout.scss */
   .g-2up > .gi:nth-of-type(odd) {
     clear: left;
   }
 }
 
 /* Grid Half (Always displayed side by side) */
-/* line 126, scss/objects/_layout.scss */
+/* line 128, scss/objects/_layout.scss */
 .g-half > .gi {
   float: left;
   width: 50%;
 }
-/* line 130, scss/objects/_layout.scss */
+/* line 132, scss/objects/_layout.scss */
 .g-half > .gi:nth-of-type(odd) {
   clear: left;
 }
 
 /* Grid 3up */
 @media all and (min-width: 46.8em) {
-  /* line 139, scss/objects/_layout.scss */
+  /* line 141, scss/objects/_layout.scss */
   .g-3up > .gi {
     float: left;
     width: 50%;
   }
-  /* line 143, scss/objects/_layout.scss */
+  /* line 145, scss/objects/_layout.scss */
   .g-3up > .gi:nth-of-type(2n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 150, scss/objects/_layout.scss */
+  /* line 152, scss/objects/_layout.scss */
   .g-3up > .gi {
     width: 33.3333333%;
   }
-  /* line 153, scss/objects/_layout.scss */
+  /* line 155, scss/objects/_layout.scss */
   .g-3up > .gi:nth-of-type(2n+1) {
     clear: none;
   }
-  /* line 157, scss/objects/_layout.scss */
+  /* line 159, scss/objects/_layout.scss */
   .g-3up > .gi:nth-of-type(3n+1) {
     clear: left;
   }
@@ -1288,130 +1293,130 @@ html, .wine-page {
 
 /* Grid 4up */
 @media all and (min-width: 46.8em) {
-  /* line 167, scss/objects/_layout.scss */
+  /* line 169, scss/objects/_layout.scss */
   .g-4up > .gi {
     float: left;
     width: 50%;
   }
-  /* line 171, scss/objects/_layout.scss */
+  /* line 173, scss/objects/_layout.scss */
   .g-4up > .gi:nth-of-type(2n+1) {
     clear: both;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 178, scss/objects/_layout.scss */
+  /* line 180, scss/objects/_layout.scss */
   .g-4up > .gi {
     width: 25%;
   }
-  /* line 181, scss/objects/_layout.scss */
+  /* line 183, scss/objects/_layout.scss */
   .g-4up > .gi:nth-of-type(2n+1) {
     clear: none;
   }
-  /* line 185, scss/objects/_layout.scss */
+  /* line 187, scss/objects/_layout.scss */
   .g-4up > .gi:nth-of-type(4n+1) {
     clear: left;
   }
 }
 
 /* Grid Quarter (Always displayed side by side) */
-/* line 194, scss/objects/_layout.scss */
+/* line 196, scss/objects/_layout.scss */
 .g-quarter > .gi {
   float: left;
   width: 24%;
 }
-/* line 198, scss/objects/_layout.scss */
+/* line 200, scss/objects/_layout.scss */
 .g-quarter > .gi:nth-of-type(4n+1) {
   clear: left;
 }
 
 @media all and (min-width: 29.75em) {
-  /* line 207, scss/objects/_layout.scss */
+  /* line 209, scss/objects/_layout.scss */
   .g-max4 > .gi {
     float: left;
     width: 50%;
   }
-  /* line 211, scss/objects/_layout.scss */
+  /* line 213, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(2n+1) {
     clear: both;
   }
 }
 @media all and (min-width: 39.8em) {
-  /* line 218, scss/objects/_layout.scss */
+  /* line 220, scss/objects/_layout.scss */
   .g-max4 > .gi {
     width: 33.3333333%;
   }
-  /* line 221, scss/objects/_layout.scss */
+  /* line 223, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(2n+1) {
     clear: none;
   }
-  /* line 225, scss/objects/_layout.scss */
+  /* line 227, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(3n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 50em) {
-  /* line 232, scss/objects/_layout.scss */
+  /* line 234, scss/objects/_layout.scss */
   .g-max4 > .gi {
     width: 25%;
   }
-  /* line 235, scss/objects/_layout.scss */
+  /* line 237, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(3n+1) {
     clear: none;
   }
-  /* line 239, scss/objects/_layout.scss */
+  /* line 241, scss/objects/_layout.scss */
   .g-max4 > .gi:nth-of-type(4n+1) {
     clear: left;
   }
 }
 
 /* Grid 5up */
-/* line 249, scss/objects/_layout.scss */
+/* line 251, scss/objects/_layout.scss */
 .g-max5 > .gi {
   float: left;
   width: 50%;
 }
-/* line 253, scss/objects/_layout.scss */
+/* line 255, scss/objects/_layout.scss */
 .g-max5 > .gi:nth-of-type(2n+1) {
   clear: both;
 }
 @media all and (min-width: 39.8em) {
-  /* line 259, scss/objects/_layout.scss */
+  /* line 261, scss/objects/_layout.scss */
   .g-max5 > .gi {
     width: 33.3333333%;
   }
-  /* line 262, scss/objects/_layout.scss */
+  /* line 264, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(2n+1) {
     clear: none;
   }
-  /* line 266, scss/objects/_layout.scss */
+  /* line 268, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(3n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 46.8em) {
-  /* line 273, scss/objects/_layout.scss */
+  /* line 275, scss/objects/_layout.scss */
   .g-max5 > .gi {
     width: 25%;
   }
-  /* line 276, scss/objects/_layout.scss */
+  /* line 278, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(3n+1) {
     clear: none;
   }
-  /* line 280, scss/objects/_layout.scss */
+  /* line 282, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(4n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 48em) {
-  /* line 287, scss/objects/_layout.scss */
+  /* line 289, scss/objects/_layout.scss */
   .g-max5 > .gi {
     width: 20%;
   }
-  /* line 290, scss/objects/_layout.scss */
+  /* line 292, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(4n+1) {
     clear: none;
   }
-  /* line 294, scss/objects/_layout.scss */
+  /* line 296, scss/objects/_layout.scss */
   .g-max5 > .gi:nth-of-type(5n+1) {
     clear: left;
   }
@@ -1419,7 +1424,7 @@ html, .wine-page {
 
 /* Grid 2/3 */
 @media all and (min-width: 46.8em) {
-  /* line 302, scss/objects/_layout.scss */
+  /* line 304, scss/objects/_layout.scss */
   .gi-2-3 {
     float: left;
     width: 66.666666%;
@@ -1427,7 +1432,7 @@ html, .wine-page {
 }
 
 @media all and (min-width: 46.8em) {
-  /* line 309, scss/objects/_layout.scss */
+  /* line 311, scss/objects/_layout.scss */
   .gi-1-3 {
     float: left;
     width: 33.333333%;
@@ -1435,11 +1440,11 @@ html, .wine-page {
 }
 
 /* Grid 4up block */
-/* line 318, scss/objects/_layout.scss */
+/* line 320, scss/objects/_layout.scss */
 .g-opposites .gi {
   float: left;
 }
-/* line 321, scss/objects/_layout.scss */
+/* line 323, scss/objects/_layout.scss */
 .g-opposites .gi:last-child {
   float: right;
   text-align: right;

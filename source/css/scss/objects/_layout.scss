@@ -3,7 +3,9 @@
     BECAUSE FLEXBOX IS MAGIC
     AND FLOATS REALLY SUCK
 \*------------------------------------*/
-
+html {
+	padding: 0 $space;
+}
 .f-one-col {
 	max-width: 50em;
 	margin: 0 auto;
