@@ -26,81 +26,43 @@
 
 	</head>
 	<body class="body">
-		
-		<!-- View All Patterns in a Pattern Sub-Type -->
-		<div class="sg-main" role="main">
-			
-			<!-- Patterns -->
-			<div id="sg-patterns">
-					<div id="molecules-wine-one-up" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-01-layout-00-wine-one-up/01-molecules-01-layout-00-wine-one-up.html" class="patternLink" data-patternpartial="molecules-wine-one-up">Wine One Up</a></h2>
-						<div class="sg-pattern-body">
-							<div class="demo">
-	<!--Grid 1up-->
-	<div class="f-one-col">
-		<div class="gi">1/1</div>
+<div class="draggable-modal  draggable" style="left: 340px; top: 110px; -webkit-user-select: none;">
+	<div class="modal-header">Transcibe/Describe</div>
+	<div class="modal-body">
+		<p>Please tell us what the highlighted text says. Please tell us what this image is depicting, using one or two words.</p>
 	</div>
-	<!--End Grid 1up-->
-</div><!--end .demo-->
-
-							<div class="sg-code" style="display: none">
-								<h3 class="sg-code-head">HTML</h3>
-								<pre class="sg-code-html">
-									<code>
-										&lt;div class=&quot;demo&quot;&gt;
-	&lt;!--Grid 1up--&gt;
-	&lt;div class=&quot;f-one-col&quot;&gt;
-		&lt;div class=&quot;gi&quot;&gt;1/1&lt;/div&gt;
-	&lt;/div&gt;
-	&lt;!--End Grid 1up--&gt;
-&lt;/div&gt;&lt;!--end .demo--&gt;
-
-									</code>
-								</pre>
-							</div>
-						</div>
-					</div>
-					<div id="molecules-wine-two-up" class="sg-pattern">
-						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-01-layout-01-wine-two-up/01-molecules-01-layout-01-wine-two-up.html" class="patternLink" data-patternpartial="molecules-wine-two-up">Wine Two Up</a></h2>
-						<div class="sg-pattern-body">
-							<div class="demo">
-	<!--Grid 2up-->
-	<div class="f-two-col">
-		<div class="gi">2/3</div>
-		<div class="gi">1/3</div>
+	<fieldset>
+		<div class="field-container">
+			<label for="textarea">Textarea</label>
+			<textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+		</div>
+    <div class="field-container">
+        <label for="select">Select</label>
+        <select id="select">
+            <optgroup label="Option Group">
+                <option>Option One</option>
+                <option>Option Two</option>
+                <option>Option Three</option>
+            </optgroup>
+        </select>
+    </div>
+	</fieldset>
+	<div class="modal-buttons">
+		<button class=" minor-button" data-reactid=".0.0.1.1.0.1.4.0">This text is illegible</button>
+		<button class=" minor-button" data-reactid=".0.0.1.1.0.1.4.0">Next</button>
 	</div>
 </div>
 
-							<div class="sg-code" style="display: none">
-								<h3 class="sg-code-head">HTML</h3>
-								<pre class="sg-code-html">
-									<code>
-										&lt;div class=&quot;demo&quot;&gt;
-	&lt;!--Grid 2up--&gt;
-	&lt;div class=&quot;f-two-col&quot;&gt;
-		&lt;div class=&quot;gi&quot;&gt;2/3&lt;/div&gt;
-		&lt;div class=&quot;gi&quot;&gt;1/3&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-									</code>
-								</pre>
-							</div>
-						</div>
-					</div>
-			</div> <!--end #sg-patterns-->
-	
-		</div><!--end .sg-main-->
-		
-		<!-- JS to hook everything together and do annotations -->
-		<script>
-			// handle injection of items from PHP
-			var patternPartial = "viewall-molecules-layout";
-			var lineage = "";
-		</script>
-		
-
 	<!--DO NOT REMOVE-->
+		
+	<script>
+		// handle injection of items from PHP
+		var patternPartial = "molecules-wine-modal";
+		var lineage        = [];
+		var lineageR       = [];
+		var patternState   = "";
+		var cssEnabled     = false;
+	</script>
 		<script>
 		/*!
 		 * scriptLoader - v0.1
