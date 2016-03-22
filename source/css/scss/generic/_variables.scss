@@ -143,7 +143,7 @@ $font-color-base:          #333;
 
 $font-family--sans-serif:  "proxima-nova", "Lucida Grande", "Lucida Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-$font-family--serif:       Georgia, "Times New Roman", Times, serif;
+$font-family--serif:       "alverata-pe", Georgia, serif;
 $font-family--monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 $font-family--base:        $font-family--sans-serif;
 $font-family--headings:    $font-family--serif;
@@ -363,4 +363,3 @@ $bp-wide--down:           max-width $media-wide-max;
 $bp-huge--down:           max-width $media-huge-max;
 
 $bp-narrow--landscape:    ($bp-narrow--down) (orientation landscape);
-

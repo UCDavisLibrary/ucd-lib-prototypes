@@ -205,7 +205,7 @@ header, footer, nav, section, article, hgroup, figure {
 
 /* line 100, scss/base/_global-classes.scss */
 .font--secondary {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "alverata-pe", Georgia, serif;
 }
 
 /* line 1, scss/base/_main.scss */
@@ -360,7 +360,7 @@ h6:first-child {
 /* Subheadings */
 /* line 38, scss/base/_headings.scss */
 .subheading {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "alverata-pe", Georgia, serif;
   font-weight: normal;
 }
 
@@ -1683,7 +1683,7 @@ html {
 
 /* line 8, scss/objects/_text.scss */
 .pullquote {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "alverata-pe", Georgia, serif;
   font-size: 1.4375em;
 }
 
@@ -2279,7 +2279,7 @@ fieldset[disabled] .btn {
 .acc-handle {
   background: #131313;
   color: #fff;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "alverata-pe", Georgia, serif;
   font-weight: bold;
   display: block;
   position: relative;
