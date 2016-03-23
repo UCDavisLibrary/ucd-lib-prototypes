@@ -1,0 +1,127 @@
+		
+		<!-- View All Patterns in a Pattern Sub-Type -->
+		<div class="sg-main" role="main">
+			
+			<!-- Patterns -->
+			<div id="sg-patterns">
+					<div id="atoms-head" class="sg-pattern">
+						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-00-meta-00-head/00-atoms-00-meta-00-head.html" class="patternLink" data-patternpartial="atoms-head">Head</a></h2>
+						<div class="sg-pattern-body">
+							<!DOCTYPE html>
+<html class="pl">
+	<head>
+		<title>UC Davis Library Pattern Lab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+
+	  <link href="../../css/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+
+		<script src="https://use.typekit.net/hob5nwu.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+		{% pattern-lab-head %}
+		<!-- End Pattern Lab -->
+
+	</head>
+	<body class="body">
+
+							<div class="sg-code" style="display: none">
+								<h3 class="sg-code-head">HTML</h3>
+								<pre class="sg-code-html">
+									<code>
+										&lt;!DOCTYPE html&gt;
+&lt;html class=&quot;pl&quot;&gt;
+	&lt;head&gt;
+		&lt;title&gt;UC Davis Library Pattern Lab&lt;/title&gt;
+		&lt;meta charset=&quot;UTF-8&quot;&gt;
+		&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot; /&gt;
+
+	  &lt;link href=&quot;../../css/app.css&quot; media=&quot;screen, projector, print&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+
+		&lt;script src=&quot;https://use.typekit.net/hob5nwu.js&quot;&gt;&lt;/script&gt;
+		&lt;script&gt;try{Typekit.load({ async: true });}catch(e){}&lt;/script&gt;
+
+		&lt;!-- Begin Pattern Lab (Required for Pattern Lab to run properly) --&gt;
+		{% pattern-lab-head %}
+		&lt;!-- End Pattern Lab --&gt;
+
+	&lt;/head&gt;
+	&lt;body class=&quot;body&quot;&gt;
+
+									</code>
+								</pre>
+							</div>
+						</div>
+					</div>
+			</div> <!--end #sg-patterns-->
+	
+		</div><!--end .sg-main-->
+		
+		<!-- JS to hook everything together and do annotations -->
+		<script>
+			// handle injection of items from PHP
+			var patternPartial = "viewall-atoms-meta";
+			var lineage = "";
+		</script>
+		
+
+	<!--DO NOT REMOVE-->
+		<script>
+		/*!
+		 * scriptLoader - v0.1
+		 *
+		 * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+		 * Licensed under the MIT license
+		 *
+		 */
+		
+		var scriptLoader = {
+			
+			run: function(js,cb,target) {
+				var s  = document.getElementById(target+'-'+cb); 
+				for (var i = 0; i < js.length; i++) {
+					var src = (typeof js[i] != "string") ? js[i].src : js[i];
+					var c   = document.createElement('script');
+					c.src   = '../../'+src+'?'+cb;
+					if (typeof js[i] != "string") {
+						if (js[i].dep !== undefined) {
+							c.onload = function(dep,cb,target) {
+								return function() {
+									scriptLoader.run(dep,cb,target);
+								}
+							}(js[i].dep,cb,target);
+						}
+					}
+					s.parentNode.insertBefore(c,s);
+				}
+			}
+			
+		}
+	</script>
+	<script id="pl-js-polyfill-insert-1458757092">
+		(function() {
+			if (self != top) {
+				var cb = '1458757092';
+				var js = [];
+				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
+					js.push("styleguide/js/vendor/classlist-polyfill.js");
+				}
+				scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+			}
+		})();
+	</script>
+	<script id="pl-js-insert-1458757092">
+		(function() {
+			if (self != top) {
+				var cb = '1458757092';
+				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
+				scriptLoader.run(js,cb,'pl-js-insert');
+			}
+		})();
+	</script>
+	
+
+
+	</body>
+</html>
