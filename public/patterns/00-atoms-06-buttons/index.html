@@ -18,8 +18,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1458759366" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1458759366" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1458760267" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1458760267" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -35,39 +35,53 @@
 					<div id="atoms-wine-buttons" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/00-atoms-06-buttons-00-wine-buttons/00-atoms-06-buttons-00-wine-buttons.html" class="patternLink" data-patternpartial="atoms-wine-buttons">Wine Buttons</a></h2>
 						<div class="sg-pattern-body">
-							<a href="#" class="button">Link Button</a>
-<button type="button" class="button">Actual Button</button>
-<div class="btn-paddles">
-  <p><a href="#" class="btn--paddle-upper">Upper Button</a></p>
-  <p><a href="#" class="btn--paddle-lower">Lower Button</a></p>
+							<a class="tiny button" href="#">Tiny Button</a>
+<a class="small button" href="#">Small Button</a>
+<a class="button" href="#">Basic Button</a>
+<a class="large button" href="#">Large Button</a>
+<a class="expanded button" href="#">Such Expand</a>
+<a class="small expanded button" href="#">Wow, Small Expand</a>
+<a class="disabled button" href="#">Disabled Button</a>
+<a class="secondary button" href="#">Secondary Button</a>
+<button type="button" class="success button">Save</button>
+<button type="button" class="alert button">Delete</button>
+<a class="warning button" href="#">Warning Button</a>
+<div class="stacked button-group">
+  <a class="button">Stacked Button</a>
+  <a class="button">Stacked Button</a>
 </div>
-<p><a href="#" class="btn btn--disabled">Disabled Button</a></p>
-<p><a href="#" class="btn btn--lg">Large Button</a></p>
-<p><a href="#" class="btn btn--sm">Small Button</a></p>
-<p><a href="#" class="btn btn--block">Block Button</a></p>
-<p><a href="#" class="btn-plus">+</a></p>
-<p><a href="#" class="btn-minus">-</a></p>
-<p><a href="#" class="btn btn-search">Search</a></p>
-<p><a href="#" class="btn btn-transcribe">Transcribe this mark</a></p>
+<div class="callout">
+  <button class="close-button" aria-label="Close alert" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <p>close button —></p>
+</div>
 
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Link Button&lt;/a&gt;
-&lt;button type=&quot;button&quot; class=&quot;button&quot;&gt;Actual Button&lt;/button&gt;
-&lt;div class=&quot;btn-paddles&quot;&gt;
-  &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn--paddle-upper&quot;&gt;Upper Button&lt;/a&gt;&lt;/p&gt;
-  &lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn--paddle-lower&quot;&gt;Lower Button&lt;/a&gt;&lt;/p&gt;
+										&lt;a class=&quot;tiny button&quot; href=&quot;#&quot;&gt;Tiny Button&lt;/a&gt;
+&lt;a class=&quot;small button&quot; href=&quot;#&quot;&gt;Small Button&lt;/a&gt;
+&lt;a class=&quot;button&quot; href=&quot;#&quot;&gt;Basic Button&lt;/a&gt;
+&lt;a class=&quot;large button&quot; href=&quot;#&quot;&gt;Large Button&lt;/a&gt;
+&lt;a class=&quot;expanded button&quot; href=&quot;#&quot;&gt;Such Expand&lt;/a&gt;
+&lt;a class=&quot;small expanded button&quot; href=&quot;#&quot;&gt;Wow, Small Expand&lt;/a&gt;
+&lt;a class=&quot;disabled button&quot; href=&quot;#&quot;&gt;Disabled Button&lt;/a&gt;
+&lt;a class=&quot;secondary button&quot; href=&quot;#&quot;&gt;Secondary Button&lt;/a&gt;
+&lt;button type=&quot;button&quot; class=&quot;success button&quot;&gt;Save&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;alert button&quot;&gt;Delete&lt;/button&gt;
+&lt;a class=&quot;warning button&quot; href=&quot;#&quot;&gt;Warning Button&lt;/a&gt;
+&lt;div class=&quot;stacked button-group&quot;&gt;
+  &lt;a class=&quot;button&quot;&gt;Stacked Button&lt;/a&gt;
+  &lt;a class=&quot;button&quot;&gt;Stacked Button&lt;/a&gt;
 &lt;/div&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--disabled&quot;&gt;Disabled Button&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--lg&quot;&gt;Large Button&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--sm&quot;&gt;Small Button&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn--block&quot;&gt;Block Button&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn-plus&quot;&gt;+&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn-minus&quot;&gt;-&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-search&quot;&gt;Search&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;#&quot; class=&quot;btn btn-transcribe&quot;&gt;Transcribe this mark&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;callout&quot;&gt;
+  &lt;button class=&quot;close-button&quot; aria-label=&quot;Close alert&quot; type=&quot;button&quot;&gt;
+    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;p&gt;close button &mdash;&gt;&lt;/p&gt;
+&lt;/div&gt;
 
 									</code>
 								</pre>
@@ -119,10 +133,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1458759366">
+	<script id="pl-js-polyfill-insert-1458760267">
 		(function() {
 			if (self != top) {
-				var cb = '1458759366';
+				var cb = '1458760267';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -131,10 +145,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1458759366">
+	<script id="pl-js-insert-1458760267">
 		(function() {
 			if (self != top) {
-				var cb = '1458759366';
+				var cb = '1458760267';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
