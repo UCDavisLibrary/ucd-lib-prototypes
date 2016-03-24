@@ -1,41 +1,29 @@
-<nav id="wine-nav-home" class="top-bar wine-nav">
-	<ul class="nav-list nav-list--main">
-		<li><a href="{{ link.templates-wine-homepage }}">Browse</a></li>
-		<li><a href="{{ link.templates-mark-wine-label }}">Mark</a></li>
-		<li><a href="{{ link.templates-transcribe-wine-label }}">Transcribe</a></li>
-		<li><a href="{{ link.templates-wine-homepage }}">Search</a></li>
-	</ul>
-	<ul class="nav-list nav-list--secondary">
-		<li><a href="{{ link.templates-wine-about }}">About the Project</a></li>
-		<li><a href="{{ link.templates-wine-blog-main-page }}">Blog</a></li>
-	</ul>
-</nav><!--end .nav-->
-
-<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="#">My Site</a></h1>
-    </li>
-     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li class="active"><a href="#">Right Button Active</a></li>
-      <li class="has-dropdown">
-        <a href="#">Right Button Dropdown</a>
-        <ul class="dropdown">
-          <li><a href="#">First link in dropdown</a></li>
-          <li class="active"><a href="#">Active link in dropdown</a></li>
-        </ul>
-      </li>
-    </ul>
-
-    <!-- Left Nav Section -->
-    <ul class="left">
-      <li><a href="#">Left Nav Button</a></li>
-    </ul>
-  </section>
-</nav>
+<header>
+	<nav class="top-bar">
+		<div class="top-bar-left">
+			<ul class="menu">
+				<li>
+					<a class="selected" href="#/">Label This</a>
+				</li>
+				<li>
+					<a class="" href="{{ link.templates-wine-homepage }}">Browse</a>
+				</li>
+				<li>
+					<a class="" href="{{ link.templates-mark-wine-label }}">Mark</a>
+				</li>
+				<li>
+					<a class="" href="{{ link.templates-transcribe-wine-label }}">Transcribe</a>
+				</li>
+			</ul>
+		</div>
+		<div class="top-bar-right">
+			<ul class="menu">
+				<li>
+					<a class="" href="{{ link.templates-wine-about }}">About the Project</a>
+				</li>
+				<li>
+					<a target="_blank" href="{{ link.templates-wine-blog-main-page }}">Blog</a>
+				</li>
+			</ul>
+	</nav>
+</header>
