@@ -1,15 +1,13 @@
-<div class="page wine-page" id="page">
-	{{> organisms-wine-header }}
-	<section class="f-one-col-jumbo">
-		{{> organisms-image-viewer }}
-		{{> molecules-wine-label-navigation }}
-	</section>
-	<section class="f-two-col">
-		<div class="label-info">
-			<h1>Label #32435</h1>
-			{{> atoms-definition }}
-		</div>
-		{{> organisms-secondary-wine-info }}
-	</section>
-	{{> organisms-wine-footer }}
+{{> molecules-primary-nav }}
+<section>
+	{{> atoms-hero-image }}
+</section>
+<section class="row">
+	<div class="column">
+		<h1>Label #32435</h1>
+		{{> atoms-definition }}
+	</div>
+	{{> organisms-label-info-sidebar }}
+</section>
+{{> organisms-footer }}
 </div>

@@ -1,14 +1,8 @@
-&lt;div class=&quot;page wine-page&quot; id=&quot;page&quot;&gt;
-	{{&gt; organisms-wine-header }}
-		&lt;section class=&quot;f-one-col&quot;&gt;
-			&lt;section&gt;
-				&lt;ul class=&quot;post-list&quot;&gt;
-					{{# latest-posts}}
-						&lt;li&gt;{{&gt; molecules-media-block }}&lt;/li&gt;
-					{{/ latest-posts}}
-				&lt;/ul&gt;
-				{{&gt; molecules-pagination }}
-			&lt;/section&gt;
-		&lt;/section&gt;
-	{{&gt; organisms-wine-footer }}
-&lt;/div&gt;
+{{&gt; molecules-primary-nav }}
+	&lt;section class=&quot;row align-center&quot;&gt;
+		{{# latest-posts}}
+		{{&gt; molecules-post-river-item }}
+		{{/ latest-posts}}
+	&lt;/section&gt;
+	{{&gt; molecules-pagination }}
+{{&gt; organisms-footer }}

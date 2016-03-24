@@ -1,14 +1,8 @@
-<div class="page wine-page" id="page">
-	{{> organisms-wine-header }}
-		<section class="f-one-col">
-			<section>
-				<ul class="post-list">
-					{{# latest-posts}}
-						<li>{{> molecules-media-block }}</li>
-					{{/ latest-posts}}
-				</ul>
-				{{> molecules-pagination }}
-			</section>
-		</section>
-	{{> organisms-wine-footer }}
-</div>
+{{> molecules-primary-nav }}
+	<section class="row align-center">
+		{{# latest-posts}}
+		{{> molecules-post-river-item }}
+		{{/ latest-posts}}
+	</section>
+	{{> molecules-pagination }}
+{{> organisms-footer }}
