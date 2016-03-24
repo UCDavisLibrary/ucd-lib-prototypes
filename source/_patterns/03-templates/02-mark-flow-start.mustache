@@ -1,21 +1,23 @@
-<div class="page wine-page" id="page">
-	{{> organisms-wine-header }}
+	{{> organisms-primary-nav }}
+	<div class="row">
+		<div class="small-4 columns">
+			{{> atoms-toggle }}
+			{{> molecules-image-zoom-controls }}
+		</div>
+		<div class="column">
+			<p>Draw a box around an area of interest on this label. Then tell us whether what you’ve marked is an image or text. Mark as many elements as you want. <a href="FIXME">Need help?</a></p>
+			<a class="button" href="#">Next Label</a>
+		</div>
+	</div>
 	<section>
-		{{> atoms-wine-toggle }}
-		{{> molecules-image-zoom-controls }}
-		<p>Draw a box around an area of interest on this label. Then tell us whether what you’ve marked is an image or text. Mark as many elements as you want. <a href="FIXME">Need help?</a></p>
-		<p><a href="#" class="btn">Next Label</a></p>
+		{{> atoms-hero-image }}
 	</section>
-	<section class="f-one-col-jumbo">
-		{{> organisms-image-viewer }}
-		{{> molecules-wine-label-navigation }}
-	</section>
-	<section class="f-two-col">
-		<div class="label-info">
+	<section class="row">
+		<div class="column">
 			<h1>Label #32435</h1>
 			{{> atoms-definition }}
 		</div>
-		{{> organisms-secondary-wine-info }}
+		{{> organisms-label-info-sidebar }}
 	</section>
-	{{> organisms-wine-footer }}
+	{{> organisms-footer }}
 </div>
