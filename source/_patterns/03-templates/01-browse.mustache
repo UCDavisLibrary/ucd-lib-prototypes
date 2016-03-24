@@ -1,0 +1,17 @@
+<div class="page wine-page" id="page">
+	{{> organisms-wine-header }}
+		<section class="f-one-col">
+			<h3>Help us uncork a piece of history</h3>
+			<p>Before we can create a searchable database, we need to transcribe the labels. That’s where you come in!</p>
+			<p><a href="{{ link.template-mark-flow-start }}" class="btn">Get Started</a></p>
+			<h2>Browse labels randomly</h2>
+			{{> molecules-pagination }}
+			<div class="gallery">
+				{{# winegallery }}
+					{{> molecules-gallery-thumbnail }}
+				{{/ winegallery }}
+			</div>
+			{{> molecules-pagination }}
+		</section>
+	{{> organisms-wine-footer }}
+</div>

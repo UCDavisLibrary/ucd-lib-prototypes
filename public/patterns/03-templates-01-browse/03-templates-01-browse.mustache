@@ -1,0 +1,17 @@
+&lt;div class=&quot;page wine-page&quot; id=&quot;page&quot;&gt;
+	{{&gt; organisms-wine-header }}
+		&lt;section class=&quot;f-one-col&quot;&gt;
+			&lt;h3&gt;Help us uncork a piece of history&lt;/h3&gt;
+			&lt;p&gt;Before we can create a searchable database, we need to transcribe the labels. That&rsquo;s where you come in!&lt;/p&gt;
+			&lt;p&gt;&lt;a href=&quot;{{ link.template-mark-flow-start }}&quot; class=&quot;btn&quot;&gt;Get Started&lt;/a&gt;&lt;/p&gt;
+			&lt;h2&gt;Browse labels randomly&lt;/h2&gt;
+			{{&gt; molecules-pagination }}
+			&lt;div class=&quot;gallery&quot;&gt;
+				{{# winegallery }}
+					{{&gt; molecules-gallery-thumbnail }}
+				{{/ winegallery }}
+			&lt;/div&gt;
+			{{&gt; molecules-pagination }}
+		&lt;/section&gt;
+	{{&gt; organisms-wine-footer }}
+&lt;/div&gt;
