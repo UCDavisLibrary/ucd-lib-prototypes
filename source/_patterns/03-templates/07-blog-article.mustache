@@ -1,6 +1,4 @@
-<div class="page wine-page" id="page">
-	{{> organisms-wine-header }}
-	<div class="f-one-col">
+{{> molecules-primary-nav }}
 		<article class="article">
 			<header class="article-header">
 				{{> molecules-headline }}
@@ -9,13 +7,11 @@
 			{{# article-body }}
 				<p class="intro">{{ intro }}</p>
 				<p>{{ main-text-p-1 }}</p>
-				{{> atoms-landscape-16x9 }} 
+				{{> atoms-landscape-16x9 }}
 				<p>{{ main-text-p-2 }}</p>
-				{{> atoms-blockquote }} 
+				{{> atoms-blockquote }}
 				<p>{{ main-text-p-3 }}</p>
 			{{/ article-body }}
 		</article>
 		{{> molecules-social-share }}
-	</div>
-	{{> organisms-wine-footer }}
-</div>
+	{{> organisms-footer }}
