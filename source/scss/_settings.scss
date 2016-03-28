@@ -61,6 +61,7 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #FFF;
 $labels-red: #4D0717;
+$labels-focal: #642667;
 $labels-background: #FFF7EC;
 $body-background: $labels-red;
 $body-font-color: #FFF7EC;
@@ -237,8 +238,8 @@ $breadcrumbs-item-slash: true;
 
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
-$button-fill: hollow;
-$button-background: $white;
+$button-fill: solid;
+$button-background: $labels-focal;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
@@ -479,7 +480,7 @@ $slider-radius: $global-radius;
 // ----------
 
 $switch-background: $medium-gray;
-$switch-background-active: $primary-color;
+$switch-background-active: $labels-focal;
 $switch-height: 2rem;
 $switch-height-tiny: 1.5rem;
 $switch-height-small: 1.75rem;

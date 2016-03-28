@@ -66,15 +66,15 @@
     <a class="secondary button" href="#">Next Label</a>
   </div>
 </section>
-<section>
+	<section>
 	<figure class="main-wine-label">
 		<img src="../../images/wine-label-generic.jpg" alt="16x9 Image" />
 	</figure>
-</section>
-<section class="medium-medium-10 medium-offset-1">
-	<section class="medium-unstack row">
-		<div class="column">
-			<h1>Label #32435</h1>
+	</section>
+	<section class="medium-medium-10 medium-offset-1">
+		<section class="medium-unstack row">
+			<div class="column">
+				<h1>Label #32435</h1>
 			<dl>
 				<dt>Definition List</dt>
 				<dd>A number of connected items or names written or printed consecutively, typically one below the other.</dd>
@@ -85,7 +85,7 @@
 				<dt>Here is term that shares a definition with the term below.</dt>
 				<dd>And it gets a definition too, which is this line.</dd>
 			</dl>
-		</div>
+			</div>
 		<div class="small-4 columns">
   <div class="social-media-container">
   	<ul class="social-share-list">
@@ -101,8 +101,8 @@
 		  <h5>Tell us your story</h5>
 		  <p>Are you a wine expert? Do you have family history with this label? <a href="#">Send us your story</a>!</p>
 		</div>
+		</section>
 	</section>
-</section>
 <!-- Begin Footer -->
 <footer>
 		<section class="row align-spaced">
@@ -125,14 +125,28 @@
 		</section>
 </footer>
 <!-- End Footer -->
+	<div class="modal-position">
+	<div class="draggable-modal transcribe-tool draggable" unselectable="on">
+		<label>
+			<h2>Transcribe this Text</h2>
+			<p>Please tell us what the highlighted text says.</p>
+			<textarea value="" data-task_key="text" placeholder="Enter text here"></textarea>
+		</label>
+		<div class="button-group align-right">
+			<!-- button class="button ghost toggle-button  minor-button">Bad mark</button>	If the 'Illegible' button moves the user directly onto the next task, the 'Illegible' button should also automatically mark the area as a 'Bad Mark'-->
+			<button class="secondary button">This text is illegible</button> <!-- used to have these classes:  ghost toggle-button undefined minor-button. FIXME find out if they're necessary for React -->
+			<button class="button">Continue</button>
+		</div>
+	</div>
+</div>
 
 	<!--DO NOT REMOVE-->
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "templates-transcribe-flow-start";
-		var lineage        = [{"lineagePattern":"molecules-primary-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-00-primary-nav\/01-molecules-05-navigation-00-primary-nav.html"},{"lineagePattern":"molecules-transcribe-instructions","lineagePath":"..\/..\/patterns\/01-molecules-06-components-01-transcribe-instructions\/01-molecules-06-components-01-transcribe-instructions.html"},{"lineagePattern":"atoms-hero-image","lineagePath":"..\/..\/patterns\/00-atoms-04-images-02-hero-image\/00-atoms-04-images-02-hero-image.html"},{"lineagePattern":"atoms-definition","lineagePath":"..\/..\/patterns\/00-atoms-03-lists-00-definition\/00-atoms-03-lists-00-definition.html"},{"lineagePattern":"organisms-label-info-sidebar","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-02-label-info-sidebar\/02-organisms-03-sections-02-label-info-sidebar.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"}];
-		var lineageR       = [{"lineagePattern":"pages-transcribe-flow-01","lineagePath":"..\/..\/patterns\/04-pages-03-transcribe-flow-01\/04-pages-03-transcribe-flow-01.html"}];
+		var patternPartial = "pages-transcribe-flow-01";
+		var lineage        = [{"lineagePattern":"templates-transcribe-flow-start","lineagePath":"..\/..\/patterns\/03-templates-03-transcribe-flow-start\/03-templates-03-transcribe-flow-start.html"},{"lineagePattern":"molecules-transcribe-modal","lineagePath":"..\/..\/patterns\/01-molecules-04-forms-01-transcribe-modal\/01-molecules-04-forms-01-transcribe-modal.html"}];
+		var lineageR       = [];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

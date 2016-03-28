@@ -1,12 +1,26 @@
 .main-wine-label {
-  margin: -20px 0 20px 0;
+  margin: 0 0 1rem 0;
 }
 
 .callout {
   min-width: 100%;
 }
 
-.button.secondary {
-  color: $white;
-  background: $labels-red;
+.button {
+  text-transform: uppercase;
+}
+
+.modal-position {  //faking the positioning of the modal
+  position: fixed;
+  top: 200px;
+  left: 30%;
+}
+.transcribe-tool {
+  min-width: 30rem;
+  background: $label-background;
+  padding: $global-padding;
+  border-radius: $global-radius;
+  label {
+    color: $labels-red;
+  }
 }
