@@ -3,3 +3,8 @@ bower_components
 node_modules
 npm-debug.log
 css
+# Emacs because Emacs
+\#*
+\.#*
+*~
+*.lock
