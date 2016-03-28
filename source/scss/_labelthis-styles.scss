@@ -1,0 +1,46 @@
+.main-wine-label {
+  margin: 0 0 1rem 0;
+}
+
+.callout {
+  min-width: 100%;
+}
+
+.button {
+  text-transform: uppercase;
+}
+
+.secondary.button {
+  color: $labels-red;
+  border-color: $labels-red;
+}
+
+.intro {
+  background: $label-background;
+  color: $labels-red;
+  padding: 3rem;
+  margin-bottom: 2rem;
+  .title {
+    height: 15rem;
+    background: url("../images/label-this-title-image.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300;
+    margin-bottom: 3rem;
+  }
+}
+
+.modal-position {  //faking the positioning of the modal
+  position: fixed;
+  top: 200px;
+  left: 25%;
+}
+.transcribe-tool {
+  min-width: 30rem;
+  background: $label-background;
+  padding: $global-padding;
+  border-radius: $global-radius;
+  label {
+    color: $labels-red;
+  }
+}
