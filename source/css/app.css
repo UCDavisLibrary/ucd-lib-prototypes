@@ -1679,7 +1679,7 @@ label {
   font-size: 0.875rem;
   font-weight: normal;
   line-height: 1.8;
-  color: #0a0a0a; }
+  color: #FFF7EC; }
   label.middle {
     margin: 0 0 1rem;
     padding: 0.5625rem 0; }
@@ -1688,7 +1688,7 @@ label {
   margin-top: -0.5rem;
   font-size: 0.8125rem;
   font-style: italic;
-  color: #0a0a0a; }
+  color: #FFF7EC; }
 
 .input-group {
   display: -webkit-flex;
@@ -1711,7 +1711,7 @@ label {
   text-align: center;
   padding: 0 1rem;
   background: #e6e6e6;
-  color: #0a0a0a;
+  color: #FFF7EC;
   border: 1px solid #cacaca;
   white-space: nowrap;
   -webkit-flex: 0 0 auto;
