@@ -20,6 +20,14 @@
   color: $labels-red;
   padding: 3rem;
   margin-bottom: 2rem;
+  .title {
+    height: 15rem;
+    background: url("../images/label-this-title-image.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300;
+    margin-bottom: 3rem;
+  }
 }
 
 .modal-position {  //faking the positioning of the modal

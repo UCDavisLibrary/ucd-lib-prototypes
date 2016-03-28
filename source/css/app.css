@@ -3999,6 +3999,13 @@ table.hover tr:nth-of-type(even):hover {
   color: #4D0717;
   padding: 3rem;
   margin-bottom: 2rem; }
+  .intro .title {
+    height: 15rem;
+    background: url("../images/label-this-title-image.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300;
+    margin-bottom: 3rem; }
 
 .modal-position {
   position: fixed;
