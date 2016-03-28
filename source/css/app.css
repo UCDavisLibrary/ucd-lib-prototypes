@@ -2993,7 +2993,7 @@ body {
         display: inline-block; } }
   .pagination a,
   .pagination button {
-    color: #0a0a0a;
+    color: #fefefe;
     display: block;
     padding: 0.1875rem 0.625rem;
     border-radius: 0; }
@@ -3014,7 +3014,7 @@ body {
   .pagination .ellipsis::after {
     content: '\2026';
     padding: 0.1875rem 0.625rem;
-    color: #0a0a0a; }
+    color: #fefefe; }
 
 .pagination-previous a::before,
 .pagination-previous.disabled::before {
@@ -3273,7 +3273,7 @@ body.is-reveal-open {
   width: 4rem;
   height: 2rem;
   transition: all 0.25s ease-out;
-  border-radius: 0;
+  border-radius: 3rem;
   color: inherit;
   font-weight: inherit; }
   input + .switch-paddle {
@@ -3290,7 +3290,7 @@ body.is-reveal-open {
     transition: all 0.25s ease-out;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
-    border-radius: 0; }
+    border-radius: 3rem; }
   input:checked ~ .switch-paddle {
     background: #fff; }
     input:checked ~ .switch-paddle::after {
