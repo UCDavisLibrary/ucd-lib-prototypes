@@ -3,10 +3,12 @@
 @import 'settings';
 @import 'foundation';
 
-@import 'labelthis';
+
 // @import 'motion-ui';
 
 @include foundation-everything(true);
+
+@import 'labelthis';
 // @include foundation-global-styles;
 // @include foundation-grid;
 // @include foundation-flex-grid;
