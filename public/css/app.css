@@ -4027,7 +4027,8 @@ body {
   left: 25%; }
 
 .transcribe-tool, .help-dialogue {
-  max-width: 30rem;
+  min-width: 30rem;
+  max-width: 35rem;
   background: #FFF7EC;
   padding: 1rem;
   border-radius: 0.3rem; }

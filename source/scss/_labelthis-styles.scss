@@ -56,7 +56,8 @@ body {
 }
 
 .transcribe-tool, .help-dialogue {
-  max-width: 30rem;
+  min-width: 30rem;
+  max-width: 35rem;
   background: $label-background;
   padding: $global-padding;
   border-radius: $global-radius;
