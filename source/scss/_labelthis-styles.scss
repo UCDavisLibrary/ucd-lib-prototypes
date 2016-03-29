@@ -32,9 +32,10 @@
 
 .modal-position {  //faking the positioning of the modal
   position: fixed;
-  top: 200px;
+  top: 250px;
   left: 25%;
 }
+
 .transcribe-tool {
   min-width: 30rem;
   background: $label-background;
@@ -43,6 +44,15 @@
   label {
     color: $labels-red;
   }
+}
+
+.transcribe-overlay {
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  top: 1;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 // FIXME these are temporary until I can figure out wtf is wrong with the _webicons.scss file

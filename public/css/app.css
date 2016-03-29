@@ -4009,7 +4009,7 @@ table.hover tr:nth-of-type(even):hover {
 
 .modal-position {
   position: fixed;
-  top: 200px;
+  top: 250px;
   left: 25%; }
 
 .transcribe-tool {
@@ -4019,6 +4019,14 @@ table.hover tr:nth-of-type(even):hover {
   border-radius: 0.3rem; }
   .transcribe-tool label {
     color: #4D0717; }
+
+.transcribe-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 1;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 .webicon.facebook {
   background: url("../images/webicons/webicon-facebook.svg"); }
