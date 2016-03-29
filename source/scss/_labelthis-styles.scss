@@ -44,3 +44,14 @@
     color: $labels-red;
   }
 }
+
+// FIXME these are temporary until I can figure out wtf is wrong with the _webicons.scss file
+.webicon.facebook {
+  background: url("../images/webicons/webicon-facebook.svg");
+}
+.webicon.pinterest {
+  background: url("../images/webicons/webicon-pinterest.svg");
+}
+.webicon.twitter {
+  background: url("../images/webicons/webicon-twitter.svg");
+}

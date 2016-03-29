@@ -4019,3 +4019,87 @@ table.hover tr:nth-of-type(even):hover {
   border-radius: 0.3rem; }
   .transcribe-tool label {
     color: #4D0717; }
+
+.webicon.facebook {
+  background: url("../images/webicons/webicon-facebook.svg"); }
+
+.webicon.pinterest {
+  background: url("../images/webicons/webicon-pinterest.svg"); }
+
+.webicon.twitter {
+  background: url("../images/webicons/webicon-twitter.svg"); }
+
+/* Webicons by Adam Fairhead: http://adamfairhead.com */
+.webicon {
+  display: inline-block;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  text-indent: -999em;
+  text-align: left;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  margin-bottom: 5px; }
+
+.webicon:hover {
+  margin: -1px 0 1px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25); }
+
+.webicon.small {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px; }
+
+.webicon.large {
+  width: 48px;
+  height: 48px;
+  border-radius: 6px; }
+
+/* restore webicons accessibility for print */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  .webicon {
+    text-indent: 0;
+    width: auto !important;
+    height: auto !important;
+    border-radius: 0 !important; } }
+
+.no-svg .webicon.facebook {
+  background: url("../images/webicons/webicon-facebook-m.png"); }
+
+.no-svg .webicon.facebook.large {
+  background: url("../images/webicons/webicon-facebook.png"); }
+
+.no-svg .webicon.facebook.small {
+  background: url("../images/webicons/webicon-facebook-s.png"); }
+
+.svg .webicon.facebook {
+  background: url("../images/webicons/webicon-facebook.svg"); }
+
+.no-svg .webicon.pinterest {
+  background: url("../images/webicons/webicon-pinterest-m.png"); }
+
+.no-svg .webicon.pinterest.large {
+  background: url("../images/webicons/webicon-pinterest.png"); }
+
+.no-svg .webicon.pinterest.small {
+  background: url("../images/webicons/webicon-pinterest-s.png"); }
+
+.svg .webicon.pinterest {
+  background: url("../images/webicons/webicon-pinterest.svg"); }
+
+.no-svg .webicon.twitter {
+  background: url("../images/webicons/webicon-twitter-m.png"); }
+
+.no-svg .webicon.twitter.large {
+  background: url("../images/webicons/webicon-twitter.png"); }
+
+.no-svg .webicon.twitter.small {
+  background: url("../images/webicons/webicon-twitter-s.png"); }
+
+.svg .webicon.twitter {
+  background: url("../images/webicons/webicon-twitter.svg"); }
