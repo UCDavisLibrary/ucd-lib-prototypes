@@ -3981,6 +3981,20 @@ table.hover tr:nth-of-type(even):hover {
         -ms-flex-order: 6;
             order: 6; } }
 
+body {
+  background: #4D0717;
+  /* Old browsers */
+  /* FF3.6+ */
+  /* Chrome,Safari4+ */
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(to bottom, #4D0717 0%, #0a0a0a 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+  background-attachment: fixed; }
+
 .main-wine-label {
   margin: 0 0 1rem 0; }
 
@@ -4012,15 +4026,15 @@ table.hover tr:nth-of-type(even):hover {
   top: 250px;
   left: 25%; }
 
-.transcribe-tool {
-  min-width: 30rem;
+.transcribe-tool, .help-dialogue {
+  max-width: 30rem;
   background: #FFF7EC;
   padding: 1rem;
   border-radius: 0.3rem; }
-  .transcribe-tool label {
+  .transcribe-tool label, .help-dialogue label {
     color: #4D0717; }
 
-.transcribe-overlay {
+.vignette-overlay {
   background: rgba(0, 0, 0, 0.6);
   position: absolute;
   top: 1;
