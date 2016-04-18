@@ -1646,7 +1646,7 @@ textarea[readonly] {
 
 [type='submit'],
 [type='button'] {
-  border-radius: 0.3rem;
+  border-radius: 1px;
   -webkit-appearance: none;
   -moz-appearance: none; }
 
@@ -1825,17 +1825,17 @@ select {
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   vertical-align: middle;
   border: 1px solid transparent;
-  border-radius: 0.3rem;
+  border-radius: 1px;
   padding: 0.85em 1em;
   margin: 0 0 1rem 0;
   font-size: 0.9rem;
-  background-color: #642667;
-  color: #FFF; }
+  background-color: #455B00;
+  color: #FFF7EC; }
   [data-whatinput='mouse'] .button {
     outline: 0; }
   .button:hover, .button:focus {
-    background-color: #552058;
-    color: #FFF; }
+    background-color: #3b4d00;
+    color: #FFF7EC; }
   .button.tiny {
     font-size: 0.6rem; }
   .button.small {
@@ -1849,34 +1849,34 @@ select {
     margin-right: 0; }
   .button.primary {
     background-color: #FFF7EC;
-    color: #FFF; }
+    color: #FFF7EC; }
     .button.primary:hover, .button.primary:focus {
       background-color: #ffce8a;
-      color: #FFF; }
+      color: #FFF7EC; }
   .button.secondary {
     background-color: #FFF7EC;
-    color: #FFF; }
+    color: #FFF7EC; }
     .button.secondary:hover, .button.secondary:focus {
       background-color: #ffce8a;
-      color: #FFF; }
+      color: #FFF7EC; }
   .button.success {
     background-color: #3adb76;
-    color: #FFF; }
+    color: #FFF7EC; }
     .button.success:hover, .button.success:focus {
       background-color: #22bb5b;
-      color: #FFF; }
+      color: #FFF7EC; }
   .button.warning {
     background-color: #ffae00;
-    color: #FFF; }
+    color: #FFF7EC; }
     .button.warning:hover, .button.warning:focus {
       background-color: #cc8b00;
-      color: #FFF; }
+      color: #FFF7EC; }
   .button.alert {
     background-color: #ec5840;
-    color: #FFF; }
+    color: #FFF7EC; }
     .button.alert:hover, .button.alert:focus {
       background-color: #da3116;
-      color: #FFF; }
+      color: #FFF7EC; }
   .button.hollow {
     border: 1px solid #FFF7EC;
     color: #FFF7EC; }
@@ -4002,7 +4002,16 @@ body {
   min-width: 100%; }
 
 .button {
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border: 1px solid #CBBAA5;
+  box-shadow: 0 0 0 3px #455B00;
+  margin: 5px; }
+
+.large.button {
+  text-transform: uppercase;
+  border: 1px solid #CBBAA5;
+  box-shadow: 0 0 0 5px #455B00, 0 0 0 10px #CBBAA5;
+  margin: 10px; }
 
 .secondary.button {
   color: #4D0717;
