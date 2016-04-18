@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7 (28169) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Large-Button" transform="translate(-19.000000, -18.000000)">
+            <g id="Group" transform="translate(19.000000, 18.000000)">
+                <path d="M4.01459549,15.9830266 C6.39201509,14.6829401 7.98960926,12.2663786 7.98960926,9.5 C7.98960926,6.7279641 6.38547414,4.30717742 4,3.00901129" id="Oval-7" stroke="#F1E3D1" transform="translate(5.994805, 9.496019) scale(-1, 1) translate(-5.994805, -9.496019) "></path>
+                <path d="M1.41050478,18 C4.52566477,16.296482 6.6190106,13.1300338 6.6190106,9.50521645 C6.6190106,5.87298623 4.51709408,2.70100187 1.39138014,1" id="Oval-7-Copy" stroke="#F1E3D1" transform="translate(4.005195, 9.500000) scale(-1, 1) translate(-4.005195, -9.500000) "></path>
+                <path d="M4.37273462,10.5 L17.0457116,10.5" id="Line" stroke="#F1E3D1" stroke-linecap="square" transform="translate(10.709223, 10.500000) scale(-1, 1) translate(-10.709223, -10.500000) "></path>
+                <path d="M4.37273462,8.5 L17.0457116,8.5" id="Line-Copy" stroke="#F1E3D1" stroke-linecap="square" transform="translate(10.709223, 8.500000) scale(-1, 1) translate(-10.709223, -8.500000) "></path>
+                <rect id="Rectangle-29" x="0" y="0" width="27" height="19"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

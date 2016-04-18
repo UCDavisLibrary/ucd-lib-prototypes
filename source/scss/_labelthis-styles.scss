@@ -30,6 +30,12 @@ body {
 	border: 1px solid #CBBAA5;
   box-shadow: 0 0 0 3px #455B00;
   margin: 5px;
+  .right-pointer {
+    padding: 0 0 .2em .5em;
+  }
+  .left-pointer {
+    padding: 0 .5em .2em 0;
+  }
 }
 
 .large.button {
@@ -39,9 +45,32 @@ body {
   margin: 10px;
 }
 
+.secondary.button, .tiny.button {
+  border: 1px solid $labels-red;
+  box-shadow: 0 0 0 0;
+  border-radius: $global-radius;
+}
+
 .secondary.button {
+  background-color: #F1E3D1;
   color: $labels-red;
-  border-color: $labels-red;
+  &:hover {
+    color: $labels-red;
+    background-color: #CBBAA5;
+  }
+}
+
+.stacked  {
+  .button {
+    box-shadow: 0 0 0 0;
+    background-color: $labels-red;
+    border-radius: 0 0 10px 10px;
+    border-color: $labels-red;
+    &:first-of-type {
+      background-color: $labels-focal;
+      border-radius: 10px 10px 0 0;
+    }
+  }
 }
 
 .intro {
