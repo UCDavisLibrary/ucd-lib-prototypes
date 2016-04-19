@@ -95,12 +95,16 @@ body {
   left: 25%;
 }
 
-.transcribe-tool, .help-dialogue {
+.draggable-modal, .transcribe-tool, .help-dialogue {
   min-width: 30rem;
   max-width: 35rem;
   background: $label-background;
   padding: $global-padding;
-  border-radius: $global-radius;
+  border-radius: 0;
+  margin: 40px 30px;
+	outline: 3px solid $label-background;
+	border: 3px solid $labels-background-dark;
+	box-shadow: 0 0 0 15px $labels-background-dark;
   label {
     color: $labels-red;
   }

@@ -4045,13 +4045,17 @@ body {
   top: 250px;
   left: 25%; }
 
-.transcribe-tool, .help-dialogue {
+.draggable-modal, .transcribe-tool, .help-dialogue {
   min-width: 30rem;
   max-width: 35rem;
   background: #F1E3D1;
   padding: 1rem;
-  border-radius: 0.3rem; }
-  .transcribe-tool label, .help-dialogue label {
+  border-radius: 0;
+  margin: 40px 30px;
+  outline: 3px solid #F1E3D1;
+  border: 3px solid #CBBAA5;
+  box-shadow: 0 0 0 15px #CBBAA5; }
+  .draggable-modal label, .transcribe-tool label, .help-dialogue label {
     color: #4D0717; }
 
 .vignette-overlay {
