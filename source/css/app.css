@@ -2081,7 +2081,7 @@ select {
         -ms-flex: 0 0 auto;
             flex: 0 0 auto; }
     .button-group .button:not(:last-child) {
-      margin-right: 1px; }
+      margin-right: 10px; }
   .button-group.tiny .button {
     font-size: 0.6rem; }
   .button-group.small .button {
@@ -2138,14 +2138,14 @@ select {
           -ms-flex: 1 1 0px;
               flex: 1 1 0px; }
       .button-group.stacked-for-small .button:not(:last-child) {
-        margin-right: 1px; } }
+        margin-right: 10px; } }
   @media screen and (min-width: 64em) {
     .button-group.stacked-for-medium .button {
       -webkit-flex: 1 1 0px;
           -ms-flex: 1 1 0px;
               flex: 1 1 0px; }
       .button-group.stacked-for-medium .button:not(:last-child) {
-        margin-right: 1px; } }
+        margin-right: 10px; } }
   @media screen and (max-width: 39.9375em) {
     .button-group.stacked-for-small.expanded {
       display: block; }
@@ -4045,9 +4045,7 @@ body {
   top: 250px;
   left: 25%; }
 
-.draggable-modal, .transcribe-tool, .help-dialogue {
-  min-width: 30rem;
-  max-width: 35rem;
+.draggable-modal, .transcribe-tool, .help-dialogue, .step-by-step {
   background: #F1E3D1;
   padding: 1rem;
   border-radius: 0;
@@ -4055,8 +4053,18 @@ body {
   outline: 3px solid #F1E3D1;
   border: 3px solid #CBBAA5;
   box-shadow: 0 0 0 15px #CBBAA5; }
-  .draggable-modal label, .transcribe-tool label, .help-dialogue label {
+  .draggable-modal label, .transcribe-tool label, .help-dialogue label, .step-by-step label {
     color: #4D0717; }
+
+.draggable-modal, .transcribe-tool, .help-dialogue {
+  min-width: 30rem;
+  max-width: 35rem; }
+
+.step-by-step {
+  padding: .2rem .5rem .5rem;
+  color: #4D0717; }
+  .step-by-step h6 {
+    margin: 0 0 -17px 27px; }
 
 .vignette-overlay {
   background: rgba(0, 0, 0, 0.6);

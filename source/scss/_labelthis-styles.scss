@@ -95,9 +95,7 @@ body {
   left: 25%;
 }
 
-.draggable-modal, .transcribe-tool, .help-dialogue {
-  min-width: 30rem;
-  max-width: 35rem;
+.draggable-modal, .transcribe-tool, .help-dialogue, .step-by-step {
   background: $label-background;
   padding: $global-padding;
   border-radius: 0;
@@ -107,6 +105,19 @@ body {
 	box-shadow: 0 0 0 15px $labels-background-dark;
   label {
     color: $labels-red;
+  }
+}
+
+.draggable-modal, .transcribe-tool, .help-dialogue {
+  min-width: 30rem;
+  max-width: 35rem;
+}
+
+.step-by-step {
+  padding: .2rem .5rem .5rem;
+  color: $labels-red;
+  h6 {
+    margin: 0 0 -17px 27px;
   }
 }
 
