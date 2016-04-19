@@ -3008,13 +3008,13 @@ body {
         display: inline-block; } }
   .pagination a,
   .pagination button {
-    color: #FFF;
+    color: #F1E3D1;
     display: block;
     padding: 0.1875rem 0.625rem;
     border-radius: 0.3rem; }
     .pagination a:hover,
     .pagination button:hover {
-      background: #e6e6e6; }
+      background: none; }
   .pagination .current {
     padding: 0.1875rem 0.625rem;
     background: #F1E3D1;
@@ -3029,19 +3029,7 @@ body {
   .pagination .ellipsis::after {
     content: '\2026';
     padding: 0.1875rem 0.625rem;
-    color: #FFF; }
-
-.pagination-previous a::before,
-.pagination-previous.disabled::before {
-  content: '\00ab';
-  display: inline-block;
-  margin-right: 0.5rem; }
-
-.pagination-next a::after,
-.pagination-next.disabled::after {
-  content: '\00bb';
-  display: inline-block;
-  margin-left: 0.5rem; }
+    color: #F1E3D1; }
 
 .progress {
   background-color: #cacaca;
@@ -4005,10 +3993,12 @@ body {
   text-transform: uppercase;
   border: 1px solid #CBBAA5;
   margin: 5px; }
-  .button .right-pointer {
-    padding: 0 0 .2em .5em; }
-  .button .left-pointer {
-    padding: 0 .5em .2em 0; }
+
+.right-pointer {
+  padding: 0 0 .2em .5em; }
+
+.left-pointer {
+  padding: 0 .5em .2em 0; }
 
 .large.button {
   text-transform: uppercase;
@@ -4071,6 +4061,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%; }
+
+.pagination li a {
+  border: 1px solid transparent; }
+  .pagination li a:hover {
+    border: 1px solid #F1E3D1; }
 
 .webicon.facebook {
   background: url("../images/webicons/webicon-facebook.svg"); }

@@ -30,12 +30,13 @@ body {
 	border: 1px solid #CBBAA5;
   //box-shadow: 0 0 0 3px #455B00;
   margin: 5px;
-  .right-pointer {
-    padding: 0 0 .2em .5em;
-  }
-  .left-pointer {
-    padding: 0 .5em .2em 0;
-  }
+}
+
+.right-pointer {
+  padding: 0 0 .2em .5em;
+}
+.left-pointer {
+  padding: 0 .5em .2em 0;
 }
 
 .large.button {
@@ -112,6 +113,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.pagination li a {
+  border: 1px solid rgba(0,0,0,0);
+  &:hover {
+    border: 1px solid $labels-background;
+  }
 }
 
 // FIXME these are temporary until I can figure out wtf is wrong with the _webicons.scss file
