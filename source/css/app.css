@@ -1646,7 +1646,7 @@ textarea[readonly] {
 
 [type='submit'],
 [type='button'] {
-  border-radius: 1px;
+  border-radius: 3px;
   -webkit-appearance: none;
   -moz-appearance: none; }
 
@@ -1825,7 +1825,7 @@ select {
   transition: background-color 0.25s ease-out, color 0.25s ease-out;
   vertical-align: middle;
   border: 1px solid transparent;
-  border-radius: 1px;
+  border-radius: 3px;
   padding: 0.85em 1em;
   margin: 0 0 1rem 0;
   font-size: 0.9rem;
@@ -4004,7 +4004,6 @@ body {
 .button {
   text-transform: uppercase;
   border: 1px solid #CBBAA5;
-  box-shadow: 0 0 0 3px #455B00;
   margin: 5px; }
   .button .right-pointer {
     padding: 0 0 .2em .5em; }
