@@ -74,18 +74,29 @@ body {
   }
 }
 
-.intro {
-  background: $label-background;
-  color: $labels-red;
-  padding: 3rem;
-  margin-bottom: 2rem;
-  .title {
-    height: 15rem;
-    background: url("../images/label-this-title-image.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 300;
-    margin-bottom: 3rem;
+.homepage {
+  h1 {
+    text-align: center;
+  }
+  .title img {
+    width: 100%;
+    margin: 2em auto 1.5em;
+  }
+  .button {
+    margin: 1.5em auto 2.5em;
+  }
+}
+
+.large-title {
+  display: none;
+  @media only screen and (min-width: 33em) {
+    display: block;
+  }
+}
+.small-title {
+  display: none;
+  @media only screen and (max-width: 33em) {
+    display: block;
   }
 }
 
@@ -99,7 +110,7 @@ body {
   background: $label-background;
   padding: $global-padding;
   border-radius: 0;
-  margin: 40px 30px;
+  margin: 40px 25px;
 	outline: 3px solid $label-background;
 	border: 3px solid $labels-background-dark;
 	box-shadow: 0 0 0 15px $labels-background-dark;

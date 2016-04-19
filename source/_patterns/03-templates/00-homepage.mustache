@@ -1,21 +1,29 @@
 {{> molecules-primary-nav }}
-<div class="row">
-		<section class="intro small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns">
-			<h1 class="title"></h1>
+<div class="row homepage">
+		<section class="small-12 medium-12 large-10 large-offset-1 columns title">
+			<img class="large-title" src="../../images/label-this-title-image.svg">
+			<img class="small-title" src="../../images/label-this-title-image-sm.svg">
+		</section>
+		<section class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns">
 			<p class="lead">The labels in the Maynard Amerine Collection at the UC Davis Libary tell the story of the growing wine industry in California. Many of them are meaningful windows into the fabric of both winemaking and winemakers and should be searchable in a way that is accessible.</p>
-			<p class="lead">Before we can create a searchable database, we need to transcribe the labels. That’s where you come in! Help us uncork a piece of history.</p>
+			<p>Before we can create a searchable database, we need to transcribe the labels. That’s where you come in! Help us uncork a piece of history.</p>
+		</section>
+		<section class="small-12 medium-12 large-10 large-offset-1 columns">
+			<h1>Here's how you can help:</h1>
+			{{> organisms-step-by-step }}
+		</section>
+		<section class="small-12 medium-10 medium-offset-1 columns">
 			<div class="row align-center">
-				<a class="button large" href="{{ link.templates-mark-flow-start }}">Get Started</a>
+				<button type="button" class="large button" href="{{ link.templates-mark-flow-start }}"><img class="left-pointer" src="../../images/left-pointer-knockout.svg"/>Get Started<img class="right-pointer" src="../../images/right-pointer-knockout.svg"/></button>
 			</div>
 		</section>
 		<section class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns">
 			<h2>Just want to look at the pretty labels?</h2>
 			<p>Since the labels aren’t transcribed yet, they’re just ordered randomly. That’s why we need your help. As we transcribe more labels, we’ll be able to gather more information about them. That will help us organize how we present them to you.</p>
 			<p>In the meantime, you can look through the labels at random below, or search for terms within the labels we’ve transcribed so far.</p>
+			{{> molecules-pagination }}
 			{{> organisms-gallery }}
-			<div class="row align-center">
-				<a class="small secondary button" href="{{ link.templates-browse }}">Browse More Labels</a>
-			</div>
+			{{> molecules-pagination }}
 		</section>
 </div>
 {{> organisms-footer }}

@@ -4027,18 +4027,27 @@ body {
     background-color: #642667;
     border-radius: 10px 10px 0 0; }
 
-.intro {
-  background: #F1E3D1;
-  color: #4D0717;
-  padding: 3rem;
-  margin-bottom: 2rem; }
-  .intro .title {
-    height: 15rem;
-    background: url("../images/label-this-title-image.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 300;
-    margin-bottom: 3rem; }
+.homepage h1 {
+  text-align: center; }
+
+.homepage .title img {
+  width: 100%;
+  margin: 2em auto 1.5em; }
+
+.homepage .button {
+  margin: 1.5em auto 2.5em; }
+
+.large-title {
+  display: none; }
+  @media only screen and (min-width: 33em) {
+    .large-title {
+      display: block; } }
+
+.small-title {
+  display: none; }
+  @media only screen and (max-width: 33em) {
+    .small-title {
+      display: block; } }
 
 .modal-position {
   position: fixed;
@@ -4049,7 +4058,7 @@ body {
   background: #F1E3D1;
   padding: 1rem;
   border-radius: 0;
-  margin: 40px 30px;
+  margin: 40px 25px;
   outline: 3px solid #F1E3D1;
   border: 3px solid #CBBAA5;
   box-shadow: 0 0 0 15px #CBBAA5; }
