@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="19px" viewBox="0 0 18 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.7.1 (28215) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Pagination" transform="translate(1.000000, -4.000000)" stroke="#4D0717">
+            <g id="Group" transform="translate(0.000000, 5.000000)">
+                <path d="M3.01459549,14.9830266 C5.39201509,13.6829401 6.98960926,11.2663786 6.98960926,8.5 C6.98960926,5.7279641 5.38547414,3.30717742 3,2.00901129" id="Oval-7" transform="translate(4.994805, 8.496019) scale(-1, 1) translate(-4.994805, -8.496019) "></path>
+                <path d="M0.410504779,17 C3.52566477,15.296482 5.6190106,12.1300338 5.6190106,8.50521645 C5.6190106,4.87298623 3.51709408,1.70100187 0.391380143,0" id="Oval-7-Copy" transform="translate(3.005195, 8.500000) scale(-1, 1) translate(-3.005195, -8.500000) "></path>
+                <path d="M3.37273462,9.5 L16.0457116,9.5" id="Line" stroke-linecap="square" transform="translate(9.709223, 9.500000) scale(-1, 1) translate(-9.709223, -9.500000) "></path>
+                <path d="M3.37273462,7.5 L16.0457116,7.5" id="Line-Copy" stroke-linecap="square" transform="translate(9.709223, 7.500000) scale(-1, 1) translate(-9.709223, -7.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

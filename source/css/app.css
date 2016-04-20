@@ -4073,7 +4073,11 @@ body {
   padding: .2rem .5rem .5rem;
   color: #4D0717; }
   .step-by-step h6 {
-    margin: 0 0 -17px 27px; }
+    margin: 0 0 -17px 30px; }
+  .step-by-step p {
+    line-height: 1em; }
+  .step-by-step img {
+    width: 100%; }
 
 .vignette-overlay {
   background: rgba(0, 0, 0, 0.6);
@@ -4087,6 +4091,25 @@ body {
   border: 1px solid transparent; }
   .pagination li a:hover {
     border: 1px solid #F1E3D1; }
+
+.top-bar {
+  border-bottom: 0.2em solid #CBBAA5; }
+
+.toolbar {
+  background: #CBBAA5;
+  padding-bottom: .2em; }
+
+.label-title {
+  background-color: #F1E3D1;
+  color: #4D0717;
+  text-align: center;
+  padding: .7em 0; }
+
+.previous-label {
+  margin-left: -4px; }
+
+.next-label {
+  margin-right: -4px; }
 
 .webicon.facebook {
   background: url("../images/webicons/webicon-facebook.svg"); }

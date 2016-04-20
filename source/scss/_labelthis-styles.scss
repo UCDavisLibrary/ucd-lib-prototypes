@@ -128,7 +128,13 @@ body {
   padding: .2rem .5rem .5rem;
   color: $labels-red;
   h6 {
-    margin: 0 0 -17px 27px;
+    margin: 0 0 -17px 30px;
+  }
+  p {
+    line-height: 1em;
+  }
+  img {
+    width: 100%;
   }
 }
 
@@ -146,6 +152,29 @@ body {
   &:hover {
     border: 1px solid $labels-background;
   }
+}
+
+.top-bar {
+  border-bottom: .2em solid $labels-background-dark;
+}
+
+.toolbar {
+  background: $labels-background-dark;
+  padding-bottom: .2em;
+}
+
+.label-title {
+  background-color: $labels-background;
+  color: $labels-red;
+  text-align: center;
+  padding: .7em 0;
+}
+
+.previous-label {
+  margin-left: -4px;
+}
+.next-label {
+  margin-right: -4px;
 }
 
 // FIXME these are temporary until I can figure out wtf is wrong with the _webicons.scss file
