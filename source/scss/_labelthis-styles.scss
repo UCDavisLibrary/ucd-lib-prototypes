@@ -175,10 +175,10 @@ body {
   background-color: $labels-background;
   color: $labels-red;
   text-align: center;
-  padding: .3em 0;
+  padding: 0;
   margin-top: .4em;
-  min-height: 1em;
-  max-height: 3em;
+  //min-height: .8em;
+  max-height: 2.8em;
   overflow: visible;
   z-index: 9000;
 }
@@ -201,18 +201,18 @@ body {
   height: 36px;
 }
 
-.mark-instructions {
-  //position: absolute;
+.mark-instructions, .transcribe-instructions {
   background-color: $labels-background;
   border: 1px solid $labels-red;
   border-radius: 1px;
   box-shadow: 0 0 0 5px $labels-background-dark, 0 2px 15px #000;
-  margin: -1.3em 1em 0 0;
+  margin: -1em 1em 0 0;
   padding: .5em 1em 0 1em;
   h1 {
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 0;
   }
   p {
     line-height: 1em;
@@ -221,6 +221,10 @@ body {
     color: $labels-red;
     text-decoration: underline;
   }
+}
+
+.transcribe-instructions {
+  margin-left: 10em;
 }
 
 // FIXME these are temporary until I can figure out wtf is wrong with the _webicons.scss file

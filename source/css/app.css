@@ -4110,10 +4110,9 @@ body {
   background-color: #F1E3D1;
   color: #4D0717;
   text-align: center;
-  padding: .3em 0;
+  padding: 0;
   margin-top: .4em;
-  min-height: 1em;
-  max-height: 3em;
+  max-height: 2.8em;
   overflow: visible;
   z-index: 9000; }
 
@@ -4132,22 +4131,26 @@ body {
   border-radius: 30em;
   height: 36px; }
 
-.mark-instructions {
+.mark-instructions, .transcribe-instructions {
   background-color: #F1E3D1;
   border: 1px solid #4D0717;
   border-radius: 1px;
   box-shadow: 0 0 0 5px #CBBAA5, 0 2px 15px #000;
-  margin: -1.3em 1em 0 0;
+  margin: -1em 1em 0 0;
   padding: .5em 1em 0 1em; }
-  .mark-instructions h1 {
+  .mark-instructions h1, .transcribe-instructions h1 {
     font-size: 1em;
     font-weight: bold;
-    text-transform: uppercase; }
-  .mark-instructions p {
+    text-transform: uppercase;
+    margin: 0; }
+  .mark-instructions p, .transcribe-instructions p {
     line-height: 1em; }
-  .mark-instructions a {
+  .mark-instructions a, .transcribe-instructions a {
     color: #4D0717;
     text-decoration: underline; }
+
+.transcribe-instructions {
+  margin-left: 10em; }
 
 .webicon.facebook {
   background: url("../images/webicons/webicon-facebook.svg"); }
