@@ -3271,7 +3271,7 @@ body.is-reveal-open {
   position: absolute; }
 
 .switch-paddle {
-  background: #cacaca;
+  background: #F1E3D1;
   cursor: pointer;
   display: block;
   position: relative;
@@ -3284,7 +3284,7 @@ body.is-reveal-open {
   input + .switch-paddle {
     margin: 0; }
   .switch-paddle::after {
-    background: #FFF;
+    background: #CBBAA5;
     content: '';
     display: block;
     position: absolute;
@@ -3297,7 +3297,7 @@ body.is-reveal-open {
             transform: translate3d(0, 0, 0);
     border-radius: 3rem; }
   input:checked ~ .switch-paddle {
-    background: #642667; }
+    background: #4D0717; }
     input:checked ~ .switch-paddle::after {
       left: 2.25rem; }
   [data-whatinput='mouse'] input:focus ~ .switch-paddle {
@@ -4096,8 +4096,15 @@ body {
   border-bottom: 0.2em solid #CBBAA5; }
 
 .toolbar {
+  min-width: 100%;
   background: #CBBAA5;
   padding-bottom: .2em; }
+
+.row.tools {
+  padding-left: 3em;
+  background: #F1E3D1;
+  margin-top: .4em;
+  margin-right: .4em; }
 
 .label-title {
   background-color: #F1E3D1;
@@ -4110,6 +4117,10 @@ body {
 
 .next-label {
   margin-right: -4px; }
+
+.switch {
+  padding-top: .3em;
+  margin: 0 1em .2em 2em; }
 
 .webicon.facebook {
   background: url("../images/webicons/webicon-facebook.svg"); }

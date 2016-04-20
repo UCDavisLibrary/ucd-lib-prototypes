@@ -159,8 +159,16 @@ body {
 }
 
 .toolbar {
+  min-width: 100%;
   background: $labels-background-dark;
   padding-bottom: .2em;
+}
+
+.row.tools {
+  padding-left: 3em;
+  background: $labels-background;
+  margin-top: .4em;
+  margin-right:.4em;
 }
 
 .label-title {
@@ -175,6 +183,11 @@ body {
 }
 .next-label {
   margin-right: -4px;
+}
+
+.switch {
+  padding-top: .3em;
+  margin: 0 1em .2em 2em;
 }
 
 // FIXME these are temporary until I can figure out wtf is wrong with the _webicons.scss file

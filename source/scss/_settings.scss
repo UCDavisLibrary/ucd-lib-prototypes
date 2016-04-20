@@ -481,15 +481,15 @@ $slider-radius: $global-radius;
 // 30. Switch
 // ----------
 
-$switch-background: $medium-gray;
-$switch-background-active: $labels-focal;
+$switch-background: $labels-background;
+$switch-background-active: $labels-red;
 $switch-height: 2rem;
 $switch-height-tiny: 1.5rem;
 $switch-height-small: 1.75rem;
 $switch-height-large: 2.5rem;
 $switch-radius: 3rem;
 $switch-margin: $global-margin;
-$switch-paddle-background: $white;
+$switch-paddle-background: $labels-background-dark;
 $switch-paddle-offset: 0.25rem;
 $switch-paddle-radius: 3rem;
 $switch-paddle-transition: all 0.25s ease-out;

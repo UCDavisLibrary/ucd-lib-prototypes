@@ -26,28 +26,29 @@
 
 	</head>
 	<body class="body">
-<div class="draggable-modal help-dialogue draggable" unselectable="on">
-	<label>
-		<h2>How to Transcribe this label</h2>
-		<p>Please tell us what the highlighted text says. Try to include any diacritics, like accents ( ` ) or umlauts ( ¨ ), as well as upper and lower case letters.</p>
-		<p>If something is illegible, that is important information for us to know as well, so please mark it as illegible.</p>
-		<p>If the area highlighted is an image, please use on or two words to describe the image.</p>
-		<figure>
-			<img src="../../images/fpo_4x3.png" alt="4x3 Image" />
-		</figure>
-		<div class="button-group align-center">
-			<a href="../../patterns/04-pages-03-transcribe-flow-01/04-pages-03-transcribe-flow-01.html" class="button">OK, got it!</a>
-		</div>
-	</label>
-</div>
+<section class="row align-justify toolbar">
+  <div class="">
+    <div class="row tools">
+    	<img class="zoom-button" src="../../images/zoom-button.svg">
+	<div class="switch">
+	  <input class="switch-input" id="exampleSwitch" type="checkbox" name="exampleSwitch">
+	  <label class="switch-paddle" for="exampleSwitch">
+	    <span class="show-for-sr">Show Others' Marks</span>
+	  </label>
+	</div>
+    </div>
+  </div>
+  <div class="columns align-self-middle label-title">INSTRUCTIONS:</div>
+  <a class="secondary button next-label" href="../../patterns/03-templates-04-single-label/03-templates-04-single-label.html">Next Label<img class="right-pointer" src="../../images/right-pointer-red.svg"/></a>
+</section>
 
 	<!--DO NOT REMOVE-->
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-transcribe-help-modal";
-		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"pages-transcribe-help","lineagePath":"..\/..\/patterns\/04-pages-03-transcribe-help\/04-pages-03-transcribe-help.html"}];
+		var patternPartial = "molecules-mark-toolbar";
+		var lineage        = [{"lineagePattern":"molecules-image-zoom-controls","lineagePath":"..\/..\/patterns\/01-molecules-06-components-03-image-zoom-controls\/01-molecules-06-components-03-image-zoom-controls.html"}];
+		var lineageR       = [{"lineagePattern":"templates-mark-flow-start","lineagePath":"..\/..\/patterns\/03-templates-02-mark-flow-start\/03-templates-02-mark-flow-start.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>
