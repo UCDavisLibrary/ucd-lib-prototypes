@@ -187,7 +187,13 @@ body {
 
 .switch {
   padding-top: .3em;
-  margin: 0 1em .2em 2em;
+  margin: 0 1em .4em 2em;
+}
+
+.toggle {
+  border: 2px solid $labels-red;
+  border-radius: 30em;
+  height: 36px;
 }
 
 // FIXME these are temporary until I can figure out wtf is wrong with the _webicons.scss file

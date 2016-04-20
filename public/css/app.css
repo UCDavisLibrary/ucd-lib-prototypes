@@ -4120,7 +4120,12 @@ body {
 
 .switch {
   padding-top: .3em;
-  margin: 0 1em .2em 2em; }
+  margin: 0 1em .4em 2em; }
+
+.toggle {
+  border: 2px solid #4D0717;
+  border-radius: 30em;
+  height: 36px; }
 
 .webicon.facebook {
   background: url("../images/webicons/webicon-facebook.svg"); }
