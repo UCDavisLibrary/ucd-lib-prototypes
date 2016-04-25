@@ -18,8 +18,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1461609382" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1461609382" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1461625117" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1461625117" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -58,16 +58,18 @@
 			</ul>
 	</nav>
 </header>
-<section class="medium-10 medium-offset-1 large-8 large-offset-2 row align-middle">
-	<div class="column">
-		<h3>Help us uncork a piece of history</h3>
-		<p>Before we can create a searchable database, we need to transcribe the labels. That’s where you come in!</p>
-	</div>
-	<div class="shrink">
-		<a class="button" href="#">Get started</a>
-	</div>
+<section class="row align-justify toolbar">
+  <div class="">
+  </div>
+  <div class="columns align-center label-title">
+    <div class="browse-instructions small-12">
+      <h1>Help us uncork a piece of history</h1>
+      <p><small>You can currently browse labels at random. Before we can create a searchable database, we need to transcribe the labels. That’s where you come in!</small></p>
+    </div>
+  </div>
+  <a class="secondary button next-label" href="../../patterns/03-templates-04-single-label/03-templates-04-single-label.html">Get started<img class="right-pointer" src="../../images/right-pointer-red.svg"/></a>
 </section>
-<section class="medium-10 medium-offset-1 large-8 large-offset-2 columns ">
+<section class="medium-10 medium-offset-1 large-8 large-offset-2 columns browse">
 	<h1>Browse labels randomly</h1>
 	<ul class="pagination text-center column" role="navigation">
 	  <li class="pagination-previous disabled ">
@@ -211,7 +213,7 @@
 	<script>
 		// handle injection of items from PHP
 		var patternPartial = "templates-browse";
-		var lineage        = [{"lineagePattern":"molecules-primary-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-00-primary-nav\/01-molecules-05-navigation-00-primary-nav.html"},{"lineagePattern":"molecules-pagination","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-03-pagination\/01-molecules-05-navigation-03-pagination.html"},{"lineagePattern":"organisms-gallery","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-03-gallery\/02-organisms-03-sections-03-gallery.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"}];
+		var lineage        = [{"lineagePattern":"molecules-primary-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-00-primary-nav\/01-molecules-05-navigation-00-primary-nav.html"},{"lineagePattern":"molecules-browse-toolbar","lineagePath":"..\/..\/patterns\/01-molecules-06-components-04-browse-toolbar\/01-molecules-06-components-04-browse-toolbar.html"},{"lineagePattern":"molecules-pagination","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-03-pagination\/01-molecules-05-navigation-03-pagination.html"},{"lineagePattern":"organisms-gallery","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-03-gallery\/02-organisms-03-sections-03-gallery.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"}];
 		var lineageR       = [];
 		var patternState   = "";
 		var cssEnabled     = false;
@@ -248,10 +250,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1461609382">
+	<script id="pl-js-polyfill-insert-1461625117">
 		(function() {
 			if (self != top) {
-				var cb = '1461609382';
+				var cb = '1461625117';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -260,10 +262,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1461609382">
+	<script id="pl-js-insert-1461625117">
 		(function() {
 			if (self != top) {
-				var cb = '1461609382';
+				var cb = '1461625117';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

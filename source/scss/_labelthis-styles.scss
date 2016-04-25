@@ -201,7 +201,7 @@ body {
   height: 36px;
 }
 
-.mark-instructions, .transcribe-instructions {
+.mark-instructions, .transcribe-instructions, .browse-instructions {
   background-color: $labels-background;
   border: 1px solid $labels-red;
   border-radius: 1px;
@@ -223,8 +223,14 @@ body {
   }
 }
 
-.transcribe-instructions {
+.transcribe-instructions, .browse-instructions {
   margin-left: 10em;
+}
+
+.browse {
+  h1 {
+    margin-top: 30px;
+  }
 }
 
 .pan-zoom-area {
@@ -238,7 +244,7 @@ body {
 .subject-zoom-pan {
   width: 130px;
   height: 130px;
-  background: $labels-background;
+  //background: $labels-background;
   //border: 2px solid #444444;
   border-radius: 4px;
   z-index: 99;

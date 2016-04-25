@@ -4131,26 +4131,29 @@ body {
   border-radius: 30em;
   height: 36px; }
 
-.mark-instructions, .transcribe-instructions {
+.mark-instructions, .transcribe-instructions, .browse-instructions {
   background-color: #F1E3D1;
   border: 1px solid #4D0717;
   border-radius: 1px;
   box-shadow: 0 0 0 5px #CBBAA5, 0 2px 15px #000;
   margin: -1em 1em 0 0;
   padding: .5em 1em 0 1em; }
-  .mark-instructions h1, .transcribe-instructions h1 {
+  .mark-instructions h1, .transcribe-instructions h1, .browse-instructions h1 {
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0; }
-  .mark-instructions p, .transcribe-instructions p {
+  .mark-instructions p, .transcribe-instructions p, .browse-instructions p {
     line-height: 1em; }
-  .mark-instructions a, .transcribe-instructions a {
+  .mark-instructions a, .transcribe-instructions a, .browse-instructions a {
     color: #4D0717;
     text-decoration: underline; }
 
-.transcribe-instructions {
+.transcribe-instructions, .browse-instructions {
   margin-left: 10em; }
+
+.browse h1 {
+  margin-top: 30px; }
 
 .pan-zoom-area {
   background-color: #CBBAA5;
@@ -4163,7 +4166,6 @@ body {
 .subject-zoom-pan {
   width: 130px;
   height: 130px;
-  background: #F1E3D1;
   border-radius: 4px;
   z-index: 99;
   position: absolute;
