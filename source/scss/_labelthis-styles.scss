@@ -464,9 +464,38 @@ footer {
   }
 }
 
+//-----------------------------------------------------
+// Admin UI Styles
+.admin {
+  margin-bottom: 1em;
+  .secondary {
+    background-color: $labels-focal;
+    color: $labels-background;
+    &:hover {
+      background-color: $labels-focal;
+      color: $labels-background;
+      opacity: .7;
+    }
+  }
+}
 
+.pie-chart {
+  margin-bottom: 2em;
+  img {
+    max-width: 90%;
+  }
+}
 
-
+//-----------------------------------------------------
+// Admin Gallery Styles
+.verify {
+  &.button {
+      margin-bottom: 1.5em;
+  }
+  &.thumbnail {
+    margin-bottom: 0;
+  }
+}
 
 // FIXME these are temporary until I can figure out wtf is wrong with the _webicons.scss file
 .webicon.facebook {

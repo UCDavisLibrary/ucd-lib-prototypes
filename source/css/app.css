@@ -4326,6 +4326,27 @@ footer {
     footer img:hover {
       opacity: .9; }
 
+.admin {
+  margin-bottom: 1em; }
+  .admin .secondary {
+    background-color: #642667;
+    color: #F1E3D1; }
+    .admin .secondary:hover {
+      background-color: #642667;
+      color: #F1E3D1;
+      opacity: .7; }
+
+.pie-chart {
+  margin-bottom: 2em; }
+  .pie-chart img {
+    max-width: 90%; }
+
+.verify.button {
+  margin-bottom: 1.5em; }
+
+.verify.thumbnail {
+  margin-bottom: 0; }
+
 .webicon.facebook {
   background: url("../images/webicons/webicon-facebook.svg"); }
 

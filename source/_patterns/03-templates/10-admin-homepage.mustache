@@ -1,0 +1,31 @@
+{{> molecules-primary-nav }}
+{{> molecules-admin-toolbar }}
+<section class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns">
+	<h2>Progress</h2>
+	<p>Here's how we;re doing so far:</p>
+	<div class="row">
+		<div class="pie-chart large-6 columns">
+			<img src="../../images/pie-chart-placeholder.svg">
+		</div>
+		<div class="status-list large-6 columns">
+			<dl>
+				<dt>Verified labels:</dt>
+				<dd>88,888</dd>
+				<dt>Marked labels:</dt>
+				<dd>88,888</dd>
+				<dt>Transcribed labels:</dt>
+				<dd>88,888</dd>
+				<dt>Untouched labels:</dt>
+				<dd>88,888</dd>
+			</dl>
+		</div>
+	</div>
+</section>
+<section class="small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns">
+	<h2>Verify Labels</h2>
+	<p>You, fair admin user, should go thorugh these labels, which have been previously marked and transcribed by random strangers, and verify that each transcription is accurate.</p>
+	{{> molecules-pagination }}
+	{{> organisms-verify-gallery }}
+	{{> molecules-pagination }}
+</section>
+{{> organisms-footer }}
