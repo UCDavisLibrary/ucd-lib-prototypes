@@ -26,19 +26,34 @@
 
 	</head>
 	<body class="body">
-<section class="row align-center toolbar admin">
-  <a class="secondary button" href="../../patterns/03-templates-10-admin-homepage/03-templates-10-admin-homepage.html">Admin Dashboard</a>
-  <a class="secondary button" href="../../patterns/03-templates-01-browse/03-templates-01-browse.html">Catalogue</a>
-  <a class="secondary button" href="../../patterns/03-templates-00-homepage/03-templates-00-homepage.html">Log Out {username}</a>
-</section>
+<div class="draggable-modal verify-tool draggable" unselectable="on">
+	<label>
+		<h2>Verify this transcription</h2>
+		<p>Please choose one of the following transcriptions as the most correct one.</p>
+		<ul class="choice clickable">
+			<li>
+				<span class="value">Alternative 1</span><img src="../../images/left-pointer-knockout.svg">
+			</li>
+			<li>
+				<span class="value">Alternative 2</span><img src="../../images/left-pointer-knockout.svg">
+			</li>
+			<li>
+				<span class="value">Alternative 3</span><img src="../../images/left-pointer-knockout.svg">
+			</li>
+	</label>
+	<div class="button-group align-left">
+		<!-- button class="button ghost toggle-button  minor-button">Bad mark</button>	If the 'Illegible' button moves the user directly onto the next task, the 'Illegible' button should also automatically mark the area as a 'Bad Mark'-->
+		<a href="../../patterns/03-templates-03-transcribe-flow-start/03-templates-03-transcribe-flow-start.html" class="secondary button">These are all bad—enter your own</a> <!-- used to have these classes:  ghost toggle-button undefined minor-button. FIXME find out if they're necessary for React -->
+	</div>
+</div>
 
 	<!--DO NOT REMOVE-->
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-admin-toolbar";
+		var patternPartial = "molecules-verify-modal";
 		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"templates-admin-homepage","lineagePath":"..\/..\/patterns\/03-templates-10-admin-homepage\/03-templates-10-admin-homepage.html"},{"lineagePattern":"templates-verify-label","lineagePath":"..\/..\/patterns\/03-templates-11-verify-label\/03-templates-11-verify-label.html"}];
+		var lineageR       = [{"lineagePattern":"templates-verify-label","lineagePath":"..\/..\/patterns\/03-templates-11-verify-label\/03-templates-11-verify-label.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

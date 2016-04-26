@@ -1,0 +1,10 @@
+{{> molecules-primary-nav }}
+{{> molecules-admin-toolbar }}
+	<div class="modal-position">
+		{{> molecules-verify-modal }}
+</div>
+<div class="vignette-overlay"></div> <!-- this overlay should extend all the way to the bottom of the screen. It should go over the label metadata (if any) and the footer. You might need to break it up into two pieces, since it looks like react adds the overlay inside an svg element.-->
+<section>
+	{{> atoms-hero-image }}
+</section>
+{{> organisms-footer }}

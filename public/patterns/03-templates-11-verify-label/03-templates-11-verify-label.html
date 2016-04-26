@@ -58,54 +58,39 @@
 			</ul>
 	</nav>
 </header>
-<section class="row align-justify toolbar">
-  <div class="">
-  </div>
-  <div class="columns align-center label-title">
-    <div class="transcribe-instructions small-12">
-      <h1>Instructions:</h1>
-      <p><small>Tell us what the highlighted text says, or describe the highlighted image.
-        <br/><em>Need help? <a href="../../patterns/04-pages-03-transcribe-help/04-pages-03-transcribe-help.html">Watch a tutorial.</em></small></p>
-    </div>
-  </div>
-  <a class="secondary button next-label" href="../../patterns/03-templates-04-single-label/03-templates-04-single-label.html">Next Label<img class="right-pointer" src="../../images/right-pointer-red.svg"/></a>
+<section class="row align-center toolbar admin">
+  <a class="secondary button" href="../../patterns/03-templates-10-admin-homepage/03-templates-10-admin-homepage.html">Admin Dashboard</a>
+  <a class="secondary button" href="../../patterns/03-templates-01-browse/03-templates-01-browse.html">Catalogue</a>
+  <a class="secondary button" href="../../patterns/03-templates-00-homepage/03-templates-00-homepage.html">Log Out {username}</a>
 </section>
-	<div class="vignette-overlay"></div> <!-- this overlay should extend all the way to the bottom of the screen. It should go over the label metadata (if any) and the footer. You might need to break it up into two pieces, since it looks like react adds the overlay inside an svg element.-->
-	<section>
+	<div class="modal-position">
+		<div class="draggable-modal verify-tool draggable" unselectable="on">
+			<label>
+				<h2>Verify this transcription</h2>
+				<p>Please choose one of the following transcriptions as the most correct one.</p>
+				<ul class="choice clickable">
+					<li>
+						<span class="value">Alternative 1</span><img src="../../images/left-pointer-knockout.svg">
+					</li>
+					<li>
+						<span class="value">Alternative 2</span><img src="../../images/left-pointer-knockout.svg">
+					</li>
+					<li>
+						<span class="value">Alternative 3</span><img src="../../images/left-pointer-knockout.svg">
+					</li>
+			</label>
+			<div class="button-group align-left">
+				<!-- button class="button ghost toggle-button  minor-button">Bad mark</button>	If the 'Illegible' button moves the user directly onto the next task, the 'Illegible' button should also automatically mark the area as a 'Bad Mark'-->
+				<a href="../../patterns/03-templates-03-transcribe-flow-start/03-templates-03-transcribe-flow-start.html" class="secondary button">These are all bad—enter your own</a> <!-- used to have these classes:  ghost toggle-button undefined minor-button. FIXME find out if they're necessary for React -->
+			</div>
+		</div>
+</div>
+<div class="vignette-overlay"></div> <!-- this overlay should extend all the way to the bottom of the screen. It should go over the label metadata (if any) and the footer. You might need to break it up into two pieces, since it looks like react adds the overlay inside an svg element.-->
+<section>
 	<figure class="main-wine-label">
 		<img src="../../images/wine-label-generic.jpg" alt="16x9 Image" />
 	</figure>
-	</section>
-	<section class="medium-medium-10 medium-offset-1">
-		<section class="medium-unstack row">
-			<div class="column">
-				<h1>Label #32435</h1>
-			<dl>
-				<dt>Definition List</dt>
-				<dd>A number of connected items or names written or printed consecutively, typically one below the other.</dd>
-				<dt>This is a term.</dt>
-				<dd>This is the definition of that term.</dd>
-				<dt>Here is another term.</dt>
-				<dd>And it gets a definition too, which is this line.</dd>
-				<dt>Here is term that shares a definition with the term below.</dt>
-				<dd>And it gets a definition too, which is this line.</dd>
-			</dl>
-			</div>
-		<div class="small-4 columns">
-  <div class="row small-10 align-spaced">
-  	<a class="webicon facebook" href="#">Facebook</a>
-  	<a class="webicon pinterest" href="#">Pinterest</a>
-  	<a class="webicon twitter" href="#">Twitter</a>
-  </div>
-		  <h5>Status: Needs transcribing</h5>
-		  <p><a href="#" class="button">Mark this Label</a></p>
-		  <h5>Get the story behind this label:</h5>
-		  <h6><a href="">Who was Maynard Amerine?</a></h6>
-		  <h5>Tell us your story</h5>
-		  <p>Are you a wine expert? Do you have family history with this label? <a href="#">Send us your story</a>!</p>
-		</div>
-		</section>
-	</section>
+</section>
 <!-- Begin Footer -->
 <footer>
 		<section class="row align-spaced">
@@ -129,29 +114,13 @@
 </footer>
 </body>
 <!-- End Footer -->
-	<div class="modal-position">
-	<div class="draggable-modal help-dialogue draggable" unselectable="on">
-		<label>
-			<h2>How to Transcribe this label</h2>
-			<p>Please tell us what the highlighted text says. Try to include any diacritics, like accents ( ` ) or umlauts ( ¨ ), as well as upper and lower case letters.</p>
-			<p>If something is illegible, that is important information for us to know as well, so please mark it as illegible.</p>
-			<p>If the area highlighted is an image, please use on or two words to describe the image.</p>
-			<figure>
-				<img src="../../images/fpo_4x3.png" alt="4x3 Image" />
-			</figure>
-			<div class="button-group align-center">
-				<a href="../../patterns/04-pages-03-transcribe-flow-01/04-pages-03-transcribe-flow-01.html" class="button">OK, got it!</a>
-			</div>
-		</label>
-	</div>
-	</div>
 
 	<!--DO NOT REMOVE-->
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "pages-transcribe-help";
-		var lineage        = [{"lineagePattern":"templates-transcribe-flow-start","lineagePath":"..\/..\/patterns\/03-templates-03-transcribe-flow-start\/03-templates-03-transcribe-flow-start.html"},{"lineagePattern":"molecules-transcribe-help-modal","lineagePath":"..\/..\/patterns\/01-molecules-07-messaging-03-transcribe-help-modal\/01-molecules-07-messaging-03-transcribe-help-modal.html"}];
+		var patternPartial = "templates-verify-label";
+		var lineage        = [{"lineagePattern":"molecules-primary-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-00-primary-nav\/01-molecules-05-navigation-00-primary-nav.html"},{"lineagePattern":"molecules-admin-toolbar","lineagePath":"..\/..\/patterns\/01-molecules-06-components-04-admin-toolbar\/01-molecules-06-components-04-admin-toolbar.html"},{"lineagePattern":"molecules-verify-modal","lineagePath":"..\/..\/patterns\/01-molecules-04-forms-03-verify-modal\/01-molecules-04-forms-03-verify-modal.html"},{"lineagePattern":"atoms-hero-image","lineagePath":"..\/..\/patterns\/00-atoms-04-images-02-hero-image\/00-atoms-04-images-02-hero-image.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"}];
 		var lineageR       = [];
 		var patternState   = "";
 		var cssEnabled     = false;
