@@ -12,7 +12,7 @@
 
 // Overrides
 // Above and beyond the stock Foundation styles
-//-----------------------------------------------------
+
 //-----------------------------------------------------
 // General Styles
 
@@ -126,8 +126,8 @@ body {
 }
 
 //-----------------------------------------------------
-// Prototype Fakery--these styles fake things on the prototype
-//site that React takes care of
+//Prototype Fakery
+//These styles fake things on the prototype site that React does on prod
 
 //this is for faking the positioning of the modals
 .modal-position {
@@ -444,6 +444,27 @@ body {
   margin-left:-32px;
   font-size:14px;
 }
+
+//-----------------------------------------------------
+// Footer Styles
+
+footer {
+  margin-top: 3em;
+  padding-top: 2em;
+  border-top: .2em solid $labels-background-dark;
+  a {
+    text-decoration: underline;
+  }
+  img {
+    max-width: 100px;
+    opacity: .7;
+    &:hover {
+      opacity: .9;
+    }
+  }
+}
+
+
 
 
 

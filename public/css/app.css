@@ -4314,6 +4314,18 @@ body {
   margin-left: -32px;
   font-size: 14px; }
 
+footer {
+  margin-top: 3em;
+  padding-top: 2em;
+  border-top: 0.2em solid #CBBAA5; }
+  footer a {
+    text-decoration: underline; }
+  footer img {
+    max-width: 100px;
+    opacity: .7; }
+    footer img:hover {
+      opacity: .9; }
+
 .webicon.facebook {
   background: url("../images/webicons/webicon-facebook.svg"); }
 
