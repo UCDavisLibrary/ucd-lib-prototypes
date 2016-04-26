@@ -10,7 +10,11 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
 }
 
-//Styles
+// Overrides
+// Above and beyond the stock Foundation styles
+//-----------------------------------------------------
+//-----------------------------------------------------
+// General Styles
 
 body {
   @include linearGradient($labels-red, $black);
@@ -25,10 +29,12 @@ body {
   min-width: 100%;
 }
 
+//-----------------------------------------------------
+//Button style overrides
+
 .button {
   text-transform: uppercase;
 	border: 1px solid #CBBAA5;
-  //box-shadow: 0 0 0 3px #455B00;
   margin: 5px;
 }
 
@@ -74,6 +80,9 @@ body {
   }
 }
 
+//-----------------------------------------------------
+//Homepage overrides
+
 .homepage {
   h1 {
     text-align: center;
@@ -87,6 +96,7 @@ body {
   }
 }
 
+// Making the title image responsive
 .large-title {
   display: none;
   @media only screen and (min-width: 33em) {
@@ -100,11 +110,43 @@ body {
   }
 }
 
-.modal-position {  //faking the positioning of the modal
+// Step-by-step instructions on the homepage
+.step-by-step {
+  padding: .2rem .5rem .5rem;
+  color: $labels-red;
+  h6 {
+    margin: 0 0 -17px 30px;
+  }
+  p {
+    line-height: 1em;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+//-----------------------------------------------------
+// Prototype Fakery--these styles fake things on the prototype
+//site that React takes care of
+
+//this is for faking the positioning of the modals
+.modal-position {
   position: fixed;
   top: 250px;
   left: 25%;
 }
+//this is for faking the vignette over the label image in the trascribe UI
+.vignette-overlay {
+  background: rgba(0,0,0,0.6);
+  position: absolute;
+  top: 1;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+//-----------------------------------------------------
+// Modal/dialogue box overrides
 
 .draggable-modal, .transcribe-tool, .help-dialogue, .step-by-step {
   background: $label-background;
@@ -124,28 +166,8 @@ body {
   max-width: 35rem;
 }
 
-.step-by-step {
-  padding: .2rem .5rem .5rem;
-  color: $labels-red;
-  h6 {
-    margin: 0 0 -17px 30px;
-  }
-  p {
-    line-height: 1em;
-  }
-  img {
-    width: 100%;
-  }
-}
-
-.vignette-overlay {
-  background: rgba(0,0,0,0.6);
-  position: absolute;
-  top: 1;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+//-----------------------------------------------------
+// Pagination styles
 
 .pagination li a {
   border: 1px solid rgba(0,0,0,0);
@@ -153,6 +175,9 @@ body {
     border: 1px solid $labels-background;
   }
 }
+
+//-----------------------------------------------------
+// Toolbar/Instructions bar styles for Mark/Transcribe/Browse Screens
 
 .top-bar {
   border-bottom: .2em solid $labels-background-dark;
@@ -177,7 +202,6 @@ body {
   text-align: center;
   padding: 0;
   margin-top: .4em;
-  //min-height: .8em;
   max-height: 2.8em;
   overflow: visible;
   z-index: 9000;
@@ -194,17 +218,6 @@ body {
 }
 .next-label {
   margin-right: -4px;
-}
-
-.switch {
-  padding-top: .3em;
-  margin: 0 1em .4em 2em;
-}
-
-.toggle {
-  border: 2px solid $labels-red;
-  border-radius: 30em;
-  height: 36px;
 }
 
 .mark-instructions, .transcribe-instructions, .browse-instructions {
@@ -238,6 +251,23 @@ body {
     margin-top: 30px;
   }
 }
+
+//-----------------------------------------------------
+// Toggle switch styles
+
+.switch {
+  padding-top: .3em;
+  margin: 0 1em .4em 2em;
+}
+
+.toggle {
+  border: 2px solid $labels-red;
+  border-radius: 30em;
+  height: 36px;
+}
+
+//-----------------------------------------------------
+// Zoom UI styles, based on the ones on the ScribeAPI repo
 
 .zoom-button {
   z-index: 100;
