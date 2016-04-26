@@ -233,22 +233,36 @@ body {
   }
 }
 
+.zoom-button {
+  z-index: 100;
+}
 .pan-zoom-area {
   background-color: $labels-background-dark;
   width: 140px;
   height: 135px;
   left: 15px;
+  top: 110px;
   border-radius: 4px;
   position: absolute;
+  z-index: 99;
+  &:before {
+    content: ' ';
+    border-radius: 4px;
+    width: 60px;
+    height: 70px;
+    position: absolute;
+    top: -7px;
+    left: 36px;
+    margin-top: -36px;
+    margin-left: -36px;
+    background-color: $labels-background-dark;
+  }
 }
+
 .subject-zoom-pan {
   width: 130px;
   height: 130px;
-  //background: $labels-background;
-  //border: 2px solid #444444;
   border-radius: 4px;
-  z-index: 99;
-  position: absolute;
   left: 5px;
   &:before {
     content: ' ';
@@ -275,121 +289,126 @@ body {
     left: 50%;
     margin-left: -35px;
   }
-  .pan, .zoom, .reset {
-    position:absolute;
-    background: transparent;
-    color: $labels-red;
-    border: none;
-    cursor: pointer;
-    &.disabled {
-      opacity: 0.4;
-      cursor: default;
-    }
+}
+
+.pan, .zoom, .reset {
+  position:absolute;
+  background: transparent;
+  color: $labels-red;
+  border: none;
+  cursor: pointer;
+  &.disabled {
+    opacity: 0.4;
+    cursor: default;
   }
-  .zoom {
-    width:35px;
-    height:35px;
-    font-size: 30px;
-    line-height: 35px;
-    text-align: center;
-    top: 50%;
-    margin-top: -35px;
-    left: 50%;
-    &.in,
-    &.out {
-      &:before {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 35px;
-        height: 35px;
-        margin-left: -17.5px;
-        margin-top: -22px;
-      }
-    }
-    &.out {
-      margin-left: -35px;
-      &:before {
-        content: '-';
-        margin-top: -20px;
-      }
-    }
-    &.in {
-      margin-left: 0;
-      border-left: 1px solid $labels-background-dark;
-      border-radius: 0;
-      &:before {
-        content: '+';
-      }
-    }
-  .pan {
+}
+
+.zoom {
+  width:35px;
+  height:35px;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  top: 50%;
+  margin-top: -35px;
+  left: 50%;
+  &.in,
+  &.out {
     &:before {
-      content: ' ';
-      display: block;
-      width: 0;
-      height: 0;
-      border-left: 12px solid transparent;
-      border-right: 12px solid transparent;
-      border-bottom: 12px solid $labels-red;
       position: absolute;
-      left: 50%;
       top: 50%;
-      margin-left: -12px;
-      margin-top: -6px;
-    }
-    &.up, &.down {
-      width: 50px;
-      height: 20px;
       left: 50%;
-      margin-left:-25px;
+      width: 35px;
+      height: 35px;
+      margin-left: -18px;
+      margin-top: -18px;
     }
-    &.up {
-      top: 5px;
+  }
+  &.out {
+    margin-left: -35px;
+    &:before {
+      content: '-';
+      margin-top: -20px;
     }
-    &.down {
-      bottom: 5px;
-      &:before {
-        transform: rotate(180deg);
-        -webkit-transform: rotate(180deg);
-      }
-    }
-    &.left, &.right {
-      width: 20px;
-      height: 50px;
-      top: 50%;
-      margin-top:-25px;
-    }
-    &.left {
-      left: 5px;
-      &:before {
-        transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
-      }
-    }
-    &.right {
-      right: 5px;
-      &:before {
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-      }
-    }
-    &:hover {
-      &:before {
-        border-bottom: 12px solid white;
-      }
+  }
+  &.in {
+    margin-left: 0;
+    border-left: 1px solid $labels-background-dark;
+    border-radius: 0;
+    &:before {
+      content: '+';
     }
   }
 }
-  .reset {
-    width: 64px;
+
+.pan {
+  &:before {
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid $labels-red;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -6px;
+  }
+  &.up, &.down {
+    width: 50px;
     height: 20px;
-    top:50%;
-    margin-top: 8px;
-    left:50%;
-    margin-left:-32px;
-    font-size:10px;
+    left: 50%;
+    margin-left:-25px;
+  }
+  &.up {
+    top: 5px;
+  }
+  &.down {
+    bottom: 5px;
+    &:before {
+      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
+    }
+  }
+  &.left, &.right {
+    width: 20px;
+    height: 50px;
+    top: 50%;
+    margin-top:-25px;
+  }
+  &.left {
+    left: 5px;
+    &:before {
+      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+    }
+  }
+  &.right {
+    right: 5px;
+    &:before {
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+    }
+  }
+  &:hover {
+    &:before {
+      border-bottom: 12px solid $labels-focal;
+    }
   }
 }
+
+.reset {
+  width: 64px;
+  height: 20px;
+  top:50%;
+  margin-top: 5px;
+  left:50%;
+  margin-left:-32px;
+  font-size:14px;
+}
+
 
 
 // FIXME these are temporary until I can figure out wtf is wrong with the _webicons.scss file
