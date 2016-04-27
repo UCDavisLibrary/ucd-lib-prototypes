@@ -150,7 +150,7 @@ body {
 //-----------------------------------------------------
 // Modal/dialogue box overrides
 
-.draggable-modal, .transcribe-tool, .help-dialogue, .step-by-step {
+.draggable-modal, .transcribe-tool, .help-dialogue, .step-by-step, .login {
   background: $label-background;
   padding: $global-padding;
   border-radius: 0;
@@ -166,6 +166,10 @@ body {
 .draggable-modal, .transcribe-tool, .help-dialogue {
   min-width: 30rem;
   max-width: 35rem;
+}
+
+.login {
+  color: $labels-red;
 }
 
 //-----------------------------------------------------
