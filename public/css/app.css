@@ -4357,6 +4357,9 @@ footer {
   .pie-chart img {
     max-width: 90%; }
 
+.status-list dd {
+  font-size: 2em; }
+
 .webicon.facebook {
   background: url("../images/webicons/webicon-facebook.svg"); }
 

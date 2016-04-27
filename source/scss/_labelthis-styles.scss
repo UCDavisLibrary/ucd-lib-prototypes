@@ -509,6 +509,12 @@ footer {
   }
 }
 
+.status-list {
+  dd {
+    font-size: 2em;
+  }
+}
+
 // FIXME these are temporary until I can figure out wtf is wrong with the _webicons.scss file
 .webicon.facebook {
   background: url("../images/webicons/webicon-facebook.svg");
