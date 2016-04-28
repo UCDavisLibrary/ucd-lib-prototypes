@@ -298,8 +298,13 @@ body {
 
 .zoom-button {
   z-index: 100;
+  cursor: pointer;
+  &:hover ~ .pan-zoom-area {
+    display: block;
+  }
 }
 .pan-zoom-area {
+  display: none;
   background-color: $labels-background-dark;
   width: 140px;
   height: 135px;

@@ -4180,9 +4180,13 @@ body {
   height: 36px; }
 
 .zoom-button {
-  z-index: 100; }
+  z-index: 100;
+  cursor: pointer; }
+  .zoom-button:hover ~ .pan-zoom-area {
+    display: block; }
 
 .pan-zoom-area {
+  display: none;
   background-color: #CBBAA5;
   width: 140px;
   height: 135px;
