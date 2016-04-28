@@ -4358,7 +4358,8 @@ footer {
 .pie-chart {
   margin-bottom: 2em; }
   .pie-chart img {
-    max-width: 90%; }
+    width: 90%;
+    max-width: 400px; }
 
 .status-list dd {
   font-size: 2em; }
