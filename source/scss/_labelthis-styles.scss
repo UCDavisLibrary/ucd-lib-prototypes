@@ -293,6 +293,19 @@ body {
   height: 36px;
 }
 
+.helper {
+  visibility: visible;
+  background-color: $labels-red;
+  color: $labels-background;
+  width: 10em;
+  left: -40%;
+  text-align: center;
+  z-index: 99999999;
+  &:before {
+    border-color: transparent transparent $labels-red;
+  }
+}
+
 //-----------------------------------------------------
 // Zoom UI styles, based on the ones on the ScribeAPI repo
 

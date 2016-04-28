@@ -4179,6 +4179,17 @@ body {
   border-radius: 30em;
   height: 36px; }
 
+.helper {
+  visibility: visible;
+  background-color: #4D0717;
+  color: #F1E3D1;
+  width: 10em;
+  left: -40%;
+  text-align: center;
+  z-index: 99999999; }
+  .helper:before {
+    border-color: transparent transparent #4D0717; }
+
 .zoom-button {
   z-index: 100;
   cursor: pointer; }
