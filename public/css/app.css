@@ -4074,7 +4074,7 @@ body {
   height: 100%;
   z-index: 99998; }
 
-.draggable-modal, .transcribe-tool, .help-dialogue, .step-by-step, .login {
+.draggable-modal, .transcribe-tool, .help-dialogue, .step-by-step, .login, .signup {
   background: #F1E3D1;
   padding: 1rem;
   border-radius: 0;
@@ -4082,15 +4082,20 @@ body {
   outline: 3px solid #F1E3D1;
   border: 3px solid #CBBAA5;
   box-shadow: 0 0 0 15px #CBBAA5; }
-  .draggable-modal label, .transcribe-tool label, .help-dialogue label, .step-by-step label, .login label {
+  .draggable-modal label, .transcribe-tool label, .help-dialogue label, .step-by-step label, .login label, .signup label {
     color: #4D0717; }
 
-.draggable-modal, .transcribe-tool, .help-dialogue {
+.draggable-modal, .transcribe-tool, .help-dialogue, .signup {
   min-width: 30rem;
   max-width: 35rem; }
 
-.login {
+.login, .signup {
   color: #4D0717; }
+  .login .large.button, .signup .large.button {
+    margin-bottom: 1em; }
+  .login small a, .signup small a {
+    color: #4D0717;
+    text-decoration: underline; }
 
 .pagination li a {
   border: 1px solid transparent; }

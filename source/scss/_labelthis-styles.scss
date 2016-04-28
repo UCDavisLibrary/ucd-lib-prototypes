@@ -150,7 +150,7 @@ body {
 //-----------------------------------------------------
 // Modal/dialogue box overrides
 
-.draggable-modal, .transcribe-tool, .help-dialogue, .step-by-step, .login {
+.draggable-modal, .transcribe-tool, .help-dialogue, .step-by-step, .login, .signup {
   background: $label-background;
   padding: $global-padding;
   border-radius: 0;
@@ -163,13 +163,20 @@ body {
   }
 }
 
-.draggable-modal, .transcribe-tool, .help-dialogue {
+.draggable-modal, .transcribe-tool, .help-dialogue, .signup {
   min-width: 30rem;
   max-width: 35rem;
 }
 
-.login {
+.login, .signup {
   color: $labels-red;
+  .large.button {
+    margin-bottom: 1em;
+  }
+  small a {
+    color: $labels-red;
+    text-decoration: underline;
+  }
 }
 
 //-----------------------------------------------------

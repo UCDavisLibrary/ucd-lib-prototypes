@@ -34,19 +34,28 @@
 	&lt;/nav&gt;
 &lt;/header&gt;
 &lt;div class=&quot;row align-center&quot;&gt;
-	&lt;div class=&quot;login&quot;&gt;
-		&lt;h2&gt;Admin Login&lt;/h2&gt;
-		&lt;p&gt;In order to verify labels, you need to log in to the admin dashboard.&lt;/p&gt;
-		&lt;label&gt;Email
-			&lt;input type=&quot;email&quot; placeholder=&quot;name@email.com&quot;&gt;
-		&lt;/label&gt;
-		&lt;label&gt;Password
-			&lt;input type=&quot;password&quot; placeholder=&quot;Type your Password&quot;&gt;
-		&lt;/label&gt;
+	&lt;div class=&quot;signup&quot;&gt;
+		&lt;h2&gt;Sign up&lt;/h2&gt;
+		&lt;form accept-charset=&quot;UTF-8&quot; action=&quot;/users&quot; class=&quot;new_user&quot; id=&quot;new_user&quot; method=&quot;post&quot;&gt;
+			&lt;input name=&quot;utf8&quot; type=&quot;hidden&quot; value=&quot;✓&quot;&gt;
+			&lt;input name=&quot;authenticity_token&quot; type=&quot;hidden&quot; value=&quot;Q4WVeSzb09+/+D3e5W5ozy+lfZoEU0D9sSGvRQWvFQk=&quot;&gt;
+			&lt;label for=&quot;user_name&quot;&gt;Name
+				&lt;input id=&quot;user_name&quot; name=&quot;user[name]&quot; type=&quot;text&quot;&gt;
+			&lt;/label&gt;
+			&lt;label for=&quot;user_email&quot;&gt;Email
+				&lt;input id=&quot;user_email&quot; name=&quot;user[email]&quot; type=&quot;email&quot; value=&quot;&quot; placeholder=&quot;name@email.com&quot;&gt;
+			&lt;/label&gt;
+			&lt;label for=&quot;user_password&quot;&gt;Password
+				&lt;input id=&quot;user_password&quot; name=&quot;user[password]&quot; type=&quot;password&quot; placeholder=&quot;Type your Password&quot;&gt;
+			&lt;/label&gt;
+			&lt;label for=&quot;user_password_confirmation&quot;&gt;Confirm Password
+				&lt;input id=&quot;user_password_confirmation&quot; name=&quot;user[password_confirmation]&quot; type=&quot;password&quot; placeholder=&quot;Confirm your Password&quot;&gt;
+			&lt;/label&gt;
+		&lt;form&gt;
 		&lt;div class=&quot;row align-center&quot;&gt;
-			&lt;a class=&quot;large button&quot; href=&quot;../../patterns/03-templates-10-admin-homepage/03-templates-10-admin-homepage.html&quot;&gt;&lt;img class=&quot;left-pointer&quot; src=&quot;../../images/left-pointer-knockout.svg&quot;/&gt;Log In&lt;img class=&quot;right-pointer&quot; src=&quot;../../images/right-pointer-knockout.svg&quot;/&gt;&lt;/a&gt;
+			&lt;a class=&quot;large button&quot; href=&quot;../../patterns/03-templates-10-admin-homepage/03-templates-10-admin-homepage.html&quot;&gt;&lt;img class=&quot;left-pointer&quot; src=&quot;../../images/left-pointer-knockout.svg&quot;/&gt;Sign Up&lt;img class=&quot;right-pointer&quot; src=&quot;../../images/right-pointer-knockout.svg&quot;/&gt;&lt;/a&gt;
 		&lt;/div&gt;
-		&lt;small&gt;&lt;a href=&quot;/users/sign_up&quot;&gt;Sign up&lt;/a&gt;&lt;/small&gt;&lt;br&gt;
+		&lt;small&gt;&lt;a href=&quot;/users/sign_in&quot;&gt;Sign in&lt;/a&gt;&lt;/small&gt;&lt;br&gt;
 		&lt;small&gt;&lt;a href=&quot;/users/password/new&quot;&gt;Forgot your password?&lt;/a&gt;&lt;/small&gt;
 	&lt;/div&gt;
 &lt;/div&gt;

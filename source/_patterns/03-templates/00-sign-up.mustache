@@ -1,0 +1,28 @@
+{{> molecules-primary-nav }}
+<div class="row align-center">
+	<div class="signup">
+		<h2>Sign up</h2>
+		<form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
+			<input name="utf8" type="hidden" value="✓">
+			<input name="authenticity_token" type="hidden" value="Q4WVeSzb09+/+D3e5W5ozy+lfZoEU0D9sSGvRQWvFQk=">
+			<label for="user_name">Name
+				<input id="user_name" name="user[name]" type="text">
+			</label>
+			<label for="user_email">Email
+				<input id="user_email" name="user[email]" type="email" value="" placeholder="name@email.com">
+			</label>
+			<label for="user_password">Password
+				<input id="user_password" name="user[password]" type="password" placeholder="Type your Password">
+			</label>
+			<label for="user_password_confirmation">Confirm Password
+				<input id="user_password_confirmation" name="user[password_confirmation]" type="password" placeholder="Confirm your Password">
+			</label>
+		<form>
+		<div class="row align-center">
+			<a class="large button" href="{{ link.templates-admin-homepage }}"><img class="left-pointer" src="../../images/left-pointer-knockout.svg"/>Sign Up<img class="right-pointer" src="../../images/right-pointer-knockout.svg"/></a>
+		</div>
+		<small><a href="/users/sign_in">Sign in</a></small><br>
+		<small><a href="/users/password/new">Forgot your password?</a></small>
+	</div>
+</div>
+{{> organisms-footer }}
