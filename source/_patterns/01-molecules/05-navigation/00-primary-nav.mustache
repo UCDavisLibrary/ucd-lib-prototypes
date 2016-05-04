@@ -1,35 +1,39 @@
 <header>
-	<nav class="top-bar">
+	<nav id="large-menu" class="top-bar">
 		<div class="top-bar-left">
 			<ul class="menu">
-				<li>
-					<a class="selected" href="{{ link.templates-homepage }}">Label This</a>
+				<li class="menu-item-large">
+					<a href="{{ link.templates-homepage }}">Label This</a>
 				</li>
-				<li>
-					<a class="" href="{{ link.templates-browse }}">Browse</a>
+				<li class="menu-item">
+					<a href="{{ link.templates-browse }}">Browse</a>
 				</li>
-				<li>
-					<a class="" href="{{ link.templates-mark-flow-start }}">Mark</a>
+				<li class="menu-item">
+					<a href="{{ link.templates-mark-flow-start }}">Mark</a>
 				</li>
-				<li>
-					<a class="" href="{{ link.templates-transcribe-flow-start }}">Transcribe</a>
+				<li class="menu-item">
+					<a href="{{ link.templates-transcribe-flow-start }}">Transcribe</a>
 				</li>
-				<li>
-					<a class="" href="{{ link.templates-homepage }}">Search</a>
+				<li class="menu-item-large">
+					<a href="{{ link.templates-homepage }}">Search</a>
 				</li>
 			</ul>
 		</div>
 		<div class="top-bar-right">
 			<ul class="menu">
-				<li>
-					<a class="" href="{{ link.templates-about }}">About the Project</a>
+				<li class="menu-item-large">
+					<a href="{{ link.templates-about }}">About the Project</a>
 				</li>
-				<li>
+				<li class="menu-item-large">
 					<a target="_blank" href="{{ link.templates-blog-main-page }}">Blog</a>
 				</li>
-				<li>
+				<li class="menu-item-large">
 					<a target="_blank" href="{{ link.templates-login }}">Log in</a>
 				</li>
+				<li class="menu-item-small">
+					<a href="#small-menu">...</a>
+				</li>
 			</ul>
+		</div>
 	</nav>
 </header>
