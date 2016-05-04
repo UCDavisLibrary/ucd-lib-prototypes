@@ -4186,11 +4186,11 @@ body {
     color: #4D0717;
     text-decoration: underline; }
 
-.browse-instructions {
+.browse-instructions, .transcribe-instructions {
   margin: -4.1em 10em 0 10px;
   position: absolute; }
   @media only screen and (min-width: 45.88em) {
-    .browse-instructions {
+    .browse-instructions, .transcribe-instructions {
       margin: -8em 1em 0 10px;
       position: relative; } }
 
@@ -4199,14 +4199,6 @@ body {
   position: absolute; }
   @media only screen and (min-width: 45.88em) {
     .mark-instructions {
-      margin: -8em 1em 0 0;
-      position: relative; } }
-
-.transcribe-instructions {
-  margin: 0 5px 0 0;
-  position: absolute; }
-  @media only screen and (min-width: 45.88em) {
-    .transcribe-instructions {
       margin: -8em 1em 0 0;
       position: relative; } }
 
