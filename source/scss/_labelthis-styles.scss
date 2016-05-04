@@ -279,7 +279,6 @@ body {
   border: 1px solid $labels-red;
   border-radius: 1px;
   box-shadow: 0 0 0 5px $labels-background-dark, 0 2px 15px #000;
-  margin: -1em 1em 0 0;
   padding: .5em 1em 0 1em;
   h1 {
     font-size: 1em;
@@ -294,10 +293,21 @@ body {
     color: $labels-red;
     text-decoration: underline;
   }
+  margin: 0 5px 0 0;
+  position: absolute;
+  left: 5px;
+  top: 116px;
+  @media only screen and (min-width: 45.88em) {
+    margin: -8em 1em 0 0;
+    position: relative;
+  }
 }
 
 .transcribe-instructions, .browse-instructions {
-  margin-left: 10em;
+//  margin: -8em 1em 0 0;
+  @media only screen and (min-width: 45.88em) {
+    margin-left: 10em;
+  }
 }
 
 .browse {
