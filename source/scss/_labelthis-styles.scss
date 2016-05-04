@@ -293,20 +293,37 @@ body {
     color: $labels-red;
     text-decoration: underline;
   }
-  margin: 0 5px 0 0;
-  position: absolute;
   left: 5px;
   top: 116px;
+  @media only screen and (min-width: 45.88em) {
+
+  }
+}
+
+.browse-instructions {
+  margin: -4.1em 10em 0 10px;
+  position: absolute;
+  @media only screen and (min-width: 45.88em) {
+    margin: -8em 1em 0 10px;
+    position: relative;
+  }
+}
+
+.mark-instructions {
+  margin: 0 5px 0 0;
+  position: absolute;
   @media only screen and (min-width: 45.88em) {
     margin: -8em 1em 0 0;
     position: relative;
   }
 }
 
-.transcribe-instructions, .browse-instructions {
-//  margin: -8em 1em 0 0;
+.transcribe-instructions {
+  margin: 0 5px 0 0;
+  position: absolute;
   @media only screen and (min-width: 45.88em) {
-    margin-left: 10em;
+    margin: -8em 1em 0 0;
+    position: relative;
   }
 }
 
