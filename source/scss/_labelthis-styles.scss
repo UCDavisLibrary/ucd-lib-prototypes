@@ -574,10 +574,9 @@ footer {
     text-decoration: underline;
   }
   img {
-    max-width: 100px;
-    opacity: .7;
+    opacity: .9;
     &:hover {
-      opacity: .9;
+      opacity: 1;
     }
   }
 }
