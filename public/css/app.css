@@ -3989,6 +3989,14 @@ body {
 .callout {
   min-width: 100%; }
 
+nav a {
+  color: #F1E3D1;
+  opacity: .9;
+  text-decoration: none; }
+  nav a:hover {
+    color: #F1E3D1;
+    opacity: 1; }
+
 #small-menu {
   margin-top: 10em;
   display: block; }
@@ -4411,14 +4419,33 @@ body {
 
 footer {
   margin-top: 3em;
-  padding-top: .2em;
+  padding: .2em 1em;
   border-top: 0.2em solid #CBBAA5; }
   footer a {
     text-decoration: underline; }
+  footer nav {
+    margin-bottom: 3em; }
+    footer nav a {
+      text-decoration: none; }
   footer img {
-    opacity: .9; }
+    opacity: .9;
+    margin: 0 1em 1em 0; }
     footer img:hover {
       opacity: 1; }
+  footer small {
+    max-width: 45em; }
+
+.donor-links {
+  margin-bottom: 3em; }
+
+.ucd-links {
+  margin-bottom: 1em; }
+
+.legal {
+  font-size: .7em;
+  text-align: center; }
+  .legal-links {
+    max-width: 17em; }
 
 .admin {
   margin-bottom: 1em; }
