@@ -4187,7 +4187,7 @@ nav a {
   margin-right: -4px;
   min-width: 12em; }
 
-.mark-instructions, .transcribe-instructions, .browse-instructions {
+.mark-instructions, .transcribe-instructions, .browse-instructions, .label-card {
   background-color: #F1E3D1;
   border: 1px solid #4D0717;
   border-radius: 1px;
@@ -4195,14 +4195,14 @@ nav a {
   padding: .5em 1em 0 1em;
   left: 5px;
   top: 116px; }
-  .mark-instructions h1, .transcribe-instructions h1, .browse-instructions h1 {
+  .mark-instructions h1, .transcribe-instructions h1, .browse-instructions h1, .label-card h1 {
     font-size: 1em;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0; }
-  .mark-instructions p, .transcribe-instructions p, .browse-instructions p {
+  .mark-instructions p, .transcribe-instructions p, .browse-instructions p, .label-card p {
     line-height: 1em; }
-  .mark-instructions a, .transcribe-instructions a, .browse-instructions a {
+  .mark-instructions a, .transcribe-instructions a, .browse-instructions a, .label-card a {
     color: #4D0717;
     text-decoration: underline; }
 
@@ -4460,13 +4460,27 @@ footer {
 .status-list dd {
   font-size: 2em; }
 
+.label-card {
+  color: #4D0717; }
+  .label-card h5 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: .4em 0 .8em;
+    border-bottom: #CBBAA5 2px solid; }
+
 .webicon.facebook {
+  width: 40px;
+  height: 40px;
   background: url("../images/webicons/webicon-facebook.svg"); }
 
 .webicon.pinterest {
+  width: 40px;
+  height: 40px;
   background: url("../images/webicons/webicon-pinterest.svg"); }
 
 .webicon.twitter {
+  width: 40px;
+  height: 40px;
   background: url("../images/webicons/webicon-twitter.svg"); }
 
 /* Webicons by Adam Fairhead: http://adamfairhead.com */

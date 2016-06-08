@@ -294,7 +294,7 @@ nav a {
   min-width: 12em;
 }
 
-.mark-instructions, .transcribe-instructions, .browse-instructions {
+.mark-instructions, .transcribe-instructions, .browse-instructions, .label-card {
   background-color: $labels-background;
   border: 1px solid $labels-red;
   border-radius: 1px;
@@ -640,13 +640,32 @@ footer {
   }
 }
 
+//-----------------------------------------------------
+// Single Label view Styles
+
+.label-card {
+  color: $labels-red;
+  h5 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: .4em 0 .8em;
+    border-bottom: $labels-background-dark 2px solid ;
+  }
+}
+
 // FIXME these are temporary until I can figure out wtf is wrong with the _webicons.scss file
 .webicon.facebook {
-  background: url("../images/webicons/webicon-facebook.svg");
+width: 40px;
+height: 40px;
+background: url("../images/webicons/webicon-facebook.svg");
 }
 .webicon.pinterest {
-  background: url("../images/webicons/webicon-pinterest.svg");
+width: 40px;
+height: 40px;
+background: url("../images/webicons/webicon-pinterest.svg");
 }
 .webicon.twitter {
-  background: url("../images/webicons/webicon-twitter.svg");
+width: 40px;
+height: 40px;
+background: url("../images/webicons/webicon-twitter.svg");
 }

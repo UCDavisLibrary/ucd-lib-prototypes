@@ -1,14 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="-14 -14 48 48" enable-background="new -14 -14 48 48" xml:space="preserve">
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="90.0527" y1="-99.7603" x2="90.0527" y2="-106.3809" gradientTransform="matrix(7.2338 0 0 -7.2338 -641.4998 -735.5619)">
-	<stop  offset="0" style="stop-color:#4B71B8"/>
-	<stop  offset="1" style="stop-color:#293F7E"/>
-</linearGradient>
-<path fill="url(#SVGID_1_)" d="M33.931,27.993c0,3.304-2.689,5.983-6.002,5.983H-8.082c-3.315,0-6.001-2.683-6.001-5.983V-7.928
-	c0-3.308,2.687-5.988,6.001-5.988h36.011c3.312,0,6.002,2.681,6.002,5.988V27.993z"/>
-<path fill="#FFFFFF" d="M25.613-4.557c0,0-3.707,0-6.166,0c-3.662,0-7.732,1.535-7.732,6.835c0.019,1.845,0,3.613,0,5.603H7.481
-	v6.728h4.366v19.37h8.021V14.48h5.295l0.479-6.618h-5.913c0,0,0.016-2.946,0-3.8c0-2.093,2.184-1.974,2.312-1.974
-	c1.042,0,3.059,0.003,3.578,0v-6.646H25.613z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>webicon-facebook</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="40" height="40" rx="3"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="40" height="40" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Social-icons" transform="translate(-130.000000, 0.000000)">
+            <g id="webicon-facebook" transform="translate(130.000000, 0.000000)">
+                <use id="Rectangle-33-Copy-2" stroke="#CBBAA5" mask="url(#mask-2)" stroke-width="2" fill="#F1E3D1" xlink:href="#path-1"></use>
+                <path d="M25.966,6.001 C22.304,6.001 18.234,7.536 18.234,12.836 C18.253,14.681 18.234,16.449 18.234,18.439 L14,18.439 L14,25.167 L18.366,25.167 L18.366,39 L26.387,39 L26.387,25.038 L31.682,25.038 L32.161,18.42 L26.248,18.42 C26.248,18.42 26.264,15.474 26.248,14.62 C26.248,12.527 28.432,12.646 28.56,12.646 C29.602,12.646 31.619,12.649 32.138,12.646 L32.138,6 C32.132,6.001 28.425,6.001 25.966,6.001 Z" id="Shape" fill="#CBBAA5"></path>
+            </g>
+        </g>
+    </g>
 </svg>
