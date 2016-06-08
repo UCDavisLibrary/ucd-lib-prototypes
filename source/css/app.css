@@ -4448,20 +4448,14 @@ footer {
     max-width: 17em; }
 
 .admin {
-  margin-bottom: 1em; }
-  .admin .secondary {
-    background-color: #642667;
-    color: #F1E3D1; }
-    .admin .secondary:hover {
-      background-color: #642667;
-      color: #F1E3D1;
-      opacity: .7; }
+  margin-top: 2em; }
+  .admin h2 {
+    margin-top: 2em; }
 
-.pie-chart {
-  margin-bottom: 2em; }
-  .pie-chart img {
-    width: 90%;
-    max-width: 400px; }
+.project-progress {
+  text-align: center; }
+  .project-progress img {
+    max-width: 15em; }
 
 .status-list dd {
   font-size: 2em; }

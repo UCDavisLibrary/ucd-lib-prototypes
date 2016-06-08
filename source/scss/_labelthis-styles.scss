@@ -619,24 +619,18 @@ footer {
 
 //-----------------------------------------------------
 // Admin UI Styles
+
 .admin {
-  margin-bottom: 1em;
-  .secondary {
-    background-color: $labels-focal;
-    color: $labels-background;
-    &:hover {
-      background-color: $labels-focal;
-      color: $labels-background;
-      opacity: .7;
-    }
+  margin-top: 2em;
+  h2 {
+    margin-top: 2em;
   }
 }
 
-.pie-chart {
-  margin-bottom: 2em;
+.project-progress {
+  text-align: center;
   img {
-    width: 90%;
-    max-width: 400px;
+    max-width: 15em;
   }
 }
 

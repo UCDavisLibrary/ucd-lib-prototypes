@@ -1,29 +1,30 @@
 {{&gt; molecules-primary-nav }}
-{{&gt; molecules-admin-toolbar }}
-&lt;section class=&quot;small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns&quot;&gt;
-	&lt;h2&gt;WAT&lt;/h2&gt;
-	&lt;p&gt;Here's how we're doing so far:&lt;/p&gt;
-	&lt;div class=&quot;row&quot;&gt;
-		&lt;div class=&quot;pie-chart large-9 columns&quot;&gt;
-			&lt;img src=&quot;../../images/pie-chart-placeholder.svg&quot;&gt;
+&lt;div class=&quot;admin small-12 medium-10 medium-offset-1&quot;&gt;
+	&lt;section class=&quot;row align-spaced medium-unstack&quot;&gt;
+		&lt;div class=&quot;small-12 medium-8 columns&quot;&gt;
+			&lt;h1&gt;Admin Dashboard&lt;/h1&gt;
+			&lt;p&gt;As an admin, you can help us make sure that the transcription work of the crowds is up to snuff.&lt;/p&gt;
+			&lt;h3&gt;You can do one of two things:&lt;/h3&gt;
+			&lt;p&gt;Verify that the transcription is correct.&lt;/p&gt;
+			&lt;p&gt;Approve a label once you deem that it has been fully and accurately transcribed.&lt;/p&gt;
 		&lt;/div&gt;
-		&lt;div class=&quot;status-list columns&quot;&gt;
+		&lt;div class=&quot;columns project-progress&quot;&gt;
+			&lt;h3&gt;Project Progress&lt;/h3&gt;
+			&lt;img src=&quot;../../images/pie-chart-placeholder.svg&quot;&gt;
 			&lt;dl&gt;
-				&lt;dd&gt;88,888&lt;/dd&gt;
-				&lt;dt&gt;Verified labels&lt;/dt&gt;
-				&lt;dd&gt;88,888&lt;/dd&gt;
-				&lt;dt&gt;Marked labels&lt;/dt&gt;
-				&lt;dd&gt;88,888&lt;/dd&gt;
-				&lt;dt&gt;Transcribed labels&lt;/dt&gt;
+				&lt;dt&gt;3 Verified labels&lt;/dt&gt;
+				&lt;dt&gt;68 Marked labels&lt;/dt&gt;
+				&lt;dt&gt;21 Transcribed labels&lt;/dt&gt;
 			&lt;/dl&gt;
 		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/section&gt;
-&lt;section class=&quot;small-12 medium-10 medium-offset-1 large-8 large-offset-2 columns&quot;&gt;
-	&lt;h2&gt;Verify Labels&lt;/h2&gt;
-	&lt;p&gt;You, fair admin user, should go thorugh these labels, which have been previously marked and transcribed by random strangers, and verify that each transcription is accurate.&lt;/p&gt;
-	{{&gt; molecules-pagination }}
-	{{&gt; organisms-verify-gallery }}
-	{{&gt; molecules-pagination }}
-&lt;/section&gt;
-{{&gt; organisms-footer }}
+	&lt;/section&gt;
+	&lt;section&gt;
+		&lt;h2&gt;Verify&lt;/h2&gt;
+		&lt;p&gt;Please verify the transcriptions or descriptions on each of the following labels.&lt;/p&gt;
+		{{&gt; organisms-verify-gallery }}
+		&lt;h2&gt;Approve&lt;/h2&gt;
+		&lt;p&gt;Please approve the transcriptions and descriptions that have already been verified for each of the following labels.&lt;/p&gt;
+		{{&gt; organisms-verify-gallery }}
+	&lt;/section&gt;
+&lt;/div&gt;
+{{&gt; organisms-admin-footer }}
