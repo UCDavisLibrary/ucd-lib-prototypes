@@ -4019,6 +4019,14 @@ body {
     font-size: 2em;
     margin: -.5em 0 0 0; }
 
+.secondary-menu ul {
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-flex-wrap: wrap-reverse;
+      -ms-flex-wrap: wrap-reverse;
+          flex-wrap: wrap-reverse; }
+
 .button {
   text-transform: uppercase;
   border: 1px solid #CBBAA5;
@@ -4403,7 +4411,7 @@ body {
 
 footer {
   margin-top: 3em;
-  padding-top: 2em;
+  padding-top: .2em;
   border-top: 0.2em solid #CBBAA5; }
   footer a {
     text-decoration: underline; }
