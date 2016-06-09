@@ -4435,7 +4435,7 @@ footer {
   footer small {
     max-width: 45em; }
 
-.donor-links {
+.donor-links, .legal-links {
   margin-bottom: 3em; }
 
 .ucd-links {
