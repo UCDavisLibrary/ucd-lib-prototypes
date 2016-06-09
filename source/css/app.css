@@ -4467,6 +4467,24 @@ footer {
     text-align: center;
     padding: .4em 0 .8em;
     border-bottom: #CBBAA5 2px solid; }
+  .label-card h6 {
+    text-transform: uppercase;
+    margin: .1em 0; }
+  .label-card p {
+    font-size: .9em;
+    line-height: 1.4em; }
+  .label-card dt, .label-card dd {
+    display: inline;
+    padding-right: .4em; }
+  .label-card button {
+    display: block;
+    margin: .8em auto; }
+  .label-card .medium-5 {
+    text-align: center; }
+  .label-card .row {
+    margin-bottom: 1em; }
+  .label-card .webicon {
+    margin-top: .4em; }
 
 .webicon.facebook {
   width: 40px;
