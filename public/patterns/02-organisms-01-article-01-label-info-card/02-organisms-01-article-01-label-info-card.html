@@ -26,28 +26,49 @@
 
 	</head>
 	<body class="body">
-<div class="draggable-modal help-dialogue draggable" unselectable="on">
-	<label>
-		<h2>How to Transcribe this label</h2>
-		<p>Please tell us what the highlighted text says. Try to include any diacritics, like accents ( ` ) or umlauts ( ¨ ), as well as upper and lower case letters.</p>
-		<p>If something is illegible, that is important information for us to know as well, so please mark it as illegible.</p>
-		<p>If the area highlighted is an image, please use on or two words to describe the image.</p>
-		<figure>
-			<img src="../../images/fpo_4x3.png" alt="4x3 Image" />
-		</figure>
-		<div class="button-group align-center">
-			<a href="../../patterns/04-pages-03-transcribe-flow-01/04-pages-03-transcribe-flow-01.html" class="button">OK, got it!</a>
+<section class="label-card medium-10 medium-offset-1 medium-unstack">
+	<h5>About this label</h5>
+	<section class="row">
+		<div class="small-12 medium-7 large-8 medium-unstack columns">
+			 <dl>
+				 <dt>Category:</dt>
+				 <dd>Spain</dd>
+			 </dl>
 		</div>
-	</label>
-</div>
+		<div class="small-12 medium-5 large-4 medium-unstack columns">
+			<p>This label still needs your help. Mark the elements on this label for transcription.</p>
+			<button type="button" class="button" href="#">Mark This Label</button>
+		</div>
+	</section>
+	<section class="row">
+		<div class="small-12 medium-unstack columns">
+			<h6>The story behind this label</h6>
+			<p><a href="">Amerine and the Bohemian Club</a></p>
+		</div>
+	</section>
+	<section class="row">
+		<div class="small-12 medium-7 large-8 medium-unstack columns">
+			<h6>Tell us your story</h6>
+			<p>Are you a wine expert? Do you have family history with this label? <a href="">Send us your story</a>!</p>
+		</div>
+		<div class="small-12 medium-5 large-4 medium-unstack columns">
+			<h6>Share this label</h6>
+			<div class="row align-spaced">
+				<a class="webicon facebook" href="#">Facebook</a>
+				<a class="webicon pinterest" href="#">Pinterest</a>
+				<a class="webicon twitter" href="#">Twitter</a>
+			</div>
+		</div>
+	</section>
+</section>
 
 	<!--DO NOT REMOVE-->
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-transcribe-help-modal";
-		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"pages-transcribe-help","lineagePath":"..\/..\/patterns\/04-pages-03-transcribe-help\/04-pages-03-transcribe-help.html"}];
+		var patternPartial = "organisms-label-info-card";
+		var lineage        = [{"lineagePattern":"molecules-social-share","lineagePath":"..\/..\/patterns\/01-molecules-06-components-00-social-share\/01-molecules-06-components-00-social-share.html"}];
+		var lineageR       = [{"lineagePattern":"templates-mark-flow-start","lineagePath":"..\/..\/patterns\/03-templates-02-mark-flow-start\/03-templates-02-mark-flow-start.html"},{"lineagePattern":"templates-transcribe-flow-start","lineagePath":"..\/..\/patterns\/03-templates-03-transcribe-flow-start\/03-templates-03-transcribe-flow-start.html"},{"lineagePattern":"templates-single-label","lineagePath":"..\/..\/patterns\/03-templates-04-single-label\/03-templates-04-single-label.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>
