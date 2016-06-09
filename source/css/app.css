@@ -3983,6 +3983,9 @@ body {
   /* IE6-9 */
   background-attachment: fixed; }
 
+p a {
+  text-decoration: underline; }
+
 .main-wine-label {
   margin: 40px 0 1em 0; }
   @media only screen and (min-width: 32em) {
