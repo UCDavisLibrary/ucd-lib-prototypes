@@ -18,8 +18,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1466003726" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1466003726" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1466004840" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1466004840" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -148,22 +148,30 @@
 							<div class="draggable-modal verify-tool draggable" unselectable="on">
 	<label>
 		<h2>Verify this transcription</h2>
-		<p>Please choose one of the following transcriptions as the most correct one.</p>
+		<p>Please choose one of the following transcriptions as the most correct one. If none are exactly right, you can edit the most accurate one, and choose that.</p>
 		<ul class="choice clickable">
-			<li>
-				<span class="value">Alternative 1</span><img src="../../images/left-pointer-knockout.svg">
-			</li>
-			<li>
-				<span class="value">Alternative 2</span><img src="../../images/left-pointer-knockout.svg">
-			</li>
-			<li>
-				<span class="value">Alternative 3</span><img src="../../images/left-pointer-knockout.svg">
-			</li>
-	</label>
-	<div class="button-group align-left">
-		<!-- button class="button ghost toggle-button  minor-button">Bad mark</button>	If the 'Illegible' button moves the user directly onto the next task, the 'Illegible' button should also automatically mark the area as a 'Bad Mark'-->
-		<a href="../../patterns/03-templates-03-transcribe-flow-start/03-templates-03-transcribe-flow-start.html" class="secondary button">These are all bad—enter your own</a> <!-- used to have these classes:  ghost toggle-button undefined minor-button. FIXME find out if they're necessary for React -->
+			<div class="row align-middle">
+			<div class="field-container small-8">
+	        <label for="textarea">Transcription 1:</label>
+	        <textarea id="textarea" rows="1" cols="48" placeholder="Text of transcription 1"></textarea>
+	    </div>
+			<button type="button" class="button small-3" href="FIXME">Accept</button>
+		</div>
+		<div class="row align-middle">
+		<div class="field-container small-8">
+				<label for="textarea">Transcription 2:</label>
+				<textarea id="textarea" rows="1" cols="48" placeholder="Text of transcription 2"></textarea>
+		</div>
+		<button type="button" class="button small-3" href="FIXME">Accept</button>
 	</div>
+	<div class="row align-middle">
+	<div class="field-container small-8">
+			<label for="textarea">Transcription 3:</label>
+			<textarea id="textarea" rows="1" cols="48" placeholder="Text of transcription 3"></textarea>
+	</div>
+	<button type="button" class="button small-3" href="FIXME">Accept</button>
+</div>
+	</label>
 </div>
 
 							<div class="sg-code" style="display: none">
@@ -173,22 +181,30 @@
 										&lt;div class=&quot;draggable-modal verify-tool draggable&quot; unselectable=&quot;on&quot;&gt;
 	&lt;label&gt;
 		&lt;h2&gt;Verify this transcription&lt;/h2&gt;
-		&lt;p&gt;Please choose one of the following transcriptions as the most correct one.&lt;/p&gt;
+		&lt;p&gt;Please choose one of the following transcriptions as the most correct one. If none are exactly right, you can edit the most accurate one, and choose that.&lt;/p&gt;
 		&lt;ul class=&quot;choice clickable&quot;&gt;
-			&lt;li&gt;
-				&lt;span class=&quot;value&quot;&gt;Alternative 1&lt;/span&gt;&lt;img src=&quot;../../images/left-pointer-knockout.svg&quot;&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;span class=&quot;value&quot;&gt;Alternative 2&lt;/span&gt;&lt;img src=&quot;../../images/left-pointer-knockout.svg&quot;&gt;
-			&lt;/li&gt;
-			&lt;li&gt;
-				&lt;span class=&quot;value&quot;&gt;Alternative 3&lt;/span&gt;&lt;img src=&quot;../../images/left-pointer-knockout.svg&quot;&gt;
-			&lt;/li&gt;
-	&lt;/label&gt;
-	&lt;div class=&quot;button-group align-left&quot;&gt;
-		&lt;!-- button class=&quot;button ghost toggle-button  minor-button&quot;&gt;Bad mark&lt;/button&gt;	If the 'Illegible' button moves the user directly onto the next task, the 'Illegible' button should also automatically mark the area as a 'Bad Mark'--&gt;
-		&lt;a href=&quot;../../patterns/03-templates-03-transcribe-flow-start/03-templates-03-transcribe-flow-start.html&quot; class=&quot;secondary button&quot;&gt;These are all bad&mdash;enter your own&lt;/a&gt; &lt;!-- used to have these classes:  ghost toggle-button undefined minor-button. FIXME find out if they're necessary for React --&gt;
+			&lt;div class=&quot;row align-middle&quot;&gt;
+			&lt;div class=&quot;field-container small-8&quot;&gt;
+	        &lt;label for=&quot;textarea&quot;&gt;Transcription 1:&lt;/label&gt;
+	        &lt;textarea id=&quot;textarea&quot; rows=&quot;1&quot; cols=&quot;48&quot; placeholder=&quot;Text of transcription 1&quot;&gt;&lt;/textarea&gt;
+	    &lt;/div&gt;
+			&lt;button type=&quot;button&quot; class=&quot;button small-3&quot; href=&quot;FIXME&quot;&gt;Accept&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;row align-middle&quot;&gt;
+		&lt;div class=&quot;field-container small-8&quot;&gt;
+				&lt;label for=&quot;textarea&quot;&gt;Transcription 2:&lt;/label&gt;
+				&lt;textarea id=&quot;textarea&quot; rows=&quot;1&quot; cols=&quot;48&quot; placeholder=&quot;Text of transcription 2&quot;&gt;&lt;/textarea&gt;
+		&lt;/div&gt;
+		&lt;button type=&quot;button&quot; class=&quot;button small-3&quot; href=&quot;FIXME&quot;&gt;Accept&lt;/button&gt;
 	&lt;/div&gt;
+	&lt;div class=&quot;row align-middle&quot;&gt;
+	&lt;div class=&quot;field-container small-8&quot;&gt;
+			&lt;label for=&quot;textarea&quot;&gt;Transcription 3:&lt;/label&gt;
+			&lt;textarea id=&quot;textarea&quot; rows=&quot;1&quot; cols=&quot;48&quot; placeholder=&quot;Text of transcription 3&quot;&gt;&lt;/textarea&gt;
+	&lt;/div&gt;
+	&lt;button type=&quot;button&quot; class=&quot;button small-3&quot; href=&quot;FIXME&quot;&gt;Accept&lt;/button&gt;
+&lt;/div&gt;
+	&lt;/label&gt;
 &lt;/div&gt;
 
 									</code>
@@ -241,10 +257,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1466003726">
+	<script id="pl-js-polyfill-insert-1466004840">
 		(function() {
 			if (self != top) {
-				var cb = '1466003726';
+				var cb = '1466004840';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -253,10 +269,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1466003726">
+	<script id="pl-js-insert-1466004840">
 		(function() {
 			if (self != top) {
-				var cb = '1466003726';
+				var cb = '1466004840';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}

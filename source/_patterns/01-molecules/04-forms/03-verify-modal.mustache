@@ -1,20 +1,28 @@
 <div class="draggable-modal verify-tool draggable" unselectable="on">
 	<label>
 		<h2>Verify this transcription</h2>
-		<p>Please choose one of the following transcriptions as the most correct one.</p>
+		<p>Please choose one of the following transcriptions as the most correct one. If none are exactly right, you can edit the most accurate one, and choose that.</p>
 		<ul class="choice clickable">
-			<li>
-				<span class="value">Alternative 1</span><img src="../../images/left-pointer-knockout.svg">
-			</li>
-			<li>
-				<span class="value">Alternative 2</span><img src="../../images/left-pointer-knockout.svg">
-			</li>
-			<li>
-				<span class="value">Alternative 3</span><img src="../../images/left-pointer-knockout.svg">
-			</li>
-	</label>
-	<div class="button-group align-left">
-		<!-- button class="button ghost toggle-button  minor-button">Bad mark</button>	If the 'Illegible' button moves the user directly onto the next task, the 'Illegible' button should also automatically mark the area as a 'Bad Mark'-->
-		<a href="{{ link.templates-transcribe-flow-start }}" class="secondary button">These are all bad—enter your own</a> <!-- used to have these classes:  ghost toggle-button undefined minor-button. FIXME find out if they're necessary for React -->
+			<div class="row align-middle">
+			<div class="field-container small-8">
+	        <label for="textarea">Transcription 1:</label>
+	        <textarea id="textarea" rows="1" cols="48" placeholder="Text of transcription 1"></textarea>
+	    </div>
+			<button type="button" class="button small-3" href="FIXME">Accept</button>
+		</div>
+		<div class="row align-middle">
+		<div class="field-container small-8">
+				<label for="textarea">Transcription 2:</label>
+				<textarea id="textarea" rows="1" cols="48" placeholder="Text of transcription 2"></textarea>
+		</div>
+		<button type="button" class="button small-3" href="FIXME">Accept</button>
 	</div>
+	<div class="row align-middle">
+	<div class="field-container small-8">
+			<label for="textarea">Transcription 3:</label>
+			<textarea id="textarea" rows="1" cols="48" placeholder="Text of transcription 3"></textarea>
+	</div>
+	<button type="button" class="button small-3" href="FIXME">Accept</button>
+</div>
+	</label>
 </div>

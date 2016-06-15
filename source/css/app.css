@@ -4050,7 +4050,8 @@ nav a {
 .button {
   text-transform: uppercase;
   border: 1px solid #CBBAA5;
-  margin: 5px; }
+  margin: 5px;
+  max-height: 40px; }
 
 .right-pointer {
   padding: 0 0 .2em .5em; }
