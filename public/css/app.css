@@ -1348,7 +1348,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "alverata pe", "alverata-pe", "Georgia", serif;
+  font-family: "korolev-compressed", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: inherit;
@@ -3983,6 +3983,9 @@ body {
   /* IE6-9 */
   background-attachment: fixed; }
 
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase; }
+
 p a {
   text-decoration: underline; }
 
@@ -4214,7 +4217,7 @@ nav a {
   left: 5px;
   top: 116px; }
   .mark-instructions h1, .transcribe-instructions h1, .browse-instructions h1, .label-card h1 {
-    font-size: 1em;
+    font-size: .7em;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0; }
@@ -4481,12 +4484,10 @@ footer {
 .label-card {
   color: #4D0717; }
   .label-card h5 {
-    text-transform: uppercase;
     text-align: center;
     padding: .4em 0 .8em;
     border-bottom: #CBBAA5 2px solid; }
   .label-card h6 {
-    text-transform: uppercase;
     margin: .1em 0; }
   .label-card p {
     font-size: .9em;
