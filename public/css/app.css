@@ -4515,8 +4515,11 @@ footer {
     padding-right: .4em; }
   .label-card button {
     display: block;
-    margin: .8em auto; }
+    margin: .8em auto;
+    min-width: 10em; }
   .label-card .medium-5 {
+    text-align: center; }
+  .label-card .instructions {
     text-align: center; }
   .label-card .row {
     margin-bottom: 1em; }

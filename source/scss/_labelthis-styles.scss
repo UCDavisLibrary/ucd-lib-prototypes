@@ -710,8 +710,12 @@ footer {
   button {
     display: block;
     margin: .8em auto;
+    min-width: 10em;
   }
   .medium-5 {
+    text-align: center;
+  }
+  .instructions {
     text-align: center;
   }
   .row {

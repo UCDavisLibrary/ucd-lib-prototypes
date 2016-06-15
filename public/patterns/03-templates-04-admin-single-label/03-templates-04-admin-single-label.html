@@ -59,23 +59,60 @@
 		</div>
 	</nav>
 </header>
-<div class="row align-center">
-	<div class="login">
-		<h2>Admin Login</h2>
-		<p>In order to verify labels, you need to log in to the admin dashboard.</p>
-		<label>Email
-			<input type="email" placeholder="name@email.com">
-		</label>
-		<label>Password
-			<input type="password" placeholder="Type your Password">
-		</label>
-		<div class="row align-center">
-			<a class="large button" href="../../patterns/03-templates-10-admin-homepage/03-templates-10-admin-homepage.html"><img class="left-pointer" src="../../images/left-pointer-knockout.svg"/>Log In<img class="right-pointer" src="../../images/right-pointer-knockout.svg"/></a>
+<section class="row align-justify toolbar">
+  <a class="secondary button previous-label" href="../../patterns/03-templates-04-single-label/03-templates-04-single-label.html"><img class="left-pointer" src="../../images/left-pointer-red.svg"/>Previous Label</a>
+  <div class="columns align-self-middle single label-title">Label #8888</div>
+  <a class="secondary button next-label" href="../../patterns/03-templates-04-single-label/03-templates-04-single-label.html">Next Label<img class="right-pointer" src="../../images/right-pointer-red.svg"/></a>
+</section>
+<section>
+	<figure class="main-wine-label">
+		<img src="../../images/wine-label-generic.jpg" alt="16x9 Image" />
+	</figure>
+</section>
+<section class="label-card medium-10 medium-offset-1 medium-unstack">
+	<h2>Approve this label</h2>
+	<section>
+		<div class="small-12 medium-10 medium-offset-1 columns">
+			<p class="instructions">Please review the verified transcriptions and descriptions for this label by clicking on each element. Once you’re sure they’re correct, click “APPROVE.” If you find a mistake or a label is missing transcriptions, click “REJECT.”</p>
 		</div>
-		<small><a href="/users/sign_up">Sign up</a></small><br>
-		<small><a href="/users/password/new">Forgot your password?</a></small>
-	</div>
-</div>
+		<div class="small-12 medium-6 row">
+			<button type="button" class="secondary button" href="#">Reject</button>
+			<button type="button" class="button" href="#">Approve</button>
+		</div>
+	</section>
+	<h2>About this label</h2>
+	<section class="row">
+		<div class="small-12 medium-7 large-8 medium-unstack columns">
+			 <dl>
+				 <dt>Category:</dt>
+				 <dd>Spain</dd>
+			 </dl>
+		</div>
+		<div class="small-12 medium-5 large-4 medium-unstack columns">
+
+		</div>
+	</section>
+	<section class="row">
+		<div class="small-12 medium-unstack columns">
+			<h3>The story behind this label</h3>
+			<p><a href="">Amerine and the Bohemian Club</a></p>
+		</div>
+	</section>
+	<section class="row">
+		<div class="small-12 medium-7 large-8 medium-unstack columns">
+			<h3>Tell us your story</h3>
+			<p>Are you a wine expert? Do you have family history with this label? <a href="">Send us your story</a>!</p>
+		</div>
+		<div class="small-12 medium-5 large-4 medium-unstack columns">
+			<h3>Share this label</h3>
+			<div class="row align-spaced">
+				<a class="webicon facebook" href="#">Facebook</a>
+				<a class="webicon pinterest" href="#">Pinterest</a>
+				<a class="webicon twitter" href="#">Twitter</a>
+			</div>
+		</div>
+	</section>
+</section>
 <!-- Begin Footer -->
 <footer>
 	<nav>
@@ -142,8 +179,8 @@
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "templates-login";
-		var lineage        = [{"lineagePattern":"molecules-primary-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-00-primary-nav\/01-molecules-05-navigation-00-primary-nav.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"}];
+		var patternPartial = "templates-admin-single-label";
+		var lineage        = [{"lineagePattern":"molecules-primary-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-00-primary-nav\/01-molecules-05-navigation-00-primary-nav.html"},{"lineagePattern":"molecules-label-toolbar","lineagePath":"..\/..\/patterns\/01-molecules-06-components-01-label-toolbar\/01-molecules-06-components-01-label-toolbar.html"},{"lineagePattern":"atoms-hero-image","lineagePath":"..\/..\/patterns\/00-atoms-04-images-02-hero-image\/00-atoms-04-images-02-hero-image.html"},{"lineagePattern":"organisms-admin-label-info-card","lineagePath":"..\/..\/patterns\/02-organisms-01-article-01-admin-label-info-card\/02-organisms-01-article-01-admin-label-info-card.html"},{"lineagePattern":"organisms-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-footer\/02-organisms-00-global-01-footer.html"}];
 		var lineageR       = [];
 		var patternState   = "";
 		var cssEnabled     = false;
