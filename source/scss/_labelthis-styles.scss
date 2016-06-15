@@ -25,6 +25,10 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
+h4, h5, h6 {
+  letter-spacing: .06em;
+}
+
 p {
   a {
   text-decoration: underline;
@@ -155,9 +159,8 @@ nav a {
 
 .homepage {
   padding-top: 1em;
-  h1, h2, h4 {
+  h4 {
     text-align: center;
-    letter-spacing: .06em;
     line-height: 1em;
     span {
       text-transform: lowercase;
@@ -167,11 +170,10 @@ nav a {
     width: 100%;
     margin: 0 auto 1.5em;
   }
-  p {
-    line-height: 1.4em;
-    padding: 0;
+  .intro {
+    padding: 0 1em;
     @media only screen and (min-width: 33em) {
-      padding: 0 2em;
+      padding: 0 3em;
     }
   }
   .button {
@@ -195,16 +197,21 @@ nav a {
 
 // Step-by-step instructions on the homepage
 .step-by-step {
-  padding: .2rem .5rem .5rem;
   color: $labels-red;
-  h6 {
-    margin: 0 0 -17px 30px;
-  }
-  p {
-    line-height: 1em;
+  background: $label-background;
+  padding: $global-padding;
+  border-radius: 0;
+	outline: 3px solid $label-background;
+	border: 3px solid $labels-background-dark;
+	box-shadow: 0 0 0 15px $labels-background-dark;
+  margin: 1.8em auto;
+  h1 {
+    text-align: center;
+    padding-bottom: .4em;
+    border-bottom: $labels-background-dark 2px solid;
   }
   img {
-    width: 100%;
+    margin: 0 0 3em 0;
   }
 }
 
@@ -233,7 +240,7 @@ nav a {
 //-----------------------------------------------------
 // Modal/dialogue box overrides
 
-.draggable-modal, .transcribe-tool, .help-dialogue, .step-by-step, .login, .signup {
+.draggable-modal, .transcribe-tool, .help-dialogue, .login, .signup {
   background: $label-background;
   padding: $global-padding;
   border-radius: 0;
@@ -683,13 +690,14 @@ footer {
 
 .label-card {
   color: $labels-red;
-  h5 {
+  h2 {
     text-align: center;
-    padding: .4em 0 .8em;
+    padding: 0 0 .4em;
+    margin-bottom: 1em;
     border-bottom: $labels-background-dark 2px solid ;
   }
-  h6 {
-    margin: .1em 0;
+  h3 {
+    margin: 0;
   }
   p {
     font-size: .9em;
