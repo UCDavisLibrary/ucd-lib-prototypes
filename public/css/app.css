@@ -1488,8 +1488,8 @@ kbd {
   color: #8a8a8a; }
 
 .lead {
-  font-size: 125%;
-  line-height: 1.6; }
+  font-size: 110%;
+  line-height: 1.4; }
 
 .stat {
   font-size: 2.5rem;
@@ -4082,15 +4082,25 @@ nav a {
     background-color: #642667;
     border-radius: 10px 10px 0 0; }
 
-.homepage h1 {
-  text-align: center; }
-
-.homepage .title img {
-  width: 100%;
-  margin: 2em auto 1.5em; }
-
-.homepage .button {
-  margin: 1.5em auto 2.5em; }
+.homepage {
+  padding-top: 1em; }
+  .homepage h1, .homepage h2, .homepage h4 {
+    text-align: center;
+    letter-spacing: .06em;
+    line-height: 1em; }
+    .homepage h1 span, .homepage h2 span, .homepage h4 span {
+      text-transform: lowercase; }
+  .homepage .title img {
+    width: 100%;
+    margin: 0 auto 1.5em; }
+  .homepage p {
+    line-height: 1.4em;
+    padding: 0; }
+    @media only screen and (min-width: 33em) {
+      .homepage p {
+        padding: 0 2em; } }
+  .homepage .button {
+    margin: 1.5em auto 2.5em; }
 
 .large-title {
   display: none; }

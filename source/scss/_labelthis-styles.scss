@@ -154,12 +154,25 @@ nav a {
 //Homepage overrides
 
 .homepage {
-  h1 {
+  padding-top: 1em;
+  h1, h2, h4 {
     text-align: center;
+    letter-spacing: .06em;
+    line-height: 1em;
+    span {
+      text-transform: lowercase;
+    }
   }
   .title img {
     width: 100%;
-    margin: 2em auto 1.5em;
+    margin: 0 auto 1.5em;
+  }
+  p {
+    line-height: 1.4em;
+    padding: 0;
+    @media only screen and (min-width: 33em) {
+      padding: 0 2em;
+    }
   }
   .button {
     margin: 1.5em auto 2.5em;
