@@ -4492,9 +4492,24 @@ footer {
     margin-top: 2em; }
 
 .project-progress {
-  text-align: center; }
+  text-align: center;
+  font-family: "korolev-compressed", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase; }
   .project-progress img {
-    max-width: 15em; }
+    max-width: 15em;
+    margin: 1em 0; }
+  .project-progress ul {
+    text-align: left;
+    list-style: none; }
+    .project-progress ul li {
+      margin-bottom: 1em; }
+      .project-progress ul li span {
+        color: #F1E3D1;
+        font-weight: bold;
+        padding: .3em .6em;
+        margin-right: .3em;
+        border-radius: 20em; }
 
 .status-list dd {
   font-size: 2em; }

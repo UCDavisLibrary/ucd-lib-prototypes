@@ -675,8 +675,26 @@ footer {
 
 .project-progress {
   text-align: center;
+  font-family: $header-font-family;
+  font-weight: normal;
+  text-transform: uppercase;
   img {
     max-width: 15em;
+    margin: 1em 0;
+  }
+  ul {
+    text-align: left;
+    list-style: none;
+    li {
+      margin-bottom: 1em;
+      span {
+        color: $labels-background;
+        font-weight: bold;
+        padding: .3em .6em;
+        margin-right: .3em;
+        border-radius:20em;
+      }
+    }
   }
 }
 
