@@ -26,21 +26,27 @@
 
 	</head>
 	<body class="body">
-	<!--Grid 3up-->
-	<div class="row">
-		<div class="columns">col 1/3</div>
-		<div class="columns">col 2/3</div>
-		<div class="columns">col 3/3</div>
-	</div>
-	<!--End grid 2up-->
+<a href="../../patterns/03-templates-07-blog-article/03-templates-07-blog-article.html" class="b-inner">
+  <div class="blog-post-item blog-post-item-featured">
+    <h4>June 16, 2016</h4>
+    <h1>Lorem ipsum dolor sit (37 characters)</h1>
+    <div class="row">
+      <div class="small-4">
+        <img src="../../images/fpo_square.png" alt="Square Thumbnail" />      </div>
+      <div class="small-8">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+</a>
 
 	<!--DO NOT REMOVE-->
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-flexbox-three-up";
-		var lineage        = [];
-		var lineageR       = [];
+		var patternPartial = "molecules-post-featured-item";
+		var lineage        = [{"lineagePattern":"atoms-square","lineagePath":"..\/..\/patterns\/00-atoms-04-images-03-square\/00-atoms-04-images-03-square.html"}];
+		var lineageR       = [{"lineagePattern":"templates-blog-main-page","lineagePath":"..\/..\/patterns\/03-templates-06-blog-main-page\/03-templates-06-blog-main-page.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>
