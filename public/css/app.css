@@ -4253,26 +4253,25 @@ nav a {
   border: 1px solid #4D0717;
   border-radius: 1px;
   box-shadow: 0 0 0 5px #CBBAA5, 0 2px 15px #000;
-  padding: .5em 1em 0 1em;
+  padding: .3em 1em 0 1em;
   left: 5px;
   top: 116px; }
   .mark-instructions h1, .transcribe-instructions h1, .browse-instructions h1, .label-card h1 {
-    font-size: .7em;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 1em;
     margin: 0; }
   .mark-instructions p, .transcribe-instructions p, .browse-instructions p, .label-card p {
-    line-height: 1em; }
+    line-height: 1.4em;
+    font-size: .6em; }
   .mark-instructions a, .transcribe-instructions a, .browse-instructions a, .label-card a {
     color: #4D0717;
     text-decoration: underline; }
 
 .browse-instructions, .transcribe-instructions {
-  margin: -4.1em 10em 0 10px;
+  margin: -3em 9em 0 10px;
   position: absolute; }
   @media only screen and (min-width: 45.88em) {
     .browse-instructions, .transcribe-instructions {
-      margin: -8em 1em 0 10px;
+      margin: -5.7em 1em 0 10px;
       position: relative; } }
 
 .mark-instructions {
