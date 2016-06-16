@@ -1,8 +1,34 @@
 {{&gt; molecules-primary-nav }}
-	&lt;section class=&quot;medium-10 medium-offset-1 large-8 large-offset-2 columns&quot;&gt;
+&lt;section class=&quot;blog small-12 medium-10 medium-offset-1 row&quot;&gt;
+	&lt;section class=&quot;blog-header small-12 columns&quot;&gt;
+		&lt;img class=&quot;large-title&quot; src=&quot;../../images/label-this-blog-title-image.svg&quot; alt=&quot;Label This Project title image&quot;&gt;
+		&lt;!-- img class=&quot;small-title&quot; src=&quot;../../images/label-this-title-image-sm.svg&quot; alt=&quot;&quot;--&gt;
+	&lt;/section&gt;
+	&lt;section class=&quot;blog-river small-8 columns&quot;&gt;
 		{{# latest-posts}}
 		{{&gt; molecules-post-river-item }}
 		{{/ latest-posts}}
+		{{&gt; molecules-pagination }}
 	&lt;/section&gt;
-{{&gt; molecules-pagination }}
+	&lt;section class=&quot;blog-sidebar small-4 columns&quot;&gt;
+		&lt;div class=&quot;blog-sidebar-about-cta&quot;&gt;
+			&lt;h4&gt;ABOUT THE PROJECT&lt;/h4&gt;
+			&lt;p&gt;The labels in the Amerine collection tell the story of the growing wine industry during a pivotal time. Right now, the only way to search Amerine&rsquo;s collection of historic wine labels is to flip through the hundreds of spiral-bound notebooks housed in Special Collections at the UC Davis Library.&lt;/p&gt;
+			&lt;p&gt;The Label This project allows you to help us mark up these labels to create a searchable database.&lt;/p&gt;
+			&lt;button type=&quot;button&quot; class=&quot;button&quot; href=&quot;{{ link.templates-mark-flow-start }}&quot;&gt;Get Started&lt;/button&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;blog-sidebar-email&quot;&gt;
+			&lt;h4&gt;TELL US YOUR STORY&lt;/h4&gt;
+			&lt;p&gt;Are you a wine expert? Do you have family history that you&rsquo;d like to share with us? Send us your story!&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;blog-sidebar-donate&quot;&gt;
+			&lt;h4&gt;SUPPORT THE PROJECT&lt;/h4&gt;
+			&lt;p&gt;There&rsquo;s much more we want to do with the labels in the Amerine collection. To help support our digital wine initiatives, please  contact Jean Korinke, Director of Development, at jfkorinke@ucdavis.edu.&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;blog-sidebar-social&quot;&gt;
+			&lt;h4&gt;SPREAD THE WORD&lt;/h4&gt;
+			{{&gt; molecules-social-share }}
+		&lt;/div&gt;
+	&lt;/section&gt;
+&lt;/section&gt;
 {{&gt; organisms-footer }}

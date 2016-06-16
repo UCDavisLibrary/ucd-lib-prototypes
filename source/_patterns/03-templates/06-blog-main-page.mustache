@@ -1,8 +1,34 @@
 {{> molecules-primary-nav }}
-	<section class="medium-10 medium-offset-1 large-8 large-offset-2 columns">
+<section class="blog small-12 medium-10 medium-offset-1 row">
+	<section class="blog-header small-12 columns">
+		<img class="large-title" src="../../images/label-this-blog-title-image.svg" alt="Label This Project title image">
+		<!-- img class="small-title" src="../../images/label-this-title-image-sm.svg" alt=""-->
+	</section>
+	<section class="blog-river small-8 columns">
 		{{# latest-posts}}
 		{{> molecules-post-river-item }}
 		{{/ latest-posts}}
+		{{> molecules-pagination }}
 	</section>
-{{> molecules-pagination }}
+	<section class="blog-sidebar small-4 columns">
+		<div class="blog-sidebar-about-cta">
+			<h4>ABOUT THE PROJECT</h4>
+			<p>The labels in the Amerine collection tell the story of the growing wine industry during a pivotal time. Right now, the only way to search Amerine’s collection of historic wine labels is to flip through the hundreds of spiral-bound notebooks housed in Special Collections at the UC Davis Library.</p>
+			<p>The Label This project allows you to help us mark up these labels to create a searchable database.</p>
+			<button type="button" class="button" href="{{ link.templates-mark-flow-start }}">Get Started</button>
+		</div>
+		<div class="blog-sidebar-email">
+			<h4>TELL US YOUR STORY</h4>
+			<p>Are you a wine expert? Do you have family history that you’d like to share with us? Send us your story!</p>
+		</div>
+		<div class="blog-sidebar-donate">
+			<h4>SUPPORT THE PROJECT</h4>
+			<p>There’s much more we want to do with the labels in the Amerine collection. To help support our digital wine initiatives, please  contact Jean Korinke, Director of Development, at jfkorinke@ucdavis.edu.</p>
+		</div>
+		<div class="blog-sidebar-social">
+			<h4>SPREAD THE WORD</h4>
+			{{> molecules-social-share }}
+		</div>
+	</section>
+</section>
 {{> organisms-footer }}
