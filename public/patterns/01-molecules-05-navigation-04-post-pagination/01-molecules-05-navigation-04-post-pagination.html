@@ -26,28 +26,49 @@
 
 	</head>
 	<body class="body">
-<div class="draggable-modal help-dialogue draggable" unselectable="on">
-	<label>
-		<h2>How to Mark this label</h2>
-		<p>Before we can transcribe the labels, we need to know which sections need transcription.</p>
-		<p>You can help us by marking up the labels — draw a box around each area of interest on the label, and log it as an image or as a piece of text. Mark as many areas as you want.</p>
-		<p>Try to keep phrases or groups of words that look like they belong together in one box.</p>
-		<figure>
-			<img src="../../images/fpo_4x3.png" alt="4x3 Image" />
-		</figure>
-		<div class="button-group align-center">
-			<a href="../../patterns/03-templates-02-mark-flow-start/03-templates-02-mark-flow-start.html" class="button">OK, got it!</a>
-		</div>
-	</label>
-</div>
+<ul class="pagination pagination-reverse text-center column" role="navigation">
+  <li class="pagination-previous disabled ">
+    <span>
+      <span><img class="left-pointer" src="../../images/left-pointer-red.svg"/>Previous </span>
+      <span class="show-for-sr">page</span>
+    </span>
+  </li>
+  <li class="hide">
+    <a class=" active" href="#/browse/1">1</a>
+  </li>
+  <li class="ellipsis hide">
+  </li>
+  <li class="current">
+    <span class="show-for-sr">Current page is</span>
+    <span> </span>
+    <span>1</span>
+  </li>
+  <li class="undefined">
+    <a class="" href="#/browse/2">2</a>
+  </li>
+  <li class="undefined">
+    <a class="" href="#/browse/3">3</a>
+  </li>
+  <li class="ellipsis undefined">
+  </li>
+  <li class="undefined">
+    <a class="" href="#/browse/182">182</a>
+  </li>
+  <li class="pagination-next undefined">
+    <a class="" href="#/browse/2">
+      <span>Next<img class="right-pointer" src="../../images/right-pointer-red.svg"/></span>
+      <span class="show-for-sr">page</span>
+    </a>
+  </li>
+</ul>
 
 	<!--DO NOT REMOVE-->
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-mark-help-modal";
+		var patternPartial = "molecules-post-pagination";
 		var lineage        = [];
-		var lineageR       = [{"lineagePattern":"pages-mark-help","lineagePath":"..\/..\/patterns\/04-pages-03-mark-help\/04-pages-03-mark-help.html"}];
+		var lineageR       = [{"lineagePattern":"templates-blog-article","lineagePath":"..\/..\/patterns\/03-templates-07-blog-article\/03-templates-07-blog-article.html"}];
 		var patternState   = "";
 		var cssEnabled     = false;
 	</script>

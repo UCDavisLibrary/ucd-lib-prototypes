@@ -1,17 +1,49 @@
 {{> molecules-primary-nav }}
-		<article class="medium-10 medium-offset-1 large-8 large-offset-2 columns">
+<section class="blog blog-post row">
+	<section class="blog-post-header small-12 columns">
+		<img src="../../images/label-this-blog-title-image.svg" alt="Label This Project title image">
+		<!-- img class="small-title" src="../../images/label-this-title-image-sm.svg" alt=""-->
+	</section>
+	<article class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns">
 			<header class="article-header">
 				{{> molecules-headline }}
 				{{> molecules-byline }}
 			</header>
 			{{# article-body }}
-				<p class="intro">{{ intro }}</p>
-				<p>{{ main-text-p-1 }}</p>
 				{{> atoms-landscape-16x9 }}
+				<p class="lead">{{ intro }}</p>
+				<p>{{ main-text-p-1 }}</p>
 				<p>{{ main-text-p-2 }}</p>
 				{{> atoms-blockquote }}
 				<p>{{ main-text-p-3 }}</p>
 			{{/ article-body }}
 		</article>
-		{{> molecules-social-share }}
+		<section class="article-footer blog-sidebar small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns">
+			<div class="row">
+				<div class="blog-sidebar-social medium-4 columns">
+					<h3>SPREAD THE WORD</h3>
+					{{> molecules-social-share }}
+				</div>
+			</div>
+			{{> molecules-post-pagination }}
+			<div class="row">
+				<div class="blog-sidebar-about-cta medium-7 columns">
+					<h3>ABOUT THE PROJECT</h3>
+					<p>The labels in the Amerine collection tell the story of the growing wine industry during a pivotal time. Right now, the only way to search Amerine’s collection of historic wine labels is to flip through the hundreds of spiral-bound notebooks housed in Special Collections at the UC Davis Library.</p>
+					<p>The Label This project allows you to help us mark up these labels to create a searchable database.</p>
+					<button type="button" class="button" href="{{ link.templates-mark-flow-start }}">Mark Labels</button>
+				</div>
+				<div class="medium-5 columns">
+					<div class="blog-sidebar-email">
+						<h3>TELL US YOUR STORY</h3>
+						<p>Are you a wine expert? Do you have family history that you’d like to share with us? Send us your story!</p>
+					</div>
+					<div class="blog-sidebar-donate">
+						<h3>SUPPORT THE PROJECT</h3>
+						<p>There’s much more we want to do with the labels in the Amerine collection. To help support our digital wine initiatives, please  contact Jean Korinke, Director of Development, at jfkorinke@ucdavis.edu.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
 	{{> organisms-footer }}

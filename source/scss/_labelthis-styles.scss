@@ -823,6 +823,22 @@ footer {
       }
     }
   }
+  &-post {
+    &-header {
+      background: $label-background;
+      border-top: 2px solid $labels-background-dark;
+      border-right: 0;
+      border-bottom: 3px solid $labels-background-dark;
+      border-left: 0;
+      margin: 0;
+      padding: .5em;
+      text-align: center;
+      img {
+        margin: 0 auto;
+        max-width: 10em;
+      }
+    }
+  }
 }
 
 

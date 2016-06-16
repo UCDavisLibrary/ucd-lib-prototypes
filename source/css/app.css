@@ -4603,6 +4603,18 @@ footer {
       line-height: 1.4em; }
     .blog-post-item-featured p {
       margin-left: 2em; }
+  .blog-post-header {
+    background: #F1E3D1;
+    border-top: 2px solid #CBBAA5;
+    border-right: 0;
+    border-bottom: 3px solid #CBBAA5;
+    border-left: 0;
+    margin: 0;
+    padding: .5em;
+    text-align: center; }
+    .blog-post-header img {
+      margin: 0 auto;
+      max-width: 10em; }
 
 .webicon.facebook {
   width: 40px;
