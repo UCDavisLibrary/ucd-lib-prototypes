@@ -4,9 +4,10 @@
 		<img src="../../images/label-this-blog-title-image.svg" alt="Label This Project title image">
 		<!-- img class="small-title" src="../../images/label-this-title-image-sm.svg" alt=""-->
 	</section>
-	<article class="small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns">
+	<article class="small-12 medium-8 medium-offset-2 large-6 large-offset-3 columns">
 			<header class="article-header">
-				{{> molecules-headline }}
+				<h4>{{ dateline }}</h4>
+		    <h1>{{ headline.short }}</h1>
 				{{> molecules-byline }}
 			</header>
 			{{# article-body }}
@@ -18,7 +19,7 @@
 				<p>{{ main-text-p-3 }}</p>
 			{{/ article-body }}
 		</article>
-		<section class="article-footer blog-sidebar small-12 medium-8 medium-offset-2 large-8 large-offset-2 columns">
+		<section class="article-footer blog-sidebar small-12 medium-8 medium-offset-2 large-6 large-offset-3 columns">
 			<div class="row">
 				<div class="blog-sidebar-social medium-4 columns">
 					<h3>SPREAD THE WORD</h3>

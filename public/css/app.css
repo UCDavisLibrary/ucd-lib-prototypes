@@ -362,7 +362,7 @@ th {
   padding: 0; }
 
 .foundation-mq {
-  font-family: "small=0em&medium=40em&large=64em&xlarge=75em&xxlarge=90em"; }
+  font-family: "small=0em&medium=40em&large=64.0625em&xlarge=75em&xxlarge=90em"; }
 
 html {
   font-size: 100%;
@@ -1014,7 +1014,7 @@ button {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64.0625em) {
   .large-1 {
     -webkit-flex: 0 0 8.33333%;
         -ms-flex: 0 0 8.33333%;
@@ -1250,7 +1250,7 @@ button {
     .large-up-8 > .column:last-child, .large-up-8 > .columns:last-child {
       float: left; } }
 
-@media screen and (min-width: 64em) and (min-width: 64em) {
+@media screen and (min-width: 64.0625em) and (min-width: 64.0625em) {
   .large-expand {
     -webkit-flex: 1 1 0px;
         -ms-flex: 1 1 0px;
@@ -1260,13 +1260,13 @@ button {
   -webkit-flex: 0 0 100%;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%; }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 64.0625em) {
     .row.large-unstack .column, .row.large-unstack .columns {
       -webkit-flex: 1 1 0px;
           -ms-flex: 1 1 0px;
               flex: 1 1 0px; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64.0625em) {
   .large-collapse > .column, .large-collapse > .columns {
     padding-left: 0;
     padding-right: 0; }
@@ -1523,7 +1523,7 @@ kbd {
   .medium-text-justify {
     text-align: justify; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64.0625em) {
   .large-text-left {
     text-align: left; }
   .large-text-right {
@@ -2139,7 +2139,7 @@ select {
               flex: 1 1 0px; }
       .button-group.stacked-for-small .button:not(:last-child) {
         margin-right: 10px; } }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 64.0625em) {
     .button-group.stacked-for-medium .button {
       -webkit-flex: 1 1 0px;
           -ms-flex: 1 1 0px;
@@ -2287,7 +2287,7 @@ select {
         -webkit-justify-content: flex-start;
             -ms-flex-pack: start;
                 justify-content: flex-start; } }
-  @media screen and (min-width: 64em) {
+  @media screen and (min-width: 64.0625em) {
     .menu.large-horizontal {
       -webkit-flex-wrap: nowrap;
           -ms-flex-wrap: nowrap;
@@ -2605,7 +2605,7 @@ select {
     border-left-style: solid;
     border-right-width: 0; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64.0625em) {
   .dropdown.menu.large-horizontal > li.opens-left > .is-dropdown-submenu {
     left: auto;
     right: 0;
@@ -2896,7 +2896,7 @@ body {
     .position-right.reveal-for-medium ~ .off-canvas-content {
       margin-right: 250px; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64.0625em) {
   .position-left.reveal-for-large {
     left: 0;
     z-index: auto;
@@ -3389,7 +3389,7 @@ table {
   table tbody td {
     padding: 0.5rem 0.625rem 0.625rem; }
 
-@media screen and (max-width: 63.9375em) {
+@media screen and (max-width: 64em) {
   table.stack thead {
     display: none; }
   table.stack tfoot {
@@ -3656,7 +3656,7 @@ table.hover tr:nth-of-type(even):hover {
               flex: 0 0 100%;
       max-width: 100%; } }
 
-@media screen and (max-width: 63.9375em) {
+@media screen and (max-width: 64em) {
   .stacked-for-medium {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -3736,27 +3736,27 @@ table.hover tr:nth-of-type(even):hover {
   .show-for-medium {
     display: none !important; } }
 
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+@media screen and (min-width: 40em) and (max-width: 64em) {
   .hide-for-medium-only {
     display: none !important; } }
 
-@media screen and (max-width: 39.9375em), screen and (min-width: 64em) {
+@media screen and (max-width: 39.9375em), screen and (min-width: 64.0625em) {
   .show-for-medium-only {
     display: none !important; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64.0625em) {
   .hide-for-large {
     display: none !important; } }
 
-@media screen and (max-width: 63.9375em) {
+@media screen and (max-width: 64em) {
   .show-for-large {
     display: none !important; } }
 
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+@media screen and (min-width: 64.0625em) and (max-width: 74.9375em) {
   .hide-for-large-only {
     display: none !important; } }
 
-@media screen and (max-width: 63.9375em), screen and (min-width: 75em) {
+@media screen and (max-width: 64em), screen and (min-width: 75em) {
   .show-for-large-only {
     display: none !important; } }
 
@@ -3943,7 +3943,7 @@ table.hover tr:nth-of-type(even):hover {
         -ms-flex-order: 6;
             order: 6; } }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64.0625em) {
   .large {
     -webkit-order: 1;
         -ms-flex-order: 1;
@@ -4170,6 +4170,10 @@ nav a {
   .login small a, .signup small a {
     color: #4D0717;
     text-decoration: underline; }
+
+.pagination {
+  font-family: "korolev-compressed", sans-serif;
+  text-transform: uppercase; }
 
 .pagination li a {
   border: 1px solid transparent; }
@@ -4561,7 +4565,8 @@ footer {
 
 .blog {
   color: #4D0717;
-  background: #F1E3D1; }
+  background: #F1E3D1;
+  min-width: 100%; }
   .blog p, .blog h1, .blog h2, .blog h3, .blog h4 {
     color: #4D0717;
     margin: 0; }
@@ -4615,6 +4620,30 @@ footer {
     .blog-post-header img {
       margin: 0 auto;
       max-width: 10em; }
+  .blog-post article p {
+    margin-top: .8em; }
+  .blog-post .article-header {
+    margin-top: 2em; }
+    .blog-post .article-header h1 {
+      text-transform: none; }
+    .blog-post .article-header h3 {
+      text-transform: none;
+      margin-top: .4em; }
+  .blog-post .article-footer p {
+    font-size: .7em;
+    line-height: 1.6em; }
+  .blog-post .article-footer .blog-sidebar-social {
+    margin-top: 2em;
+    margin-bottom: 0; }
+    .blog-post .article-footer .blog-sidebar-social .row {
+      margin-bottom: 0; }
+  .blog-post .article-footer .button {
+    min-width: 50%;
+    margin-top: 1em; }
+  .blog-post .article-footer .pagination {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #CBBAA5; }
 
 .webicon.facebook {
   width: 40px;
