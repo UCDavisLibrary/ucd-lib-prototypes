@@ -4147,6 +4147,24 @@ nav a {
   height: 100%;
   z-index: 999; }
 
+.verify-overlay {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  height: 100px;
+  width: 300px;
+  border: solid 1px #4D0717; }
+  .verify-overlay:hover {
+    border: 3px solid #4D0717; }
+    .verify-overlay:hover > span {
+      opacity: 1; }
+  .verify-overlay span {
+    opacity: 0;
+    position: absolute;
+    bottom: -65px;
+    background-color: #4D0717;
+    padding: .5em; }
+
 .draggable-modal, .transcribe-tool, .help-dialogue, .login, .signup {
   color: #4D0717;
   background: #F1E3D1;
@@ -4591,13 +4609,14 @@ footer {
       margin: 0 auto; }
   .blog-sidebar h3 {
     margin-bottom: .4em; }
-  .blog-sidebar p {
-    font-size: 80%; }
+  .blog-sidebar p, .blog-sidebar .textwidget {
+    font-size: 1em; }
   .blog-sidebar div {
     margin-bottom: 2em;
     font-size: 80%; }
   .blog-sidebar button, .blog-sidebar .button {
-    min-width: 100%; }
+    min-width: 100%;
+    margin-top: 1em; }
   .blog-post-item {
     border-bottom: 1px solid #CBBAA5;
     margin-bottom: 1em;
