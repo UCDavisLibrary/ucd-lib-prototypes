@@ -44,7 +44,6 @@ p {
   text-decoration: underline;
   }
 }
-
 .main-wine-label {
   margin: 40px 0 1em 0;
   @media only screen and (min-width: 32em) {
@@ -775,12 +774,18 @@ footer {
   color: $labels-red;
   background: $label-background;
   min-width: 100%;
-  p, h1, h2, h3, h4 {
+  p, h1, h2, h3, h4, span {
     color: $labels-red;
     margin: 0;
   }
   h1, h2, h3, h4 {
     line-height: 1em;
+  }
+  a {
+    color: $labels-red;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   &-header {
     @include modal-styling;
@@ -801,8 +806,9 @@ footer {
     }
     div {
       margin-bottom: 2em;
+      font-size: $small-font-size;
     }
-    .button {
+    button, .button {
       min-width: 100%;
     }
   }
@@ -842,11 +848,11 @@ footer {
         max-width: 10em;
       }
     }
-    article {
+
       p {
         margin-top: .8em;
       }
-    }
+    
     .article-header {
       margin-top: 2em;
       h1 {
@@ -858,7 +864,7 @@ footer {
       }
     }
     .article-footer {
-      p {
+      div {
         font-size: .7em;
         line-height: 1.6em;
       }

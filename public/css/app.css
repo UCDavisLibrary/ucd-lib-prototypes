@@ -4566,11 +4566,15 @@ footer {
   color: #4D0717;
   background: #F1E3D1;
   min-width: 100%; }
-  .blog p, .blog h1, .blog h2, .blog h3, .blog h4 {
+  .blog p, .blog h1, .blog h2, .blog h3, .blog h4, .blog span {
     color: #4D0717;
     margin: 0; }
   .blog h1, .blog h2, .blog h3, .blog h4 {
     line-height: 1em; }
+  .blog a {
+    color: #4D0717; }
+    .blog a:hover {
+      text-decoration: underline; }
   .blog-header {
     color: #4D0717;
     background: #F1E3D1;
@@ -4590,8 +4594,9 @@ footer {
   .blog-sidebar p {
     font-size: 80%; }
   .blog-sidebar div {
-    margin-bottom: 2em; }
-  .blog-sidebar .button {
+    margin-bottom: 2em;
+    font-size: 80%; }
+  .blog-sidebar button, .blog-sidebar .button {
     min-width: 100%; }
   .blog-post-item {
     border-bottom: 1px solid #CBBAA5;
@@ -4619,7 +4624,7 @@ footer {
     .blog-post-header img {
       margin: 0 auto;
       max-width: 10em; }
-  .blog-post article p {
+  .blog-post p {
     margin-top: .8em; }
   .blog-post .article-header {
     margin-top: 2em; }
@@ -4628,7 +4633,7 @@ footer {
     .blog-post .article-header h3 {
       text-transform: none;
       margin-top: .4em; }
-  .blog-post .article-footer p {
+  .blog-post .article-footer div {
     font-size: .7em;
     line-height: 1.6em; }
   .blog-post .article-footer .blog-sidebar-social {
