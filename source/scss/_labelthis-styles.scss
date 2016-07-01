@@ -115,11 +115,16 @@ nav a {
 //-----------------------------------------------------
 //Button style overrides
 
-.button {
+.button, input {
   text-transform: uppercase;
 	border: 1px solid #CBBAA5;
   margin: 5px;
-  max-height: 40px;
+  max-height: 60px;
+  background-color: #455B00;
+}
+
+input {
+  padding: .6em 1em;
 }
 
 .right-pointer {
