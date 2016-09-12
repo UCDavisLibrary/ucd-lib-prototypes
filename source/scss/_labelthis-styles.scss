@@ -975,6 +975,12 @@ footer {
   }
 }
 
+.herocard {
+  h1, h3, p, a {
+    color: $labels-red;
+    margin-bottom: 0;
+  }
+}
 .minicard {
   @include simple-modal-styling;
   max-width: 35em;

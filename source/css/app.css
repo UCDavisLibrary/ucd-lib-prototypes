@@ -4709,6 +4709,10 @@ footer {
 .refine-search label {
   display: inline-block; }
 
+.herocard h1, .herocard h3, .herocard p, .herocard a {
+  color: #4D0717;
+  margin-bottom: 0; }
+
 .minicard {
   color: #4D0717;
   background: #F1E3D1;
