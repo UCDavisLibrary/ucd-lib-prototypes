@@ -26,22 +26,36 @@
 
 	</head>
 	<body class="body">
-<form action="#" method="post" class="inline-form search-form">           
-    <fieldset>
-	    <legend class="is-vishidden">Search</legend>
-	    <label for="search-field" class="is-vishidden">Search</label>
-	    <input type="search" placeholder="Search" id="search-field" class="search-field" />
-	    <button class="search-submit">
-	    	<span class="icon-search" aria-hidden="true"></span>
-	    	<span class="is-vishidden">Search</span>
-	    </button>
-    </fieldset>
-</form>
+<header>
+	<nav id="large-menu" class="top-bar">
+		<div class="top-bar-left">
+			<ul class="menu">
+				<li class="menu-item-large">
+					<a href="../../patterns/03-templates-00-homepage/03-templates-00-homepage.html">Manage This</a>
+				</li>
+				<li class="menu-item">
+					<a href="../../patterns/03-templates-02-mark-flow-start/03-templates-02-mark-flow-start.html">Stats</a>
+				</li>
+			</ul>
+		</div>
+		<div class="top-bar-right">
+			<ul class="menu">
+				<li class="menu-item-large">
+					<a target="_blank" href="../../patterns/03-templates-06-blog-main-page/03-templates-06-blog-main-page.html">Back to Label This</a>
+				</li>
+				<li class="menu-item-small">
+					<a href="#small-menu">...</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
 	<!--DO NOT REMOVE-->
 		
 	<script>
 		// handle injection of items from PHP
-		var patternPartial = "molecules-search";
+		var patternPartial = "molecules-manage-this-nav";
 		var lineage        = [];
 		var lineageR       = [];
 		var patternState   = "";

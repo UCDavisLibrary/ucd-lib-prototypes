@@ -932,14 +932,35 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
+//-----------------------------------------------------
+// Manage This Styles
+.admin-body {
+  color: $labels-red;
+  background: $label-background;
+  min-width: 100%;
+  p, h1, h2, h3, h4, span {
+    color: $labels-red;
+    margin: 0;
+  }
+  h1, h2, h3, h4 {
+    line-height: 1em;
+  }
+  a {
+    color: $labels-red;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.refine-search {
+  input, select {
+    max-width: 8em;
+    display: inline-block;
+  }
+  label {
+    display: inline-block;
+  }
+}
 
 
 
