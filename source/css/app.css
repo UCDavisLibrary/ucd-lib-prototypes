@@ -4688,10 +4688,13 @@ footer {
 .admin-body {
   color: #4D0717;
   background: #F1E3D1;
-  min-width: 100%; }
-  .admin-body p, .admin-body h1, .admin-body h2, .admin-body h3, .admin-body h4, .admin-body span {
+  min-width: 100%;
+  padding: 1rem; }
+  .admin-body p, .admin-body h1, .admin-body h2, .admin-body h3, .admin-body h4, .admin-body span, .admin-body label {
     color: #4D0717;
     margin: 0; }
+  .admin-body input {
+    color: #F1E3D1; }
   .admin-body h1, .admin-body h2, .admin-body h3, .admin-body h4 {
     line-height: 1em; }
   .admin-body a {
@@ -4705,6 +4708,18 @@ footer {
 
 .refine-search label {
   display: inline-block; }
+
+.minicard {
+  color: #4D0717;
+  background: #F1E3D1;
+  padding: 1rem;
+  border-radius: 0;
+  outline: 3px solid #F1E3D1;
+  border: 3px solid #CBBAA5;
+  max-width: 35em; }
+  .minicard h1, .minicard h3, .minicard p, .minicard a {
+    color: #4D0717;
+    margin-bottom: 0; }
 
 .webicon.facebook {
   width: 40px;

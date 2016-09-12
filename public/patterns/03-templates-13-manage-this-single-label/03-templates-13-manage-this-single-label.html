@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html class="pl">
+	<head>
+		<title>UC Davis Library Pattern Lab</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width" />
+
+	  <link href="../../css/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+
+		<script src="https://use.typekit.net/umm3adq.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+				<!-- never cache patterns -->
+		<meta http-equiv="cache-control" content="max-age=0" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="expires" content="0" />
+		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+		<meta http-equiv="pragma" content="no-cache" />
+		
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1473707045" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1473707045" media="all" />
+		
+
+		<!-- End Pattern Lab -->
+
+	</head>
+	<body class="body">
+<header>
+	<nav id="large-menu" class="top-bar">
+		<div class="top-bar-left">
+			<ul class="menu">
+				<li class="menu-item-large">
+					<a href="../../patterns/03-templates-00-homepage/03-templates-00-homepage.html">Manage This</a>
+				</li>
+				<li class="menu-item">
+					<a href="../../patterns/03-templates-02-mark-flow-start/03-templates-02-mark-flow-start.html">Stats</a>
+				</li>
+			</ul>
+		</div>
+		<div class="top-bar-right">
+			<ul class="menu">
+				<li class="menu-item-large">
+					<a target="_blank" href="../../patterns/03-templates-06-blog-main-page/03-templates-06-blog-main-page.html">Back to Label This</a>
+				</li>
+				<li class="menu-item-small">
+					<a href="#small-menu">...</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<div class="admin-body">
+	<section class="row">
+		<div class="small-12 columns">
+			<h1>Manage This</h1>
+			<p>As an admin, you can help us make sure that the transcription work of the crowds is up to snuff.</p>
+			<form class="refine-search" action="/" method="GET">
+			  <h1 for="id_identifier"><span>Quick find by label number:</span> <input id="id_identifier" name="identifier" type="text"></h1>
+			  <h3>Refine your search</h3>
+			  <p>Use these controls to find what you're looking for. As the corpus gets bigger, this functionality will improve.</p>
+			  <div class="row">
+			    <div class="column">
+			      <label for="id_sort_by">Sort results by:</label>
+			      <select id="id_sort_by" name="sort_by" required="">
+			        <option value="source_modified">Date</option>
+			        <option value="identifier" selected="selected">Label ID</option>
+			        <option value="num_marks"># of marks</option>
+			        <option value="num_transcriptions"># of transc</option>
+			      </select>
+			    </div>
+			    <div class="column">
+			      <div class="row">
+			        <input checked="checked" id="id_modified_only" name="modified_only" type="checkbox"><label for="id_modified_only">Only show labels with marks and transcriptions.</label>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="row">
+			    <div class="column">
+			      <label>Show me</label>
+			      <select id="id_limit" name="limit" required="">
+			        <option value="10">10</option>
+			        <option value="50">50</option>
+			        <option value="100" selected="selected">100</option>
+			      </select>
+			      <label for="id_limit">results per page</label>
+			    </div>
+			    <div class="column">
+			      <label>In</label>
+			      <select id="id_order" name="order" required="">
+			        <option value="-">Descending</option>
+			        <option value="+" selected="selected">Ascending</option>
+			      </select>
+			      <label for="id_order">order</label>
+			    </div>
+			  </div>
+			  <input type="submit" value="Search">
+			</form>
+		</div>
+	</section>
+	<section>
+		<h2>Results</h2>
+		<ul class="pagination text-center column" role="navigation">
+		  <li class="pagination-previous disabled ">
+		    <span>
+		      <span><img class="left-pointer" src="../../images/left-pointer-knockout.svg"/>Previous </span>
+		      <span class="show-for-sr">page</span>
+		    </span>
+		  </li>
+		  <li class="hide">
+		    <a class=" active" href="#/browse/1">1</a>
+		  </li>
+		  <li class="ellipsis hide">
+		  </li>
+		  <li class="current">
+		    <span class="show-for-sr">Current page is</span>
+		    <span> </span>
+		    <span>1</span>
+		  </li>
+		  <li class="undefined">
+		    <a class="" href="#/browse/2">2</a>
+		  </li>
+		  <li class="undefined">
+		    <a class="" href="#/browse/3">3</a>
+		  </li>
+		  <li class="ellipsis undefined">
+		  </li>
+		  <li class="undefined">
+		    <a class="" href="#/browse/182">182</a>
+		  </li>
+		  <li class="pagination-next undefined">
+		    <a class="" href="#/browse/2">
+		      <span>Next<img class="right-pointer" src="../../images/right-pointer-knockout.svg"/></span>
+		      <span class="show-for-sr">page</span>
+		    </a>
+		  </li>
+		</ul>
+		<div class="row small-up-1 medium-up-2 large-up-3">
+			<div class="minicard column row">
+				<div class="column small-4">
+					<a href="../../patterns/03-templates-11-verify-label/03-templates-11-verify-label.html">
+			<img src="../../images/fpo_square.png" alt="Square Thumbnail" />					</a>
+					<p><a href="#">Download Image</a></p>
+				</div>
+				<div class="column">
+					<h1><a href="#">Label #1234</a></h1>
+					<p><a href="#">Direct Link to Mark</a></p>
+					<h3>Category</h3>
+					<p>North Africa Folder</p>
+					<h3>Last modified:</h3>
+					<p>Sept. 12, 2016, 8:39 a.m.</p>
+					<p>Marks: 6</p>
+				</div>
+			</div>
+			<div class="minicard column row">
+				<div class="column small-4">
+					<a href="../../patterns/03-templates-11-verify-label/03-templates-11-verify-label.html">
+			<img src="../../images/fpo_square.png" alt="Square Thumbnail" />					</a>
+					<p><a href="#">Download Image</a></p>
+				</div>
+				<div class="column">
+					<h1><a href="#">Label #1234</a></h1>
+					<p><a href="#">Direct Link to Mark</a></p>
+					<h3>Category</h3>
+					<p>North Africa Folder</p>
+					<h3>Last modified:</h3>
+					<p>Sept. 12, 2016, 8:39 a.m.</p>
+					<p>Marks: 6</p>
+				</div>
+			</div>
+			<div class="minicard column row">
+				<div class="column small-4">
+					<a href="../../patterns/03-templates-11-verify-label/03-templates-11-verify-label.html">
+			<img src="../../images/fpo_square.png" alt="Square Thumbnail" />					</a>
+					<p><a href="#">Download Image</a></p>
+				</div>
+				<div class="column">
+					<h1><a href="#">Label #1234</a></h1>
+					<p><a href="#">Direct Link to Mark</a></p>
+					<h3>Category</h3>
+					<p>North Africa Folder</p>
+					<h3>Last modified:</h3>
+					<p>Sept. 12, 2016, 8:39 a.m.</p>
+					<p>Marks: 6</p>
+				</div>
+			</div>
+			<div class="minicard column row">
+				<div class="column small-4">
+					<a href="../../patterns/03-templates-11-verify-label/03-templates-11-verify-label.html">
+			<img src="../../images/fpo_square.png" alt="Square Thumbnail" />					</a>
+					<p><a href="#">Download Image</a></p>
+				</div>
+				<div class="column">
+					<h1><a href="#">Label #1234</a></h1>
+					<p><a href="#">Direct Link to Mark</a></p>
+					<h3>Category</h3>
+					<p>North Africa Folder</p>
+					<h3>Last modified:</h3>
+					<p>Sept. 12, 2016, 8:39 a.m.</p>
+					<p>Marks: 6</p>
+				</div>
+			</div>
+			<div class="minicard column row">
+				<div class="column small-4">
+					<a href="../../patterns/03-templates-11-verify-label/03-templates-11-verify-label.html">
+			<img src="../../images/fpo_square.png" alt="Square Thumbnail" />					</a>
+					<p><a href="#">Download Image</a></p>
+				</div>
+				<div class="column">
+					<h1><a href="#">Label #1234</a></h1>
+					<p><a href="#">Direct Link to Mark</a></p>
+					<h3>Category</h3>
+					<p>North Africa Folder</p>
+					<h3>Last modified:</h3>
+					<p>Sept. 12, 2016, 8:39 a.m.</p>
+					<p>Marks: 6</p>
+				</div>
+			</div>
+			<div class="minicard column row">
+				<div class="column small-4">
+					<a href="../../patterns/03-templates-11-verify-label/03-templates-11-verify-label.html">
+			<img src="../../images/fpo_square.png" alt="Square Thumbnail" />					</a>
+					<p><a href="#">Download Image</a></p>
+				</div>
+				<div class="column">
+					<h1><a href="#">Label #1234</a></h1>
+					<p><a href="#">Direct Link to Mark</a></p>
+					<h3>Category</h3>
+					<p>North Africa Folder</p>
+					<h3>Last modified:</h3>
+					<p>Sept. 12, 2016, 8:39 a.m.</p>
+					<p>Marks: 6</p>
+				</div>
+			</div>
+			<div class="minicard column row">
+				<div class="column small-4">
+					<a href="../../patterns/03-templates-11-verify-label/03-templates-11-verify-label.html">
+			<img src="../../images/fpo_square.png" alt="Square Thumbnail" />					</a>
+					<p><a href="#">Download Image</a></p>
+				</div>
+				<div class="column">
+					<h1><a href="#">Label #1234</a></h1>
+					<p><a href="#">Direct Link to Mark</a></p>
+					<h3>Category</h3>
+					<p>North Africa Folder</p>
+					<h3>Last modified:</h3>
+					<p>Sept. 12, 2016, 8:39 a.m.</p>
+					<p>Marks: 6</p>
+				</div>
+			</div>
+			<div class="minicard column row">
+				<div class="column small-4">
+					<a href="../../patterns/03-templates-11-verify-label/03-templates-11-verify-label.html">
+			<img src="../../images/fpo_square.png" alt="Square Thumbnail" />					</a>
+					<p><a href="#">Download Image</a></p>
+				</div>
+				<div class="column">
+					<h1><a href="#">Label #1234</a></h1>
+					<p><a href="#">Direct Link to Mark</a></p>
+					<h3>Category</h3>
+					<p>North Africa Folder</p>
+					<h3>Last modified:</h3>
+					<p>Sept. 12, 2016, 8:39 a.m.</p>
+					<p>Marks: 6</p>
+				</div>
+			</div>
+			<div class="minicard column row">
+				<div class="column small-4">
+					<a href="../../patterns/03-templates-11-verify-label/03-templates-11-verify-label.html">
+			<img src="../../images/fpo_square.png" alt="Square Thumbnail" />					</a>
+					<p><a href="#">Download Image</a></p>
+				</div>
+				<div class="column">
+					<h1><a href="#">Label #1234</a></h1>
+					<p><a href="#">Direct Link to Mark</a></p>
+					<h3>Category</h3>
+					<p>North Africa Folder</p>
+					<h3>Last modified:</h3>
+					<p>Sept. 12, 2016, 8:39 a.m.</p>
+					<p>Marks: 6</p>
+				</div>
+			</div>
+			<div class="minicard column row">
+				<div class="column small-4">
+					<a href="../../patterns/03-templates-11-verify-label/03-templates-11-verify-label.html">
+			<img src="../../images/fpo_square.png" alt="Square Thumbnail" />					</a>
+					<p><a href="#">Download Image</a></p>
+				</div>
+				<div class="column">
+					<h1><a href="#">Label #1234</a></h1>
+					<p><a href="#">Direct Link to Mark</a></p>
+					<h3>Category</h3>
+					<p>North Africa Folder</p>
+					<h3>Last modified:</h3>
+					<p>Sept. 12, 2016, 8:39 a.m.</p>
+					<p>Marks: 6</p>
+				</div>
+			</div>
+		</div>
+		<ul class="pagination text-center column" role="navigation">
+		  <li class="pagination-previous disabled ">
+		    <span>
+		      <span><img class="left-pointer" src="../../images/left-pointer-knockout.svg"/>Previous </span>
+		      <span class="show-for-sr">page</span>
+		    </span>
+		  </li>
+		  <li class="hide">
+		    <a class=" active" href="#/browse/1">1</a>
+		  </li>
+		  <li class="ellipsis hide">
+		  </li>
+		  <li class="current">
+		    <span class="show-for-sr">Current page is</span>
+		    <span> </span>
+		    <span>1</span>
+		  </li>
+		  <li class="undefined">
+		    <a class="" href="#/browse/2">2</a>
+		  </li>
+		  <li class="undefined">
+		    <a class="" href="#/browse/3">3</a>
+		  </li>
+		  <li class="ellipsis undefined">
+		  </li>
+		  <li class="undefined">
+		    <a class="" href="#/browse/182">182</a>
+		  </li>
+		  <li class="pagination-next undefined">
+		    <a class="" href="#/browse/2">
+		      <span>Next<img class="right-pointer" src="../../images/right-pointer-knockout.svg"/></span>
+		      <span class="show-for-sr">page</span>
+		    </a>
+		  </li>
+		</ul>
+	</section>
+</div>
+<!-- Begin Footer -->
+<footer>
+	<nav>
+		<div class="secondary-menu">
+			<ul class="menu">
+				<li class="menu-item">
+					<a target="_blank" href="../../patterns/03-templates-00-login/03-templates-00-login.html">Admin log out</a>
+				</li>
+				<li class="menu-item">
+					<a target="_blank" href="../../patterns/03-templates-10-admin-homepage/03-templates-10-admin-homepage.html">Admin Dashboard</a>
+				</li>
+				<li class="menu-item">
+					<a href="../../patterns/03-templates-05-about/03-templates-05-about.html">Questions or Comments?</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<section class="row align-center donor-links">
+		<div><img src="../../images/uc-lib-logo-label-this.svg"></a></div>
+		<small>This site was built for the <a href="https://www.lib.ucdavis.edu/dept/specol/">Special Collections Department</a> at the <a href="https://www.lib.ucdavis.edu">UC Davis Library</a>.<br/>
+ 					Help us make this and other projects possible—<a href="https://give.ucdavis.edu/ulib/">support the Library.</a></small>
+	</section>
+	<section class="row align-center ucd-links">
+		<small class="legal"><a href="https://www.ucdavis.edu">University of California, Davis</a>, One Shields Avenue, Davis, CA 95616 | 530-752-1011<br/>
+			Copyright © The Regents of the <a href="http://www.universityofcalifornia.edu/">University of California</a>, Davis campus. All rights reserved.</small>
+	</section>
+	<section class="row align-spaced legal-links">
+		<div><small class="legal"><a href="https://www.ucdavis.edu/privacy-and-accessibility">Privacy & Accessibility</a></small></div>
+		<div><small class="legal"><a href="http://occr.ucdavis.edu/poc/">Principles of Community</a></small></div>
+	</section>
+</footer>
+<nav id="small-menu">
+	<ul class="sm-menu">
+		<li class="sm-menu-item close-button">
+			<a href="#large-menu">&times;</a>
+		</li>
+		<li class="sm-menu-item">
+			<a href="../../patterns/03-templates-00-homepage/03-templates-00-homepage.html">Home</a>
+		</li>
+		<li class="sm-menu-item">
+			<a href="../../patterns/03-templates-02-mark-flow-start/03-templates-02-mark-flow-start.html">Mark</a>
+		</li>
+		<li class="sm-menu-item">
+			<a href="../../patterns/03-templates-03-transcribe-flow-start/03-templates-03-transcribe-flow-start.html">Transcribe</a>
+		</li>
+		<li class="sm-menu-item">
+			<a href="../../patterns/03-templates-00-homepage/03-templates-00-homepage.html">Search</a>
+		</li>
+		<li class="sm-menu-item">
+			<a href="../../patterns/03-templates-05-about/03-templates-05-about.html">About the Project</a>
+		</li>
+		<li class="sm-menu-item">
+			<a target="_blank" href="../../patterns/03-templates-06-blog-main-page/03-templates-06-blog-main-page.html">Blog</a>
+		</li>
+		<li class="sm-menu-item">
+			<a target="_blank" href="../../patterns/03-templates-06-blog-main-page/03-templates-06-blog-main-page.html">Questions or Comments?</a>
+		</li>
+		<li class="sm-menu-item">
+			<a target="_blank" href="../../patterns/03-templates-00-login/03-templates-00-login.html">Admin Dashboard</a>
+		</li>
+		<li class="sm-menu-item">
+			<a target="_blank" href="../../patterns/03-templates-00-login/03-templates-00-login.html">Admin log out</a>
+		</li>
+	</ul>
+</nav>
+</body>
+<!-- End Footer -->
+
+	<!--DO NOT REMOVE-->
+		
+	<script>
+		// handle injection of items from PHP
+		var patternPartial = "templates-manage-this-single-label";
+		var lineage        = [{"lineagePattern":"molecules-manage-this-nav","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-01-manage-this-nav\/01-molecules-05-navigation-01-manage-this-nav.html"},{"lineagePattern":"molecules-refine-search","lineagePath":"..\/..\/patterns\/01-molecules-04-forms-04-refine-search\/01-molecules-04-forms-04-refine-search.html"},{"lineagePattern":"molecules-pagination","lineagePath":"..\/..\/patterns\/01-molecules-05-navigation-03-pagination\/01-molecules-05-navigation-03-pagination.html"},{"lineagePattern":"organisms-admin-footer","lineagePath":"..\/..\/patterns\/02-organisms-00-global-01-admin-footer\/02-organisms-00-global-01-admin-footer.html"}];
+		var lineageR       = [];
+		var patternState   = "";
+		var cssEnabled     = false;
+	</script>
+		<script>
+		/*!
+		 * scriptLoader - v0.1
+		 *
+		 * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+		 * Licensed under the MIT license
+		 *
+		 */
+		
+		var scriptLoader = {
+			
+			run: function(js,cb,target) {
+				var s  = document.getElementById(target+'-'+cb); 
+				for (var i = 0; i < js.length; i++) {
+					var src = (typeof js[i] != "string") ? js[i].src : js[i];
+					var c   = document.createElement('script');
+					c.src   = '../../'+src+'?'+cb;
+					if (typeof js[i] != "string") {
+						if (js[i].dep !== undefined) {
+							c.onload = function(dep,cb,target) {
+								return function() {
+									scriptLoader.run(dep,cb,target);
+								}
+							}(js[i].dep,cb,target);
+						}
+					}
+					s.parentNode.insertBefore(c,s);
+				}
+			}
+			
+		}
+	</script>
+	<script id="pl-js-polyfill-insert-1473707045">
+		(function() {
+			if (self != top) {
+				var cb = '1473707045';
+				var js = [];
+				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
+					js.push("styleguide/js/vendor/classlist-polyfill.js");
+				}
+				scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+			}
+		})();
+	</script>
+	<script id="pl-js-insert-1473707045">
+		(function() {
+			if (self != top) {
+				var cb = '1473707045';
+				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
+				scriptLoader.run(js,cb,'pl-js-insert');
+			}
+		})();
+	</script>
+	
+
+
+	</body>
+</html>

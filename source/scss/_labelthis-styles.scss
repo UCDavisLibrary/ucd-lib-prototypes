@@ -20,6 +20,15 @@
   box-shadow: 0 0 0 15px $labels-background-dark;
 }
 
+@mixin simple-modal-styling {
+  color: $labels-red;
+  background: $label-background;
+  padding: $global-padding;
+  border-radius: 0;
+  outline: 3px solid $label-background;
+  border: 3px solid $labels-background-dark;
+}
+
 // Overrides
 // Above and beyond the stock Foundation styles
 
@@ -938,9 +947,13 @@ footer {
   color: $labels-red;
   background: $label-background;
   min-width: 100%;
-  p, h1, h2, h3, h4, span {
+  padding: $global-padding;
+  p, h1, h2, h3, h4, span, label {
     color: $labels-red;
     margin: 0;
+  }
+  input {
+    color: $label-background;
   }
   h1, h2, h3, h4 {
     line-height: 1em;
@@ -959,6 +972,15 @@ footer {
   }
   label {
     display: inline-block;
+  }
+}
+
+.minicard {
+  @include simple-modal-styling;
+  max-width: 35em;
+  h1, h3, p, a {
+    color: $labels-red;
+    margin-bottom: 0;
   }
 }
 
