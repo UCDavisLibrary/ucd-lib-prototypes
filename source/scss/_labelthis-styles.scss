@@ -981,14 +981,44 @@ footer {
       text-decoration: underline;
     }
   }
-}
-.refine-search {
-  input, select {
-    max-width: 8em;
-    display: inline-block;
+  .greeting {
+    margin-top: 1em;
+    h1, h2, p {
+      text-align: center;
+    }
   }
-  label {
-    display: inline-block;
+  form {
+    margin: 2em;
+  }
+  .quick-search {
+    border-right: 2px solid $labels-background-dark;
+    h1 {
+      text-align: center;
+    }
+    input {
+      margin: 1em auto;
+      width: 7em;
+      padding: 1.5em;
+    }
+  }
+  .refine-search {
+    select {
+      max-width: 7em;
+    }
+    label {
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+    #id_limit {
+      max-width: 4em;
+    }
+  }
+  .submit-button {
+    text-align: center;
+    padding: 1em;
+    input {
+      min-width: 10em;
+    }
   }
 }
 

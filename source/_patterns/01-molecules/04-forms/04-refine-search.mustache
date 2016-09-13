@@ -1,41 +1,36 @@
-<form class="refine-search" action="/" method="GET">
-  <h1 for="id_identifier"><span>Quick find by label number:</span> <input id="id_identifier" name="identifier" type="text"></h1>
-  <h3>Refine your search</h3>
-  <p>Use these controls to find what you're looking for. As the corpus gets bigger, this functionality will improve.</p>
-  <div class="row">
-    <div class="column">
-      <label for="id_sort_by">Sort results by:</label>
-      <select id="id_sort_by" name="sort_by" required="">
-        <option value="source_modified">Date</option>
-        <option value="identifier" selected="selected">Label ID</option>
-        <option value="num_marks"># of marks</option>
-        <option value="num_transcriptions"># of transc</option>
-      </select>
+<form action="/" method="GET">
+  <div class="row small-12 medium-10 align-justify">
+    <div class="column small-12 medium-5 quick-search">
+      <h1 for="id_identifier">Quick find <br/>by label number: </h1><input id="id_identifier" name="identifier" type="text">
     </div>
-    <div class="column">
-      <div class="row">
-        <input checked="checked" id="id_modified_only" name="modified_only" type="checkbox"><label for="id_modified_only">Only show labels with marks and transcriptions.</label>
-      </div>
+    <div class="column small-12 medium-7 refine-search">
+      <h2>Refine your search</h2>
+      <p>Use these controls to find what you're looking for. As the corpus gets bigger, this functionality will improve.</p>
+      <label for="id_sort_by">Sort results by:
+        <select id="id_sort_by" name="sort_by" required="">
+          <option value="source_modified">Date</option>
+          <option value="identifier" selected="selected">Label ID</option>
+          <option value="num_marks"># of marks</option>
+          <option value="num_transcriptions"># of transc</option>
+        </select>
+      </label>
+      <label>Show me
+        <select id="id_limit" name="limit" required="">
+          <option value="10">10</option>
+          <option value="50">50</option>
+          <option value="100" selected="selected">100</option>
+        </select>
+        <span for="id_limit">results per page</span>
+        in <select id="id_order" name="order" required="">
+          <option value="-">Descending</option>
+          <option value="+" selected="selected">Ascending</option>
+        </select>
+        <span for="id_order">order</span>.
+      </label>
+      <input checked="checked" id="id_modified_only" name="modified_only" type="checkbox"><label for="id_modified_only">&nbsp;&nbsp;Only show labels with marks and transcriptions.</label>
     </div>
-  </div>
-  <div class="row">
-    <div class="column">
-      <label>Show me</label>
-      <select id="id_limit" name="limit" required="">
-        <option value="10">10</option>
-        <option value="50">50</option>
-        <option value="100" selected="selected">100</option>
-      </select>
-      <label for="id_limit">results per page</label>
-    </div>
-    <div class="column">
-      <label>In</label>
-      <select id="id_order" name="order" required="">
-        <option value="-">Descending</option>
-        <option value="+" selected="selected">Ascending</option>
-      </select>
-      <label for="id_order">order</label>
+    <div class="submit-button small-12">
+      <input class="button large" type="submit" value="Search">
     </div>
   </div>
-  <input type="submit" value="Search">
 </form>

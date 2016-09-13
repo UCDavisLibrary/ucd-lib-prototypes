@@ -4712,13 +4712,32 @@ footer {
     color: #4D0717; }
     .admin-body a:hover {
       text-decoration: underline; }
-
-.refine-search input, .refine-search select {
-  max-width: 8em;
-  display: inline-block; }
-
-.refine-search label {
-  display: inline-block; }
+  .admin-body .greeting {
+    margin-top: 1em; }
+    .admin-body .greeting h1, .admin-body .greeting h2, .admin-body .greeting p {
+      text-align: center; }
+  .admin-body form {
+    margin: 2em; }
+  .admin-body .quick-search {
+    border-right: 2px solid #CBBAA5; }
+    .admin-body .quick-search h1 {
+      text-align: center; }
+    .admin-body .quick-search input {
+      margin: 1em auto;
+      width: 7em;
+      padding: 1.5em; }
+  .admin-body .refine-search select {
+    max-width: 7em; }
+  .admin-body .refine-search label {
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  .admin-body .refine-search #id_limit {
+    max-width: 4em; }
+  .admin-body .submit-button {
+    text-align: center;
+    padding: 1em; }
+    .admin-body .submit-button input {
+      min-width: 10em; }
 
 .herocard h1, .herocard h3, .herocard p, .herocard a {
   color: #4D0717;

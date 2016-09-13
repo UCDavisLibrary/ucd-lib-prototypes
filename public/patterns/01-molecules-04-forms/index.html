@@ -18,8 +18,8 @@
 		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 		<meta http-equiv="pragma" content="no-cache" />
 		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1473774908" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1473774908" media="all" />
+		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1473781490" media="all">
+		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1473781490" media="all" />
 		
 
 		<!-- End Pattern Lab -->
@@ -233,92 +233,82 @@
 					<div id="molecules-refine-search" class="sg-pattern">
 						<h2 class="sg-pattern-head" ><a href="../../patterns/01-molecules-04-forms-04-refine-search/01-molecules-04-forms-04-refine-search.html" class="patternLink" data-patternpartial="molecules-refine-search">Refine Search</a></h2>
 						<div class="sg-pattern-body">
-							<form class="refine-search" action="/" method="GET">
-  <h1 for="id_identifier"><span>Quick find by label number:</span> <input id="id_identifier" name="identifier" type="text"></h1>
-  <h3>Refine your search</h3>
-  <p>Use these controls to find what you're looking for. As the corpus gets bigger, this functionality will improve.</p>
-  <div class="row">
-    <div class="column">
-      <label for="id_sort_by">Sort results by:</label>
-      <select id="id_sort_by" name="sort_by" required="">
-        <option value="source_modified">Date</option>
-        <option value="identifier" selected="selected">Label ID</option>
-        <option value="num_marks"># of marks</option>
-        <option value="num_transcriptions"># of transc</option>
-      </select>
+							<form action="/" method="GET">
+  <div class="row small-12 medium-10 align-justify">
+    <div class="column small-12 medium-5 quick-search">
+      <h1 for="id_identifier">Quick find <br/>by label number: </h1><input id="id_identifier" name="identifier" type="text">
     </div>
-    <div class="column">
-      <div class="row">
-        <input checked="checked" id="id_modified_only" name="modified_only" type="checkbox"><label for="id_modified_only">Only show labels with marks and transcriptions.</label>
-      </div>
+    <div class="column small-12 medium-7 refine-search">
+      <h2>Refine your search</h2>
+      <p>Use these controls to find what you're looking for. As the corpus gets bigger, this functionality will improve.</p>
+      <label for="id_sort_by">Sort results by:
+        <select id="id_sort_by" name="sort_by" required="">
+          <option value="source_modified">Date</option>
+          <option value="identifier" selected="selected">Label ID</option>
+          <option value="num_marks"># of marks</option>
+          <option value="num_transcriptions"># of transc</option>
+        </select>
+      </label>
+      <label>Show me
+        <select id="id_limit" name="limit" required="">
+          <option value="10">10</option>
+          <option value="50">50</option>
+          <option value="100" selected="selected">100</option>
+        </select>
+        <span for="id_limit">results per page</span>
+        in <select id="id_order" name="order" required="">
+          <option value="-">Descending</option>
+          <option value="+" selected="selected">Ascending</option>
+        </select>
+        <span for="id_order">order</span>.
+      </label>
+      <input checked="checked" id="id_modified_only" name="modified_only" type="checkbox"><label for="id_modified_only">&nbsp;&nbsp;Only show labels with marks and transcriptions.</label>
     </div>
-  </div>
-  <div class="row">
-    <div class="column">
-      <label>Show me</label>
-      <select id="id_limit" name="limit" required="">
-        <option value="10">10</option>
-        <option value="50">50</option>
-        <option value="100" selected="selected">100</option>
-      </select>
-      <label for="id_limit">results per page</label>
-    </div>
-    <div class="column">
-      <label>In</label>
-      <select id="id_order" name="order" required="">
-        <option value="-">Descending</option>
-        <option value="+" selected="selected">Ascending</option>
-      </select>
-      <label for="id_order">order</label>
+    <div class="submit-button small-12">
+      <input class="button large" type="submit" value="Search">
     </div>
   </div>
-  <input type="submit" value="Search">
 </form>
 
 							<div class="sg-code" style="display: none">
 								<h3 class="sg-code-head">HTML</h3>
 								<pre class="sg-code-html">
 									<code>
-										&lt;form class=&quot;refine-search&quot; action=&quot;/&quot; method=&quot;GET&quot;&gt;
-  &lt;h1 for=&quot;id_identifier&quot;&gt;&lt;span&gt;Quick find by label number:&lt;/span&gt; &lt;input id=&quot;id_identifier&quot; name=&quot;identifier&quot; type=&quot;text&quot;&gt;&lt;/h1&gt;
-  &lt;h3&gt;Refine your search&lt;/h3&gt;
-  &lt;p&gt;Use these controls to find what you're looking for. As the corpus gets bigger, this functionality will improve.&lt;/p&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;column&quot;&gt;
-      &lt;label for=&quot;id_sort_by&quot;&gt;Sort results by:&lt;/label&gt;
-      &lt;select id=&quot;id_sort_by&quot; name=&quot;sort_by&quot; required=&quot;&quot;&gt;
-        &lt;option value=&quot;source_modified&quot;&gt;Date&lt;/option&gt;
-        &lt;option value=&quot;identifier&quot; selected=&quot;selected&quot;&gt;Label ID&lt;/option&gt;
-        &lt;option value=&quot;num_marks&quot;&gt;# of marks&lt;/option&gt;
-        &lt;option value=&quot;num_transcriptions&quot;&gt;# of transc&lt;/option&gt;
-      &lt;/select&gt;
+										&lt;form action=&quot;/&quot; method=&quot;GET&quot;&gt;
+  &lt;div class=&quot;row small-12 medium-10 align-justify&quot;&gt;
+    &lt;div class=&quot;column small-12 medium-5 quick-search&quot;&gt;
+      &lt;h1 for=&quot;id_identifier&quot;&gt;Quick find &lt;br/&gt;by label number: &lt;/h1&gt;&lt;input id=&quot;id_identifier&quot; name=&quot;identifier&quot; type=&quot;text&quot;&gt;
     &lt;/div&gt;
-    &lt;div class=&quot;column&quot;&gt;
-      &lt;div class=&quot;row&quot;&gt;
-        &lt;input checked=&quot;checked&quot; id=&quot;id_modified_only&quot; name=&quot;modified_only&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;id_modified_only&quot;&gt;Only show labels with marks and transcriptions.&lt;/label&gt;
-      &lt;/div&gt;
+    &lt;div class=&quot;column small-12 medium-7 refine-search&quot;&gt;
+      &lt;h2&gt;Refine your search&lt;/h2&gt;
+      &lt;p&gt;Use these controls to find what you're looking for. As the corpus gets bigger, this functionality will improve.&lt;/p&gt;
+      &lt;label for=&quot;id_sort_by&quot;&gt;Sort results by:
+        &lt;select id=&quot;id_sort_by&quot; name=&quot;sort_by&quot; required=&quot;&quot;&gt;
+          &lt;option value=&quot;source_modified&quot;&gt;Date&lt;/option&gt;
+          &lt;option value=&quot;identifier&quot; selected=&quot;selected&quot;&gt;Label ID&lt;/option&gt;
+          &lt;option value=&quot;num_marks&quot;&gt;# of marks&lt;/option&gt;
+          &lt;option value=&quot;num_transcriptions&quot;&gt;# of transc&lt;/option&gt;
+        &lt;/select&gt;
+      &lt;/label&gt;
+      &lt;label&gt;Show me
+        &lt;select id=&quot;id_limit&quot; name=&quot;limit&quot; required=&quot;&quot;&gt;
+          &lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;
+          &lt;option value=&quot;50&quot;&gt;50&lt;/option&gt;
+          &lt;option value=&quot;100&quot; selected=&quot;selected&quot;&gt;100&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;span for=&quot;id_limit&quot;&gt;results per page&lt;/span&gt;
+        in &lt;select id=&quot;id_order&quot; name=&quot;order&quot; required=&quot;&quot;&gt;
+          &lt;option value=&quot;-&quot;&gt;Descending&lt;/option&gt;
+          &lt;option value=&quot;+&quot; selected=&quot;selected&quot;&gt;Ascending&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;span for=&quot;id_order&quot;&gt;order&lt;/span&gt;.
+      &lt;/label&gt;
+      &lt;input checked=&quot;checked&quot; id=&quot;id_modified_only&quot; name=&quot;modified_only&quot; type=&quot;checkbox&quot;&gt;&lt;label for=&quot;id_modified_only&quot;&gt;&amp;nbsp;&amp;nbsp;Only show labels with marks and transcriptions.&lt;/label&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;column&quot;&gt;
-      &lt;label&gt;Show me&lt;/label&gt;
-      &lt;select id=&quot;id_limit&quot; name=&quot;limit&quot; required=&quot;&quot;&gt;
-        &lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;
-        &lt;option value=&quot;50&quot;&gt;50&lt;/option&gt;
-        &lt;option value=&quot;100&quot; selected=&quot;selected&quot;&gt;100&lt;/option&gt;
-      &lt;/select&gt;
-      &lt;label for=&quot;id_limit&quot;&gt;results per page&lt;/label&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;column&quot;&gt;
-      &lt;label&gt;In&lt;/label&gt;
-      &lt;select id=&quot;id_order&quot; name=&quot;order&quot; required=&quot;&quot;&gt;
-        &lt;option value=&quot;-&quot;&gt;Descending&lt;/option&gt;
-        &lt;option value=&quot;+&quot; selected=&quot;selected&quot;&gt;Ascending&lt;/option&gt;
-      &lt;/select&gt;
-      &lt;label for=&quot;id_order&quot;&gt;order&lt;/label&gt;
+    &lt;div class=&quot;submit-button small-12&quot;&gt;
+      &lt;input class=&quot;button large&quot; type=&quot;submit&quot; value=&quot;Search&quot;&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-  &lt;input type=&quot;submit&quot; value=&quot;Search&quot;&gt;
 &lt;/form&gt;
 
 									</code>
@@ -371,10 +361,10 @@
 			
 		}
 	</script>
-	<script id="pl-js-polyfill-insert-1473774908">
+	<script id="pl-js-polyfill-insert-1473781490">
 		(function() {
 			if (self != top) {
-				var cb = '1473774908';
+				var cb = '1473781490';
 				var js = [];
 				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
 					js.push("styleguide/js/vendor/classlist-polyfill.js");
@@ -383,10 +373,10 @@
 			}
 		})();
 	</script>
-	<script id="pl-js-insert-1473774908">
+	<script id="pl-js-insert-1473781490">
 		(function() {
 			if (self != top) {
-				var cb = '1473774908';
+				var cb = '1473781490';
 				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
 				scriptLoader.run(js,cb,'pl-js-insert');
 			}
