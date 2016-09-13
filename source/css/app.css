@@ -4685,6 +4685,17 @@ footer {
 .page-not-found p {
   margin-bottom: 2em; }
 
+.newsletter-form {
+  margin-top: 1em; }
+  @media only screen and (min-width: 47em) {
+    .newsletter-form {
+      margin-top: -2em; } }
+  .newsletter-form label {
+    font-size: 1em; }
+  .newsletter-form .email {
+    margin-top: 5px;
+    margin-right: 5px; }
+
 .admin-body {
   color: #4D0717;
   background: #F1E3D1;

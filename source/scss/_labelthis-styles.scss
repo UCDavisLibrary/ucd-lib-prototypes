@@ -940,6 +940,23 @@ footer {
   }
 }
 
+//-----------------------------------------------------
+// Newsletter Form Styles
+
+.newsletter-form {
+  margin-top: 1em;
+  @media only screen and (min-width: 47em) {
+    margin-top: -2em;
+  }
+  label {
+    font-size: 1em;
+  }
+  .email {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+}
+
 
 //-----------------------------------------------------
 // Manage This Styles
