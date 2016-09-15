@@ -1,50 +1,50 @@
-{{&gt; molecules-primary-nav }}
-&lt;section class=&quot;blog blog-post row&quot;&gt;
-	&lt;section class=&quot;blog-post-header small-12 columns&quot;&gt;
-		&lt;img src=&quot;../../images/label-this-blog-title-image.svg&quot; alt=&quot;Label This Project title image&quot;&gt;
-		&lt;!-- img class=&quot;small-title&quot; src=&quot;../../images/label-this-title-image-sm.svg&quot; alt=&quot;&quot;--&gt;
-	&lt;/section&gt;
-	&lt;article class=&quot;small-12 medium-8 medium-offset-2 large-6 large-offset-3 columns&quot;&gt;
-			&lt;header class=&quot;article-header&quot;&gt;
-				&lt;h4&gt;{{ dateline }}&lt;/h4&gt;
-		    &lt;h1&gt;{{ headline.short }}&lt;/h1&gt;
-				{{&gt; molecules-byline }}
-			&lt;/header&gt;
+{{> molecules-primary-nav }}
+<section class="blog blog-post row">
+	<section class="blog-post-header small-12 columns">
+		<img src="../../images/label-this-blog-title-image.svg" alt="Label This Project title image">
+		<!-- img class="small-title" src="../../images/label-this-title-image-sm.svg" alt=""-->
+	</section>
+	<article class="small-12 medium-8 medium-offset-2 large-6 large-offset-3 columns">
+			<header class="article-header">
+				<h4>{{ dateline }}</h4>
+		    <h1>{{ headline.short }}</h1>
+				{{> molecules-byline }}
+			</header>
 			{{# article-body }}
-				{{&gt; atoms-landscape-16x9 }}
-				&lt;p class=&quot;lead&quot;&gt;{{ intro }}&lt;/p&gt;
-				&lt;p&gt;{{ main-text-p-1 }}&lt;/p&gt;
-				&lt;p&gt;{{ main-text-p-2 }}&lt;/p&gt;
-				{{&gt; atoms-blockquote }}
-				&lt;p&gt;{{ main-text-p-3 }}&lt;/p&gt;
+				{{> atoms-landscape-16x9 }}
+				<p class="lead">{{ intro }}</p>
+				<p>{{ main-text-p-1 }}</p>
+				<p>{{ main-text-p-2 }}</p>
+				{{> atoms-blockquote }}
+				<p>{{ main-text-p-3 }}</p>
 			{{/ article-body }}
-		&lt;/article&gt;
-		&lt;section class=&quot;article-footer blog-sidebar small-12 medium-8 medium-offset-2 large-6 large-offset-3 columns&quot;&gt;
-			&lt;div class=&quot;row&quot;&gt;
-				&lt;div class=&quot;blog-sidebar-social medium-4 columns&quot;&gt;
-					&lt;h3&gt;SPREAD THE WORD&lt;/h3&gt;
-					{{&gt; molecules-social-share }}
-				&lt;/div&gt;
-			&lt;/div&gt;
-			{{&gt; molecules-post-pagination }}
-			&lt;div class=&quot;row&quot;&gt;
-				&lt;div class=&quot;blog-sidebar-about-cta medium-7 columns&quot;&gt;
-					&lt;h3&gt;ABOUT THE PROJECT&lt;/h3&gt;
-					&lt;p&gt;The labels in the Amerine collection tell the story of the growing wine industry during a pivotal time. Right now, the only way to search Amerine&rsquo;s collection of historic wine labels is to flip through the hundreds of spiral-bound notebooks housed in Special Collections at the UC Davis Library.&lt;/p&gt;
-					&lt;p&gt;The Label This project allows you to help us mark up these labels to create a searchable database.&lt;/p&gt;
-					&lt;button type=&quot;button&quot; class=&quot;button&quot; href=&quot;{{ link.templates-mark-flow-start }}&quot;&gt;Mark Labels&lt;/button&gt;
-				&lt;/div&gt;
-				&lt;div class=&quot;medium-5 columns&quot;&gt;
-					&lt;div class=&quot;blog-sidebar-email&quot;&gt;
-						&lt;h3&gt;TELL US YOUR STORY&lt;/h3&gt;
-						&lt;p&gt;Are you a wine expert? Do you have family history that you&rsquo;d like to share with us? Send us your story!&lt;/p&gt;
-					&lt;/div&gt;
-					&lt;div class=&quot;blog-sidebar-donate&quot;&gt;
-						&lt;h3&gt;SUPPORT THE PROJECT&lt;/h3&gt;
-						&lt;p&gt;There&rsquo;s much more we want to do with the labels in the Amerine collection. To help support our digital wine initiatives, please  contact Jean Korinke, Director of Development, at jfkorinke@ucdavis.edu.&lt;/p&gt;
-					&lt;/div&gt;
-				&lt;/div&gt;
-			&lt;/div&gt;
-		&lt;/section&gt;
-	&lt;/section&gt;
-	{{&gt; organisms-footer }}
+		</article>
+		<section class="article-footer blog-sidebar small-12 medium-8 medium-offset-2 large-6 large-offset-3 columns">
+			<div class="row">
+				<div class="blog-sidebar-social medium-4 columns">
+					<h3>SPREAD THE WORD</h3>
+					{{> molecules-social-share }}
+				</div>
+			</div>
+			{{> molecules-post-pagination }}
+			<div class="row">
+				<div class="blog-sidebar-about-cta medium-7 columns">
+					<h3>ABOUT THE PROJECT</h3>
+					<p>The labels in the Amerine collection tell the story of the growing wine industry during a pivotal time. Right now, the only way to search Amerine’s collection of historic wine labels is to flip through the hundreds of spiral-bound notebooks housed in Special Collections at the UC Davis Library.</p>
+					<p>The Label This project allows you to help us mark up these labels to create a searchable database.</p>
+					<button type="button" class="button" href="{{ link.templates-mark-flow-start }}">Mark Labels</button>
+				</div>
+				<div class="medium-5 columns">
+					<div class="blog-sidebar-email">
+						<h3>TELL US YOUR STORY</h3>
+						<p>Are you a wine expert? Do you have family history that you’d like to share with us? Send us your story!</p>
+					</div>
+					<div class="blog-sidebar-donate">
+						<h3>SUPPORT THE PROJECT</h3>
+						<p>There’s much more we want to do with the labels in the Amerine collection. To help support our digital wine initiatives, please  contact Jean Korinke, Director of Development, at jfkorinke@ucdavis.edu.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	{{> organisms-footer }}

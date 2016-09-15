@@ -1,21 +1,21 @@
-&lt;div class=&quot;draggable-modal transcribe-tool draggable&quot; unselectable=&quot;on&quot;&gt;
-	&lt;label&gt;
-		&lt;h2&gt;Transcribe this Text&lt;/h2&gt;
-		&lt;p&gt;Please tell us what the highlighted text says.&lt;/p&gt;
-		&lt;textarea value=&quot;&quot; data-task_key=&quot;text&quot; placeholder=&quot;Enter text here&quot;&gt;&lt;/textarea&gt;
-	&lt;/label&gt;
-	&lt;div class=&quot;button-group align-right&quot;&gt;
-		&lt;!-- button class=&quot;button ghost toggle-button  minor-button&quot;&gt;Bad mark&lt;/button&gt;	If the 'Illegible' button moves the user directly onto the next task, the 'Illegible' button should also automatically mark the area as a 'Bad Mark'--&gt;
-		&lt;a href=&quot;{{ link.templates-transcribe-flow-start }}&quot; class=&quot;secondary button&quot;&gt;This text is illegible&lt;/a&gt; &lt;!-- used to have these classes:  ghost toggle-button undefined minor-button. FIXME find out if they're necessary for React --&gt;
-		&lt;a href=&quot;{{ link.templates-transcribe-flow-start }}&quot; class=&quot;button&quot;&gt;Next Label&lt;/a&gt;
-	&lt;/div&gt;
-	&lt;hr&gt;
-	&lt;label&gt;
-		&lt;h3&gt;Suggested transcriptions&lt;/h3&gt;
-		&lt;p&gt;&lt;small&gt;We have many people transcribe the same text in order to verify the accuracy of our transcriptions. If one of the terms below is the correct one, choose that instead of typing it in.&lt;small&gt;&lt;/p&gt;
-			&lt;a href=&quot;{{ link.templates-transcribe-flow-start }}&quot; class=&quot;secondary small button&quot;&gt;Text Alternative One&lt;/a&gt;
-			&lt;a href=&quot;{{ link.templates-transcribe-flow-start }}&quot; class=&quot;secondary small button&quot;&gt;Text Alternative 2&lt;/a&gt;
-			&lt;a href=&quot;{{ link.templates-transcribe-flow-start }}&quot; class=&quot;secondary small button&quot;&gt;Text Alternative Three&lt;/a&gt;
-			&lt;a href=&quot;{{ link.templates-transcribe-flow-start }}&quot; class=&quot;secondary small button&quot;&gt;Text Alternative Fourteen&lt;/a&gt;
-	&lt;/label&gt;
-&lt;/div&gt;
+<div class="draggable-modal transcribe-tool draggable" unselectable="on">
+	<label>
+		<h2>Transcribe this Text</h2>
+		<p>Please tell us what the highlighted text says.</p>
+		<textarea value="" data-task_key="text" placeholder="Enter text here"></textarea>
+	</label>
+	<div class="button-group align-right">
+		<!-- button class="button ghost toggle-button  minor-button">Bad mark</button>	If the 'Illegible' button moves the user directly onto the next task, the 'Illegible' button should also automatically mark the area as a 'Bad Mark'-->
+		<a href="{{ link.templates-transcribe-flow-start }}" class="secondary button">This text is illegible</a> <!-- used to have these classes:  ghost toggle-button undefined minor-button. FIXME find out if they're necessary for React -->
+		<a href="{{ link.templates-transcribe-flow-start }}" class="button">Next Label</a>
+	</div>
+	<hr>
+	<label>
+		<h3>Suggested transcriptions</h3>
+		<p><small>We have many people transcribe the same text in order to verify the accuracy of our transcriptions. If one of the terms below is the correct one, choose that instead of typing it in.<small></p>
+			<a href="{{ link.templates-transcribe-flow-start }}" class="secondary small button">Text Alternative One</a>
+			<a href="{{ link.templates-transcribe-flow-start }}" class="secondary small button">Text Alternative 2</a>
+			<a href="{{ link.templates-transcribe-flow-start }}" class="secondary small button">Text Alternative Three</a>
+			<a href="{{ link.templates-transcribe-flow-start }}" class="secondary small button">Text Alternative Fourteen</a>
+	</label>
+</div>

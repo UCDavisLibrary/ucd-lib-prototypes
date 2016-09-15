@@ -1,19 +1,19 @@
-{{&gt; molecules-primary-nav }}
-&lt;div class=&quot;row align-center&quot;&gt;
-	&lt;div class=&quot;login&quot;&gt;
-		&lt;h2&gt;Admin Login&lt;/h2&gt;
-		&lt;p&gt;In order to verify labels, you need to log in to the admin dashboard.&lt;/p&gt;
-		&lt;label&gt;Email
-			&lt;input type=&quot;email&quot; placeholder=&quot;name@email.com&quot;&gt;
-		&lt;/label&gt;
-		&lt;label&gt;Password
-			&lt;input type=&quot;password&quot; placeholder=&quot;Type your Password&quot;&gt;
-		&lt;/label&gt;
-		&lt;div class=&quot;row align-center&quot;&gt;
-			&lt;a class=&quot;large button&quot; href=&quot;{{ link.templates-admin-homepage }}&quot;&gt;&lt;img class=&quot;left-pointer&quot; src=&quot;../../images/left-pointer-knockout.svg&quot;/&gt;Log In&lt;img class=&quot;right-pointer&quot; src=&quot;../../images/right-pointer-knockout.svg&quot;/&gt;&lt;/a&gt;
-		&lt;/div&gt;
-		&lt;small&gt;&lt;a href=&quot;/users/sign_up&quot;&gt;Sign up&lt;/a&gt;&lt;/small&gt;&lt;br&gt;
-		&lt;small&gt;&lt;a href=&quot;/users/password/new&quot;&gt;Forgot your password?&lt;/a&gt;&lt;/small&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-{{&gt; organisms-footer }}
+{{> molecules-primary-nav }}
+<div class="row align-center">
+	<div class="login">
+		<h2>Admin Login</h2>
+		<p>In order to verify labels, you need to log in to the admin dashboard.</p>
+		<label>Email
+			<input type="email" placeholder="name@email.com">
+		</label>
+		<label>Password
+			<input type="password" placeholder="Type your Password">
+		</label>
+		<div class="row align-center">
+			<a class="large button" href="{{ link.templates-admin-homepage }}"><img class="left-pointer" src="../../images/left-pointer-knockout.svg"/>Log In<img class="right-pointer" src="../../images/right-pointer-knockout.svg"/></a>
+		</div>
+		<small><a href="/users/sign_up">Sign up</a></small><br>
+		<small><a href="/users/password/new">Forgot your password?</a></small>
+	</div>
+</div>
+{{> organisms-footer }}
