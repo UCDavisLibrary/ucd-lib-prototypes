@@ -1,101 +1,96 @@
 <!DOCTYPE html>
 <html class="pl">
-	<head>
-		<title>UC Davis Library Pattern Lab</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width" />
+  <head>
+    <title>UC Davis Library Pattern Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    
+    <link rel="stylesheet" href="../../css/style.css?1473963622168" media="all" />
+    <link rel="stylesheet" href="../../css/pattern-scaffolding.css?1473963622168" media="all" />
+    
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
 
-	  <link href="../../css/app.css" media="screen, projector, print" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1473963622168" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1473963622168" media="all" />
 
-		<script src="https://use.typekit.net/umm3adq.js"></script>
-		<script>try{Typekit.load({ async: true });}catch(e){}</script>
-
-		<!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
-				<!-- never cache patterns -->
-		<meta http-equiv="cache-control" content="max-age=0" />
-		<meta http-equiv="cache-control" content="no-cache" />
-		<meta http-equiv="expires" content="0" />
-		<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-		<meta http-equiv="pragma" content="no-cache" />
-		
-		<link rel="stylesheet" href="../../styleguide/css/styleguide.css?1473952725" media="all">
-		<link rel="stylesheet" href="../../styleguide/css/styleguide-specific.css?1473952725" media="all" />
-		
-
-		<!-- End Pattern Lab -->
-
-	</head>
-	<body class="body">
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="body">
+    
 <div class="column">
-	<a class="verify thumbnail" href="../../patterns/03-templates-11-verify-label/03-templates-11-verify-label.html">
-		<img src="../../images/fpo_square.png" alt="Square Thumbnail" />	</a>
+	<a class="verify thumbnail" href="&#x2F;patterns&#x2F;03-templates-11-verify-label&#x2F;03-templates-11-verify-label.html">
+		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+	</a>
 </div>
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":true,"patternLineages":[{"lineagePattern":"atoms-square","lineagePath":"../../patterns/00-atoms-04-images-03-square/00-atoms-04-images-03-square.html"}],"lineage":[{"lineagePattern":"atoms-square","lineagePath":"../../patterns/00-atoms-04-images-03-square/00-atoms-04-images-03-square.html"}],"patternLineageRExists":true,"patternLineagesR":[{"lineagePattern":"organisms-verify-gallery","lineagePath":"../../patterns/02-organisms-03-sections-03-verify-gallery/02-organisms-03-sections-03-verify-gallery.html"}],"lineageR":[{"lineagePattern":"organisms-verify-gallery","lineagePath":"../../patterns/02-organisms-03-sections-03-verify-gallery/02-organisms-03-sections-03-verify-gallery.html"}],"patternLineageEExists":true,"patternDesc":"","patternBreadcrumb":{"patternType":"molecules","patternSubtype":"media"},"patternExtension":"mustache","patternName":"Verify Gallery Thumbnail","patternPartial":"molecules-verify-gallery-thumbnail","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
 
-	<!--DO NOT REMOVE-->
-		
-	<script>
-		// handle injection of items from PHP
-		var patternPartial = "molecules-verify-gallery-thumbnail";
-		var lineage        = [{"lineagePattern":"atoms-square","lineagePath":"..\/..\/patterns\/00-atoms-04-images-03-square\/00-atoms-04-images-03-square.html"}];
-		var lineageR       = [{"lineagePattern":"organisms-verify-gallery","lineagePath":"..\/..\/patterns\/02-organisms-03-sections-03-verify-gallery\/02-organisms-03-sections-03-verify-gallery.html"}];
-		var patternState   = "";
-		var cssEnabled     = false;
-	</script>
-		<script>
-		/*!
-		 * scriptLoader - v0.1
-		 *
-		 * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
-		 * Licensed under the MIT license
-		 *
-		 */
-		
-		var scriptLoader = {
-			
-			run: function(js,cb,target) {
-				var s  = document.getElementById(target+'-'+cb); 
-				for (var i = 0; i < js.length; i++) {
-					var src = (typeof js[i] != "string") ? js[i].src : js[i];
-					var c   = document.createElement('script');
-					c.src   = '../../'+src+'?'+cb;
-					if (typeof js[i] != "string") {
-						if (js[i].dep !== undefined) {
-							c.onload = function(dep,cb,target) {
-								return function() {
-									scriptLoader.run(dep,cb,target);
-								}
-							}(js[i].dep,cb,target);
-						}
-					}
-					s.parentNode.insertBefore(c,s);
-				}
-			}
-			
-		}
-	</script>
-	<script id="pl-js-polyfill-insert-1473952725">
-		(function() {
-			if (self != top) {
-				var cb = '1473952725';
-				var js = [];
-				if (typeof document !== "undefined" && !("classList" in document.documentElement)) {
-					js.push("styleguide/js/vendor/classlist-polyfill.js");
-				}
-				scriptLoader.run(js,cb,'pl-js-polyfill-insert');
-			}
-		})();
-	</script>
-	<script id="pl-js-insert-1473952725">
-		(function() {
-			if (self != top) {
-				var cb = '1473952725';
-				var js = [ { "src": "styleguide/js/vendor/jwerty.js", "dep": [ "styleguide/js/postmessage.js", { "src": "data/annotations.js", "dep": [ "styleguide/js/annotations-pattern.js" ] }, "styleguide/js/code-pattern.js" ] } ];
-				scriptLoader.run(js,cb,'pl-js-insert');
-			}
-		})();
-	</script>
-	
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
 
+<script id="pl-js-polyfill-insert-1473963622168">
+  (function() {
+    if (self != top) {
+      var cb = '1473963622168';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
 
-	</body>
+<script id="pl-js-insert-1473963622168">
+  (function() {
+    if (self != top) {
+      var cb = '1473963622168';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+  
+  </body>
 </html>

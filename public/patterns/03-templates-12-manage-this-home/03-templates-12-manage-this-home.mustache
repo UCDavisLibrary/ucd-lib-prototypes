@@ -1,19 +1,19 @@
-{{&gt; molecules-manage-this-nav }}
-&lt;div class=&quot;admin-body&quot;&gt;
-	&lt;div class=&quot;small-12 medium-8 medium-offset-2 greeting&quot;&gt;
-			&lt;h1&gt;Manage This&lt;/h1&gt;
-			&lt;p&gt;As an admin, you can help us make sure that the transcription work of the crowds is up to snuff.&lt;/p&gt;
-	&lt;/div&gt;
-	{{&gt; molecules-refine-search }}
-	&lt;div class=&quot;row&quot;&gt;
-		&lt;h2&gt;Results&lt;/h2&gt;
-		{{&gt; molecules-pagination }}
-		&lt;div class=&quot;row small-up-1 medium-up-2 large-up-3&quot;&gt;
+{{> molecules-manage-this-nav }}
+<div class="admin-body">
+	<div class="small-12 medium-8 medium-offset-2 greeting">
+			<h1>Manage This</h1>
+			<p>As an admin, you can help us make sure that the transcription work of the crowds is up to snuff.</p>
+	</div>
+	{{> molecules-refine-search }}
+	<div class="row">
+		<h2>Results</h2>
+		{{> molecules-pagination }}
+		<div class="row small-up-1 medium-up-2 large-up-3">
 			{{# browsegallery }}
-			{{&gt; molecules-manage-this-label-minicard }}
+			{{> molecules-manage-this-label-minicard }}
 			{{/ browsegallery }}
-		&lt;/div&gt;
-		{{&gt; molecules-pagination }}
-	&lt;/div&gt;
-&lt;/div&gt;
-{{&gt; organisms-admin-footer }}
+		</div>
+		{{> molecules-pagination }}
+	</div>
+</div>
+{{> organisms-admin-footer }}

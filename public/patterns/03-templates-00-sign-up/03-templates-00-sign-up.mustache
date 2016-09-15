@@ -1,28 +1,28 @@
-{{&gt; molecules-primary-nav }}
-&lt;div class=&quot;row align-center&quot;&gt;
-	&lt;div class=&quot;signup&quot;&gt;
-		&lt;h2&gt;Sign up&lt;/h2&gt;
-		&lt;form accept-charset=&quot;UTF-8&quot; action=&quot;/users&quot; class=&quot;new_user&quot; id=&quot;new_user&quot; method=&quot;post&quot;&gt;
-			&lt;input name=&quot;utf8&quot; type=&quot;hidden&quot; value=&quot;✓&quot;&gt;
-			&lt;input name=&quot;authenticity_token&quot; type=&quot;hidden&quot; value=&quot;Q4WVeSzb09+/+D3e5W5ozy+lfZoEU0D9sSGvRQWvFQk=&quot;&gt;
-			&lt;label for=&quot;user_name&quot;&gt;Name
-				&lt;input id=&quot;user_name&quot; name=&quot;user[name]&quot; type=&quot;text&quot;&gt;
-			&lt;/label&gt;
-			&lt;label for=&quot;user_email&quot;&gt;Email
-				&lt;input id=&quot;user_email&quot; name=&quot;user[email]&quot; type=&quot;email&quot; value=&quot;&quot; placeholder=&quot;name@email.com&quot;&gt;
-			&lt;/label&gt;
-			&lt;label for=&quot;user_password&quot;&gt;Password
-				&lt;input id=&quot;user_password&quot; name=&quot;user[password]&quot; type=&quot;password&quot; placeholder=&quot;Type your Password&quot;&gt;
-			&lt;/label&gt;
-			&lt;label for=&quot;user_password_confirmation&quot;&gt;Confirm Password
-				&lt;input id=&quot;user_password_confirmation&quot; name=&quot;user[password_confirmation]&quot; type=&quot;password&quot; placeholder=&quot;Confirm your Password&quot;&gt;
-			&lt;/label&gt;
-		&lt;form&gt;
-		&lt;div class=&quot;row align-center&quot;&gt;
-			&lt;a class=&quot;large button&quot; href=&quot;{{ link.templates-admin-homepage }}&quot;&gt;&lt;img class=&quot;left-pointer&quot; src=&quot;../../images/left-pointer-knockout.svg&quot;/&gt;Sign Up&lt;img class=&quot;right-pointer&quot; src=&quot;../../images/right-pointer-knockout.svg&quot;/&gt;&lt;/a&gt;
-		&lt;/div&gt;
-		&lt;small&gt;&lt;a href=&quot;/users/sign_in&quot;&gt;Sign in&lt;/a&gt;&lt;/small&gt;&lt;br&gt;
-		&lt;small&gt;&lt;a href=&quot;/users/password/new&quot;&gt;Forgot your password?&lt;/a&gt;&lt;/small&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-{{&gt; organisms-footer }}
+{{> molecules-primary-nav }}
+<div class="row align-center">
+	<div class="signup">
+		<h2>Sign up</h2>
+		<form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
+			<input name="utf8" type="hidden" value="✓">
+			<input name="authenticity_token" type="hidden" value="Q4WVeSzb09+/+D3e5W5ozy+lfZoEU0D9sSGvRQWvFQk=">
+			<label for="user_name">Name
+				<input id="user_name" name="user[name]" type="text">
+			</label>
+			<label for="user_email">Email
+				<input id="user_email" name="user[email]" type="email" value="" placeholder="name@email.com">
+			</label>
+			<label for="user_password">Password
+				<input id="user_password" name="user[password]" type="password" placeholder="Type your Password">
+			</label>
+			<label for="user_password_confirmation">Confirm Password
+				<input id="user_password_confirmation" name="user[password_confirmation]" type="password" placeholder="Confirm your Password">
+			</label>
+		<form>
+		<div class="row align-center">
+			<a class="large button" href="{{ link.templates-admin-homepage }}"><img class="left-pointer" src="../../images/left-pointer-knockout.svg"/>Sign Up<img class="right-pointer" src="../../images/right-pointer-knockout.svg"/></a>
+		</div>
+		<small><a href="/users/sign_in">Sign in</a></small><br>
+		<small><a href="/users/password/new">Forgot your password?</a></small>
+	</div>
+</div>
+{{> organisms-footer }}

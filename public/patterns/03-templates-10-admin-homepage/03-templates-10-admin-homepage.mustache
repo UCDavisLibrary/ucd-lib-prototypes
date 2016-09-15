@@ -1,30 +1,30 @@
-{{&gt; molecules-primary-nav }}
-&lt;div class=&quot;admin small-12 medium-10 medium-offset-1&quot;&gt;
-	&lt;section class=&quot;row align-spaced medium-unstack&quot;&gt;
-		&lt;div class=&quot;small-12 medium-8 columns&quot;&gt;
-			&lt;h1&gt;Admin Dashboard&lt;/h1&gt;
-			&lt;p&gt;As an admin, you can help us make sure that the transcription work of the crowds is up to snuff.&lt;/p&gt;
-			&lt;h2&gt;You can do one of two things:&lt;/h2&gt;
-			&lt;p&gt;Verify that the transcription is correct.&lt;/p&gt;
-			&lt;p&gt;Approve a label once you deem that it has been fully and accurately transcribed.&lt;/p&gt;
-		&lt;/div&gt;
-		&lt;div class=&quot;small-12 medium-5 columns project-progress step-by-step&quot;&gt;
-			&lt;h1&gt;Project Progress&lt;/h1&gt;
-			&lt;img src=&quot;../../images/pie-chart-placeholder.svg&quot;&gt;
-			&lt;ul&gt;
-				&lt;li&gt;&lt;span style=&quot;background-color:#039317&quot;&gt;3&lt;/span&gt; Verified labels&lt;/li&gt;
-				&lt;li&gt;&lt;span style=&quot;background-color:#921377&quot;&gt;68&lt;/span&gt; Marked labels&lt;/li&gt;
-				&lt;li&gt;&lt;span style=&quot;background-color:#214BB5&quot;&gt;8888&lt;/span&gt; Transcribed labels&lt;/li&gt;
-			&lt;/ul&gt;
-		&lt;/div&gt;
-	&lt;/section&gt;
-	&lt;section&gt;
-		&lt;h2&gt;Verify&lt;/h2&gt;
-		&lt;p&gt;Please verify the transcriptions or descriptions on each of the following labels.&lt;/p&gt;
-		{{&gt; organisms-verify-gallery }}
-		&lt;h2&gt;Approve&lt;/h2&gt;
-		&lt;p&gt;Please approve the transcriptions and descriptions that have already been verified for each of the following labels.&lt;/p&gt;
-		{{&gt; organisms-verify-gallery }}
-	&lt;/section&gt;
-&lt;/div&gt;
-{{&gt; organisms-admin-footer }}
+{{> molecules-primary-nav }}
+<div class="admin small-12 medium-10 medium-offset-1">
+	<section class="row align-spaced medium-unstack">
+		<div class="small-12 medium-8 columns">
+			<h1>Admin Dashboard</h1>
+			<p>As an admin, you can help us make sure that the transcription work of the crowds is up to snuff.</p>
+			<h2>You can do one of two things:</h2>
+			<p>Verify that the transcription is correct.</p>
+			<p>Approve a label once you deem that it has been fully and accurately transcribed.</p>
+		</div>
+		<div class="small-12 medium-5 columns project-progress step-by-step">
+			<h1>Project Progress</h1>
+			<img src="../../images/pie-chart-placeholder.svg">
+			<ul>
+				<li><span style="background-color:#039317">3</span> Verified labels</li>
+				<li><span style="background-color:#921377">68</span> Marked labels</li>
+				<li><span style="background-color:#214BB5">8888</span> Transcribed labels</li>
+			</ul>
+		</div>
+	</section>
+	<section>
+		<h2>Verify</h2>
+		<p>Please verify the transcriptions or descriptions on each of the following labels.</p>
+		{{> organisms-verify-gallery }}
+		<h2>Approve</h2>
+		<p>Please approve the transcriptions and descriptions that have already been verified for each of the following labels.</p>
+		{{> organisms-verify-gallery }}
+	</section>
+</div>
+{{> organisms-admin-footer }}
