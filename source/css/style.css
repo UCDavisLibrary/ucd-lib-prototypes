@@ -4118,7 +4118,6 @@ footer {
   .admin-body .greeting {
     margin-top: 1em; }
     .admin-body .greeting h2, .admin-body .greeting p {
-      text-align: center;
       margin-bottom: 1em; }
   .admin-body form {
     margin: 2em; }
