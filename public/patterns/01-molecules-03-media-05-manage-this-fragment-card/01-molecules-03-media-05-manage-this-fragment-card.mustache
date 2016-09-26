@@ -1,18 +1,20 @@
 <div class="column mark-detail">
-	{{# fragmentcard }}
-	<div class="small-12">
-		<h3>{{ type }}</h3>
+	<div>
+		<h1>Label Fragment</h1>
 		<img src="{{ imgsrc }}" class="mark">
 		<h3>Created on:</h3> <p>{{ timestamp }}</p>
-			<h3 class="trans-type">Human Description 1:</h3>
-			<p class="trans">“{{ transc.1 }}” | <span class="trans-status">Status: {{ status }}</span><a class="tiny secondary button">Accept</a></p>
-			<p class="trans">“{{ transc.2 }}” | <span class="trans-status">Status: {{ status }}</span><a class="tiny secondary button">Accept</a></p>
-			<p class="trans">“{{ transc.3 }}” | <span class="trans-status">Status: {{ status }}</span><a class="tiny secondary button">Accept</a></p>
-			<p class="trans">“{{ transc.4 }}” | <span class="trans-status">Status: {{ status }}</span><a class="tiny secondary button">Accept</a></p>
-			<p class="trans">“{{ transc.5 }}” | <span class="trans-status">Status: {{ status }}</span><a class="tiny secondary button">Accept</a></p>
-			<p class="trans">“{{ transc.6 }}” | <span class="trans-status">Status: {{ status }}</span><a class="tiny secondary button">Accept</a></p>
-			<p class="trans">“{{ transc.7 }}” | <span class="trans-status">Status: {{ status }}</span><a class="tiny secondary button">Accept</a></p>
-			<p class="trans">“{{ transc.8 }}” | <span class="trans-status">Status: {{ status }}</span><a class="tiny secondary button">Accept</a></p>
+		<h2>{{ type }}</h2>
+		<div class="transcription">
+			<p class="trans">“{{ transc.1 }}”</p>
+			<h6>Status: {{ status }} <a class="secondary button">Accept</a></h6>
+		</div>
+		<div class="transcription">
+			<p class="trans">“{{ transc.2 }}”</p>
+			<h6>Status: {{ status }} <a class="secondary button">Accept</a></h6>
+		</div>
+		<div class="transcription">
+			<p class="trans">“{{ transc.3 }}”</p>
+			<h6>Status: {{ status }} <a class="secondary button">Accept</a></h6>
+		</div>
 	</div>
-	{{/ fragmentcard }}
 </div>

@@ -192,24 +192,22 @@
 	],
 	"fragmentcard" : [
 		{
-			"type" : "Text Transcription",
+			"type" : "Text Transcriptions",
 			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-text-577c1a59fb384154f6000055.jpg",
 			"timestamp" : "July 5, 2016, 1:36 p.m.",
+			"status" : "Unverified",
 			"transc" : {
-				"1": "Canvas Hill",
+				"1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 				"2": "Cavas Hill",
 				"3": "Cavas Hill ",
-				"4": "cavas hill",
-				"5": "Author",
-				"6": "Author",
-				"7": "Author",
-				"8": "Name"
+				"4": "cavas hill"
 			}
 		},
 		{
-			"type" : "Text Transcription",
+			"type" : "Text Transcriptions",
 			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-text-577c1a6afb384154f300004d.jpg",
 			"timestamp" : "July 5, 2016, 1:36 p.m.",
+			"status" : "Unverified",
 			"transc" : {
 				"1": "Extra Penadés",
 				"2": "Extra Penades",
@@ -217,123 +215,91 @@
 			}
 		},
 		{
-			"type" : "Text Transcription",
+			"type" : "Text Transcriptions",
 			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-text-577c1a73fb384154f300004f.jpg",
 			"timestamp" : "July 5, 2016, 1:37 p.m.",
+			"status" : "Unverified",
 			"transc" : {
-				"1": "Canvas Hill",
-				"2": "Cavas Hill",
-				"3": "Cavas Hill ",
-				"4": "cavas hill",
-				"5": "Author",
-				"6": "Author",
-				"7": "Author",
-				"8": "Name"
+				"1": "MOJA - (Villafranca del Penades)",
+				"2": "Moja-(Vilafranca del Penades)",
+				"3": "Moja -(Vilafranca del Penades)"
 			}
 		},
 		{
-			"type" : "Text Transcription",
+			"type" : "Text Transcriptions",
 			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-text-577c1a7afb384154f6000057.jpg",
 			"timestamp" : "July 5, 2016, 1:37 p.m.",
+			"status" : "Unverified",
 			"transc" : {
-				"1": "Canvas Hill",
-				"2": "Cavas Hill",
-				"3": "Cavas Hill ",
-				"4": "cavas hill",
-				"5": "Author",
-				"6": "Author",
-				"7": "Author",
-				"8": "Name"
+				"1": "GRAN PREMIO Y MEDALLA DE ORO",
+				"2": "gran premio y medalla de oro",
+				"3": "Gran Premio y Medalla de Oro"
 			}
 		},
 		{
-			"type" : "Text Transcription",
+			"type" : "Text Transcriptions",
 			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-text-577c1a83fb384154f3000051.jpg",
 			"timestamp" : "July 5, 2016, 1:37 p.m.",
+			"status" : "Unverified",
 			"transc" : {
-				"1": "Canvas Hill",
-				"2": "Cavas Hill",
-				"3": "Cavas Hill ",
-				"4": "cavas hill",
-				"5": "Author",
-				"6": "Author",
-				"7": "Author",
-				"8": "Name"
+				"1": "Exposicion Internacional de Barcelona 1929; 2nd Congreso Internacional de la vina y del vino",
+				"2": "Exposicion Internacional de Barcelona 1929 2 Congreso Internacional de la Vina Y del Vino",
+				"3": "Exposición Internacional de Barcelona 1929, 2ᴼ Congreso Internacional de la viña y del vino"
 			}
 		},
 		{
-			"type" : "Text Transcription",
+			"type" : "Text Transcriptions",
 			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-text-577c1a8bfb384154f6000059.jpg",
 			"timestamp" : "July 5, 2016, 1:37 p.m.",
+			"status" : "Unverified",
 			"transc" : {
-				"1": "Canvas Hill",
-				"2": "Cavas Hill",
-				"3": "Cavas Hill ",
-				"4": "cavas hill",
-				"5": "Author",
-				"6": "Author",
-				"7": "Author",
-				"8": "Name"
+				"1": "Regristro Embotelladores 382",
+				"2": "Registro Embotelladores 382",
+				"3": "registro embotelladores 382"
 			}
 		},
 		{
-			"type" : "Text Transcription",
+			"type" : "Text Transcriptions",
 			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-text-577c1aa2fb384154f3000053.jpg",
 			"timestamp" : "July 5, 2016, 1:37 p.m.",
+			"status" : "Unverified",
 			"transc" : {
-				"1": "Canvas Hill",
-				"2": "Cavas Hill",
-				"3": "Cavas Hill ",
-				"4": "cavas hill",
-				"5": "Author",
-				"6": "Author",
-				"7": "Author",
-				"8": "Name"
+				"1": "Cavas Hill Moja-Penades Marca Registrada",
+				"2": "Cavas Hill Moja-Penades",
+				"3": "Calvas Hill Moja-Penades marea registrada"
 			}
 		},
 		{
-			"type" : "Text Transcription",
+			"type" : "Image Descriptions",
 			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-image-577c1ab1fb384154f600005b.jpg",
 			"timestamp" : "July 5, 2016, 1:38 p.m.",
+			"status" : "Unverified",
 			"transc" : {
-				"1": "Canvas Hill",
-				"2": "Cavas Hill",
-				"3": "Cavas Hill ",
-				"4": "cavas hill",
-				"5": "Author",
-				"6": "Author",
-				"7": "Author",
-				"8": "Name"
+				"1": "Castle",
+				"2": "Castle bodega castle bodega",
+				"3": "building"
 			}
 		},
 		{
-			"type" : "Text Transcription",
+			"type" : "Image Descriptions",
 			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-image-577c1abcfb384154f300005b.jpg",
 			"timestamp" : "July 5, 2016, 1:38 p.m.",
+			"status" : "Unverified",
 			"transc" : {
-				"1": "Canvas Hill",
-				"2": "Cavas Hill",
-				"3": "Cavas Hill ",
-				"4": "cavas hill",
-				"5": "Author",
-				"6": "Author",
-				"7": "Author",
-				"8": "Name"
+				"1": "castle vineyards",
+				"2": "Villa by vineyard",
+				"3": "Chateau and vineyards"
 			}
 		},
 		{
-			"type" : "Text Transcription",
+			"type" : "Text Transcriptions",
 			"imgsrc" : "http://managethis.library.ucdavis.edu//media/0025-text-577c1acbfb384154f300005d.jpg",
 			"timestamp" : "July 5, 2016, 1:38 p.m.",
+			"status" : "Unverified",
 			"transc" : {
-				"1": "Canvas Hill",
-				"2": "Cavas Hill",
-				"3": "Cavas Hill ",
-				"4": "cavas hill",
-				"5": "Author",
-				"6": "Author",
-				"7": "Author",
-				"8": "Name"
+				"1": "Exposición Internacional de Barcelona 1929",
+				"2": "EXPOSICION INTERNACIONAL DE BARCELONA 1929",
+				"3": "Exposicion Internacional de Barcelona 1929"
 			}
 		}
 	],
