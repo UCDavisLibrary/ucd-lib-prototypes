@@ -4107,6 +4107,8 @@ footer {
     margin: 0; }
   .admin-body input {
     color: #F1E3D1; }
+  .admin-body h1 {
+    text-align: center; }
   .admin-body h1, .admin-body h2, .admin-body h3, .admin-body h4 {
     line-height: 1em; }
   .admin-body a {
@@ -4115,7 +4117,7 @@ footer {
       text-decoration: underline; }
   .admin-body .greeting {
     margin-top: 1em; }
-    .admin-body .greeting h1, .admin-body .greeting h2, .admin-body .greeting p {
+    .admin-body .greeting h2, .admin-body .greeting p {
       text-align: center; }
   .admin-body form {
     margin: 2em; }
@@ -4127,13 +4129,16 @@ footer {
       margin: 1em auto;
       width: 7em;
       padding: 1.5em; }
-  .admin-body .refine-search select {
-    max-width: 7em; }
-  .admin-body .refine-search label {
-    margin-top: 1em;
-    margin-bottom: 1em; }
-  .admin-body .refine-search #id_limit {
-    max-width: 4em; }
+  .admin-body .refine-search {
+    min-width: 450px; }
+    .admin-body .refine-search select {
+      max-width: 7em; }
+    .admin-body .refine-search hr {
+      margin-top: .5em;
+      margin-bottom: 1em;
+      border-color: #CBBAA5; }
+    .admin-body .refine-search #id_limit {
+      max-width: 4em; }
   .admin-body .submit-button {
     text-align: center;
     padding: 1em; }
@@ -4145,16 +4150,27 @@ footer {
   margin-bottom: 0; }
 
 .minicard {
-  color: #4D0717;
-  background: #F1E3D1;
-  padding: 1rem;
-  border-radius: 0;
-  outline: 3px solid #F1E3D1;
-  border: 3px solid #CBBAA5;
-  max-width: 35em; }
-  .minicard h1, .minicard h3, .minicard p, .minicard a {
+  padding: 2em;
+  min-width: 380px;
+  border-bottom: 2px solid #CBBAA5; }
+  .minicard h1, .minicard h3 {
     color: #4D0717;
     margin-bottom: 0; }
+  .minicard .label {
+    float: left;
+    margin-right: 10px; }
+    .minicard .label img {
+      max-width: 140px; }
+    .minicard .label-metadata {
+      margin-top: 1em; }
+    .minicard .label-title {
+      text-align: right; }
+    @media only screen and (min-width: 57em) {
+      .minicard .label img {
+        max-width: 200px; } }
+    @media only screen and (min-width: 67em) {
+      .minicard .label img {
+        max-width: 300px; } }
 
 .webicon.facebook {
   width: 40px;

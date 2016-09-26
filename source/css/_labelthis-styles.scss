@@ -972,6 +972,9 @@ footer {
   input {
     color: $label-background;
   }
+  h1 {
+    text-align: center;
+  }
   h1, h2, h3, h4 {
     line-height: 1em;
   }
@@ -983,7 +986,7 @@ footer {
   }
   .greeting {
     margin-top: 1em;
-    h1, h2, p {
+    h2, p {
       text-align: center;
     }
   }
@@ -1002,12 +1005,17 @@ footer {
     }
   }
   .refine-search {
+    min-width: 450px;
     select {
       max-width: 7em;
     }
     label {
-      margin-top: 1em;
+
+    }
+    hr {
+      margin-top: .5em;
       margin-bottom: 1em;
+      border-color: $labels-background-dark;
     }
     #id_limit {
       max-width: 4em;
@@ -1029,15 +1037,36 @@ footer {
   }
 }
 .minicard {
-  @include simple-modal-styling;
-  max-width: 35em;
-  h1, h3, p, a {
+  padding: 2em;
+  min-width: 380px;
+  border-bottom: 2px solid $labels-background-dark;
+  h1, h3 {
     color: $labels-red;
     margin-bottom: 0;
   }
+  .label {
+    float: left;
+    margin-right: 10px;
+    img {
+      max-width: 140px;
+    }
+    &-metadata {
+      margin-top: 1em;
+    }
+    &-title {
+      text-align: right;
+    }
+    @media only screen and (min-width: 57em) {
+      img {
+        max-width: 200px;
+      }    }
+    @media only screen and (min-width: 67em) {
+      img {
+        max-width: 300px;
+      }
+    }
+  }
 }
-
-
 
 
 

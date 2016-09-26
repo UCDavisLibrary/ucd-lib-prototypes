@@ -6,7 +6,8 @@
     <div class="column small-12 medium-7 refine-search">
       <h2>Refine your search</h2>
       <p>Use these controls to find what you're looking for. As the corpus gets bigger, this functionality will improve.</p>
-      <label for="id_sort_by">Sort results by:
+      <hr/>
+    <label for="id_sort_by">Sort results by:
         <select id="id_sort_by" name="sort_by" required="">
           <option value="source_modified">Date</option>
           <option value="identifier" selected="selected">Label ID</option>
@@ -14,6 +15,7 @@
           <option value="num_transcriptions"># of transc</option>
         </select>
       </label>
+      <hr/>
       <label>Show me
         <select id="id_limit" name="limit" required="">
           <option value="10">10</option>
@@ -27,6 +29,7 @@
         </select>
         <span for="id_order">order</span>.
       </label>
+      <hr/>
       <input checked="checked" id="id_modified_only" name="modified_only" type="checkbox"><label for="id_modified_only">&nbsp;&nbsp;Only show labels with marks and transcriptions.</label>
     </div>
     <div class="submit-button small-12">

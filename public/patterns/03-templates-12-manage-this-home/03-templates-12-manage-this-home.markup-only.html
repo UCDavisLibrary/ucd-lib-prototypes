@@ -36,7 +36,8 @@
     <div class="column small-12 medium-7 refine-search">
       <h2>Refine your search</h2>
       <p>Use these controls to find what you're looking for. As the corpus gets bigger, this functionality will improve.</p>
-      <label for="id_sort_by">Sort results by:
+      <hr/>
+    <label for="id_sort_by">Sort results by:
         <select id="id_sort_by" name="sort_by" required="">
           <option value="source_modified">Date</option>
           <option value="identifier" selected="selected">Label ID</option>
@@ -44,6 +45,7 @@
           <option value="num_transcriptions"># of transc</option>
         </select>
       </label>
+      <hr/>
       <label>Show me
         <select id="id_limit" name="limit" required="">
           <option value="10">10</option>
@@ -57,6 +59,7 @@
         </select>
         <span for="id_order">order</span>.
       </label>
+      <hr/>
       <input checked="checked" id="id_modified_only" name="modified_only" type="checkbox"><label for="id_modified_only">&nbsp;&nbsp;Only show labels with marks and transcriptions.</label>
     </div>
     <div class="submit-button small-12">
@@ -65,8 +68,8 @@
   </div>
 </form>
 
-	<div class="row">
-		<h2>Results</h2>
+	<div>
+		<h1>Results</h1>
 		<ul class="pagination text-center column" role="navigation">
   <li class="pagination-previous disabled ">
     <span>
@@ -103,168 +106,189 @@
   </li>
 </ul>
 
-		<div class="row small-up-1 medium-up-2 large-up-3">
-			<div class="minicard column row">
-	<div class="column small-4">
+		<div class="row small-up-1 medium-up-2">
+    <div class="column minicard">
+	<div class="label">
 		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		<p><a href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image</a></p>
-	</div>
-	<div class="column">
-		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
-		<p><a href="https://labelthis.lib.ucdavis.edu/view/2262">Direct Link to Mark</a></p>
-		<h3>Category</h3>
-		<p>North Africa Folder</p>
-		<h3>Last modified:</h3>
-		<p>Sept. 12, 2016, 8:39 a.m.</p>
-		<p>Marks: 6</p>
-	</div>
-</div>
-
-			<div class="minicard column row">
-	<div class="column small-4">
-		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		<p><a href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image</a></p>
-	</div>
-	<div class="column">
-		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
-		<p><a href="https://labelthis.lib.ucdavis.edu/view/2262">Direct Link to Mark</a></p>
-		<h3>Category</h3>
-		<p>North Africa Folder</p>
-		<h3>Last modified:</h3>
-		<p>Sept. 12, 2016, 8:39 a.m.</p>
-		<p>Marks: 6</p>
-	</div>
-</div>
-
-			<div class="minicard column row">
-	<div class="column small-4">
-		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		<p><a href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image</a></p>
-	</div>
-	<div class="column">
-		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
-		<p><a href="https://labelthis.lib.ucdavis.edu/view/2262">Direct Link to Mark</a></p>
-		<h3>Category</h3>
-		<p>North Africa Folder</p>
-		<h3>Last modified:</h3>
-		<p>Sept. 12, 2016, 8:39 a.m.</p>
-		<p>Marks: 6</p>
-	</div>
-</div>
-
-			<div class="minicard column row">
-	<div class="column small-4">
-		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		<p><a href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image</a></p>
-	</div>
-	<div class="column">
-		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
-		<p><a href="https://labelthis.lib.ucdavis.edu/view/2262">Direct Link to Mark</a></p>
-		<h3>Category</h3>
-		<p>North Africa Folder</p>
-		<h3>Last modified:</h3>
-		<p>Sept. 12, 2016, 8:39 a.m.</p>
-		<p>Marks: 6</p>
-	</div>
-</div>
-
-			<div class="minicard column row">
-	<div class="column small-4">
-		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		<p><a href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image</a></p>
-	</div>
-	<div class="column">
-		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
-		<p><a href="https://labelthis.lib.ucdavis.edu/view/2262">Direct Link to Mark</a></p>
-		<h3>Category</h3>
-		<p>North Africa Folder</p>
-		<h3>Last modified:</h3>
-		<p>Sept. 12, 2016, 8:39 a.m.</p>
-		<p>Marks: 6</p>
-	</div>
-</div>
-
-			<div class="minicard column row">
-	<div class="column small-4">
-		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		<p><a href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image</a></p>
-	</div>
-	<div class="column">
-		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
-		<p><a href="https://labelthis.lib.ucdavis.edu/view/2262">Direct Link to Mark</a></p>
-		<h3>Category</h3>
-		<p>North Africa Folder</p>
-		<h3>Last modified:</h3>
-		<p>Sept. 12, 2016, 8:39 a.m.</p>
-		<p>Marks: 6</p>
-	</div>
-</div>
-
-			<div class="minicard column row">
-	<div class="column small-4">
-		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		<p><a href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image</a></p>
-	</div>
-	<div class="column">
-		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
-		<p><a href="https://labelthis.lib.ucdavis.edu/view/2262">Direct Link to Mark</a></p>
-		<h3>Category</h3>
-		<p>North Africa Folder</p>
-		<h3>Last modified:</h3>
-		<p>Sept. 12, 2016, 8:39 a.m.</p>
-		<p>Marks: 6</p>
-	</div>
-</div>
-
-			<div class="minicard column row">
-	<div class="column small-4">
-		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		<p><a href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image</a></p>
-	</div>
-	<div class="column">
-		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
-		<p><a href="https://labelthis.lib.ucdavis.edu/view/2262">Direct Link to Mark</a></p>
-		<h3>Category</h3>
-		<p>North Africa Folder</p>
-		<h3>Last modified:</h3>
-		<p>Sept. 12, 2016, 8:39 a.m.</p>
-		<p>Marks: 6</p>
-	</div>
-</div>
-
-			<div class="minicard column row">
-	<div class="column small-4">
-		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		<p><a href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image</a></p>
-	</div>
-	<div class="column">
-		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
-		<p><a href="https://labelthis.lib.ucdavis.edu/view/2262">Direct Link to Mark</a></p>
-		<h3>Category</h3>
-		<p>North Africa Folder</p>
-		<h3>Last modified:</h3>
-		<p>Sept. 12, 2016, 8:39 a.m.</p>
-		<p>Marks: 6</p>
-	</div>
-</div>
-
-			<div class="minicard column row">
-	<div class="column small-4">
-		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
-		<p><a href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image</a></p>
-	</div>
-	<div class="column">
-		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
-		<p><a href="https://labelthis.lib.ucdavis.edu/view/2262">Direct Link to Mark</a></p>
-		<h3>Category</h3>
-		<p>North Africa Folder</p>
-		<h3>Last modified:</h3>
-		<p>Sept. 12, 2016, 8:39 a.m.</p>
-		<p>Marks: 6</p>
-	</div>
-</div>
-
+		<div class="label-metadata">
+			<h3>Category</h3>
+			<p>North Africa Folder</p>
+			<h3>Last modified:</h3>
+			<p>Sept. 12, 2016, 8:39 a.m.</p>
+			<p>Marks: 6</p>
 		</div>
+	</div>
+	<div class="label-title">
+		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/view/2262">Mark this label</a>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image File</a>
+	</div>
+</div>
+
+    <div class="column minicard">
+	<div class="label">
+		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+		<div class="label-metadata">
+			<h3>Category</h3>
+			<p>North Africa Folder</p>
+			<h3>Last modified:</h3>
+			<p>Sept. 12, 2016, 8:39 a.m.</p>
+			<p>Marks: 6</p>
+		</div>
+	</div>
+	<div class="label-title">
+		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/view/2262">Mark this label</a>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image File</a>
+	</div>
+</div>
+
+    <div class="column minicard">
+	<div class="label">
+		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+		<div class="label-metadata">
+			<h3>Category</h3>
+			<p>North Africa Folder</p>
+			<h3>Last modified:</h3>
+			<p>Sept. 12, 2016, 8:39 a.m.</p>
+			<p>Marks: 6</p>
+		</div>
+	</div>
+	<div class="label-title">
+		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/view/2262">Mark this label</a>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image File</a>
+	</div>
+</div>
+
+    <div class="column minicard">
+	<div class="label">
+		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+		<div class="label-metadata">
+			<h3>Category</h3>
+			<p>North Africa Folder</p>
+			<h3>Last modified:</h3>
+			<p>Sept. 12, 2016, 8:39 a.m.</p>
+			<p>Marks: 6</p>
+		</div>
+	</div>
+	<div class="label-title">
+		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/view/2262">Mark this label</a>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image File</a>
+	</div>
+</div>
+
+    <div class="column minicard">
+	<div class="label">
+		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+		<div class="label-metadata">
+			<h3>Category</h3>
+			<p>North Africa Folder</p>
+			<h3>Last modified:</h3>
+			<p>Sept. 12, 2016, 8:39 a.m.</p>
+			<p>Marks: 6</p>
+		</div>
+	</div>
+	<div class="label-title">
+		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/view/2262">Mark this label</a>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image File</a>
+	</div>
+</div>
+
+    <div class="column minicard">
+	<div class="label">
+		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+		<div class="label-metadata">
+			<h3>Category</h3>
+			<p>North Africa Folder</p>
+			<h3>Last modified:</h3>
+			<p>Sept. 12, 2016, 8:39 a.m.</p>
+			<p>Marks: 6</p>
+		</div>
+	</div>
+	<div class="label-title">
+		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/view/2262">Mark this label</a>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image File</a>
+	</div>
+</div>
+
+    <div class="column minicard">
+	<div class="label">
+		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+		<div class="label-metadata">
+			<h3>Category</h3>
+			<p>North Africa Folder</p>
+			<h3>Last modified:</h3>
+			<p>Sept. 12, 2016, 8:39 a.m.</p>
+			<p>Marks: 6</p>
+		</div>
+	</div>
+	<div class="label-title">
+		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/view/2262">Mark this label</a>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image File</a>
+	</div>
+</div>
+
+    <div class="column minicard">
+	<div class="label">
+		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+		<div class="label-metadata">
+			<h3>Category</h3>
+			<p>North Africa Folder</p>
+			<h3>Last modified:</h3>
+			<p>Sept. 12, 2016, 8:39 a.m.</p>
+			<p>Marks: 6</p>
+		</div>
+	</div>
+	<div class="label-title">
+		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/view/2262">Mark this label</a>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image File</a>
+	</div>
+</div>
+
+    <div class="column minicard">
+	<div class="label">
+		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+		<div class="label-metadata">
+			<h3>Category</h3>
+			<p>North Africa Folder</p>
+			<h3>Last modified:</h3>
+			<p>Sept. 12, 2016, 8:39 a.m.</p>
+			<p>Marks: 6</p>
+		</div>
+	</div>
+	<div class="label-title">
+		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/view/2262">Mark this label</a>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image File</a>
+	</div>
+</div>
+
+    <div class="column minicard">
+	<div class="label">
+		<img src="..&#x2F;..&#x2F;images&#x2F;fpo_square.png" alt="Square Thumbnail" />
+		<div class="label-metadata">
+			<h3>Category</h3>
+			<p>North Africa Folder</p>
+			<h3>Last modified:</h3>
+			<p>Sept. 12, 2016, 8:39 a.m.</p>
+			<p>Marks: 6</p>
+		</div>
+	</div>
+	<div class="label-title">
+		<h1><a href="&#x2F;patterns&#x2F;03-templates-13-manage-this-single-label&#x2F;03-templates-13-manage-this-single-label.html">Label #1234</a></h1>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/view/2262">Mark this label</a>
+		<a class="tiny secondary button" href="https://labelthis.lib.ucdavis.edu/images/labels/2048x/2/Amerine-2262.jpg">Download Image File</a>
+	</div>
+</div>
+
+</div>
+
 		<ul class="pagination text-center column" role="navigation">
   <li class="pagination-previous disabled ">
     <span>
