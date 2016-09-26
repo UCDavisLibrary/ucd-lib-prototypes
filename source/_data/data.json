@@ -190,6 +190,153 @@
 		{
 		}
 	],
+	"fragmentcard" : [
+		{
+			"type" : "Text Transcription",
+			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-text-577c1a59fb384154f6000055.jpg",
+			"timestamp" : "July 5, 2016, 1:36 p.m.",
+			"transc" : {
+				"1": "Canvas Hill",
+				"2": "Cavas Hill",
+				"3": "Cavas Hill ",
+				"4": "cavas hill",
+				"5": "Author",
+				"6": "Author",
+				"7": "Author",
+				"8": "Name"
+			}
+		},
+		{
+			"type" : "Text Transcription",
+			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-text-577c1a6afb384154f300004d.jpg",
+			"timestamp" : "July 5, 2016, 1:36 p.m.",
+			"transc" : {
+				"1": "Extra Penadés",
+				"2": "Extra Penades",
+				"3": "extra penades"
+			}
+		},
+		{
+			"type" : "Text Transcription",
+			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-text-577c1a73fb384154f300004f.jpg",
+			"timestamp" : "July 5, 2016, 1:37 p.m.",
+			"transc" : {
+				"1": "Canvas Hill",
+				"2": "Cavas Hill",
+				"3": "Cavas Hill ",
+				"4": "cavas hill",
+				"5": "Author",
+				"6": "Author",
+				"7": "Author",
+				"8": "Name"
+			}
+		},
+		{
+			"type" : "Text Transcription",
+			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-text-577c1a7afb384154f6000057.jpg",
+			"timestamp" : "July 5, 2016, 1:37 p.m.",
+			"transc" : {
+				"1": "Canvas Hill",
+				"2": "Cavas Hill",
+				"3": "Cavas Hill ",
+				"4": "cavas hill",
+				"5": "Author",
+				"6": "Author",
+				"7": "Author",
+				"8": "Name"
+			}
+		},
+		{
+			"type" : "Text Transcription",
+			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-text-577c1a83fb384154f3000051.jpg",
+			"timestamp" : "July 5, 2016, 1:37 p.m.",
+			"transc" : {
+				"1": "Canvas Hill",
+				"2": "Cavas Hill",
+				"3": "Cavas Hill ",
+				"4": "cavas hill",
+				"5": "Author",
+				"6": "Author",
+				"7": "Author",
+				"8": "Name"
+			}
+		},
+		{
+			"type" : "Text Transcription",
+			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-text-577c1a8bfb384154f6000059.jpg",
+			"timestamp" : "July 5, 2016, 1:37 p.m.",
+			"transc" : {
+				"1": "Canvas Hill",
+				"2": "Cavas Hill",
+				"3": "Cavas Hill ",
+				"4": "cavas hill",
+				"5": "Author",
+				"6": "Author",
+				"7": "Author",
+				"8": "Name"
+			}
+		},
+		{
+			"type" : "Text Transcription",
+			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-text-577c1aa2fb384154f3000053.jpg",
+			"timestamp" : "July 5, 2016, 1:37 p.m.",
+			"transc" : {
+				"1": "Canvas Hill",
+				"2": "Cavas Hill",
+				"3": "Cavas Hill ",
+				"4": "cavas hill",
+				"5": "Author",
+				"6": "Author",
+				"7": "Author",
+				"8": "Name"
+			}
+		},
+		{
+			"type" : "Text Transcription",
+			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-image-577c1ab1fb384154f600005b.jpg",
+			"timestamp" : "July 5, 2016, 1:38 p.m.",
+			"transc" : {
+				"1": "Canvas Hill",
+				"2": "Cavas Hill",
+				"3": "Cavas Hill ",
+				"4": "cavas hill",
+				"5": "Author",
+				"6": "Author",
+				"7": "Author",
+				"8": "Name"
+			}
+		},
+		{
+			"type" : "Text Transcription",
+			"imgsrc" : "http://managethis.library.ucdavis.edu/media/0025-image-577c1abcfb384154f300005b.jpg",
+			"timestamp" : "July 5, 2016, 1:38 p.m.",
+			"transc" : {
+				"1": "Canvas Hill",
+				"2": "Cavas Hill",
+				"3": "Cavas Hill ",
+				"4": "cavas hill",
+				"5": "Author",
+				"6": "Author",
+				"7": "Author",
+				"8": "Name"
+			}
+		},
+		{
+			"type" : "Text Transcription",
+			"imgsrc" : "http://managethis.library.ucdavis.edu//media/0025-text-577c1acbfb384154f300005d.jpg",
+			"timestamp" : "July 5, 2016, 1:38 p.m.",
+			"transc" : {
+				"1": "Canvas Hill",
+				"2": "Cavas Hill",
+				"3": "Cavas Hill ",
+				"4": "cavas hill",
+				"5": "Author",
+				"6": "Author",
+				"7": "Author",
+				"8": "Name"
+			}
+		}
+	],
 	"labelalternates" : [
 		{
 			"label": "Back of Card",
