@@ -988,6 +988,7 @@ footer {
     margin-top: 1em;
     h2, p {
       text-align: center;
+      margin-bottom: 1em;
     }
   }
   form {
@@ -1031,11 +1032,17 @@ footer {
 }
 
 .herocard {
-  h1, h3, p, a {
-    color: $labels-red;
-    margin-bottom: 0;
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+  border-bottom: 2px solid $labels-background-dark;
+  h1, a, .column {
+    text-align: left;
+  }
+  h3 {
+    margin-top: 1em;
   }
 }
+
 .minicard {
   padding: 2em;
   min-width: 380px;
